@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="sources" ID="{7171735D-3449-44F0-BEEA-1A556859587F}" ShortID="1030315644">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="att_5m" ID="{D3B54453-76D4-43B1-BFB1-AE31283EE299}" WorkUnitID="{9A9CC599-7D90-42EC-A617-C3043E491B06}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="yellow" ID="{1A64533D-A06C-49A1-AE53-1E0C4476E93F}" ShortID="948606128">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="yellow" ID="{29A68116-3971-4ED8-AEEA-6DD09C0009B4}" ShortID="683330907">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="test" ID="{FB1D7507-D51F-4FBA-96FF-C75EE5C6AEF8}" ShortID="307553095">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>52</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>40</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>610</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{06965783-B8C5-40B0-BC88-1331BBF2C3FF}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="7"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="ui_wheel_change_tone_05" ID="{69987879-C04C-409B-8FAB-1B158566F5D6}" ShortID="468558969">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_05" ID="{8AFF5DC7-0765-4135-8ECB-E414CBD0C630}" ShortID="380241359">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_05.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="530158327"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_05" ID="{8AFF5DC7-0765-4135-8ECB-E414CBD0C630}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ui_wheel_change_tone_04" ID="{4EBF71F9-12B5-4321-9BFE-D14E46717033}" ShortID="47392820">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_04" ID="{3A142DCF-5A1E-4B98-AF95-677F1A71CC8C}" ShortID="205819162">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_04.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="198424254"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_04" ID="{3A142DCF-5A1E-4B98-AF95-677F1A71CC8C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ui_wheel_change_tone_03" ID="{9FF16355-CBBB-4BD4-9DD2-199B76CFB8C2}" ShortID="872903553">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_03" ID="{E6B6A91D-F50A-436F-BB5F-5480E6C23308}" ShortID="466038138">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="866382955"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_03" ID="{E6B6A91D-F50A-436F-BB5F-5480E6C23308}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ui_wheel_change_tone_01" ID="{A543E19E-6C41-42E2-B245-9B98920FF812}" ShortID="616276853">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_01" ID="{9744D2EB-0A85-4FA0-9E29-BCA26343F984}" ShortID="501127529">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="142011321"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_01" ID="{9744D2EB-0A85-4FA0-9E29-BCA26343F984}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ui_wheel_change_tone_02" ID="{24C9C6A7-AD39-41AA-866F-BD8405A7D3F8}" ShortID="342038501">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_02" ID="{C7DD9169-FEF9-4514-AB23-468B4EA3FC24}" ShortID="1013920438">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_02.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="66536949"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_02" ID="{C7DD9169-FEF9-4514-AB23-468B4EA3FC24}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="red" ID="{22183C71-5B33-49DE-85C2-C32B4901EF55}" ShortID="168314435">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="red" ID="{EEDAC1C7-EEDE-4858-9BD1-985EA7248156}" ShortID="343341631">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="test" ID="{CBC817D4-4A89-498C-9687-E0E7B31DFC57}" ShortID="909140032">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>18</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-200</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{68624087-AE52-4FBA-BB66-81CB95232603}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="ui_wheel_change_tone_05" ID="{8A0AC795-2B9B-4A69-B06A-6DE8D1EC6622}" ShortID="34147698">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_05" ID="{40E391CE-B79F-4BEE-B279-FD19135EE93E}" ShortID="1068876643">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_05.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="530158327"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_05" ID="{40E391CE-B79F-4BEE-B279-FD19135EE93E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ui_wheel_change_tone_04" ID="{43E00179-BB11-46DF-B80B-19676FE4EC8A}" ShortID="664199538">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_04" ID="{8488E3FD-E490-49C1-BC9B-BEEECBBA0BC2}" ShortID="864031821">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_04.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="198424254"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_04" ID="{8488E3FD-E490-49C1-BC9B-BEEECBBA0BC2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ui_wheel_change_tone_03" ID="{B7C41EB2-5131-4D0B-9D71-834EF5E7098F}" ShortID="408461952">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_03" ID="{9A540344-A3B3-4FAA-8180-E8078B91F68A}" ShortID="248514353">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="866382955"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_03" ID="{9A540344-A3B3-4FAA-8180-E8078B91F68A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ui_wheel_change_tone_01" ID="{AC5DA2A6-EA3D-41B7-AE86-31909012E359}" ShortID="145308376">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_01" ID="{DA554761-4AEC-4CA4-9302-62391FF05033}" ShortID="615640485">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="142011321"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_01" ID="{DA554761-4AEC-4CA4-9302-62391FF05033}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ui_wheel_change_tone_02" ID="{D00217F0-113B-4E40-B5B6-13FF9046E91B}" ShortID="222169240">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_02" ID="{E1535377-0C05-4CD2-9309-758346CF4081}" ShortID="182934767">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_02.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="66536949"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_02" ID="{E1535377-0C05-4CD2-9309-758346CF4081}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="violet" ID="{D9494555-97FD-4CC6-B1B3-448764D129E4}" ShortID="31042675">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="violet" ID="{6DEE8B44-F5DE-4628-9776-B0155C745C2F}" ShortID="837265606">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="test" ID="{370B4613-72EF-428C-9D9C-0AD648EFFCA0}" ShortID="708332983">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>26</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>1.5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>23</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-1060</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A213BE72-ED77-45C4-97B1-5D2A69B7DE82}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="ui_wheel_change_tone_05" ID="{8556FCF3-19D2-40D6-83C9-F4CD606E1396}" ShortID="446138651">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_05" ID="{8F0FEAA5-D645-486D-87DA-71A755592C94}" ShortID="759912914">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_05.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="530158327"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_05" ID="{8F0FEAA5-D645-486D-87DA-71A755592C94}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ui_wheel_change_tone_04" ID="{E7EB7536-FC4A-4E23-B182-C90773CFF037}" ShortID="943142422">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_04" ID="{A7DACD90-FED3-4720-8A28-5DD1CE6DC91D}" ShortID="35799999">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_04.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="198424254"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_04" ID="{A7DACD90-FED3-4720-8A28-5DD1CE6DC91D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ui_wheel_change_tone_03" ID="{0E6A0475-821E-4070-BB93-D3EDC7702446}" ShortID="1014285071">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_03" ID="{AA23623E-CD65-4C30-8641-DD7B5146C96B}" ShortID="584614207">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="866382955"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_03" ID="{AA23623E-CD65-4C30-8641-DD7B5146C96B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ui_wheel_change_tone_01" ID="{2C682B5A-3F30-442E-8279-90C124EBC6D6}" ShortID="337642141">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_01" ID="{DFEB7140-1324-44BE-86C6-D68D3F151056}" ShortID="11514337">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="142011321"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_01" ID="{DFEB7140-1324-44BE-86C6-D68D3F151056}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ui_wheel_change_tone_02" ID="{2000699D-E109-4A49-B954-23B15E75A9E1}" ShortID="28867610">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_02" ID="{9848E53C-23CA-40FF-9B54-6E62A644D7CC}" ShortID="362702184">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_02.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="66536949"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_02" ID="{9848E53C-23CA-40FF-9B54-6E62A644D7CC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="blue" ID="{E937C48A-BA4E-4B49-84F1-78B49C93175A}" ShortID="602904734">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="blue" ID="{F143515B-4E15-409E-B421-05DC20ACBCAE}" ShortID="726221272">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="test" ID="{F4D24158-5594-48DD-B745-6A3A50E6BAC8}" ShortID="221574724">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-2400</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9DB9699B-A35A-4D75-9E6B-C532187F7628}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="ui_wheel_change_tone_05" ID="{C9312543-80BD-4B4E-BC89-422D96F4C39B}" ShortID="797706293">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_05" ID="{1857EECA-50A0-4942-9E8B-E9D698C1941C}" ShortID="530158327">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_05.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_05" ID="{1857EECA-50A0-4942-9E8B-E9D698C1941C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ui_wheel_change_tone_04" ID="{88431728-4E5A-4F4E-BDCF-16F58383FC1B}" ShortID="956155869">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_04" ID="{43D5EAE5-06FF-44CE-93BF-1E2C7214E21F}" ShortID="198424254">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_04" ID="{43D5EAE5-06FF-44CE-93BF-1E2C7214E21F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ui_wheel_change_tone_03" ID="{D0C55BAE-74B8-453E-82D1-6825805F28B7}" ShortID="812062601">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_03" ID="{FE1DC820-6D52-48C1-BCB0-9F5ED8A1C2C9}" ShortID="866382955">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_03" ID="{FE1DC820-6D52-48C1-BCB0-9F5ED8A1C2C9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ui_wheel_change_tone_01" ID="{C0BE3331-0E9D-407B-BB56-69C37C5C0FCA}" ShortID="1069901958">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_01" ID="{C2EB65D8-E4F3-4FE0-9CA2-54B37DAD34BB}" ShortID="142011321">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_01" ID="{C2EB65D8-E4F3-4FE0-9CA2-54B37DAD34BB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ui_wheel_change_tone_02" ID="{7D976043-B901-4522-9A33-C4F9B6741A91}" ShortID="970841209">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_02" ID="{1D77383A-AA01-48BA-9F03-9028FA8888D1}" ShortID="66536949">
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_02" ID="{1D77383A-AA01-48BA-9F03-9028FA8888D1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

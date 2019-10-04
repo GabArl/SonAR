@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db111104dbc81d4193ad689592d128e, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 7cd87145de7d5340aab9236c2ca84ac7
+    GuidInternal: 
+    m_lastTime: -8586315417872881577
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 93de408d966b7e4eab53228216c67ee9
+    GuidInternal: 
+    m_lastTime: -8586315417873236645
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 50330d10b913434294efd648980b828c
+    GuidInternal: 
+    m_lastTime: -8586315405305741119
+    List:
+    - name: SoundBank
+      guid: d4568d498803ab46b9c5a2c6e16b3224
+      id: 1661994096
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SoundBank
+        ObjectType: 7
+      Path: Default Work Unit\SoundBank
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 0d5f111b983fff4c874bcc4e07d7e8bc
+    GuidInternal: 
+    m_lastTime: -8586315405959616118
+    List:
+    - name: blue
+      guid: 791948e3008ee546b89ee80786d350eb
+      id: 1325827433
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: blue
+        ObjectType: 3
+      Path: Default Work Unit\blue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: red
+      guid: 78449fa885b65e4badeaa6cbcd0ee372
+      id: 980603538
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: red
+        ObjectType: 3
+      Path: Default Work Unit\red
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: violet
+      guid: 69195226820327478672804358db277f
+      id: 2862198004
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: violet
+        ObjectType: 3
+      Path: Default Work Unit\violet
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: yellow
+      guid: a65dd9c563d03449a0113e67149a5320
+      id: 2774173721
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: yellow
+        ObjectType: 3
+      Path: Default Work Unit\yellow
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: e94a85dc3cd28b488077fa61458130f5
+    GuidInternal: 
+    m_lastTime: -8586315417873451683
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 6a564c8fb2da88428207bed397afe30b
+    GuidInternal: 
+    m_lastTime: -8586315417872971595
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 1d3f2c20c48b1947a8c30e6343e73638
+    GuidInternal: 
+    m_lastTime: -8586315417873376669
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 6d3c129cb0789d40bc1f62c289740a60
+    GuidInternal: 
+    m_lastTime: -8586315417873631714
+    List: []
+  ExpandedItems:
+  - /cosmic-vr_WwiseProject
+  - /cosmic-vr_WwiseProject/SoundBanks
+  - /cosmic-vr_WwiseProject/SoundBanks/Default Work Unit
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 
