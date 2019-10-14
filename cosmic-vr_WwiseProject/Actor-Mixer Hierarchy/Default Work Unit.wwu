@@ -20,7 +20,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+							<ObjectRef Name="New Audio Bus" ID="{8BEDB2EB-F8E1-4AA0-81CF-6C1AC95030D4}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
@@ -28,12 +28,15 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="yellow" ID="{1A64533D-A06C-49A1-AE53-1E0C4476E93F}" ShortID="948606128">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+									<ObjectRef Name="New Audio Bus_01" ID="{2631A89D-DC3E-431C-95D5-613424731686}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

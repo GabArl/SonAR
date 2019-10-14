@@ -19,6 +19,11 @@ namespace AK
         static const AkUniqueID YELLOW = 2774173721U;
     } // namespace EVENTS
 
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID RMS = 1114824701U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
@@ -28,6 +33,8 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID NEW_AUDIO_BUS = 2255513057U;
+        static const AkUniqueID NEW_AUDIO_BUS_01 = 2799548653U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

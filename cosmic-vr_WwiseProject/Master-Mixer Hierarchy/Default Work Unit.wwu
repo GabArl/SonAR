@@ -20,6 +20,39 @@
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
+						<Bus Name="New Audio Bus" ID="{8BEDB2EB-F8E1-4AA0-81CF-6C1AC95030D4}">
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Meter_(Custom)" ID="{6CA8D957-BE4C-4FF7-AC14-C65B6C730C93}" ShortID="445542567" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<PropertyList>
+												<Property Name="Min" Type="Real32" Value="-96.3"/>
+											</PropertyList>
+											<PluginData>
+	<GameParameter Name="RMS" ID="{DF6C9CE5-B55B-4A63-96E5-4C0DD1DDE705}"/>
+</PluginData>
+										</Effect>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+						<Bus Name="New Audio Bus_01" ID="{2631A89D-DC3E-431C-95D5-613424731686}">
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Meter_(Custom)" ID="{45B0B241-0019-413F-978F-579C80DC7948}" ShortID="585101333" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<PropertyList>
+												<Property Name="MeterScope" Type="int32" Value="1"/>
+												<Property Name="Min" Type="Real32" Value="-96.3"/>
+											</PropertyList>
+											<PluginData>
+	<GameParameter Name="RMS" ID="{DF6C9CE5-B55B-4A63-96E5-4C0DD1DDE705}"/>
+</PluginData>
+										</Effect>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

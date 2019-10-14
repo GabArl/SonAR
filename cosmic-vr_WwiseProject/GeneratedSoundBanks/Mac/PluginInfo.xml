@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PluginInfo Project="cosmic-vr_WwiseProject" Platform="Windows" BasePlatform="Windows">
+<PluginInfo Project="cosmic-vr_WwiseProject" Platform="Mac" BasePlatform="Mac">
 	<Plugins>
 		<Plugin Name="Wwise Matrix Reverb" ID="7536643" DLL="AkMatrixReverb"/>
 		<Plugin Name="Wwise RoomVerb" ID="7733251" DLL="AkRoomVerb"/>

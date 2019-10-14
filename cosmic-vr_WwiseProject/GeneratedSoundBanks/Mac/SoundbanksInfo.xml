@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
 		<ProjectRoot>D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<SourceFilesRoot>D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
