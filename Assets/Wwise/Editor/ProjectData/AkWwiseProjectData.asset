@@ -17,21 +17,32 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 7cd87145de7d5340aab9236c2ca84ac7
     GuidInternal: 
-    m_lastTime: -8586315417872881577
+    m_lastTime: -8586314594777229875
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 93de408d966b7e4eab53228216c67ee9
     GuidInternal: 
-    m_lastTime: -8586315417873236645
-    List: []
+    m_lastTime: -8586305935153150530
+    List:
+    - name: reverb
+      guid: c9bcc7094afa3f4995e58dd27dd76a12
+      id: 348963605
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: reverb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\reverb
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 50330d10b913434294efd648980b828c
     GuidInternal: 
-    m_lastTime: -8586315405305741119
+    m_lastTime: -8586314594777299839
     List:
     - name: SoundBank
       guid: d4568d498803ab46b9c5a2c6e16b3224
@@ -47,53 +58,53 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 0d5f111b983fff4c874bcc4e07d7e8bc
     GuidInternal: 
-    m_lastTime: -8586315405959616118
+    m_lastTime: -8586292957726669616
     List:
-    - name: blue
+    - name: Blue
       guid: 791948e3008ee546b89ee80786d350eb
       id: 1325827433
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: blue
+      - ElementName: Blue
         ObjectType: 3
-      Path: Default Work Unit\blue
+      Path: Default Work Unit\Blue
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: red
+    - name: Red
       guid: 78449fa885b65e4badeaa6cbcd0ee372
       id: 980603538
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: red
+      - ElementName: Red
         ObjectType: 3
-      Path: Default Work Unit\red
+      Path: Default Work Unit\Red
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: violet
+    - name: Violet
       guid: 69195226820327478672804358db277f
       id: 2862198004
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: violet
+      - ElementName: Violet
         ObjectType: 3
-      Path: Default Work Unit\violet
+      Path: Default Work Unit\Violet
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: yellow
+    - name: Yellow
       guid: a65dd9c563d03449a0113e67149a5320
       id: 2774173721
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: yellow
+      - ElementName: Yellow
         ObjectType: 3
-      Path: Default Work Unit\yellow
+      Path: Default Work Unit\Yellow
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -102,32 +113,356 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: e94a85dc3cd28b488077fa61458130f5
     GuidInternal: 
-    m_lastTime: -8586315417873451683
-    List: []
+    m_lastTime: -8586305935154079984
+    List:
+    - name: RMS
+      guid: e59c6cdf5bb5634a96e54c0dd1dde705
+      id: 1114824701
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RMS
+        ObjectType: 13
+      Path: Default Work Unit\RMS
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 6a564c8fb2da88428207bed397afe30b
     GuidInternal: 
-    m_lastTime: -8586315417872971595
+    m_lastTime: -8586314594777269858
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 1d3f2c20c48b1947a8c30e6343e73638
     GuidInternal: 
-    m_lastTime: -8586315417873376669
-    List: []
+    m_lastTime: -8586293005808513687
+    List:
+    - name: track_number
+      guid: eb8bd4a717c3e94db727005fba5d20d4
+      id: 2876568630
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: track_number
+        ObjectType: 11
+      Path: Default Work Unit\track_number
+      values:
+      - name: _01
+        guid: 4ee7d59ece2efe40be8351f92ce9e808
+        id: 1627589345
+        PathAndIcons:
+        - ElementName: _01
+          ObjectType: 10
+      - name: _02
+        guid: b2c009eeb325f047b51eeaab2f74fc50
+        id: 1627589346
+        PathAndIcons:
+        - ElementName: _02
+          ObjectType: 10
+      - name: _03
+        guid: f67eb19d3cb2a84ebe083ef3d3598668
+        id: 1627589347
+        PathAndIcons:
+        - ElementName: _03
+          ObjectType: 10
+      - name: _04
+        guid: 7909552b3f1bef429ed054c54d7e07a8
+        id: 1627589348
+        PathAndIcons:
+        - ElementName: _04
+          ObjectType: 10
+      - name: _05
+        guid: 71903e9a93ee324cbfa86f292c08c749
+        id: 1627589349
+        PathAndIcons:
+        - ElementName: _05
+          ObjectType: 10
+      - name: _06
+        guid: a29f3e718eb7914286033283bd958c5c
+        id: 1627589350
+        PathAndIcons:
+        - ElementName: _06
+          ObjectType: 10
+      - name: _07
+        guid: 13bd15d041ae664c84ec267d614307cf
+        id: 1627589351
+        PathAndIcons:
+        - ElementName: _07
+          ObjectType: 10
+      - name: _08
+        guid: 8cc85311f632c842abb5fd09443ffe54
+        id: 1627589352
+        PathAndIcons:
+        - ElementName: _08
+          ObjectType: 10
+      - name: _09
+        guid: 597fb5f99d41e741a49102b1d2c96a04
+        id: 1627589353
+        PathAndIcons:
+        - ElementName: _09
+          ObjectType: 10
+      - name: _10
+        guid: 04cb412634f33e449ef8b0e0edb9e8c5
+        id: 1644366931
+        PathAndIcons:
+        - ElementName: _10
+          ObjectType: 10
+      - name: _11
+        guid: a97c70862844cc4c8dc80e24a948ea8c
+        id: 1644366930
+        PathAndIcons:
+        - ElementName: _11
+          ObjectType: 10
+      - name: _12
+        guid: f6d0f917face0442a358e03a468367a8
+        id: 1644366929
+        PathAndIcons:
+        - ElementName: _12
+          ObjectType: 10
+      - name: _13
+        guid: 1ede5db15361da41994872fdcd557c0e
+        id: 1644366928
+        PathAndIcons:
+        - ElementName: _13
+          ObjectType: 10
+      - name: _14
+        guid: b921ec8faeb93f4096670c121984f406
+        id: 1644366935
+        PathAndIcons:
+        - ElementName: _14
+          ObjectType: 10
+      - name: _15
+        guid: 181d62ccef665647801346570eea942f
+        id: 1644366934
+        PathAndIcons:
+        - ElementName: _15
+          ObjectType: 10
+      - name: _16
+        guid: de3e075276ceb749b7114c64b51c3141
+        id: 1644366933
+        PathAndIcons:
+        - ElementName: _16
+          ObjectType: 10
+      - name: _17
+        guid: b7fac191b74c0a4595815a1acbb74350
+        id: 1644366932
+        PathAndIcons:
+        - ElementName: _17
+          ObjectType: 10
+      - name: _18
+        guid: b006329b0338624ebfb0a5d10b15d4a7
+        id: 1644366939
+        PathAndIcons:
+        - ElementName: _18
+          ObjectType: 10
+      - name: _19
+        guid: 30fdef4d825b694db53d63d67eb1bb9a
+        id: 1644366938
+        PathAndIcons:
+        - ElementName: _19
+          ObjectType: 10
+      - name: _20
+        guid: f1180538a2ce3c44a1a9b07ad061b8ef
+        id: 1661144518
+        PathAndIcons:
+        - ElementName: _20
+          ObjectType: 10
+      - name: _21
+        guid: 76cec620f09e98459f5cb1c20a33f310
+        id: 1661144519
+        PathAndIcons:
+        - ElementName: _21
+          ObjectType: 10
+      - name: _22
+        guid: 108af6ab72b3ec468bc6d0ddfdca4ff9
+        id: 1661144516
+        PathAndIcons:
+        - ElementName: _22
+          ObjectType: 10
+      - name: _23
+        guid: 50ad0fcb46c8f24f8c6d06f0a7fd6c9c
+        id: 1661144517
+        PathAndIcons:
+        - ElementName: _23
+          ObjectType: 10
+      - name: _24
+        guid: 3a6bfbb93bdb294bb43549549a057fce
+        id: 1661144514
+        PathAndIcons:
+        - ElementName: _24
+          ObjectType: 10
+      - name: _25
+        guid: 38f353a41a8aa5448829767b495608ed
+        id: 1661144515
+        PathAndIcons:
+        - ElementName: _25
+          ObjectType: 10
+      - name: _26
+        guid: 70c2590eba908740907dd64c455ced1b
+        id: 1661144512
+        PathAndIcons:
+        - ElementName: _26
+          ObjectType: 10
+      - name: _27
+        guid: 22adead29d3deb47b706eca4a3d24163
+        id: 1661144513
+        PathAndIcons:
+        - ElementName: _27
+          ObjectType: 10
+      - name: _28
+        guid: e89629de3eead745af3bb52ef30ce4fc
+        id: 1661144526
+        PathAndIcons:
+        - ElementName: _28
+          ObjectType: 10
+      - name: _29
+        guid: 0762ee08f339cc499ef748d2e2f7a1eb
+        id: 1661144527
+        PathAndIcons:
+        - ElementName: _29
+          ObjectType: 10
+      - name: _30
+        guid: e46b47227eb4f24494fb43936294aa55
+        id: 1677922233
+        PathAndIcons:
+        - ElementName: _30
+          ObjectType: 10
+      - name: _31
+        guid: bbd4e57364a07e4b8c992d40fae6a0a0
+        id: 1677922232
+        PathAndIcons:
+        - ElementName: _31
+          ObjectType: 10
+      - name: _32
+        guid: 90cc2fc8e1270948a365e6fd584a45fd
+        id: 1677922235
+        PathAndIcons:
+        - ElementName: _32
+          ObjectType: 10
+      - name: _33
+        guid: d6fb9c9a7d9ee648a919983bcd1d10c1
+        id: 1677922234
+        PathAndIcons:
+        - ElementName: _33
+          ObjectType: 10
+      - name: _34
+        guid: a7e715bd834b9b4ead7e92045cf0deda
+        id: 1677922237
+        PathAndIcons:
+        - ElementName: _34
+          ObjectType: 10
+      - name: _35
+        guid: 2f17654e06a70040acc1cf4fc29b3c23
+        id: 1677922236
+        PathAndIcons:
+        - ElementName: _35
+          ObjectType: 10
+      - name: _36
+        guid: d87f8e6e35eab54eae832fa4e4de7028
+        id: 1677922239
+        PathAndIcons:
+        - ElementName: _36
+          ObjectType: 10
+      - name: _37
+        guid: 23bddf678bc01f448f733662acdfc888
+        id: 1677922238
+        PathAndIcons:
+        - ElementName: _37
+          ObjectType: 10
+      - name: _38
+        guid: 002ea27452265e418ef77e611a1b060b
+        id: 1677922225
+        PathAndIcons:
+        - ElementName: _38
+          ObjectType: 10
+      - name: _39
+        guid: 4f6bc1d5751dd244b954ec0ae7215d83
+        id: 1677922224
+        PathAndIcons:
+        - ElementName: _39
+          ObjectType: 10
+      - name: _40
+        guid: c61ee2bbf2eb3840800ab8bfd74e82d3
+        id: 1694699820
+        PathAndIcons:
+        - ElementName: _40
+          ObjectType: 10
+      - name: _41
+        guid: 7aa0045361cd5342999c8d96ef2d7295
+        id: 1694699821
+        PathAndIcons:
+        - ElementName: _41
+          ObjectType: 10
+      - name: _42
+        guid: 5bcdf2ef44f06b4994bdd0e1cdc8112e
+        id: 1694699822
+        PathAndIcons:
+        - ElementName: _42
+          ObjectType: 10
+      - name: _43
+        guid: a030183535fbe94bac6d6200eea2e4d0
+        id: 1694699823
+        PathAndIcons:
+        - ElementName: _43
+          ObjectType: 10
+      - name: _44
+        guid: 13c794ec01875d4b88b3a4edb8324397
+        id: 1694699816
+        PathAndIcons:
+        - ElementName: _44
+          ObjectType: 10
+      - name: _45
+        guid: b3a99016299f0a428fa6fdd98636e691
+        id: 1694699817
+        PathAndIcons:
+        - ElementName: _45
+          ObjectType: 10
+      - name: _46
+        guid: a7cf918500099f4aba4440c82f1e94a2
+        id: 1694699818
+        PathAndIcons:
+        - ElementName: _46
+          ObjectType: 10
+      - name: _47
+        guid: 3e9c33d8d7e73b40a9b4c62835b3d2e6
+        id: 1694699819
+        PathAndIcons:
+        - ElementName: _47
+          ObjectType: 10
+      - name: _48
+        guid: b5408d90276a2e49aaaf7da7f3c389f2
+        id: 1694699812
+        PathAndIcons:
+        - ElementName: _48
+          ObjectType: 10
+      - name: _49
+        guid: 5b258bfcb5f97740a27485aa675f929c
+        id: 1694699813
+        PathAndIcons:
+        - ElementName: _49
+          ObjectType: 10
+      - name: _50
+        guid: 9762fd0160fb754b83445a15941dc507
+        id: 1711477407
+        PathAndIcons:
+        - ElementName: _50
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 6d3c129cb0789d40bc1f62c289740a60
     GuidInternal: 
-    m_lastTime: -8586315417873631714
+    m_lastTime: -8586314594777249874
     List: []
   ExpandedItems:
   - /cosmic-vr_WwiseProject
   - /cosmic-vr_WwiseProject/SoundBanks
   - /cosmic-vr_WwiseProject/SoundBanks/Default Work Unit
+  - /cosmic-vr_WwiseProject/Switches
+  - /cosmic-vr_WwiseProject/Switches/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

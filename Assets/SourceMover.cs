@@ -6,7 +6,10 @@ public class SourceMover : MonoBehaviour
 {
 
 	//public Dictionary<int, GameObject> layers = new Dictionary<int, GameObject>();
+	
+	public LayerFiller filler;
 	public GameObject[] layers;
+
 
 	private float step = 0;
 
@@ -24,38 +27,79 @@ public class SourceMover : MonoBehaviour
 
 	private float timeCount = 0.0f;
 
+	private List<int> chord = new List<int>();
 
 	// Start is called before the first frame update
 	void Start()
 	{
-
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
 
-
+		//Clock();
 		//rotateTowards();
 		foreach (GameObject layer in layers)
 		{
-			rotate(layer);
+			// rotate(layer);
 
 			//lookRotation(layer);
 
 			//rotateTowards(layer);
 
-			slerp(layer);
+			// slerp(layer);
 
 			//fromToRotation(layer);
 
 			//angle(layer);
 
-			euler(layer);
+			//euler(layer);
 		}
 
 		//Quaternion.Euler(transform.rotation, transform.rotation, transform.rotation);
 		//.SetEulerRotation(layer1.transform.eulerAngles.x, layer1.transform.eulerAngles.y +1, layer1.transform.eulerAngles.z);
+	}
+
+	public void keyPressed(int keyNum)
+	{
+		addKeyToChord(keyNum);
+	}
+
+	private void addKeyToChord(int keyNum)
+	{
+		if (chord.Count < 3)
+		{
+			chord.Add(keyNum);
+			foreach (GameObject layer in layers)
+			{
+				layer.transform.rotation = Quaternion.Euler(0, keyNum * 30, 0);
+			}
+			Debug.LogWarning(keyNum);
+		}
+		else
+		{
+			chord.Sort();
+			chord.Clear();
+			Debug.LogWarning("chord cleared");
+		}
+	}
+
+	private void checkKeys()
+	{
+
+	}
+
+	private void Clock() {
+
+
+		int sec = System.DateTime.UtcNow.Second;
+		int min = System.DateTime.UtcNow.Minute;
+		int hour = System.DateTime.UtcNow.Hour;
+		int day = System.DateTime.UtcNow.Day;
+		Debug.LogWarning("s: " + sec + "   m: " + min + "   h: " + hour + "   d: " + day + "   dow: " + System.DateTime.UtcNow.DayOfWeek);
+
+		
 	}
 
 	void rotate(GameObject obj)

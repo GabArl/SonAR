@@ -9,6 +9,17 @@
 						<Property Name="Min" Type="Real64" Value="-100"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="rtpc_pos_x" ID="{DFB87519-B8F3-4B98-852B-DB569EC62836}"/>
+				<GameParameter Name="rtpc_pos_y" ID="{24BF0423-CA17-424E-9C56-47AC6BC90034}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="5"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="rtpc_pos_z" ID="{02AD4F1F-4FD7-400A-BE23-DA4FAA7898EA}"/>
+				<GameParameter Name="rtpc_vel_x" ID="{1E5D1C3F-C917-4889-B460-C0C09E86F2D3}"/>
+				<GameParameter Name="rtpc_vel_y" ID="{FFAE3D87-850E-47B6-A7A2-D543F6C5F497}"/>
+				<GameParameter Name="rtpc_vel_z" ID="{6C86A085-07A4-4944-B0D4-6A313D6D36A5}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

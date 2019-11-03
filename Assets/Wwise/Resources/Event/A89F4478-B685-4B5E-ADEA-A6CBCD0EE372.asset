@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbd6156b6ba44de4fa6101822c5c004e, type: 3}
   m_Name: A89F4478-B685-4B5E-ADEA-A6CBCD0EE372
   m_EditorClassIdentifier: 
-  objectName: red
+  objectName: Red
   id: 980603538
   guid: A89F4478-B685-4B5E-ADEA-A6CBCD0EE372

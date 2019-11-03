@@ -26,6 +26,8 @@ public class Visuals : MonoBehaviour
 
 	private AkGameObj akObject;
 	public AK.Wwise.Event audioEvent;
+	public uint track_number;
+	private AK.Wwise.Switch track_switch;
 
 	// Start is called before the first frame update
 	void Start()
@@ -34,7 +36,7 @@ public class Visuals : MonoBehaviour
 
 		akObject = GetComponent<AkGameObj>();
 		//playId = AkSoundEngine.PostEvent(audioEvent.Id, gameObject);
-		//audioEvent.Post(gameObject);
+		AkSoundEngine.SetSwitch(track_switch.Id, track_number, gameObject);
 		playId = audioEvent.Post(gameObject);
 	}	
 	

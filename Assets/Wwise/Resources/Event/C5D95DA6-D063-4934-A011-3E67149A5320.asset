@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbd6156b6ba44de4fa6101822c5c004e, type: 3}
   m_Name: C5D95DA6-D063-4934-A011-3E67149A5320
   m_EditorClassIdentifier: 
-  objectName: yellow
+  objectName: Yellow
   id: 2774173721
   guid: C5D95DA6-D063-4934-A011-3E67149A5320

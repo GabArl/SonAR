@@ -5,7 +5,14 @@
 			<ChildrenList>
 				<SoundBank Name="SoundBank" ID="{498D56D4-0388-46AB-B9C5-A2C6E16B3224}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Default Work Unit" ID="{1B115F0D-3F98-4CFF-874B-CC4E07D7E8BC}" WorkUnitID="{1B115F0D-3F98-4CFF-874B-CC4E07D7E8BC}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="New" ID="{BAEEE755-E002-4A41-879A-82F892F27082}" WorkUnitID="{BAEEE755-E002-4A41-879A-82F892F27082}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="New" ID="{9445EAA0-ABAE-4991-9EEC-63915AAE7DEA}">
+					<ObjectInclusionList>
+						<ObjectRef Name="New" ID="{BAEEE755-E002-4A41-879A-82F892F27082}" WorkUnitID="{BAEEE755-E002-4A41-879A-82F892F27082}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

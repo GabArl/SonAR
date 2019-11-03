@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbd6156b6ba44de4fa6101822c5c004e, type: 3}
   m_Name: E3481979-8E00-46E5-B89E-E80786D350EB
   m_EditorClassIdentifier: 
-  objectName: blue
+  objectName: Blue
   id: 1325827433
   guid: E3481979-8E00-46E5-B89E-E80786D350EB

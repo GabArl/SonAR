@@ -6,4 +6,5 @@
 
 /.cache
 /GeneratedSoundBanks/**/*.txt
+/GeneratedSoundBanks/**/*.wem
 /Originals/**/*.akd

@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{202C3F1D-8BC4-4719-A8C3-0E6343E73638}" SchemaVersion="94">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{202C3F1D-8BC4-4719-A8C3-0E6343E73638}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{202C3F1D-8BC4-4719-A8C3-0E6343E73638}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="track_number" ID="{A7D48BEB-C317-4DE9-B727-005FBA5D20D4}">
+					<ChildrenList>
+						<Switch Name="_01" ID="{9ED5E74E-2ECE-40FE-BE83-51F92CE9E808}"/>
+						<Switch Name="_02" ID="{EE09C0B2-25B3-47F0-B51E-EAAB2F74FC50}"/>
+						<Switch Name="_03" ID="{9DB17EF6-B23C-4EA8-BE08-3EF3D3598668}"/>
+						<Switch Name="_04" ID="{2B550979-1B3F-42EF-9ED0-54C54D7E07A8}"/>
+						<Switch Name="_05" ID="{9A3E9071-EE93-4C32-BFA8-6F292C08C749}"/>
+						<Switch Name="_06" ID="{713E9FA2-B78E-4291-8603-3283BD958C5C}"/>
+						<Switch Name="_07" ID="{D015BD13-AE41-4C66-84EC-267D614307CF}"/>
+						<Switch Name="_08" ID="{1153C88C-32F6-42C8-ABB5-FD09443FFE54}"/>
+						<Switch Name="_09" ID="{F9B57F59-419D-41E7-A491-02B1D2C96A04}"/>
+						<Switch Name="_10" ID="{2641CB04-F334-443E-9EF8-B0E0EDB9E8C5}"/>
+						<Switch Name="_11" ID="{86707CA9-4428-4CCC-8DC8-0E24A948EA8C}"/>
+						<Switch Name="_12" ID="{17F9D0F6-CEFA-4204-A358-E03A468367A8}"/>
+						<Switch Name="_13" ID="{B15DDE1E-6153-41DA-9948-72FDCD557C0E}"/>
+						<Switch Name="_14" ID="{8FEC21B9-B9AE-403F-9667-0C121984F406}"/>
+						<Switch Name="_15" ID="{CC621D18-66EF-4756-8013-46570EEA942F}"/>
+						<Switch Name="_16" ID="{52073EDE-CE76-49B7-B711-4C64B51C3141}"/>
+						<Switch Name="_17" ID="{91C1FAB7-4CB7-450A-9581-5A1ACBB74350}"/>
+						<Switch Name="_18" ID="{9B3206B0-3803-4E62-BFB0-A5D10B15D4A7}"/>
+						<Switch Name="_19" ID="{4DEFFD30-5B82-4D69-B53D-63D67EB1BB9A}"/>
+						<Switch Name="_20" ID="{380518F1-CEA2-443C-A1A9-B07AD061B8EF}"/>
+						<Switch Name="_21" ID="{20C6CE76-9EF0-4598-9F5C-B1C20A33F310}"/>
+						<Switch Name="_22" ID="{ABF68A10-B372-46EC-8BC6-D0DDFDCA4FF9}"/>
+						<Switch Name="_23" ID="{CB0FAD50-C846-4FF2-8C6D-06F0A7FD6C9C}"/>
+						<Switch Name="_24" ID="{B9FB6B3A-DB3B-4B29-B435-49549A057FCE}"/>
+						<Switch Name="_25" ID="{A453F338-8A1A-44A5-8829-767B495608ED}"/>
+						<Switch Name="_26" ID="{0E59C270-90BA-4087-907D-D64C455CED1B}"/>
+						<Switch Name="_27" ID="{D2EAAD22-3D9D-47EB-B706-ECA4A3D24163}"/>
+						<Switch Name="_28" ID="{DE2996E8-EA3E-45D7-AF3B-B52EF30CE4FC}"/>
+						<Switch Name="_29" ID="{08EE6207-39F3-49CC-9EF7-48D2E2F7A1EB}"/>
+						<Switch Name="_30" ID="{22476BE4-B47E-44F2-94FB-43936294AA55}"/>
+						<Switch Name="_31" ID="{73E5D4BB-A064-4B7E-8C99-2D40FAE6A0A0}"/>
+						<Switch Name="_32" ID="{C82FCC90-27E1-4809-A365-E6FD584A45FD}"/>
+						<Switch Name="_33" ID="{9A9CFBD6-9E7D-48E6-A919-983BCD1D10C1}"/>
+						<Switch Name="_34" ID="{BD15E7A7-4B83-4E9B-AD7E-92045CF0DEDA}"/>
+						<Switch Name="_35" ID="{4E65172F-A706-4000-ACC1-CF4FC29B3C23}"/>
+						<Switch Name="_36" ID="{6E8E7FD8-EA35-4EB5-AE83-2FA4E4DE7028}"/>
+						<Switch Name="_37" ID="{67DFBD23-C08B-441F-8F73-3662ACDFC888}"/>
+						<Switch Name="_38" ID="{74A22E00-2652-415E-8EF7-7E611A1B060B}"/>
+						<Switch Name="_39" ID="{D5C16B4F-1D75-44D2-B954-EC0AE7215D83}"/>
+						<Switch Name="_40" ID="{BBE21EC6-EBF2-4038-800A-B8BFD74E82D3}"/>
+						<Switch Name="_41" ID="{5304A07A-CD61-4253-999C-8D96EF2D7295}"/>
+						<Switch Name="_42" ID="{EFF2CD5B-F044-496B-94BD-D0E1CDC8112E}"/>
+						<Switch Name="_43" ID="{351830A0-FB35-4BE9-AC6D-6200EEA2E4D0}"/>
+						<Switch Name="_44" ID="{EC94C713-8701-4B5D-88B3-A4EDB8324397}"/>
+						<Switch Name="_45" ID="{1690A9B3-9F29-420A-8FA6-FDD98636E691}"/>
+						<Switch Name="_46" ID="{8591CFA7-0900-4A9F-BA44-40C82F1E94A2}"/>
+						<Switch Name="_47" ID="{D8339C3E-E7D7-403B-A9B4-C62835B3D2E6}"/>
+						<Switch Name="_48" ID="{908D40B5-6A27-492E-AAAF-7DA7F3C389F2}"/>
+						<Switch Name="_49" ID="{FC8B255B-F9B5-4077-A274-85AA675F929C}"/>
+						<Switch Name="_50" ID="{01FD6297-FB60-4B75-8344-5A15941DC507}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>
