@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -18,11 +18,18 @@
 			<IncludedEvents>
 				<Event Id="1513267954" Name="AtomCollision" ObjectPath="\Events\New\AtomCollision" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.553000" DurationMax="0.560958"/>
 				<Event Id="1151473028" Name="AtomLoop" ObjectPath="\Events\New\AtomLoop" MaxAttenuation="1.000000" DurationType="Infinite"/>
+				<Event Id="2905912508" Name="Play_Hour" ObjectPath="\Events\Clock\Play_Hour" DurationType="Infinite"/>
+				<Event Id="2429363254" Name="Play_Minute" ObjectPath="\Events\Clock\Play_Minute" DurationType="OneShot" DurationMin="1.763101" DurationMax="1.763101"/>
+				<Event Id="3319890774" Name="Play_Second" ObjectPath="\Events\Clock\Play_Second" DurationType="OneShot" DurationMin="0.560958" DurationMax="0.560958"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="66536949" Language="SFX">
 					<ShortName>ui_wheel_change_tone_02.wav</ShortName>
 					<Path>SFX\ui_wheel_change_tone_02_10C4C929.wem</Path>
+				</File>
+				<File Id="140446169" Language="SFX">
+					<ShortName>Circle 1.wav</ShortName>
+					<Path>SFX\Circle 1_10C4C929.wem</Path>
 				</File>
 				<File Id="142011321" Language="SFX">
 					<ShortName>ui_wheel_change_tone_01.wav</ShortName>
@@ -31,6 +38,10 @@
 				<File Id="198424254" Language="SFX">
 					<ShortName>ui_wheel_change_tone_04.wav</ShortName>
 					<Path>SFX\ui_wheel_change_tone_04_10C4C929.wem</Path>
+				</File>
+				<File Id="422270334" Language="SFX">
+					<ShortName>sfx_player_circle_loop_01.wav</ShortName>
+					<Path>SFX\sfx_player_circle_loop_01_C5579977.wem</Path>
 				</File>
 				<File Id="530158327" Language="SFX">
 					<ShortName>ui_wheel_change_tone_05.wav</ShortName>

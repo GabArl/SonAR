@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E8204E2B-1305-4018-BD1E-C81B48393EC0}" SchemaVersion="94">
+	<GameParameters>
+		<WorkUnit Name="Clock" ID="{E8204E2B-1305-4018-BD1E-C81B48393EC0}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Seconds" ID="{CEFF5A89-E95C-4BD7-A8AD-42B46C540CDD}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="59"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Minutes" ID="{2A49E384-D88C-4489-9D1C-2871FBB8D18C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="59"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Hours" ID="{5A6A26AF-BB1E-40C4-9672-1EF5A7A0E670}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="5"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="5"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="23"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="1"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

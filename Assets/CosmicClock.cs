@@ -4,13 +4,24 @@ using UnityEngine;
 
 public class CosmicClock : MonoBehaviour
 {
-	private int sec, min, hour;
+	public bool doUpdate = true;
+	public bool doTick = false;
+
+	[Range(0, 59)]
+	public int sec = 0;
+	[Range(0, 59)]
+	public int min = 0;
+	[Range(0, 23)]
+	public int hour = 0;
 	private string day;
 
 	private GameObject anchorSec, anchorMin, anchorHour;
 	private GameObject objSec, objMin, objHour;
 
 	public Mesh mesh;
+	public AK.Wwise.Event e_sec, e_min, e_hour;
+	public AK.Wwise.RTPC rtpc_sec, rtpc_min, rtpc_hour;
+
 
 	public int Second
 	{
@@ -63,6 +74,7 @@ public class CosmicClock : MonoBehaviour
 	void Start()
 	{
 		CreateClock();
+		e_hour.Post(objHour);
 	}
 
 	[ContextMenu("Create Clock")]
@@ -73,7 +85,8 @@ public class CosmicClock : MonoBehaviour
 		anchorSec.name = "anchorSec";
 		objSec = new GameObject();
 		objSec.transform.SetParent(anchorSec.transform);
-		objSec.transform.localPosition = new Vector3(2f, 0f, 0f);
+		objSec.transform.localPosition = new Vector3(1f, 0f, 0f);
+		objSec.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
 		objSec.name = "objSec";
 		objSec.AddComponent<MeshRenderer>();
 		objSec.AddComponent<MeshFilter>();
@@ -84,7 +97,8 @@ public class CosmicClock : MonoBehaviour
 		anchorMin.name = "anchorMin";
 		objMin = new GameObject();
 		objMin.transform.SetParent(anchorMin.transform);
-		objMin.transform.localPosition = new Vector3(2f, 0f, 0f);
+		objMin.transform.localPosition = new Vector3(0.5f, 0f, 0f);
+		objMin.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
 		objMin.name = "objMin";
 		objMin.AddComponent<MeshRenderer>();
 		objMin.AddComponent<MeshFilter>();
@@ -95,7 +109,8 @@ public class CosmicClock : MonoBehaviour
 		anchorHour.name = "anchorHour";
 		objHour = new GameObject();
 		objHour.transform.SetParent(anchorHour.transform);
-		objHour.transform.localPosition = new Vector3(2f, 0f, 0f);
+		objHour.transform.localPosition = new Vector3(0.3f, 0f, 0f);
+		objHour.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
 		objHour.name = "objHour";
 		objHour.AddComponent<MeshRenderer>();
 		objHour.AddComponent<MeshFilter>();
@@ -104,19 +119,23 @@ public class CosmicClock : MonoBehaviour
 
 	private void ClockSecond()
 	{
-		anchorSec.transform.rotation = Quaternion.Euler(new Vector3(-50, Second * 6, 0));
+		anchorSec.transform.localRotation = Quaternion.Euler(new Vector3(0, Second * 6, 20));
+		AkSoundEngine.SetRTPCValue(rtpc_sec.Id, Second);
+		e_sec.Post(objSec);
 	}
 	private void ClockMinute()
 	{
-		anchorMin.transform.rotation = Quaternion.Euler(new Vector3(-40, Minute * 6, 0));
+		anchorMin.transform.localRotation = Quaternion.Euler(new Vector3(0, Minute * 6, 10));
+		AkSoundEngine.SetRTPCValue(rtpc_min.Id, Minute);
+		e_min.Post(objMin);
 	}
 	private void ClockHour()
 	{
-		anchorHour.transform.rotation = Quaternion.Euler(new Vector3(-30, Hour * 6, 0));
+		anchorHour.transform.localRotation = Quaternion.Euler(new Vector3(0, Hour * 15, 0));
+		AkSoundEngine.SetRTPCValue(rtpc_hour.Id, Hour);
 	}
 
-	// Update is called once per frame
-	void Update()
+	public void Tick()
 	{
 		if (anchorSec == null) return;
 		else Second = System.DateTime.UtcNow.Second;
@@ -126,7 +145,18 @@ public class CosmicClock : MonoBehaviour
 		else Hour = System.DateTime.UtcNow.Hour;
 		//if (anchorDay == null) return;
 		day = System.DateTime.UtcNow.DayOfWeek.ToString();
+	}
 
-		Debug.LogWarning("s: " + Second + "   m: " + min + "   h: " + hour + "   d: " + day + "   dow: " + System.DateTime.UtcNow.DayOfWeek);
+	// Update is called once per frame
+	void Update()
+	{
+		if (doUpdate) Tick();
+		if (doTick)
+		{
+			doTick = false;
+			ClockSecond();
+			ClockMinute();
+			ClockHour();
+		}
 	}
 }
