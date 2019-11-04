@@ -90,17 +90,7 @@ public class SourceMover : MonoBehaviour
 
 	}
 
-	private void Clock() {
 
-
-		int sec = System.DateTime.UtcNow.Second;
-		int min = System.DateTime.UtcNow.Minute;
-		int hour = System.DateTime.UtcNow.Hour;
-		int day = System.DateTime.UtcNow.Day;
-		Debug.LogWarning("s: " + sec + "   m: " + min + "   h: " + hour + "   d: " + day + "   dow: " + System.DateTime.UtcNow.DayOfWeek);
-
-		
-	}
 
 	void rotate(GameObject obj)
 	{
