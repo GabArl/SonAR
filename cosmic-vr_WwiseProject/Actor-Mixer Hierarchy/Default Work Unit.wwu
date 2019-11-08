@@ -7,6 +7,11 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 						<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 						<Property Name="UseMaxSoundPerInstance" Type="bool">

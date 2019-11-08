@@ -17,13 +17,13 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Init" Hash="2355445075" Timestamp="1573173792"/>
-				<File Name="New" Hash="4211334741" Timestamp="1573174269"/>
+				<File Name="New" Hash="1725890726" Timestamp="1573177840"/>
 				<File Name="SoundBank" Hash="1039533758" Timestamp="1572487660"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1073174095" Timestamp="1573174269"/>
+				<File Name="" Hash="968689499" Timestamp="1573177840"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

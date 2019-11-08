@@ -12,7 +12,7 @@ public class MusicMover : MonoBehaviour
 	public List<Tone> objectsMoving = new List<Tone>();
 
 	public float diameter = 4;
-	public Material material;
+	public Material materialObj, materialLine;
 	public Mesh mesh;
 	public Vector3 scale;
 	private bool chordFull = false;
@@ -32,9 +32,10 @@ public class MusicMover : MonoBehaviour
 	{
 		Create();
 
+		line.enabled = true;
 		line.startWidth = 0.01f;
-		line.endWidth = 0.03f;
-		line.material = material;
+		line.endWidth = 0.1f;
+		line.material = materialLine;
 	}
 
 	[ContextMenu("Create Objects")]
@@ -49,6 +50,7 @@ public class MusicMover : MonoBehaviour
 		{
 			tones.Add(new Tone(pos, gameObject));
 			tones[i].obj.GetComponent<MeshFilter>().mesh = mesh;
+			tones[i].obj.GetComponent<MeshRenderer>().material = materialObj;
 			tones[i].obj.transform.localScale = scale;
 			line.SetPosition(tones[i].number, tones[i].obj.transform.position);
 		}

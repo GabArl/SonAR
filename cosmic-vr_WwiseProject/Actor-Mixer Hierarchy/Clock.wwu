@@ -4,7 +4,13 @@
 		<WorkUnit Name="Clock" ID="{F34708C9-9235-41FC-AFE3-C4471C648FD2}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="Clock" ID="{E78F83FF-B479-4C2F-8CF7-BD973372F325}" ShortID="820756945">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="att_5m" ID="{D3B54453-76D4-43B1-BFB1-AE31283EE299}" WorkUnitID="{9A9CC599-7D90-42EC-A617-C3043E491B06}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
 						</Reference>

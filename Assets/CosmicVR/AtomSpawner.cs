@@ -71,6 +71,7 @@ public class AtomSpawner : MonoBehaviour
 			temp.GetComponent<MeshFilter>().mesh = mesh;
 
 			temp.AddComponent<MeshRenderer>();
+			temp.GetComponent<MeshRenderer>().material = renderMat;
 
 			temp.AddComponent<AtomBall>();
 			AtomBall ab = temp.GetComponent<AtomBall>();
