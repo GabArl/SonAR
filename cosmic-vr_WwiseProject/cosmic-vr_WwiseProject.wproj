@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="94" WwiseVersion="v2019.1.3" WwiseBuild="7048">
+<WwiseDocument Type="Project" SchemaVersion="94" WwiseVersion="v2019.1.4" WwiseBuild="7065">
 	<ProjectInfo>
 		<Project Name="cosmic-vr_WwiseProject" ID="{2FB5FAA0-409B-4319-BB2B-F7524EDBB3A1}">
 			<Platforms>
@@ -10499,7 +10499,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="2" CompanyID="261" PluginID="416">
+				<SharedPropertyList ClassName="CrankcaseAudio REV" PluginType="2" CompanyID="261" PluginID="416">
 					<PropertyList>
 						<Property Name="EnableShifting" Type="int32">
 							<ValueList>
@@ -10538,7 +10538,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="0" CompanyID="261" PluginID="417">
+				<SharedPropertyList ClassName="EngineSimulationControlData" PluginType="0" CompanyID="261" PluginID="417">
 					<PropertyList>
 						<Property Name="ClutchRPMMergeTime" Type="Real32">
 							<ValueList>
@@ -10617,7 +10617,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="0" CompanyID="261" PluginID="418">
+				<SharedPropertyList ClassName="AccelDecelModelControlData" PluginType="0" CompanyID="261" PluginID="418">
 					<PropertyList>
 						<Property Name="CrossfadeDuration" Type="int32">
 							<ValueList>
@@ -10676,7 +10676,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="" PluginType="0" CompanyID="261" PluginID="419">
+				<SharedPropertyList ClassName="GranularModelControlData" PluginType="0" CompanyID="261" PluginID="419">
 					<PropertyList>
 						<Property Name="GrainWidth" Type="int32">
 							<ValueList>

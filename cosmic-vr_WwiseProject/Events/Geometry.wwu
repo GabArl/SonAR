@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3D57C6F3-AC95-43D8-8CA9-021B9E11C8A9}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Geometry" ID="{3D57C6F3-AC95-43D8-8CA9-021B9E11C8A9}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Chord_Loop" ID="{48CF23C0-256D-491A-8330-761242DE51DE}">
+					<ChildrenList>
+						<Action Name="" ID="{E8096D48-CF8E-4F65-A407-4765C2C88021}" ShortID="715728639">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="atom_loop" ID="{098B83F6-93A1-4C3F-9F98-7E25235230D4}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Chord_Loop" ID="{C6C0BD9F-A832-419E-B35D-C515A9E24010}">
+					<ChildrenList>
+						<Action Name="" ID="{146823B6-E906-4C84-8971-3D80B884434D}" ShortID="157404336">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="atom_loop" ID="{098B83F6-93A1-4C3F-9F98-7E25235230D4}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6E4889C3-AC6A-4BE8-9406-E334CCBE3B17}" ShortID="812528449">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Semitones" ID="{954B3CF1-CBB8-4148-8192-E0AB5E780335}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Chord_Full" ID="{113F2B32-5398-4607-AD8A-8A557B7929C3}">
+					<ChildrenList>
+						<Action Name="" ID="{F61F99AE-6167-4346-A6B8-2CF1E4717C4E}" ShortID="887190559">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="atom_loop" ID="{098B83F6-93A1-4C3F-9F98-7E25235230D4}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0CFC4786-94E2-46E6-95AC-3B1A4634C389}" ShortID="882669787">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeInCurve" Type="int16" Value="8"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="atom_loop" ID="{098B83F6-93A1-4C3F-9F98-7E25235230D4}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{00D96BC6-CBB4-4499-AB1B-D6DAC0960E26}" ShortID="271256175">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Semitones" ID="{954B3CF1-CBB8-4148-8192-E0AB5E780335}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Semitone" ID="{6452A1A6-706D-4F0F-9ADD-94A42C15F0C4}">
+					<ChildrenList>
+						<Action Name="" ID="{0A7DFF27-4009-4241-9DC3-222BC013793E}" ShortID="160346634">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Semitones" ID="{954B3CF1-CBB8-4148-8192-E0AB5E780335}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
