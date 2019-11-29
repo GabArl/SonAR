@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 // TODO
 //make angular speed uniform
@@ -22,7 +23,7 @@ public class MusicMover : MonoBehaviour
 	public List<Tone> objectsMoving = new List<Tone>();
 
 	public float diameter = 4;
-	public Material materialObj, materialLine;
+	public Material materialObj, materialHighlight, materialLine;
 	public Mesh mesh;
 	public Vector3 scale;
 	private bool chordFull = false;
@@ -46,6 +47,9 @@ public class MusicMover : MonoBehaviour
 	[Range(20f, 300f)]
 	public float turningRate = 150f;
 
+	private float tapsPerSecond;
+	private List<float> taps = new List<float>();
+	public Text bpmText;
 
 	void Start()
 	{
@@ -57,9 +61,25 @@ public class MusicMover : MonoBehaviour
 		line.material = materialLine;
 	}
 
+	private void BPM()
+	{
+		for (int i = 0; i < taps.Count; i++)
+		{
+			if (taps[i] <= Time.timeSinceLevelLoad - 60)
+			{
+				taps.Remove(taps[i]);
+			}
+		}
+		tapsPerSecond = taps.Count;
+		bpmText.text = "BPM: " + tapsPerSecond;
+	}
+
 	[ContextMenu("Create Objects")]
 	public void Create()
 	{
+		for (int i = 0; i < 30; i++)
+			taps.Add(Time.timeSinceLevelLoad);
+
 		line.positionCount = numberOfNotes;
 		Vector3 pos = new Vector3(diameter / 2f, 0.5f, 0);
 		start = new GameObject();
@@ -88,6 +108,7 @@ public class MusicMover : MonoBehaviour
 		foreach (Tone toneIn in chord.tones)
 		{
 			Tone copyTone = new Tone(start.transform.localPosition, gameObject);
+			copyTone.semitone = toneIn.semitone;
 			copyTone.anchor.transform.localPosition = toneIn.anchor.transform.localPosition;
 			copyTone.anchor.transform.localRotation = toneIn.anchor.transform.localRotation;
 			copyTone.obj.transform.localPosition = toneIn.obj.transform.localPosition;
@@ -147,6 +168,7 @@ public class MusicMover : MonoBehaviour
 	{
 		if (chord.tones[0].anchor.transform.localEulerAngles.z + 10 <= 80) // <--- out of range
 		{
+			Tone baseTone = new Tone(start.gameObject.transform.position, gameObject);
 			foreach (Tone tone in chord.tones)
 			{
 				tone.targetRotation = tone.anchor.transform.localRotation;
@@ -154,6 +176,8 @@ public class MusicMover : MonoBehaviour
 				Vector3 scale = tone.obj.transform.localScale;
 				tone.obj.transform.localScale = new Vector3(scale.x, scale.y * 0.7f, scale.z);
 			}
+			chord.tones.Sort((t1, t2) => t1.semitone.CompareTo(t2.semitone));
+			chord.tones[0].obj.GetComponent<MeshRenderer>().material = materialHighlight;
 			return true;
 		}
 		else return false;
@@ -167,12 +191,13 @@ public class MusicMover : MonoBehaviour
 			Destroy(tone.anchor);
 		}
 		chord.tones.Clear();
-		chord = null;
 		chords.Remove(chord);
 	}
 
 	public void Update()
 	{
+		BPM();
+
 		if (chordsMoving)
 		{
 			MoveChords();
@@ -196,11 +221,10 @@ public class MusicMover : MonoBehaviour
 				chords.Add(CopyChord(currentChord));
 				keys.Clear();
 
-				for (int i = chords.Count - 1; i >= 0; i--) // for-loop because Destroy() <-- out of range
+				for (int i = 0; i < chords.Count; i++) // for-loop because Destroy()
 				{
 					if (!PushChord(chords[i]))
 						DestroyChord(chords[i]);
-
 				}
 
 				foreach (Tone tone in currentChord.tones)
@@ -250,7 +274,7 @@ public class MusicMover : MonoBehaviour
 
 	public void keyPressed(int keyNum)
 	{
-		if (keys.Count == numberOfNotes) // geht out-of-range wenn gespammt wird
+		if (keys.Count == numberOfNotes)
 		{
 			foreach (Tone tone in currentChord.tones)
 			{
@@ -262,12 +286,8 @@ public class MusicMover : MonoBehaviour
 
 	private void AddKeyToChord(int keyNum)
 	{
-		if (keys.Count + 1 == numberOfNotes)
-		{
-			chordFull = true;
-			return;
-		}
-		//tones.Add(new Tone(start.transform.position, gameObject));
+		taps.Add(Time.timeSinceLevelLoad);
+
 		hasInput = true;
 		lastInputTime = Time.time;
 		currentChord.tones[keys.Count].semitone = keyNum;
@@ -286,6 +306,11 @@ public class MusicMover : MonoBehaviour
 		tonesMoving = true;
 		keys.Add(keyNum);
 
+		if (keys.Count == numberOfNotes)
+		{
+			chordFull = true;
+			return;
+		}
 	}
 }
 
