@@ -18,6 +18,9 @@ public class MusicMover : MonoBehaviour
 	public LineRenderer line = new LineRenderer();
 	private GameObject start;
 
+	public GameObject keyboard;
+	public List<Button> key_buttons = new List<Button>();
+
 	//private List<Chord> chords = new List<Chord>();
 
 	public List<Tone> objectsMoving = new List<Tone>();
@@ -54,6 +57,11 @@ public class MusicMover : MonoBehaviour
 	void Start()
 	{
 		Create();
+
+		foreach (Button keybutton in keyboard.GetComponentsInChildren<Button>())
+		{
+			key_buttons.Add(keybutton);
+		}
 
 		line.enabled = true;
 		line.startWidth = 0.01f;
@@ -134,6 +142,10 @@ public class MusicMover : MonoBehaviour
 			tone.isMoving = false;
 			tone.obj.SetActive(false);
 		}
+		foreach (Button keybutton in key_buttons)
+		{
+			keybutton.interactable = true;
+		}
 	}
 
 	public void MoveChords()
@@ -178,6 +190,11 @@ public class MusicMover : MonoBehaviour
 			}
 			chord.tones.Sort((t1, t2) => t1.semitone.CompareTo(t2.semitone));
 			chord.tones[0].obj.GetComponent<MeshRenderer>().material = materialHighlight;
+
+			foreach (Button keybutton in key_buttons)
+			{
+				keybutton.interactable = true;
+			}
 			return true;
 		}
 		else return false;
@@ -281,7 +298,7 @@ public class MusicMover : MonoBehaviour
 				AkSoundEngine.PostEvent(stopEvent.Id, tone.obj);
 			}
 		}
-		AddKeyToChord(keyNum);
+		AddKeyToChord(keyNum);  // <-- wonky stability, no catch from ChordFull / ToneInactive
 	}
 
 	private void AddKeyToChord(int keyNum)
@@ -304,8 +321,12 @@ public class MusicMover : MonoBehaviour
 		currentChord.tones[keys.Count].obj.SetActive(true);
 		AkSoundEngine.PostEvent(startEvent.Id, currentChord.tones[keys.Count].obj);
 		tonesMoving = true;
-		keys.Add(keyNum);
 
+		key_buttons.Find(x => x.name.Contains(keyNum.ToString())).interactable = false;
+		//interactable = false;
+
+
+		keys.Add(keyNum);
 		if (keys.Count == numberOfNotes)
 		{
 			chordFull = true;
