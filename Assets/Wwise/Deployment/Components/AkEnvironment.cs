@@ -42,11 +42,6 @@ public class AkEnvironment : UnityEngine.MonoBehaviour
 	//smaller number has a higher priority
 	public int priority = 0;
 
-	public float GetAuxSendValueForPosition(UnityEngine.Vector3 in_position)
-	{
-		return 1;
-	}
-
 	public void Awake()
 	{
 #if UNITY_EDITOR

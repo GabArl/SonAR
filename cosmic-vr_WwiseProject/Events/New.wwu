@@ -25,6 +25,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Plugin" ID="{ED0AAAB9-B77B-43D8-9790-E5942B6714DB}">
+					<ChildrenList>
+						<Action Name="" ID="{4DA13432-511A-473E-959E-9D4CE1F56BDC}" ShortID="554153925">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="New Blend Container" ID="{AD02F7EA-B019-4ACC-810C-6F06D0BF543A}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

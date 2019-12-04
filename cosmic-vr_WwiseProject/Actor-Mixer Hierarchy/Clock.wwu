@@ -439,7 +439,9 @@
 											<Language>SFX</Language>
 											<AudioFile>ui_wheel_change_tone_05.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="530158327"/>
+												<File Platform="Android" ID="103246604"/>
+												<File Platform="Mac" ID="530158327"/>
+												<File Platform="Windows" ID="530158327"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -468,7 +470,9 @@
 											<Language>SFX</Language>
 											<AudioFile>ui_wheel_change_tone_04.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="198424254"/>
+												<File Platform="Android" ID="104370690"/>
+												<File Platform="Mac" ID="198424254"/>
+												<File Platform="Windows" ID="198424254"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -490,7 +494,8 @@
 											<Language>SFX</Language>
 											<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="866382955"/>
+												<File Platform="Mac" ID="866382955"/>
+												<File Platform="Windows" ID="866382955"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -519,7 +524,9 @@
 											<Language>SFX</Language>
 											<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="142011321"/>
+												<File Platform="Android" ID="329064743"/>
+												<File Platform="Mac" ID="142011321"/>
+												<File Platform="Windows" ID="142011321"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -548,7 +555,9 @@
 											<Language>SFX</Language>
 											<AudioFile>ui_wheel_change_tone_02.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="66536949"/>
+												<File Platform="Android" ID="482077558"/>
+												<File Platform="Mac" ID="66536949"/>
+												<File Platform="Windows" ID="66536949"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>

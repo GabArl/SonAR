@@ -17,14 +17,14 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 7cd87145de7d5340aab9236c2ca84ac7
     GuidInternal: 
-    m_lastTime: -8586314594777229875
+    m_lastTime: -8586264361337252639
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 93de408d966b7e4eab53228216c67ee9
     GuidInternal: 
-    m_lastTime: -8586305935153150530
+    m_lastTime: -8586264361339958112
     List:
     - name: reverb
       guid: c9bcc7094afa3f4995e58dd27dd76a12
@@ -42,8 +42,17 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 50330d10b913434294efd648980b828c
     GuidInternal: 
-    m_lastTime: -8586314594777299839
+    m_lastTime: -8586264361339052958
     List:
+    - name: New
+      guid: a0ea4594aeab91499eec63915aae7dea
+      id: 444308101
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: New
+        ObjectType: 7
+      Path: Default Work Unit\New
     - name: SoundBank
       guid: d4568d498803ab46b9c5a2c6e16b3224
       id: 1661994096
@@ -54,11 +63,53 @@ MonoBehaviour:
         ObjectType: 7
       Path: Default Work Unit\SoundBank
   EventWwu:
+  - PhysicalPath: Events\Clock.wwu
+    ParentPhysicalPath: 
+    guid: 0a72df28804b4047a45b24d7b19275ae
+    GuidInternal: 
+    m_lastTime: -8586264361339152976
+    List:
+    - name: Play_Hour
+      guid: be7a8098878aca4da7fa6737f932c33a
+      id: 2905912508
+      PathAndIcons:
+      - ElementName: Clock
+        ObjectType: 12
+      - ElementName: Play_Hour
+        ObjectType: 3
+      Path: Clock\Play_Hour
+      maxAttenuation: 5000000
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Minute
+      guid: b5a52ab7ef48a647972daf61f7331bdf
+      id: 2429363254
+      PathAndIcons:
+      - ElementName: Clock
+        ObjectType: 12
+      - ElementName: Play_Minute
+        ObjectType: 3
+      Path: Clock\Play_Minute
+      maxAttenuation: 5000000
+      maxDuration: 1763101
+      minDuration: 1763101
+    - name: Play_Second
+      guid: bbb2d18a74bf3740ac58b86d1dbd4a8c
+      id: 3319890774
+      PathAndIcons:
+      - ElementName: Clock
+        ObjectType: 12
+      - ElementName: Play_Second
+        ObjectType: 3
+      Path: Clock\Play_Second
+      maxAttenuation: 5000000
+      maxDuration: 560958
+      minDuration: 560958
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 0d5f111b983fff4c874bcc4e07d7e8bc
     GuidInternal: 
-    m_lastTime: -8586292957726669616
+    m_lastTime: -8586264361339252979
     List:
     - name: Blue
       guid: 791948e3008ee546b89ee80786d350eb
@@ -108,12 +159,129 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+  - PhysicalPath: Events\Geometry.wwu
+    ParentPhysicalPath: 
+    guid: f3c6573d95acd8438ca9021b9e11c8a9
+    GuidInternal: 
+    m_lastTime: -8586264361339453022
+    List:
+    - name: Play_Chord_Full
+      guid: 322b3f1198530746ad8a8a557b7929c3
+      id: 2576020748
+      PathAndIcons:
+      - ElementName: Geometry
+        ObjectType: 12
+      - ElementName: Play_Chord_Full
+        ObjectType: 3
+      Path: Geometry\Play_Chord_Full
+      maxAttenuation: 10000000
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Chord_Loop
+      guid: c023cf486d251a498330761242de51de
+      id: 2096876433
+      PathAndIcons:
+      - ElementName: Geometry
+        ObjectType: 12
+      - ElementName: Play_Chord_Loop
+        ObjectType: 3
+      Path: Geometry\Play_Chord_Loop
+      maxAttenuation: 10000000
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Semitone
+      guid: a6a152646d700f4f9add94a42c15f0c4
+      id: 533559632
+      PathAndIcons:
+      - ElementName: Geometry
+        ObjectType: 12
+      - ElementName: Play_Semitone
+        ObjectType: 3
+      Path: Geometry\Play_Semitone
+      maxAttenuation: 10000000
+      maxDuration: 277417
+      minDuration: 277417
+    - name: Stop_Chord_Loop
+      guid: 9fbdc0c632a89e41b35dc515a9e24010
+      id: 3393091015
+      PathAndIcons:
+      - ElementName: Geometry
+        ObjectType: 12
+      - ElementName: Stop_Chord_Loop
+        ObjectType: 3
+      Path: Geometry\Stop_Chord_Loop
+      maxAttenuation: 10000000
+      maxDuration: 277417
+      minDuration: 277417
+  - PhysicalPath: Events\New.wwu
+    ParentPhysicalPath: 
+    guid: 55e7eeba02e0414a879a82f892f27082
+    GuidInternal: 
+    m_lastTime: -8586264361338727900
+    List:
+    - name: AtomCollision
+      guid: ff9a733f29945f4d8826beb2b563cf61
+      id: 1513267954
+      PathAndIcons:
+      - ElementName: New
+        ObjectType: 12
+      - ElementName: AtomCollision
+        ObjectType: 3
+      Path: New\AtomCollision
+      maxAttenuation: 2000000
+      maxDuration: 560958
+      minDuration: 553000
+    - name: AtomLoop
+      guid: f643a4557b42a549a8a3bd25b6a2d187
+      id: 1151473028
+      PathAndIcons:
+      - ElementName: New
+        ObjectType: 12
+      - ElementName: AtomLoop
+        ObjectType: 3
+      Path: New\AtomLoop
+      maxAttenuation: 1000000
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
+  - PhysicalPath: Game Parameters\Clock.wwu
+    ParentPhysicalPath: 
+    guid: 2b4e20e805131840bd1ec81b48393ec0
+    GuidInternal: 
+    m_lastTime: -8586264361338287824
+    List:
+    - name: Hours
+      guid: af266a5a1ebbc44096721ef5a7a0e670
+      id: 3737256986
+      PathAndIcons:
+      - ElementName: Clock
+        ObjectType: 12
+      - ElementName: Hours
+        ObjectType: 13
+      Path: Clock\Hours
+    - name: Minutes
+      guid: 84e3492a8cd889449d1c2871fbb8d18c
+      id: 1053147292
+      PathAndIcons:
+      - ElementName: Clock
+        ObjectType: 12
+      - ElementName: Minutes
+        ObjectType: 13
+      Path: Clock\Minutes
+    - name: Seconds
+      guid: 895affce5ce9d74ba8ad42b46c540cdd
+      id: 745018932
+      PathAndIcons:
+      - ElementName: Clock
+        ObjectType: 12
+      - ElementName: Seconds
+        ObjectType: 13
+      Path: Clock\Seconds
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: e94a85dc3cd28b488077fa61458130f5
     GuidInternal: 
-    m_lastTime: -8586305935154079984
+    m_lastTime: -8586264361338592881
     List:
     - name: RMS
       guid: e59c6cdf5bb5634a96e54c0dd1dde705
@@ -124,19 +292,97 @@ MonoBehaviour:
       - ElementName: RMS
         ObjectType: 13
       Path: Default Work Unit\RMS
+    - name: rtpc_pos_x
+      guid: 1975b8dff3b8984b852bdb569ec62836
+      id: 3414181498
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: rtpc_pos_x
+        ObjectType: 13
+      Path: Default Work Unit\rtpc_pos_x
+    - name: rtpc_pos_y
+      guid: 2304bf2417ca4e429c5647ac6bc90034
+      id: 3414181499
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: rtpc_pos_y
+        ObjectType: 13
+      Path: Default Work Unit\rtpc_pos_y
+    - name: rtpc_pos_z
+      guid: 1f4fad02d74f0a40be23da4faa7898ea
+      id: 3414181496
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: rtpc_pos_z
+        ObjectType: 13
+      Path: Default Work Unit\rtpc_pos_z
+    - name: rtpc_vel_x
+      guid: 3f1c5d1e17c98948b460c0c09e86f2d3
+      id: 4196732797
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: rtpc_vel_x
+        ObjectType: 13
+      Path: Default Work Unit\rtpc_vel_x
+    - name: rtpc_vel_y
+      guid: 873daeff0e85b647a7a2d543f6c5f497
+      id: 4196732796
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: rtpc_vel_y
+        ObjectType: 13
+      Path: Default Work Unit\rtpc_vel_y
+    - name: rtpc_vel_z
+      guid: 85a0866ca4074449b0d46a313d6d36a5
+      id: 4196732799
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: rtpc_vel_z
+        ObjectType: 13
+      Path: Default Work Unit\rtpc_vel_z
+  - PhysicalPath: Game Parameters\Geometry.wwu
+    ParentPhysicalPath: 
+    guid: 4a78fc0239ef4a49855a8ac8d8f4f44f
+    GuidInternal: 
+    m_lastTime: -8586264361338397844
+    List:
+    - name: Chord_Length
+      guid: d053c2e647df544fa03ee281c69a79cc
+      id: 1024289516
+      PathAndIcons:
+      - ElementName: Geometry
+        ObjectType: 12
+      - ElementName: Chord_Length
+        ObjectType: 13
+      Path: Geometry\Chord_Length
+    - name: Semitone
+      guid: dcceead4c2ae24469276d4a5b0c406d2
+      id: 3102311527
+      PathAndIcons:
+      - ElementName: Geometry
+        ObjectType: 12
+      - ElementName: Semitone
+        ObjectType: 13
+      Path: Geometry\Semitone
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 6a564c8fb2da88428207bed397afe30b
     GuidInternal: 
-    m_lastTime: -8586314594777269858
+    m_lastTime: -8586264361338827916
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 1d3f2c20c48b1947a8c30e6343e73638
     GuidInternal: 
-    m_lastTime: -8586293005808513687
+    m_lastTime: -8586264361339353003
     List:
     - name: track_number
       guid: eb8bd4a717c3e94db727005fba5d20d4
@@ -456,13 +702,8 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 6d3c129cb0789d40bc1f62c289740a60
     GuidInternal: 
-    m_lastTime: -8586314594777249874
+    m_lastTime: -8586264361339543043
     List: []
-  ExpandedItems:
-  - /cosmic-vr_WwiseProject
-  - /cosmic-vr_WwiseProject/SoundBanks
-  - /cosmic-vr_WwiseProject/SoundBanks/Default Work Unit
-  - /cosmic-vr_WwiseProject/Switches
-  - /cosmic-vr_WwiseProject/Switches/Default Work Unit
+  ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -185,7 +185,9 @@
 									<Language>SFX</Language>
 									<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
 									<ConvertedFileIDList>
-										<File ID="142011321"/>
+										<File Platform="Android" ID="329064743"/>
+										<File Platform="Mac" ID="142011321"/>
+										<File Platform="Windows" ID="142011321"/>
 									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>

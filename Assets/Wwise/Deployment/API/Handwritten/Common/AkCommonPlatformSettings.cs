@@ -34,6 +34,11 @@
 	{
 		get { return new AkCommunicationSettings(); }
 	}
+
+	public virtual bool UseAsyncOpen
+	{
+		get { return false; }
+	}
 }
 
 [System.Serializable]
@@ -436,6 +441,9 @@ public class AkCommonAdvancedSettings : AkSettingsValidationHandler
 	[UnityEngine.Tooltip("The state of the \"in_bRenderAnyway\" argument passed to the AkSoundEngine.Suspend() function when the \"OnApplicationFocus\" Unity callback is received with \"false\" as its argument.")]
 	public bool m_RenderDuringFocusLoss;
 
+	[UnityEngine.Tooltip("Use Async Open in the low-level IO hook.")]
+	public bool m_UseAsyncOpen = false;
+
 	public override void Validate()
 	{
 		if (m_SpatialAudioSettings.m_DiffractionShadowAttenuationFactor <= 0.0f)
@@ -523,6 +531,9 @@ public abstract class AkCommonPlatformSettings : AkBasePlatformSettings
 			advancedSettings.CopyTo(settings.initSettings);
 			advancedSettings.CopyTo(settings.platformSettings);
 			advancedSettings.CopyTo(settings.unityPlatformSpecificSettings);
+
+			settings.useAsyncOpen = advancedSettings.m_UseAsyncOpen;
+
 			return settings;
 		}
 	}
@@ -560,6 +571,11 @@ public abstract class AkCommonPlatformSettings : AkBasePlatformSettings
 	public override string SoundbankPath
 	{
 		get { return GetUserSettings().m_BasePath; }
+	}
+
+	public override bool UseAsyncOpen
+	{
+		get { return GetAdvancedSettings().m_UseAsyncOpen; }
 	}
 
 	public override AkCommunicationSettings AkCommunicationSettings

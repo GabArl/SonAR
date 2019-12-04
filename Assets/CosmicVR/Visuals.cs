@@ -65,7 +65,7 @@ public class Visuals : MonoBehaviour
 		Debug.Log("outBuffer  " + outBuffer + "   isBuffering   " + isBuffering);
 
 		//AkSoundEngine.IsGameObjectRegistered();
-		AkSoundEngine.PinEventInStreamCache(audioEvent.Id, 'a', 'i');
+		//AkSoundEngine.PinEventInStreamCache(audioEvent.Id, 'a', 'i');
 		AkSoundEngine.GetBufferStatusForPinnedEvent(audioEvent.Id, out percentBuffered, out memoryFullBool);
 		Debug.Log("percentBuffered  " + percentBuffered + "   memoryFullBool   " + memoryFullBool);
 

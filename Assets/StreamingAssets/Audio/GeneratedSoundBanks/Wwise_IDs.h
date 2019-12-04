@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID PLAY_MINUTE = 2429363254U;
         static const AkUniqueID PLAY_SECOND = 3319890774U;
         static const AkUniqueID PLAY_SEMITONE = 533559632U;
+        static const AkUniqueID PLUGIN = 3784159884U;
         static const AkUniqueID STOP_CHORD_LOOP = 3393091015U;
     } // namespace EVENTS
 

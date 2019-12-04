@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PluginInfo Project="cosmic-vr_WwiseProject" Platform="Android" BasePlatform="Android">
+	<Plugins>
+		<Plugin Name="Wwise Matrix Reverb" ID="7536643" DLL="AkMatrixReverb"/>
+		<Plugin Name="Wwise RoomVerb" ID="7733251" DLL="AkRoomVerb"/>
+		<Plugin Name="Wwise Meter" ID="8454147" DLL="AkSoundEngineDLL"/>
+		<Plugin Name="System" ID="11403271" DLL="DefaultSink"/>
+		<Plugin Name="No Output" ID="11862023" DLL="DefaultSink"/>
+		<Plugin Name="HvFM" ID="215745538" DLL="Hv_HvFM_WwiseSourcePlugin"/>
+	</Plugins>
+</PluginInfo>

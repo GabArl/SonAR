@@ -6,5 +6,6 @@
 		<Plugin Name="Wwise Meter" ID="8454147" DLL="AkSoundEngineDLL"/>
 		<Plugin Name="System" ID="11403271" DLL="DefaultSink"/>
 		<Plugin Name="No Output" ID="11862023" DLL="DefaultSink"/>
+		<Plugin Name="HvFM" ID="215745538" DLL="Hv_HvFM_WwiseSourcePlugin"/>
 	</Plugins>
 </PluginInfo>

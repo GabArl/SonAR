@@ -54,6 +54,8 @@ public class MusicMover : MonoBehaviour
 	private List<float> taps = new List<float>();
 	public Text bpmText;
 
+	public GameObject camera;
+
 	void Start()
 	{
 		Create();
@@ -214,6 +216,15 @@ public class MusicMover : MonoBehaviour
 	public void Update()
 	{
 		BPM();
+
+		Input.gyro.enabled = true;
+		
+		//Input.location.lastData.
+	
+		//camera.transform.localPosition += Input.gyro.userAcceleration.normalized;
+		//camera.transform.localRotation = Input.gyro.attitude;
+		//camera.transform.localRotation *= Quaternion.Euler(0,90,90);
+		//GoogleARCore.
 
 		if (chordsMoving)
 		{

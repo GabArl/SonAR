@@ -92,6 +92,7 @@ public class AkWwiseInitializationSettings : AkCommonPlatformSettings
 		"AdvancedSettings.m_SpatialAudioSettings.m_DiffractionShadowAttenuationFactor",
 		"AdvancedSettings.m_SpatialAudioSettings.m_DiffractionShadowDegrees",
 		"AdvancedSettings.m_RenderDuringFocusLoss",
+		"AdvancedSettings.m_UseAsyncOpen"
 	};
 
 	public abstract class PlatformSettings : AkCommonPlatformSettings

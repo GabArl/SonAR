@@ -2092,6 +2092,10 @@ class AkSoundEnginePINVOKE {
   public static extern void CSharp_AkInitializationSettings_unityPlatformSpecificSettings_set(global::System.IntPtr jarg1, global::System.IntPtr jarg2);
   [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_AkInitializationSettings_unityPlatformSpecificSettings_get")]
   public static extern global::System.IntPtr CSharp_AkInitializationSettings_unityPlatformSpecificSettings_get(global::System.IntPtr jarg1);
+  [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_AkInitializationSettings_useAsyncOpen_set")]
+  public static extern void CSharp_AkInitializationSettings_useAsyncOpen_set(global::System.IntPtr jarg1, bool jarg2);
+  [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_AkInitializationSettings_useAsyncOpen_get")]
+  public static extern bool CSharp_AkInitializationSettings_useAsyncOpen_get(global::System.IntPtr jarg1);
   [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_new_AkExternalSourceInfo__SWIG_0")]
   public static extern global::System.IntPtr CSharp_new_AkExternalSourceInfo__SWIG_0();
   [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_delete_AkExternalSourceInfo")]
