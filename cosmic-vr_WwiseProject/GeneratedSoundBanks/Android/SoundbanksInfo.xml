@@ -19,7 +19,7 @@
 				<Event Id="1513267954" Name="AtomCollision" ObjectPath="\Events\New\AtomCollision" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.553000" DurationMax="0.560958"/>
 				<Event Id="1151473028" Name="AtomLoop" ObjectPath="\Events\New\AtomLoop" MaxAttenuation="1.000000" DurationType="Infinite"/>
 				<Event Id="2576020748" Name="Play_Chord_Full" ObjectPath="\Events\Geometry\Play_Chord_Full" MaxAttenuation="10.000000" DurationType="Infinite"/>
-				<Event Id="2096876433" Name="Play_Chord_Loop" ObjectPath="\Events\Geometry\Play_Chord_Loop" MaxAttenuation="10.000000" DurationType="Infinite"/>
+				<Event Id="2096876433" Name="Play_Chord_Loop" ObjectPath="\Events\Geometry\Play_Chord_Loop" DurationType="Unknown"/>
 				<Event Id="2905912508" Name="Play_Hour" ObjectPath="\Events\Clock\Play_Hour" MaxAttenuation="5.000000" DurationType="Infinite"/>
 				<Event Id="2429363254" Name="Play_Minute" ObjectPath="\Events\Clock\Play_Minute" MaxAttenuation="5.000000" DurationType="OneShot" DurationMin="1.763101" DurationMax="1.763101"/>
 				<Event Id="3319890774" Name="Play_Second" ObjectPath="\Events\Clock\Play_Second" MaxAttenuation="5.000000" DurationType="OneShot" DurationMin="0.560958" DurationMax="0.560958"/>

@@ -15,6 +15,18 @@
 						<Property Name="Max" Type="Real64" Value="11"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Length_To_Origin" ID="{4300FDDA-0336-4313-B1BA-2B985B738737}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Length_To_Last" ID="{FD1724F1-184A-4B26-AC6A-0E5E52E582F2}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

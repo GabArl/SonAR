@@ -92,6 +92,8 @@ namespace AK
     {
         static const AkUniqueID CHORD_LENGTH = 1024289516U;
         static const AkUniqueID HOURS = 3737256986U;
+        static const AkUniqueID LENGTH_TO_LAST = 3775536674U;
+        static const AkUniqueID LENGTH_TO_ORIGIN = 277558524U;
         static const AkUniqueID MINUTES = 1053147292U;
         static const AkUniqueID RMS = 1114824701U;
         static const AkUniqueID RTPC_POS_X = 3414181498U;

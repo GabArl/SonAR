@@ -1,6 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A4D32FFC-6244-44BC-B9E5-7E3CD679DDC3}" SchemaVersion="94">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{A4D32FFC-6244-44BC-B9E5-7E3CD679DDC3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A4D32FFC-6244-44BC-B9E5-7E3CD679DDC3}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{6546F73D-7A2D-49D4-BB22-3E6B11E39441}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Chord_Loop" ID="{48CF23C0-256D-491A-8330-761242DE51DE}" WorkUnitID="{3D57C6F3-AC95-43D8-8CA9-021B9E11C8A9}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Chord_Loop" ID="{C6C0BD9F-A832-419E-B35D-C515A9E24010}" WorkUnitID="{3D57C6F3-AC95-43D8-8CA9-021B9E11C8A9}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="rtpc_pos_z" ID="{02AD4F1F-4FD7-400A-BE23-DA4FAA7898EA}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Hours" ID="{5A6A26AF-BB1E-40C4-9672-1EF5A7A0E670}"/>
+							<Value>4.4</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="rtpc_pos_y" ID="{24BF0423-CA17-424E-9C56-47AC6BC90034}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Length_To_Origin" ID="{4300FDDA-0336-4313-B1BA-2B985B738737}"/>
+							<Value>0.43</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Minutes" ID="{2A49E384-D88C-4489-9D1C-2871FBB8D18C}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Semitone" ID="{D4EACEDC-AEC2-4624-9276-D4A5B0C406D2}"/>
+							<Value>11</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="rtpc_vel_y" ID="{FFAE3D87-850E-47B6-A7A2-D543F6C5F497}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="rtpc_vel_x" ID="{1E5D1C3F-C917-4889-B460-C0C09E86F2D3}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="rtpc_vel_z" ID="{6C86A085-07A4-4944-B0D4-6A313D6D36A5}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RMS" ID="{DF6C9CE5-B55B-4A63-96E5-4C0DD1DDE705}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Length_To_Last" ID="{FD1724F1-184A-4B26-AC6A-0E5E52E582F2}"/>
+							<Value>0.516</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="rtpc_pos_x" ID="{DFB87519-B8F3-4B98-852B-DB569EC62836}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Seconds" ID="{CEFF5A89-E95C-4BD7-A8AD-42B46C540CDD}"/>
+							<Value>14.1936799184506</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Chord_Length" ID="{E6C253D0-DF47-4F54-A03E-E281C69A79CC}"/>
+							<Value>0.66</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="_01" ID="{9ED5E74E-2ECE-40FE-BE83-51F92CE9E808}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
