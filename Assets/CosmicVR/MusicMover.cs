@@ -9,6 +9,7 @@ using UnityEngine.UI;
 // cleanup gameobjects reaching top
 // Time.timeScale
 // Tone on 0 not moving
+// one copied tone too much??
 
 public class MusicMover : MonoBehaviour
 {
@@ -16,36 +17,28 @@ public class MusicMover : MonoBehaviour
 	private Chord currentChord = new Chord();
 	private List<Chord> chords = new List<Chord>();
 	private GameObject start;
-
-	public GameObject keyboard;
-	public List<Button> key_buttons = new List<Button>();
-
-	//private List<Chord> chords = new List<Chord>();
-
 	private int count_moving_tones, count_moving_chords;
+	private bool chordFull = false, tonesMoving = false, chordsMoving = false;
+	private bool hasInput = false, startFromZero = false;
 
-	public float diameter = 4;
 	public Material materialObj, materialHighlight, materialLine;
 	public Mesh mesh;
 	public Vector3 scale;
-	private bool chordFull = false, tonesMoving = false, chordsMoving = false;
-
-	private float lastInputTime;
-	private bool hasInput = false;
-	private bool startFromZero = false;
-
-	private float toneAngle = 30f;
-	public int keyOfScale = 0, numberOfNotes = 4;
-
-	public AK.Wwise.Event startEvent, stopEvent, longStopEvent;
-	public AK.Wwise.RTPC rtpc_chordLength, rtpc_semitone;
 
 	[Range(20f, 300f)]
 	public float turningRate = 150f;
+	public float diameter = 4;
+	public int keyOfScale = 0, numberOfNotes = 4;
+	private float toneAngle = 30f;
 
-	private float tapsPerSecond;
+	public GameObject keyboard;
+	public List<Button> key_buttons = new List<Button>();
+	private float lastInputTime, tapsPerSecond;
 	private List<float> taps = new List<float>();
 	public Text bpmText;
+
+	public AK.Wwise.Event startEvent, stopEvent, longStopEvent;
+	public AK.Wwise.RTPC rtpc_chordLength, rtpc_semitone;
 
 	public AK.Wwise.RTPC length_to_origin;
 	public AK.Wwise.RTPC length_to_last;
@@ -153,7 +146,7 @@ public class MusicMover : MonoBehaviour
 				if (tone.anchor.transform.localRotation == tone.targetRotation)
 				{
 					count_moving_tones--;
-					tone.isMoving = false;					
+					tone.isMoving = false;
 					AkSoundEngine.PostEvent(stopEvent.Id, tone.obj);
 					continue;
 				}
@@ -245,17 +238,18 @@ public class MusicMover : MonoBehaviour
 	private Chord CopyChord(Chord chord)
 	{
 		Chord copyChord = new Chord();
-		foreach (Tone toneIn in chord.tones)
+		foreach (Tone tone in chord.tones)
 		{
 			Tone copyTone = new Tone(start.transform.localPosition, gameObject);
-			copyTone.semitone = toneIn.semitone;
-			copyTone.anchor.transform.localPosition = toneIn.anchor.transform.localPosition;
-			copyTone.anchor.transform.localRotation = toneIn.anchor.transform.localRotation;
-			copyTone.obj.transform.localPosition = toneIn.obj.transform.localPosition;
-			copyTone.obj.transform.localRotation = toneIn.obj.transform.localRotation;
+			copyTone.semitone = tone.semitone;
+			copyTone.anchor.transform.localPosition = tone.anchor.transform.localPosition;
+			copyTone.anchor.transform.localRotation = tone.anchor.transform.localRotation;
+			copyTone.obj.transform.localPosition = tone.obj.transform.localPosition;
+			copyTone.obj.transform.localRotation = tone.obj.transform.localRotation;
 			copyTone.obj.GetComponent<MeshFilter>().mesh = mesh;
 			copyTone.obj.GetComponent<MeshRenderer>().material = materialObj;
 			copyTone.obj.transform.localScale = scale;
+			copyTone.line.enabled = false;
 			copyChord.tones.Add(copyTone);
 		}
 		return copyChord;
