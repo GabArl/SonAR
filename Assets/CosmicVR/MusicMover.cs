@@ -68,7 +68,10 @@ public class MusicMover : MonoBehaviour
 		{
 			ResetTones();
 		}
-
+		if (Time.time - lastInputTime > 10)
+		{
+			ResetTones();
+		}
 		UpdateLines();
 		BPM();
 	}
@@ -94,7 +97,6 @@ public class MusicMover : MonoBehaviour
 		for (int i = 0; i < 30; i++)
 			taps.Add(Time.timeSinceLevelLoad);
 
-		Vector3 pos = new Vector3(diameter / 2f, 0.5f, 0);
 		start = new GameObject();
 		start.transform.position = pos;
 
@@ -257,18 +259,20 @@ public class MusicMover : MonoBehaviour
 	}
 	private bool PushChord(Chord chord)
 	{
-		if (chord.tones[0].anchor.transform.localEulerAngles.z + 10 <= 80) // <--- out of range
+		if (chord.step < 5)
 		{
 			Tone baseTone = new Tone(start.gameObject.transform.position, gameObject);
 			foreach (Tone tone in chord.tones)
 			{
 				tone.targetRotation = tone.anchor.transform.localRotation;
-				tone.targetRotation *= Quaternion.Euler(0, 0, 10);
+				// tone.targetRotation *= Quaternion.Euler(0, 0, -1);
+				tone.obj.transform.localPosition = Vector3.Scale(tone.obj.transform.localPosition, new Vector3(1.3f, 1f, 1f));
 				Vector3 scale = tone.obj.transform.localScale;
 				tone.obj.transform.localScale = new Vector3(scale.x, scale.y * 0.7f, scale.z * 0.8f);
 			}
 			chord.tones.Sort((t1, t2) => t1.semitone.CompareTo(t2.semitone));
 			chord.tones[0].obj.GetComponent<MeshRenderer>().material = materialHighlight;
+			chord.step++;
 
 			foreach (Button keybutton in key_buttons)
 			{
@@ -379,4 +383,5 @@ public class Chord
 {
 	public List<Tone> tones = new List<Tone>();
 	private float scale = 1f;
+	public int step = 0;
 }
