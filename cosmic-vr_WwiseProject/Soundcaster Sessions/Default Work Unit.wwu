@@ -37,7 +37,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Semitone" ID="{D4EACEDC-AEC2-4624-9276-D4A5B0C406D2}"/>
-							<Value>11</Value>
+							<Value>1.2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Step" ID="{4B58EF5A-766F-4706-A940-0FACEF7C62EA}"/>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="rtpc_vel_y" ID="{FFAE3D87-850E-47B6-A7A2-D543F6C5F497}"/>

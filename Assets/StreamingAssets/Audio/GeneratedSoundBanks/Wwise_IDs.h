@@ -18,11 +18,15 @@ namespace AK
         static const AkUniqueID PLAY_CHORD_FULL = 2576020748U;
         static const AkUniqueID PLAY_CHORD_LOOP = 2096876433U;
         static const AkUniqueID PLAY_HOUR = 2905912508U;
+        static const AkUniqueID PLAY_LASTCHORD = 3096279812U;
         static const AkUniqueID PLAY_MINUTE = 2429363254U;
         static const AkUniqueID PLAY_SECOND = 3319890774U;
         static const AkUniqueID PLAY_SEMITONE = 533559632U;
+        static const AkUniqueID PLAY_TONE_IDLE = 4028792483U;
         static const AkUniqueID PLUGIN = 3784159884U;
         static const AkUniqueID STOP_CHORD_LOOP = 3393091015U;
+        static const AkUniqueID STOP_LASTCHORD = 987771470U;
+        static const AkUniqueID STOP_TONE_IDLE = 553704049U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -104,6 +108,7 @@ namespace AK
         static const AkUniqueID RTPC_VEL_Z = 4196732799U;
         static const AkUniqueID SECONDS = 745018932U;
         static const AkUniqueID SEMITONE = 3102311527U;
+        static const AkUniqueID STEP = 621108255U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

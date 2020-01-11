@@ -16,7 +16,6 @@ public class MusicMover : MonoBehaviour
 	private List<int> keys = new List<int>();
 	private Chord currentChord = new Chord();
 	private List<Chord> chords = new List<Chord>();
-	private GameObject start;
 	private int count_moving_tones, count_moving_chords;
 	private bool chordFull = false, tonesMoving = false, chordsMoving = false;
 	private bool hasInput = false, startFromZero = false;
@@ -24,7 +23,11 @@ public class MusicMover : MonoBehaviour
 	public Material materialObj, materialHighlight, materialLine;
 	public Mesh mesh;
 	public Vector3 scale;
+	public GameObject middlePoint;
+	public GameObject startPoint;
 
+	[Range(0f, 2f)]
+	public float angle_tolerance = 0.1f;
 	[Range(20f, 300f)]
 	public float turningRate = 150f;
 	public float diameter = 4;
@@ -37,21 +40,44 @@ public class MusicMover : MonoBehaviour
 	private List<float> taps = new List<float>();
 	public Text bpmText;
 
-	public AK.Wwise.Event startEvent, stopEvent, longStopEvent;
-	public AK.Wwise.RTPC rtpc_chordLength, rtpc_semitone;
+	public AK.Wwise.Event startEvent, stopEvent, longStopEvent, toneIdle_start, toneIdle_stop, start_lastChord, stop_lastChord;
+	public AK.Wwise.RTPC rtpc_chordLength, rtpc_semitone, rtpc_step;
 
 	public AK.Wwise.RTPC length_to_origin;
 	public AK.Wwise.RTPC length_to_last;
+
+	private Vector3 origin, self, last;
+
+
+	//METRO
+	public GameObject metro_semitone;
+	public List<GameObject> lanes_list, steps_list;
+
+	private int current_semitone, current_step, metro_chord;
+	private int stepCountMax = 4;
+	private float timeSinceTick, timeSinceStep, lastTickTime; // timeSinceStep != chord_step...
+
+	private bool[][] sequencer = new bool[12][4]; // reicht bool?
+
+
 
 
 	void Start()
 	{
 		Create();
+		lanes_list[0].transform.localPosition += new Vector3(0f, 0.003f, 0f);
+		steps_list[stepCountMax - 1].transform.localPosition += new Vector3(0f, 0.003f, 0f);
+
 
 		foreach (Button keybutton in keyboard.GetComponentsInChildren<Button>())
 		{
 			key_buttons.Add(keybutton);
 		}
+	}
+
+	private void OnDestroy()
+	{
+		AkSoundEngine.StopAll();
 	}
 
 	void Update()
@@ -68,13 +94,73 @@ public class MusicMover : MonoBehaviour
 		{
 			ResetTones();
 		}
-		if (Time.time - lastInputTime > 10)
-		{
-			ResetTones();
-		}
 		UpdateLines();
 		BPM();
+		Metro();
 	}
+
+	private void Metro()
+	{
+		timeSinceTick += Time.deltaTime;
+		timeSinceStep += Time.deltaTime;
+		float maxBPM = 120f;
+		float maxFactor = 0.8f;
+		float maxTime = 1f;
+		float bpm_factor = Mathf.Lerp(0f, maxFactor, Mathf.InverseLerp(0f, maxBPM, tapsPerSecond));
+
+		if (timeSinceStep > lastTickTime / stepCountMax)
+		{
+			timeSinceStep = 0;
+			current_step--;
+			metro_semitone.transform.localPosition = new Vector3(
+				((diameter / stepCountMax) * current_step) * 2 * Mathf.Sin(Mathf.Deg2Rad * ((toneAngle * current_semitone) + 90)),
+				metro_semitone.transform.localPosition.y,
+				((diameter / stepCountMax) * current_step) * 2 * Mathf.Cos(Mathf.Deg2Rad * ((toneAngle * current_semitone) + 90)));
+		}
+
+		if (timeSinceTick >= maxTime - bpm_factor)
+		{
+			lastTickTime = timeSinceTick;
+			timeSinceTick = 0;
+			timeSinceStep = 0;
+			current_semitone++;
+			current_step = stepCountMax;
+
+
+			if (current_semitone == 12)
+			{
+				if (metro_chord == 0)
+				{
+					steps_list[stepCountMax - 1].transform.localPosition -= new Vector3(0f, 0.003f, 0f);
+				}
+				else
+				{
+				steps_list[metro_chord].transform.localPosition += new Vector3(0f, 0.003f, 0f);
+
+				current_semitone = 0;
+				metro_chord++;
+					metro_chord = 0;
+			}
+
+			metro_semitone.transform.localPosition = new Vector3(
+				diameter * 2 * Mathf.Sin(Mathf.Deg2Rad * ((toneAngle * current_semitone) + 90)),
+				metro_semitone.transform.localPosition.y,
+				diameter * 2 * Mathf.Cos(Mathf.Deg2Rad * ((toneAngle * current_semitone) + 90)));
+
+			if (current_semitone == 0)
+			{
+				lanes_list[11].transform.localPosition -= new Vector3(0f, 0.003f, 0f);
+			}
+			else
+			{
+				lanes_list[current_semitone - 1].transform.localPosition -= new Vector3(0f, 0.003f, 0f);
+
+			}
+			lanes_list[current_semitone].transform.localPosition += new Vector3(0f, 0.003f, 0f);
+
+		}
+	}
+
 	private void BPM()
 	{
 		for (int i = 0; i < taps.Count; i++)
@@ -91,14 +177,12 @@ public class MusicMover : MonoBehaviour
 	[ContextMenu("Create Objects")]
 	public void Create()
 	{
+		origin = startPoint.transform.position;
 		currentChord = new Chord();
 		currentChord.tones = new List<Tone>();
 
-		for (int i = 0; i < 30; i++)
-			taps.Add(Time.timeSinceLevelLoad);
-
-		start = new GameObject();
-		start.transform.position = pos;
+		//	for (int i = 0; i < 30; i++)
+		//		taps.Add(Time.timeSinceLevelLoad);
 
 		for (int i = 0; i < numberOfNotes; i++)
 		{
@@ -107,9 +191,12 @@ public class MusicMover : MonoBehaviour
 	}
 	private Tone CreateTone()
 	{
-		Tone tone = new Tone(start.transform.localPosition, gameObject);
+		Tone tone = new Tone(startPoint.transform.position, gameObject);
+		//	tone.anchor.transform.SetParent(gameObject.transform);
+		tone.anchor.transform.localPosition = gameObject.transform.localPosition;
 		tone.obj.GetComponent<MeshFilter>().mesh = mesh;
 		tone.obj.GetComponent<MeshRenderer>().material = materialObj;
+		tone.obj.transform.position = startPoint.transform.position;
 		tone.obj.transform.localScale = scale;
 		tone.obj.SetActive(false);
 		tone.line.material = materialLine;
@@ -145,8 +232,9 @@ public class MusicMover : MonoBehaviour
 		{
 			if (tone.isMoving)
 			{
-				if (tone.anchor.transform.localRotation == tone.targetRotation)
+				if (Quaternion.Angle(tone.anchor.transform.localRotation, tone.targetRotation) < angle_tolerance)
 				{
+					tone.anchor.transform.localRotation = tone.targetRotation;
 					count_moving_tones--;
 					tone.isMoving = false;
 					AkSoundEngine.PostEvent(stopEvent.Id, tone.obj);
@@ -155,7 +243,7 @@ public class MusicMover : MonoBehaviour
 				tone.anchor.transform.localRotation = Quaternion.RotateTowards(tone.anchor.transform.localRotation, tone.targetRotation, Time.deltaTime * turningRate);
 			}
 		}
-		if (count_moving_tones == 0)
+		if (count_moving_tones <= 0)
 			tonesMoving = false;
 	}
 	private void ResetTones()
@@ -164,6 +252,7 @@ public class MusicMover : MonoBehaviour
 		hasInput = false;
 		chordFull = false;
 		tonesMoving = false;
+		count_moving_tones = 0;
 		keys.Clear();
 		foreach (Tone tone in currentChord.tones)
 		{
@@ -178,20 +267,17 @@ public class MusicMover : MonoBehaviour
 
 	private void UpdateLines()
 	{
-		Vector3 origin = start.transform.position;
-		Vector3 self;
-		Vector3 last;
 		Tone tempTone;
 
 		for (int i = 0; i < currentChord.tones.Count; i++)
 		{
 			tempTone = currentChord.tones[i];
-			self = tempTone.obj.transform.position;
+			self = tempTone.obj.transform.localPosition;
 
 			if (i == 0)
 				last = self;
 			else
-				last = currentChord.tones[i - 1].obj.transform.position;
+				last = currentChord.tones[i - 1].obj.transform.localPosition;
 
 			tempTone.line.SetPosition(0, origin);
 			tempTone.line.SetPosition(1, self);
@@ -218,9 +304,9 @@ public class MusicMover : MonoBehaviour
 	{
 		chordFull = false;
 		chordsMoving = true;
+		count_moving_chords = chords.Count;
 		chords.Add(CopyChord(currentChord));
 		keys.Clear();
-		count_moving_chords = chords.Count;
 
 		for (int i = 0; i < chords.Count; i++) // for-loop because Destroy()
 		{
@@ -242,10 +328,12 @@ public class MusicMover : MonoBehaviour
 		Chord copyChord = new Chord();
 		foreach (Tone tone in chord.tones)
 		{
-			Tone copyTone = new Tone(start.transform.localPosition, gameObject);
+			Tone copyTone = new Tone(startPoint.transform.localPosition, gameObject);
 			copyTone.semitone = tone.semitone;
+			//	copyTone.anchor.transform.SetParent(gameObject.transform);
 			copyTone.anchor.transform.localPosition = tone.anchor.transform.localPosition;
 			copyTone.anchor.transform.localRotation = tone.anchor.transform.localRotation;
+			copyTone.obj.transform.position = tone.obj.transform.position;
 			copyTone.obj.transform.localPosition = tone.obj.transform.localPosition;
 			copyTone.obj.transform.localRotation = tone.obj.transform.localRotation;
 			copyTone.obj.GetComponent<MeshFilter>().mesh = mesh;
@@ -259,9 +347,9 @@ public class MusicMover : MonoBehaviour
 	}
 	private bool PushChord(Chord chord)
 	{
-		if (chord.step < 5)
+		if (chord.step <= stepCountMax) // hier passiert irgendwas komisches lol, ein chords zu viel wenn true
 		{
-			Tone baseTone = new Tone(start.gameObject.transform.position, gameObject);
+			AkSoundEngine.PostEvent(stop_lastChord.Id, gameObject);
 			foreach (Tone tone in chord.tones)
 			{
 				tone.targetRotation = tone.anchor.transform.localRotation;
@@ -269,6 +357,12 @@ public class MusicMover : MonoBehaviour
 				tone.obj.transform.localPosition = Vector3.Scale(tone.obj.transform.localPosition, new Vector3(1.3f, 1f, 1f));
 				Vector3 scale = tone.obj.transform.localScale;
 				tone.obj.transform.localScale = new Vector3(scale.x, scale.y * 0.7f, scale.z * 0.8f);
+				AkSoundEngine.SetRTPCValue(rtpc_semitone.Id, tone.semitone, tone.obj.gameObject);
+				//AkSoundEngine.SetRTPCValue(rtpc_step.Id, chord.step, gameObject);
+				AkSoundEngine.PostEvent(toneIdle_start.Id, tone.obj.gameObject);
+
+				AkSoundEngine.SetRTPCValue(rtpc_semitone.Id, tone.semitone, gameObject);
+				AkSoundEngine.PostEvent(start_lastChord.Id, gameObject);
 			}
 			chord.tones.Sort((t1, t2) => t1.semitone.CompareTo(t2.semitone));
 			chord.tones[0].obj.GetComponent<MeshRenderer>().material = materialHighlight;
@@ -278,6 +372,7 @@ public class MusicMover : MonoBehaviour
 			{
 				keybutton.interactable = true;
 			}
+
 			return true;
 		}
 		else return false;
@@ -286,6 +381,7 @@ public class MusicMover : MonoBehaviour
 	{
 		foreach (Tone tone in chord.tones)
 		{
+			AkSoundEngine.PostEvent(toneIdle_stop.Id, tone.obj.gameObject);
 			Destroy(tone.obj);
 			Destroy(tone.anchor);
 		}

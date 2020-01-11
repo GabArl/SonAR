@@ -82,6 +82,67 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Tone_Idle" ID="{8FC39D29-B0B4-48A1-ABA8-9F76E929A8FC}">
+					<ChildrenList>
+						<Action Name="" ID="{88E8FD11-7688-48ED-A0EA-D1AD8B8A07D8}" ShortID="556320414">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="idle_loop" ID="{2F63922C-EC2E-4805-8C91-BA3D215D4533}" WorkUnitID="{F34708C9-9235-41FC-AFE3-C4471C648FD2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Tone_Idle" ID="{14138948-66E0-4F96-9A54-2D99B5B6F1E9}">
+					<ChildrenList>
+						<Action Name="" ID="{6CAB8D8F-BB0F-4764-87DA-8748C3568D81}" ShortID="442143663">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="idle_loop" ID="{2F63922C-EC2E-4805-8C91-BA3D215D4533}" WorkUnitID="{F34708C9-9235-41FC-AFE3-C4471C648FD2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_LastChord" ID="{F34D4E46-29A6-44B5-B167-17B1D7EE0D2C}">
+					<ChildrenList>
+						<Action Name="" ID="{F968CEEC-8A6D-4B31-AEBD-AE2CF9C0D60E}" ShortID="560272118">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ui_wheel_change_tone_02" ID="{30390833-CC38-4847-B9E1-ABA69988FA2D}" WorkUnitID="{F34708C9-9235-41FC-AFE3-C4471C648FD2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{52281BA4-790F-4D85-9C25-F781576FD3C6}" ShortID="451123271">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="idle_pad" ID="{DA569D1A-C9BC-4926-8D0D-F403B73FBF4C}" WorkUnitID="{F34708C9-9235-41FC-AFE3-C4471C648FD2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_LastChord" ID="{D60D51EA-D15B-4015-BFD9-6374E0963FC0}">
+					<ChildrenList>
+						<Action Name="" ID="{9B74BFCA-F909-4E72-BE26-D66F1D7928BF}" ShortID="942488698">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="idle_pad" ID="{DA569D1A-C9BC-4926-8D0D-F403B73FBF4C}" WorkUnitID="{F34708C9-9235-41FC-AFE3-C4471C648FD2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

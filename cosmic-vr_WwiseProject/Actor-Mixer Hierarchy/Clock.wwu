@@ -567,6 +567,246 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<BlendContainer Name="idle_loop" ID="{2F63922C-EC2E-4805-8C91-BA3D215D4533}" ShortID="720659056">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="att_10cm" ID="{B85BA967-5D3A-4E27-93B0-355992DBCD0A}" WorkUnitID="{9A9CC599-7D90-42EC-A617-C3043E491B06}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="idle_tick" ID="{32C985D2-A600-4527-9309-65AD58493EB7}" ShortID="980728771">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{08650071-6ADC-49B7-A17C-D918E12EB801}" ShortID="618757773">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Semitone" ID="{D4EACEDC-AEC2-4624-9276-D4A5B0C406D2}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{C4AF7172-90D1-46DF-B258-4E84FBFBD077}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-1200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>11</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="att_1m" ID="{B67C0EBC-A9F9-4BC3-A13F-215963FC9C49}" WorkUnitID="{9A9CC599-7D90-42EC-A617-C3043E491B06}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ui_wheel_change_tone_02" ID="{30390833-CC38-4847-B9E1-ABA69988FA2D}" ShortID="358937498">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>45</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="att_2m" ID="{15726583-2086-402E-B823-76E1A6671F70}" WorkUnitID="{9A9CC599-7D90-42EC-A617-C3043E491B06}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="New Audio Bus" ID="{8BEDB2EB-F8E1-4AA0-81CF-6C1AC95030D4}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ui_wheel_change_tone_02" ID="{43C753E1-1617-4294-B176-C136E783BBB7}" ShortID="786278253">
+													<Language>SFX</Language>
+													<AudioFile>ui_wheel_change_tone_02.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File Platform="Android" ID="482077558"/>
+														<File Platform="Mac" ID="66536949"/>
+														<File Platform="Windows" ID="66536949"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ui_wheel_change_tone_02" ID="{43C753E1-1617-4294-B176-C136E783BBB7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="idle_pad" ID="{DA569D1A-C9BC-4926-8D0D-F403B73FBF4C}" ShortID="510858480">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{FBE5399D-79CA-4999-92FA-E099C81E721D}" ShortID="205163071">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Semitone" ID="{D4EACEDC-AEC2-4624-9276-D4A5B0C406D2}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{339FF0EE-2CFC-4728-8883-A2999C43789D}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-1200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>11</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="att_1m" ID="{B67C0EBC-A9F9-4BC3-A13F-215963FC9C49}" WorkUnitID="{9A9CC599-7D90-42EC-A617-C3043E491B06}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_player_circle_loop_01" ID="{B36E942F-4A01-492E-8CE6-A01771DD65C3}" ShortID="943398633">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="att_1m" ID="{B67C0EBC-A9F9-4BC3-A13F-215963FC9C49}" WorkUnitID="{9A9CC599-7D90-42EC-A617-C3043E491B06}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_player_circle_loop_01" ID="{291C7E81-17C5-4AB2-AD24-B617BFD9A1C8}" ShortID="462736533">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_player_circle_loop_01.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="422270334"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_player_circle_loop_01" ID="{291C7E81-17C5-4AB2-AD24-B617BFD9A1C8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ui_wheel_change_tone_02" ID="{2EE4FDFE-66E7-4880-A5E2-D436B05378A6}" ShortID="702325268">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>45</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="att_10cm" ID="{B85BA967-5D3A-4E27-93B0-355992DBCD0A}" WorkUnitID="{9A9CC599-7D90-42EC-A617-C3043E491B06}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ui_wheel_change_tone_02" ID="{F5A0DD67-13CF-4F8C-906C-5BD1C2791894}" ShortID="240010076">
+											<Language>SFX</Language>
+											<AudioFile>ui_wheel_change_tone_02.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="482077558"/>
+												<File Platform="Mac" ID="66536949"/>
+												<File Platform="Windows" ID="66536949"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ui_wheel_change_tone_02" ID="{F5A0DD67-13CF-4F8C-906C-5BD1C2791894}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
