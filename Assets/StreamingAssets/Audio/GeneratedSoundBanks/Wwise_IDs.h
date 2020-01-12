@@ -22,6 +22,7 @@ namespace AK
         static const AkUniqueID PLAY_MINUTE = 2429363254U;
         static const AkUniqueID PLAY_SECOND = 3319890774U;
         static const AkUniqueID PLAY_SEMITONE = 533559632U;
+        static const AkUniqueID PLAY_TICK = 3592141553U;
         static const AkUniqueID PLAY_TONE_IDLE = 4028792483U;
         static const AkUniqueID PLUGIN = 3784159884U;
         static const AkUniqueID STOP_CHORD_LOOP = 3393091015U;
@@ -31,6 +32,39 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace TICK_BINARY_ONE
+        {
+            static const AkUniqueID GROUP = 1312546987U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID _0 = 846646256U;
+                static const AkUniqueID _1 = 846646257U;
+            } // namespace SWITCH
+        } // namespace TICK_BINARY_ONE
+
+        namespace TICK_BINARY_TWO
+        {
+            static const AkUniqueID GROUP = 923263321U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID _0 = 846646256U;
+                static const AkUniqueID _1 = 846646257U;
+            } // namespace SWITCH
+        } // namespace TICK_BINARY_TWO
+
+        namespace TICK_DESIGN
+        {
+            static const AkUniqueID GROUP = 654608395U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ONE = 1064933119U;
+                static const AkUniqueID TWO = 678209053U;
+            } // namespace SWITCH
+        } // namespace TICK_DESIGN
+
         namespace TRACK_NUMBER
         {
             static const AkUniqueID GROUP = 2876568630U;
@@ -108,7 +142,7 @@ namespace AK
         static const AkUniqueID RTPC_VEL_Z = 4196732799U;
         static const AkUniqueID SECONDS = 745018932U;
         static const AkUniqueID SEMITONE = 3102311527U;
-        static const AkUniqueID STEP = 621108255U;
+        static const AkUniqueID TICK_DIGIT = 365065828U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

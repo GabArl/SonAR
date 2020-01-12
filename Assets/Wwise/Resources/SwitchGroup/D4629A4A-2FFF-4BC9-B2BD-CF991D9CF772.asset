@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 361b8cb7c87c33941a8d7e27231ce435, type: 3}
-  m_Name: 4B58EF5A-766F-4706-A940-0FACEF7C62EA
+  m_Script: {fileID: 11500000, guid: 80292218c3ae5d14db5b429d7b3b1c48, type: 3}
+  m_Name: D4629A4A-2FFF-4BC9-B2BD-CF991D9CF772
   m_EditorClassIdentifier: 
-  objectName: tick_digit
-  id: 365065828
-  guid: 4B58EF5A-766F-4706-A940-0FACEF7C62EA
+  objectName: tick_design
+  id: 654608395
+  guid: D4629A4A-2FFF-4BC9-B2BD-CF991D9CF772

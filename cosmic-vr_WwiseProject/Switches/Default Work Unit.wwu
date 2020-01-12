@@ -57,6 +57,85 @@
 						<Switch Name="_50" ID="{01FD6297-FB60-4B75-8344-5A15941DC507}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="tick_design" ID="{D4629A4A-2FFF-4BC9-B2BD-CF991D9CF772}">
+					<ChildrenList>
+						<Switch Name="one" ID="{2E98E92D-E322-4435-A2D3-243F06EA24E3}"/>
+						<Switch Name="two" ID="{054002BE-0328-492C-8A44-6E99E073C2DA}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="tick_binary_one" ID="{6CAA1D57-1B8F-4A26-8E82-C4072B565E97}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="_0" ID="{F8C60498-34C8-4CA0-B089-5AD55D4434C1}"/>
+						<Switch Name="_1" ID="{A294EA07-947C-4341-8434-B9F8AEE436FD}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="tick_digit" ID="{4B58EF5A-766F-4706-A940-0FACEF7C62EA}"/>
+						<Curve Name="" ID="{250FC5F8-7D01-447C-ACF8-71981B318E7A}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="tick_binary_two" ID="{938A6179-FCF4-49B3-B954-50A26774E019}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="_0" ID="{BC943E8C-DF64-4311-BA20-1AA698141962}"/>
+						<Switch Name="_1" ID="{0ED02760-EC42-4A15-87E9-F0121C1B80BC}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="tick_digit" ID="{4B58EF5A-766F-4706-A940-0FACEF7C62EA}"/>
+						<Curve Name="" ID="{892AF346-4783-4C00-89D9-71F84C094D29}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

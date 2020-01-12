@@ -143,6 +143,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Tick" ID="{6D9702FB-1019-46FB-8796-2E9001C76328}">
+					<ChildrenList>
+						<Action Name="" ID="{E1C5AB5F-BE2D-4603-A443-B15F0B888C56}" ShortID="777683431">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="tick" ID="{688EB154-A85C-4287-8313-CFC569E35F52}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

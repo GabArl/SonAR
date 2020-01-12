@@ -197,6 +197,634 @@
 						</Sound>
 					</ChildrenList>
 				</BlendContainer>
+				<BlendContainer Name="tick" ID="{688EB154-A85C-4287-8313-CFC569E35F52}" ShortID="548374432">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="tick_design" ID="{D72BA842-B450-43B4-BBA2-BF19931067DA}" ShortID="613716018">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="one" ID="{2E98E92D-E322-4435-A2D3-243F06EA24E3}" WorkUnitID="{202C3F1D-8BC4-4719-A8C3-0E6343E73638}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="tick_design" ID="{D4629A4A-2FFF-4BC9-B2BD-CF991D9CF772}" WorkUnitID="{202C3F1D-8BC4-4719-A8C3-0E6343E73638}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="tick_d1" ID="{25C34734-6157-4117-8B6A-A3B4A3AAA2D7}" ShortID="456449552">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SwitchContainer Name="tick_d1_binary_one" ID="{03299F36-29A1-404B-A33F-573342744C39}" ShortID="788508644">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="_0" ID="{F8C60498-34C8-4CA0-B089-5AD55D4434C1}" WorkUnitID="{202C3F1D-8BC4-4719-A8C3-0E6343E73638}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="tick_binary_one" ID="{6CAA1D57-1B8F-4A26-8E82-C4072B565E97}" WorkUnitID="{202C3F1D-8BC4-4719-A8C3-0E6343E73638}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="0" ID="{D2B83E25-FE4B-4968-B811-932CF288DFE7}" ShortID="465191958">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>150</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_01" ID="{C7DC783E-BBE4-4AEB-A969-A2E6F8D151FA}" ShortID="376536993">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.013854723190089"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="7.31400503290748E-02"/>
+																<Property Name="FadeOutShape" Type="int16" Value="2"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="4.51084010840108E-02"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.137258420441347"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="88409178"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_01" ID="{C7DC783E-BBE4-4AEB-A969-A2E6F8D151FA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="1" ID="{79A87C46-039B-46FB-90B4-79F7A80742B9}" ShortID="439463462">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-100</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_01" ID="{2F987A1E-4F2F-447F-9155-4750BB2702D0}" ShortID="154344542">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="6.02519357336431E-02"/>
+																<Property Name="FadeInShape" Type="int16" Value="7"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.51435346496323E-02"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.20975406504065"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.79965156794422E-03"/>
+																<Property Name="TrimEnd" Type="Real64" Value="8.63503677893922E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="54302559"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_01" ID="{2F987A1E-4F2F-447F-9155-4750BB2702D0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="0" ID="{D2B83E25-FE4B-4968-B811-932CF288DFE7}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="1" ID="{79A87C46-039B-46FB-90B4-79F7A80742B9}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="_1" ID="{A294EA07-947C-4341-8434-B9F8AEE436FD}"/>
+														<ItemList>
+															<ItemRef Name="1" ID="{79A87C46-039B-46FB-90B4-79F7A80742B9}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="_0" ID="{F8C60498-34C8-4CA0-B089-5AD55D4434C1}"/>
+														<ItemList>
+															<ItemRef Name="0" ID="{D2B83E25-FE4B-4968-B811-932CF288DFE7}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="tick_d1_binary_two" ID="{40DDF2FA-6A71-4C37-A10A-EEB17FB829EC}" ShortID="267633979">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="_0" ID="{BC943E8C-DF64-4311-BA20-1AA698141962}" WorkUnitID="{202C3F1D-8BC4-4719-A8C3-0E6343E73638}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="tick_binary_two" ID="{938A6179-FCF4-49B3-B954-50A26774E019}" WorkUnitID="{202C3F1D-8BC4-4719-A8C3-0E6343E73638}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="0" ID="{0BC384DA-B373-4966-B2F9-92D85C4BE6FA}" ShortID="35578993">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>150</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_01" ID="{AED34420-0142-4D0D-9034-D0C6CA04AE5B}" ShortID="420513590">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.013854723190089"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="7.31400503290748E-02"/>
+																<Property Name="FadeOutShape" Type="int16" Value="2"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="4.51084010840108E-02"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.137258420441347"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="88409178"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_01" ID="{AED34420-0142-4D0D-9034-D0C6CA04AE5B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="1" ID="{444BC0E9-C84B-41F1-A300-86DAA5864A10}" ShortID="30382798">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-100</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_01" ID="{C91970CC-ADA2-45BA-B7BD-C0C60A5AEB27}" ShortID="155130158">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="6.02519357336431E-02"/>
+																<Property Name="FadeInShape" Type="int16" Value="7"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.51435346496323E-02"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.20975406504065"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.79965156794422E-03"/>
+																<Property Name="TrimEnd" Type="Real64" Value="8.63503677893922E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="54302559"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_01" ID="{C91970CC-ADA2-45BA-B7BD-C0C60A5AEB27}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="0" ID="{0BC384DA-B373-4966-B2F9-92D85C4BE6FA}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="1" ID="{444BC0E9-C84B-41F1-A300-86DAA5864A10}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="_1" ID="{0ED02760-EC42-4A15-87E9-F0121C1B80BC}"/>
+														<ItemList>
+															<ItemRef Name="1" ID="{444BC0E9-C84B-41F1-A300-86DAA5864A10}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="_0" ID="{BC943E8C-DF64-4311-BA20-1AA698141962}"/>
+														<ItemList>
+															<ItemRef Name="0" ID="{0BC384DA-B373-4966-B2F9-92D85C4BE6FA}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+								</BlendContainer>
+								<BlendContainer Name="tick_d2" ID="{D34A6069-B066-4164-A4C0-99C6891C1C83}" ShortID="324535802">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SwitchContainer Name="tick_d2_binary_one" ID="{085B304A-BCF2-49D2-8610-ACBEBEE6A14E}" ShortID="888724988">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="_0" ID="{F8C60498-34C8-4CA0-B089-5AD55D4434C1}" WorkUnitID="{202C3F1D-8BC4-4719-A8C3-0E6343E73638}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="tick_binary_one" ID="{6CAA1D57-1B8F-4A26-8E82-C4072B565E97}" WorkUnitID="{202C3F1D-8BC4-4719-A8C3-0E6343E73638}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="0" ID="{A1D319F0-269F-4973-BC03-A729B99000BA}" ShortID="83988033">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>60</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-2400</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UserAuxSendVolume0" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="att_2m" ID="{15726583-2086-402E-B823-76E1A6671F70}" WorkUnitID="{9A9CC599-7D90-42EC-A617-C3043E491B06}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="New Audio Bus" ID="{8BEDB2EB-F8E1-4AA0-81CF-6C1AC95030D4}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_03" ID="{315F4A1B-EF1D-49D9-804F-28B601BD1C75}" ShortID="274396582">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="2.59529217762913E-02"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="4.31506410256411E-02"/>
+																<Property Name="FadeOutShape" Type="int16" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="9.69325994054255E-03"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.56640189520624E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File Platform="Android" ID="182918401"/>
+																<File Platform="Mac" ID="120218215"/>
+																<File Platform="Windows" ID="120218215"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_03" ID="{315F4A1B-EF1D-49D9-804F-28B601BD1C75}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="1" ID="{3611C549-BA2B-48E0-8FDC-E888CE11CA1F}" ShortID="640018299">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>60</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-2300</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_03" ID="{F47AB62F-92A1-43BC-B89F-25408CB02923}" ShortID="55176079">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="2.06372630992195E-02"/>
+																<Property Name="FadeInShape" Type="int16" Value="9"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="3.43954384986991E-03"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.81417224080268E-02"/>
+																<Property Name="TrimEnd" Type="Real64" Value="7.31684782608696E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_03" ID="{F47AB62F-92A1-43BC-B89F-25408CB02923}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="1" ID="{3611C549-BA2B-48E0-8FDC-E888CE11CA1F}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="0" ID="{A1D319F0-269F-4973-BC03-A729B99000BA}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="_1" ID="{A294EA07-947C-4341-8434-B9F8AEE436FD}"/>
+														<ItemList>
+															<ItemRef Name="1" ID="{3611C549-BA2B-48E0-8FDC-E888CE11CA1F}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="_0" ID="{F8C60498-34C8-4CA0-B089-5AD55D4434C1}"/>
+														<ItemList>
+															<ItemRef Name="0" ID="{A1D319F0-269F-4973-BC03-A729B99000BA}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="tick_d2_binary_two" ID="{2D0CCCF8-63CA-4EE7-B856-C5D9F8BB33A3}" ShortID="324291916">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.15</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>29</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-20</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="_0" ID="{BC943E8C-DF64-4311-BA20-1AA698141962}" WorkUnitID="{202C3F1D-8BC4-4719-A8C3-0E6343E73638}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="tick_binary_two" ID="{938A6179-FCF4-49B3-B954-50A26774E019}" WorkUnitID="{202C3F1D-8BC4-4719-A8C3-0E6343E73638}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="0" ID="{3D9D56BD-9CDA-40A4-9E16-7225798E2A4F}" ShortID="981399301">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>60</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-2400</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_03" ID="{DE472A8F-FEE4-49F4-89CA-8E5EAAC16134}" ShortID="713361219">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="9.06788833147528E-03"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="4.84662997027128E-02"/>
+																<Property Name="FadeOutShape" Type="int16" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="9.69325994054255E-03"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.56640189520624E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="274396582"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_03" ID="{DE472A8F-FEE4-49F4-89CA-8E5EAAC16134}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="1" ID="{12FB4CBC-B368-44B6-998B-CFCFE123A295}" ShortID="506265698">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>60</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-2300</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ui_wheel_change_tone_03" ID="{FAA3637C-D788-4595-8598-6D26FDA1CB45}" ShortID="824757981">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="2.50148643626904E-02"/>
+																<Property Name="FadeInShape" Type="int16" Value="9"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="3.43954384986991E-03"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="3.56461817168339E-02"/>
+																<Property Name="TrimEnd" Type="Real64" Value="7.34811640654032E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File Platform="Android" ID="244711514"/>
+																<File Platform="Mac" ID="182918401"/>
+																<File Platform="Windows" ID="182918401"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ui_wheel_change_tone_03" ID="{FAA3637C-D788-4595-8598-6D26FDA1CB45}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="1" ID="{12FB4CBC-B368-44B6-998B-CFCFE123A295}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="0" ID="{3D9D56BD-9CDA-40A4-9E16-7225798E2A4F}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="_1" ID="{0ED02760-EC42-4A15-87E9-F0121C1B80BC}"/>
+														<ItemList>
+															<ItemRef Name="1" ID="{12FB4CBC-B368-44B6-998B-CFCFE123A295}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="_0" ID="{BC943E8C-DF64-4311-BA20-1AA698141962}"/>
+														<ItemList>
+															<ItemRef Name="0" ID="{3D9D56BD-9CDA-40A4-9E16-7225798E2A4F}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="tick_d1" ID="{25C34734-6157-4117-8B6A-A3B4A3AAA2D7}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="tick_d2" ID="{D34A6069-B066-4164-A4C0-99C6891C1C83}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="one" ID="{2E98E92D-E322-4435-A2D3-243F06EA24E3}"/>
+										<ItemList>
+											<ItemRef Name="tick_d1" ID="{25C34734-6157-4117-8B6A-A3B4A3AAA2D7}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="two" ID="{054002BE-0328-492C-8A44-6E99E073C2DA}"/>
+										<ItemList>
+											<ItemRef Name="tick_d2" ID="{D34A6069-B066-4164-A4C0-99C6891C1C83}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

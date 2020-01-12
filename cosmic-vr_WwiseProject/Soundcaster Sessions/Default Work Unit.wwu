@@ -40,8 +40,8 @@
 							<Value>1.2</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Step" ID="{4B58EF5A-766F-4706-A940-0FACEF7C62EA}"/>
-							<Value>0</Value>
+							<GameParameterRef Name="tick_digit" ID="{4B58EF5A-766F-4706-A940-0FACEF7C62EA}"/>
+							<Value>3</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="rtpc_vel_y" ID="{FFAE3D87-850E-47B6-A7A2-D543F6C5F497}"/>
@@ -78,6 +78,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="two" ID="{054002BE-0328-492C-8A44-6E99E073C2DA}"/>
 						<CurrentSwitchRef Name="_01" ID="{9ED5E74E-2ECE-40FE-BE83-51F92CE9E808}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
