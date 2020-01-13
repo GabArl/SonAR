@@ -154,6 +154,35 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_metro_step" ID="{32393432-427E-4564-8AD5-4CB2929A5692}">
+					<ChildrenList>
+						<Action Name="" ID="{7EDFC8F5-EB8E-4171-BD4B-247615E90D94}" ShortID="756651254">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="step" ID="{FC2BE72B-51B1-4F3B-81DC-0C481549A5DD}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_metro_step" ID="{C25DBF08-CD3B-4298-AF7D-8FB63D648F35}">
+					<ChildrenList>
+						<Action Name="" ID="{0407BF25-4AD4-4F8B-B255-AD6AD3CA698A}" ShortID="527449755">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="step" ID="{FC2BE72B-51B1-4F3B-81DC-0C481549A5DD}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

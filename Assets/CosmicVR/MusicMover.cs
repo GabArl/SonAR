@@ -4,8 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 //TODO
-// make angular speed uniform
+// make angular speed uniform / instant
+// redesign inner/first notes
 // fallback no arcore / no camera allowed
+// dont cast shadows
+// repair lines
+// fix ARCore
+// play chords when stepping
+// expose params and enable designs
 
 public class MusicMover : MonoBehaviour
 {
@@ -74,7 +80,10 @@ public class MusicMover : MonoBehaviour
 		{
 			ResetTones();
 		}
-		UpdateLines();
+		if (hasInput)
+		{
+			UpdateLines();
+		}
 		metro.UpdateMetro();
 
 	}
@@ -107,7 +116,7 @@ public class MusicMover : MonoBehaviour
 		tone.obj.transform.localScale = scale;
 		tone.obj.SetActive(false);
 		tone.line.material = materialLine;
-		tone.line.positionCount = numberOfNotes;
+		tone.line.positionCount = 3;
 		return tone;
 	}
 
@@ -178,32 +187,35 @@ public class MusicMover : MonoBehaviour
 
 		for (int i = 0; i < currentChord.tones.Count; i++)
 		{
-			tempTone = currentChord.tones[i];
-			self = tempTone.obj.transform.localPosition;
+			if (currentChord.tones[i].isMoving)
+			{
+				tempTone = currentChord.tones[i];
+				self = tempTone.obj.transform.position;
 
-			if (i == 0)
-				last = self;
-			else
-				last = currentChord.tones[i - 1].obj.transform.localPosition;
+				if (i == 0)
+					last = self;
+				else
+					last = currentChord.tones[i - 1].obj.transform.position;
 
-			tempTone.line.SetPosition(0, origin);
-			tempTone.line.SetPosition(1, self);
-			tempTone.line.SetPosition(2, last);
+				tempTone.line.SetPosition(0, origin);
+				tempTone.line.SetPosition(1, self);
+				tempTone.line.SetPosition(2, last);
 
-			tempTone.length_to_origin = Vector3.Distance(origin, self);
-			tempTone.length_to_last = Vector3.Distance(last, self);
+				tempTone.length_to_origin = Vector3.Distance(origin, self);
+				tempTone.length_to_last = Vector3.Distance(last, self);
 
-			AkSoundEngine.SetRTPCValue(
-				 length_to_origin.Id,
-				 Mathf.Lerp(0f, 1f, Mathf.InverseLerp(0f, diameter, tempTone.length_to_origin)),
-				 currentChord.tones[i].obj);
+				AkSoundEngine.SetRTPCValue(
+					 length_to_origin.Id,
+					 Mathf.Lerp(0f, 1f, Mathf.InverseLerp(0f, diameter, tempTone.length_to_origin)),
+					 currentChord.tones[i].obj);
 
-			AkSoundEngine.SetRTPCValue(
-				 length_to_last.Id,
-				 Mathf.Lerp(0f, 1f, Mathf.InverseLerp(0f, diameter, tempTone.length_to_last)),
-				 currentChord.tones[i].obj);
+				AkSoundEngine.SetRTPCValue(
+					 length_to_last.Id,
+					 Mathf.Lerp(0f, 1f, Mathf.InverseLerp(0f, diameter, tempTone.length_to_last)),
+					 currentChord.tones[i].obj);
 
-			currentChord.tones[i] = tempTone;
+				currentChord.tones[i] = tempTone;
+			}
 		}
 	}
 
@@ -383,8 +395,8 @@ public class Tone
 		obj.AddComponent<LineRenderer>();
 		line = obj.GetComponent<LineRenderer>();
 		line.enabled = true;
-		line.startWidth = 0.01f;
-		line.endWidth = 0.1f;
+		line.startWidth = 0.001f;
+		line.endWidth = 0.003f;
 
 		number = counter;
 		counter++;

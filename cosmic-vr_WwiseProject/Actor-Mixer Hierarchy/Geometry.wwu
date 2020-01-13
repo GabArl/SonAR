@@ -825,6 +825,484 @@
 						</SwitchContainer>
 					</ChildrenList>
 				</BlendContainer>
+				<BlendContainer Name="step" ID="{09E9377A-AB9F-4508-9F08-88C5B90D6C4B}" ShortID="716559337">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="step" ID="{FC2BE72B-51B1-4F3B-81DC-0C481549A5DD}" ShortID="925937103">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{499E03B9-F7D0-4078-A552-FE855A14CB9C}" ShortID="155827260">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Semitone" ID="{D4EACEDC-AEC2-4624-9276-D4A5B0C406D2}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{D0468693-2A40-45D0-85DA-9578C4CBE55E}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-1200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>11</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="step_01" ID="{67E82AC9-2B42-42A6-8689-AF65F2738C8C}" ShortID="816656893">
+									<PropertyList>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="HvSineWaves" ID="{71358FA3-BCA5-4443-B770-16C86C391811}" ShortID="279856636" PluginName="HvSineWaves" CompanyID="64" PluginID="24965">
+											<PropertyList>
+												<Property Name="ChA" Type="Real32" Value="0.16">
+													<RTPCList>
+														<RTPC Name="" ID="{ECB4529B-4DC9-422A-AD54-5251BF5F7D57}" ShortID="547324332">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Chord_Length" ID="{E6C253D0-DF47-4F54-A03E-E281C69A79CC}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{AD5F3ED8-49EE-4F66-BB9F-0C12808CEF49}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0.23</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="ChB" Type="Real32" Value="0.2">
+													<RTPCList>
+														<RTPC Name="" ID="{8C355915-4AF3-4E81-9BAD-C748EE52F008}" ShortID="842631071">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Chord_Length" ID="{E6C253D0-DF47-4F54-A03E-E281C69A79CC}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{A082403A-D084-4FE0-8938-9B4F3BFF846C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.23</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0.35</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="ChC" Type="Real32" Value="0.14">
+													<RTPCList>
+														<RTPC Name="" ID="{50F058E4-5A04-4D31-93D6-C9E397502CAB}" ShortID="268587167">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Chord_Length" ID="{E6C253D0-DF47-4F54-A03E-E281C69A79CC}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{4DA413FA-F14E-4987-A98C-67A156878529}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.5</XPos>
+																		<YPos>0.23</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real32" Value="0.03"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+										<SourcePlugin Name="HvFM" ID="{906F89D0-BD5A-410D-9AB2-9525F27C8019}" ShortID="78645170" PluginName="HvFM" CompanyID="64" PluginID="3292">
+											<PropertyList>
+												<Property Name="carrier_frequency" Type="Real32" Value="40">
+													<RTPCList>
+														<RTPC Name="" ID="{F5ACA63F-29FC-44A6-B68D-77FD9E2C689B}" ShortID="1067586335">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Length_To_Origin" ID="{4300FDDA-0336-4313-B1BA-2B985B738737}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{A676BC6F-52F1-4435-BD09-8696B0CDBFF2}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>60</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="harmoncity_ratio" Type="Real32" Value="5.24">
+													<RTPCList>
+														<RTPC Name="" ID="{3B9B9471-0C2A-401D-906D-CAF1C4B041D2}" ShortID="35905767">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Length_To_Last" ID="{FD1724F1-184A-4B26-AC6A-0E5E52E582F2}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{E7AC3761-AD30-4B54-BAAD-0AC0B51707D1}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>2.0026</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0.18538</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="modulation_width" Type="Real32" Value="183.88">
+													<RTPCList>
+														<RTPC Name="" ID="{4B770C41-45BF-4C5E-AA71-8297739425AE}" ShortID="942335241">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Length_To_Last" ID="{FD1724F1-184A-4B26-AC6A-0E5E52E582F2}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{10A3ADFD-3B8A-42CB-B098-411F63F6FAED}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>201.13055</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>512</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="volume" Type="Real32" Value="0.08"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="HvFM" ID="{906F89D0-BD5A-410D-9AB2-9525F27C8019}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="step_02" ID="{70BEDF65-B73C-4155-BB07-8DDFFB1C6521}" ShortID="326175454">
+									<PropertyList>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="HvSineWaves" ID="{B82D5982-8307-49D6-A825-508CDEB3B1CF}" ShortID="689358580" PluginName="HvSineWaves" CompanyID="64" PluginID="24965">
+											<PropertyList>
+												<Property Name="ChA" Type="Real32" Value="0.16">
+													<RTPCList>
+														<RTPC Name="" ID="{BD333732-25F4-467E-BC22-9E1A4917EB96}" ShortID="1050150570">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Chord_Length" ID="{E6C253D0-DF47-4F54-A03E-E281C69A79CC}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{25E4C888-E194-4B46-BE18-E8F53B2EEBF2}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0.23</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="ChB" Type="Real32" Value="0.2">
+													<RTPCList>
+														<RTPC Name="" ID="{3F8212A2-B666-4402-8C9F-F3475B911043}" ShortID="433699215">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Chord_Length" ID="{E6C253D0-DF47-4F54-A03E-E281C69A79CC}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{3F110971-3550-429F-A60C-199ADACF765C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.23</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0.35</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="ChC" Type="Real32" Value="0.14">
+													<RTPCList>
+														<RTPC Name="" ID="{CF851949-E9B3-450B-9723-EF2858871BD5}" ShortID="861647527">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Chord_Length" ID="{E6C253D0-DF47-4F54-A03E-E281C69A79CC}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{D8225605-F28A-4723-9521-01E8975CA4C7}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.5</XPos>
+																		<YPos>0.23</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real32" Value="0.03"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+										<SourcePlugin Name="HvFM" ID="{85B01B87-D4D0-418D-B1CD-6EEB3F58B626}" ShortID="418501779" PluginName="HvFM" CompanyID="64" PluginID="3292">
+											<PropertyList>
+												<Property Name="carrier_frequency" Type="Real32" Value="52.63">
+													<RTPCList>
+														<RTPC Name="" ID="{63A63BFF-0884-4CA7-ADA9-D99036FA336E}" ShortID="876496854">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Length_To_Origin" ID="{4300FDDA-0336-4313-B1BA-2B985B738737}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{2A245DD6-1B1E-40A9-A15E-F19FD69034F2}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>240</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>360</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="harmoncity_ratio" Type="Real32" Value="0.13">
+													<RTPCList>
+														<RTPC Name="" ID="{97D51A3B-114B-449B-89E3-8EC3F2CABDE0}" ShortID="160294244">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Length_To_Last" ID="{FD1724F1-184A-4B26-AC6A-0E5E52E582F2}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{041F3886-3D32-4306-8FF8-F344D137E043}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>2.0026</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0.18538</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="modulation_width" Type="Real32" Value="393.66">
+													<RTPCList>
+														<RTPC Name="" ID="{D5AA47D8-011A-4697-9B69-BAC99946DFE4}" ShortID="745305538">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Length_To_Last" ID="{FD1724F1-184A-4B26-AC6A-0E5E52E582F2}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{DD8BF63D-A7AF-4ED1-A1F5-9809DF41E734}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>201.13055</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>420</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="volume" Type="Real32" Value="0.04"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="HvFM" ID="{85B01B87-D4D0-418D-B1CD-6EEB3F58B626}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

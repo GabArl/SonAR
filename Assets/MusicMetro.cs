@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+// metro range
+// retrigger sound when input
+
 public class MusicMetro : MonoBehaviour
 {
 	public GameObject metro_object;
@@ -13,8 +17,8 @@ public class MusicMetro : MonoBehaviour
 	private float tapsPerSecond;
 	public float lastInputTime;
 	private List<float> taps = new List<float>();
-	public AK.Wwise.Event tickEvent;
-	public AK.Wwise.RTPC rtpc_step;
+	public AK.Wwise.Event tickEvent, stepEvent_start, stepEvent_stop, semitoneEvent;
+	public AK.Wwise.RTPC rtpc_step, rtpc_semitone;
 	public AK.Wwise.Switch tickDesign;
 
 	private int stepCountMax;
@@ -31,6 +35,9 @@ public class MusicMetro : MonoBehaviour
 
 	public bool[,] sequencer = new bool[12, 4];
 
+	public int min_semi;
+	public int max_semi;
+
 
 	public void SetParams(int stepCountMax_, float diameter_, float toneAngle_)
 	{
@@ -42,7 +49,7 @@ public class MusicMetro : MonoBehaviour
 	private void Start()
 	{
 		lanes_list[0].transform.localPosition += new Vector3(0f, 0.003f, 0f);
-		steps_list[stepCountMax - 1].transform.localPosition += new Vector3(0f, 0.003f, 0f);
+		//steps_list[stepCountMax - 1].transform.localPosition += new Vector3(0f, 0.003f, 0f);
 
 		for (int i = 0; i < sequencer.GetLength(0); i++)
 			for (int j = 0; j < sequencer.GetLength(1); j++)
@@ -80,14 +87,20 @@ public class MusicMetro : MonoBehaviour
 			{
 				current_semitone++;
 				current_step = stepCountMax;
-				TickSemitone();
+				if (current_semitone == 12)
+				{
+					AddStep();
+				}
+				AddSemitone();
 			}
 			if (current_step > 0)
-				TickStep();
+			{
+				AddTick();
+			}
 		}
 	}
 
-	private void TickStep()
+	private void AddTick()
 	{
 		metro_object.transform.localPosition = new Vector3(
 			((diameter / stepCountMax) * current_step) * 2 * Mathf.Sin(Mathf.Deg2Rad * ((toneAngle * current_semitone) + 90)),
@@ -104,27 +117,8 @@ public class MusicMetro : MonoBehaviour
 		}
 	}
 
-	private void TickSemitone()
+	private void AddSemitone()
 	{
-		if (current_semitone == 12)
-		{
-			if (metro_chord == 0)
-			{
-				steps_list[stepCountMax - 1].transform.localPosition -= new Vector3(0f, 0.003f, 0f);
-			}
-			else
-			{
-				steps_list[metro_chord - 1].transform.localPosition -= new Vector3(0f, 0.003f, 0f);
-			}
-
-			steps_list[metro_chord].transform.localPosition += new Vector3(0f, 0.003f, 0f);
-
-			current_semitone = 0;
-			metro_chord++;
-			if (metro_chord == stepCountMax)
-				metro_chord = 0;
-		}
-
 		if (current_semitone == 0)
 		{
 			lanes_list[11].transform.localPosition -= new Vector3(0f, 0.003f, 0f);
@@ -134,6 +128,35 @@ public class MusicMetro : MonoBehaviour
 			lanes_list[current_semitone - 1].transform.localPosition -= new Vector3(0f, 0.003f, 0f);
 		}
 		lanes_list[current_semitone].transform.localPosition += new Vector3(0f, 0.003f, 0f);
+	}
+
+	private void AddStep()
+	{
+		if (metro_chord == 0)
+		{
+			steps_list[stepCountMax - 1].transform.localPosition -= new Vector3(0f, 0.003f, 0f);
+		}
+		else
+		{
+			steps_list[metro_chord - 1].transform.localPosition -= new Vector3(0f, 0.003f, 0f);
+		}
+
+		steps_list[metro_chord].transform.localPosition += new Vector3(0f, 0.003f, 0f);
+
+		AkSoundEngine.PostEvent(stepEvent_stop.Id, gameObject);
+		for (int i = 0; i < sequencer.GetLength(0); i++)
+		{
+			if (sequencer[i, metro_chord])
+			{
+				AkSoundEngine.SetRTPCValue(rtpc_semitone.Id, i, gameObject);
+				AkSoundEngine.PostEvent(stepEvent_start.Id, gameObject);
+			}
+		}
+
+		current_semitone = 0;
+		metro_chord++;
+		if (metro_chord == stepCountMax)
+			metro_chord = 0;
 	}
 
 	private void BPM()
