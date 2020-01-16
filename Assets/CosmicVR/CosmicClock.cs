@@ -36,7 +36,6 @@ public class CosmicClock : MonoBehaviour
 				return;
 			sec = value;
 			ClockSecond();
-			//sec.text = "Damage: " + sec;
 		}
 	}
 	public int Minute
