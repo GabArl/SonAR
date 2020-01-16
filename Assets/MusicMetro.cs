@@ -35,37 +35,12 @@ public class MusicMetro : MonoBehaviour
 	public bool[,] sequencer = new bool[12, 4];
 
 	[Range(0, 11)]
-	public int from_semi_ = 0;
-	private int from_semi
-	{
-		get
-		{
-			return from_semi_;
-		}
-		set
-		{
-			if (from_semi_ >= to_semi_)
-				from_semi_ = to_semi_ - 1;
-			else from_semi_ = value;
+	private int from_semi = 0;
 
-		}
-	}
 
 	[Range(0, 11)]
-	public int to_semi_ = 11;
-	private int to_semi
-	{
-		get
-		{
-			return to_semi_;
-		}
-		set
-		{
-			if (to_semi_ <= from_semi_)
-				to_semi_ = from_semi_ + 1;
-			else to_semi_ = value;
-		}
-	}
+	private int to_semi = 11;
+
 
 	public enum MetroReadMethod { Sonar, Sequence };
 	public MetroReadMethod activeReadMethod = MetroReadMethod.Sequence;
@@ -299,5 +274,15 @@ public class MusicMetro : MonoBehaviour
 	{
 		taps.Add(Time.timeSinceLevelLoad);
 		lastInputTime = Time.time;
+	}
+	public void SetRangeFrom(Slider slider_)
+	{
+		from_semi = (int)slider_.value;
+		slider_.transform.GetChild(slider_.transform.childCount - 1).GetComponentInChildren<Text>().text = slider_.value.ToString();
+	}
+	public void SetRangeTo(Slider slider_)
+	{
+		to_semi = (int)slider_.value;
+		slider_.transform.GetChild(slider_.transform.childCount - 1).GetComponentInChildren<Text>().text = slider_.value.ToString();
 	}
 }
