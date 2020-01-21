@@ -116,7 +116,6 @@
 															<AudioFile>ui_wheel_change_tone_05.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Android" ID="103246604"/>
-																<File Platform="Mac" ID="530158327"/>
 																<File Platform="Windows" ID="530158327"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -140,7 +139,6 @@
 															<AudioFile>ui_wheel_change_tone_04.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Android" ID="104370690"/>
-																<File Platform="Mac" ID="198424254"/>
 																<File Platform="Windows" ID="198424254"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -164,7 +162,6 @@
 															<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Android" ID="120218215"/>
-																<File Platform="Mac" ID="866382955"/>
 																<File Platform="Windows" ID="866382955"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -188,7 +185,6 @@
 															<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Android" ID="329064743"/>
-																<File Platform="Mac" ID="142011321"/>
 																<File Platform="Windows" ID="142011321"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -211,7 +207,6 @@
 															<Language>SFX</Language>
 															<AudioFile>ui_wheel_change_tone_02.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File Platform="Mac" ID="66536949"/>
 																<File Platform="Windows" ID="66536949"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -312,7 +307,6 @@
 															<AudioFile>ui_wheel_change_tone_05.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Android" ID="103246604"/>
-																<File Platform="Mac" ID="530158327"/>
 																<File Platform="Windows" ID="530158327"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -335,7 +329,6 @@
 															<Language>SFX</Language>
 															<AudioFile>ui_wheel_change_tone_04.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File Platform="Mac" ID="198424254"/>
 																<File Platform="Windows" ID="198424254"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -359,7 +352,6 @@
 															<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Android" ID="120218215"/>
-																<File Platform="Mac" ID="866382955"/>
 																<File Platform="Windows" ID="866382955"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -383,7 +375,6 @@
 															<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Android" ID="329064743"/>
-																<File Platform="Mac" ID="142011321"/>
 																<File Platform="Windows" ID="142011321"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -407,7 +398,6 @@
 															<AudioFile>ui_wheel_change_tone_02.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Android" ID="482077558"/>
-																<File Platform="Mac" ID="66536949"/>
 																<File Platform="Windows" ID="66536949"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -513,7 +503,6 @@
 															<AudioFile>ui_wheel_change_tone_05.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Android" ID="103246604"/>
-																<File Platform="Mac" ID="530158327"/>
 																<File Platform="Windows" ID="530158327"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -537,7 +526,6 @@
 															<AudioFile>ui_wheel_change_tone_04.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Android" ID="104370690"/>
-																<File Platform="Mac" ID="198424254"/>
 																<File Platform="Windows" ID="198424254"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -561,7 +549,6 @@
 															<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Android" ID="120218215"/>
-																<File Platform="Mac" ID="866382955"/>
 																<File Platform="Windows" ID="866382955"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -584,7 +571,6 @@
 															<Language>SFX</Language>
 															<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File Platform="Mac" ID="142011321"/>
 																<File Platform="Windows" ID="142011321"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -608,7 +594,6 @@
 															<AudioFile>ui_wheel_change_tone_02.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Android" ID="482077558"/>
-																<File Platform="Mac" ID="66536949"/>
 																<File Platform="Windows" ID="66536949"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -699,7 +684,6 @@
 															<AudioFile>ui_wheel_change_tone_05.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Android" ID="103246604"/>
-																<File Platform="Mac" ID="530158327"/>
 																<File Platform="Windows" ID="530158327"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -723,7 +707,6 @@
 															<AudioFile>ui_wheel_change_tone_04.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Android" ID="104370690"/>
-																<File Platform="Mac" ID="198424254"/>
 																<File Platform="Windows" ID="198424254"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -747,7 +730,6 @@
 															<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Android" ID="120218215"/>
-																<File Platform="Mac" ID="866382955"/>
 																<File Platform="Windows" ID="866382955"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -771,7 +753,6 @@
 															<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Android" ID="329064743"/>
-																<File Platform="Mac" ID="142011321"/>
 																<File Platform="Windows" ID="142011321"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
@@ -795,7 +776,6 @@
 															<AudioFile>ui_wheel_change_tone_02.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File Platform="Android" ID="482077558"/>
-																<File Platform="Mac" ID="66536949"/>
 																<File Platform="Windows" ID="66536949"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>

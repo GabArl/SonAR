@@ -1787,7 +1787,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-001.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="540684704"/>
 												<File Platform="Windows" ID="540684704"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1795,7 +1794,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-002.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="859379753"/>
 												<File Platform="Windows" ID="859379753"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1803,7 +1801,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-003.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="807987821"/>
 												<File Platform="Windows" ID="807987821"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1818,7 +1815,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-006.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="1000903146"/>
 												<File Platform="Windows" ID="1000903146"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1826,7 +1822,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-007.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="912162692"/>
 												<File Platform="Windows" ID="912162692"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1842,7 +1837,6 @@
 											<AudioFile>Yellow-012.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="24352547"/>
-												<File Platform="Mac" ID="160644576"/>
 												<File Platform="Windows" ID="160644576"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1850,7 +1844,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-013.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="810260596"/>
 												<File Platform="Windows" ID="810260596"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1858,7 +1851,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-011.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="546720858"/>
 												<File Platform="Windows" ID="546720858"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1873,7 +1865,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-010.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="1033185445"/>
 												<File Platform="Windows" ID="1033185445"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1881,7 +1872,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-008.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="325597598"/>
 												<File Platform="Windows" ID="325597598"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1896,7 +1886,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-014.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="449713039"/>
 												<File Platform="Windows" ID="449713039"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1904,7 +1893,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-017.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="1009163399"/>
 												<File Platform="Windows" ID="1009163399"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1912,7 +1900,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-018.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="311466335"/>
 												<File Platform="Windows" ID="311466335"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1934,7 +1921,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-031.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="826674612"/>
 												<File Platform="Windows" ID="826674612"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1942,7 +1928,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-028.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="532026053"/>
 												<File Platform="Windows" ID="532026053"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1950,7 +1935,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-027.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="853421394"/>
 												<File Platform="Windows" ID="853421394"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1966,7 +1950,6 @@
 											<AudioFile>Yellow-025.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="88537610"/>
-												<File Platform="Mac" ID="776022803"/>
 												<File Platform="Windows" ID="776022803"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1974,7 +1957,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-024.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="559492833"/>
 												<File Platform="Windows" ID="559492833"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1983,7 +1965,6 @@
 											<AudioFile>Yellow-029.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="318377238"/>
-												<File Platform="Mac" ID="957714618"/>
 												<File Platform="Windows" ID="957714618"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -1992,7 +1973,6 @@
 											<AudioFile>Yellow-023.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="286845062"/>
-												<File Platform="Mac" ID="552835106"/>
 												<File Platform="Windows" ID="552835106"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -2001,7 +1981,6 @@
 											<AudioFile>Yellow-034.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="121152840"/>
-												<File Platform="Mac" ID="370978417"/>
 												<File Platform="Windows" ID="370978417"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -2017,7 +1996,6 @@
 											<AudioFile>Yellow-033.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="165700614"/>
-												<File Platform="Mac" ID="516176198"/>
 												<File Platform="Windows" ID="516176198"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -2032,7 +2010,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-032.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="988593097"/>
 												<File Platform="Windows" ID="988593097"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -2040,7 +2017,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-035.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="36682477"/>
 												<File Platform="Windows" ID="36682477"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -2048,7 +2024,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-021.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="296199675"/>
 												<File Platform="Windows" ID="296199675"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -2057,7 +2032,6 @@
 											<AudioFile>Yellow-022.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="584904361"/>
-												<File Platform="Mac" ID="598932020"/>
 												<File Platform="Windows" ID="598932020"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -2066,7 +2040,6 @@
 											<AudioFile>Yellow-019.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="116949885"/>
-												<File Platform="Mac" ID="818757347"/>
 												<File Platform="Windows" ID="818757347"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -2075,7 +2048,6 @@
 											<AudioFile>Yellow-020.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="304061820"/>
-												<File Platform="Mac" ID="992125726"/>
 												<File Platform="Windows" ID="992125726"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -2084,7 +2056,6 @@
 											<AudioFile>Yellow-038.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="96236950"/>
-												<File Platform="Mac" ID="675832831"/>
 												<File Platform="Windows" ID="675832831"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -2093,7 +2064,6 @@
 											<AudioFile>Yellow-042.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="238569719"/>
-												<File Platform="Mac" ID="835314459"/>
 												<File Platform="Windows" ID="835314459"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -2102,7 +2072,6 @@
 											<AudioFile>Yellow-043.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="699044511"/>
-												<File Platform="Mac" ID="895341446"/>
 												<File Platform="Windows" ID="895341446"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -2111,7 +2080,6 @@
 											<AudioFile>Yellow-044.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="491338756"/>
-												<File Platform="Mac" ID="797582111"/>
 												<File Platform="Windows" ID="797582111"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -2120,7 +2088,6 @@
 											<AudioFile>Yellow-045.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="236698172"/>
-												<File Platform="Mac" ID="448894659"/>
 												<File Platform="Windows" ID="448894659"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -2128,7 +2095,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-046.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="1048434815"/>
 												<File Platform="Windows" ID="1048434815"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -2137,7 +2103,6 @@
 											<AudioFile>Yellow-041.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="173509154"/>
-												<File Platform="Mac" ID="965751396"/>
 												<File Platform="Windows" ID="965751396"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -2145,7 +2110,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-048.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="364527085"/>
 												<File Platform="Windows" ID="364527085"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -2181,7 +2145,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-050.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="324271879"/>
 												<File Platform="Windows" ID="324271879"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3139,7 +3102,6 @@
 											<AudioFile>Yellow-001.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="267996665"/>
-												<File Platform="Mac" ID="540684704"/>
 												<File Platform="Windows" ID="540684704"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3148,7 +3110,6 @@
 											<AudioFile>Yellow-002.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="217301"/>
-												<File Platform="Mac" ID="859379753"/>
 												<File Platform="Windows" ID="859379753"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3157,7 +3118,6 @@
 											<AudioFile>Yellow-003.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="79861451"/>
-												<File Platform="Mac" ID="807987821"/>
 												<File Platform="Windows" ID="807987821"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3173,7 +3133,6 @@
 											<AudioFile>Yellow-006.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="758342912"/>
-												<File Platform="Mac" ID="1000903146"/>
 												<File Platform="Windows" ID="1000903146"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3182,7 +3141,6 @@
 											<AudioFile>Yellow-007.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="686739217"/>
-												<File Platform="Mac" ID="912162692"/>
 												<File Platform="Windows" ID="912162692"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3197,7 +3155,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-012.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="160644576"/>
 												<File Platform="Windows" ID="160644576"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3206,7 +3163,6 @@
 											<AudioFile>Yellow-013.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="373948526"/>
-												<File Platform="Mac" ID="810260596"/>
 												<File Platform="Windows" ID="810260596"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3215,7 +3171,6 @@
 											<AudioFile>Yellow-011.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="110147936"/>
-												<File Platform="Mac" ID="546720858"/>
 												<File Platform="Windows" ID="546720858"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3231,7 +3186,6 @@
 											<AudioFile>Yellow-010.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="148850036"/>
-												<File Platform="Mac" ID="1033185445"/>
 												<File Platform="Windows" ID="1033185445"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3240,7 +3194,6 @@
 											<AudioFile>Yellow-008.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="157357336"/>
-												<File Platform="Mac" ID="325597598"/>
 												<File Platform="Windows" ID="325597598"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3256,7 +3209,6 @@
 											<AudioFile>Yellow-014.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="241788121"/>
-												<File Platform="Mac" ID="449713039"/>
 												<File Platform="Windows" ID="449713039"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3265,7 +3217,6 @@
 											<AudioFile>Yellow-017.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="765405247"/>
-												<File Platform="Mac" ID="1009163399"/>
 												<File Platform="Windows" ID="1009163399"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3274,7 +3225,6 @@
 											<AudioFile>Yellow-018.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="114562925"/>
-												<File Platform="Mac" ID="311466335"/>
 												<File Platform="Windows" ID="311466335"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3297,7 +3247,6 @@
 											<AudioFile>Yellow-031.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="37196961"/>
-												<File Platform="Mac" ID="826674612"/>
 												<File Platform="Windows" ID="826674612"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3306,7 +3255,6 @@
 											<AudioFile>Yellow-028.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="97389117"/>
-												<File Platform="Mac" ID="532026053"/>
 												<File Platform="Windows" ID="532026053"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3315,7 +3263,6 @@
 											<AudioFile>Yellow-027.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="277921382"/>
-												<File Platform="Mac" ID="853421394"/>
 												<File Platform="Windows" ID="853421394"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3330,7 +3277,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-025.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="776022803"/>
 												<File Platform="Windows" ID="776022803"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3339,7 +3285,6 @@
 											<AudioFile>Yellow-024.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="195622476"/>
-												<File Platform="Mac" ID="559492833"/>
 												<File Platform="Windows" ID="559492833"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3347,7 +3292,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-029.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="957714618"/>
 												<File Platform="Windows" ID="957714618"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3355,7 +3299,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-023.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="552835106"/>
 												<File Platform="Windows" ID="552835106"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3363,7 +3306,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-034.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="370978417"/>
 												<File Platform="Windows" ID="370978417"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3378,7 +3320,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-033.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="516176198"/>
 												<File Platform="Windows" ID="516176198"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3394,7 +3335,6 @@
 											<AudioFile>Yellow-032.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="414665444"/>
-												<File Platform="Mac" ID="988593097"/>
 												<File Platform="Windows" ID="988593097"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3403,7 +3343,6 @@
 											<AudioFile>Yellow-035.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="32185332"/>
-												<File Platform="Mac" ID="36682477"/>
 												<File Platform="Windows" ID="36682477"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3412,7 +3351,6 @@
 											<AudioFile>Yellow-021.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="276367894"/>
-												<File Platform="Mac" ID="296199675"/>
 												<File Platform="Windows" ID="296199675"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3420,7 +3358,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-022.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="598932020"/>
 												<File Platform="Windows" ID="598932020"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3428,7 +3365,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-019.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="818757347"/>
 												<File Platform="Windows" ID="818757347"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3436,7 +3372,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-020.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="992125726"/>
 												<File Platform="Windows" ID="992125726"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3444,7 +3379,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-038.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="675832831"/>
 												<File Platform="Windows" ID="675832831"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3452,7 +3386,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-042.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="835314459"/>
 												<File Platform="Windows" ID="835314459"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3460,7 +3393,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-043.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="895341446"/>
 												<File Platform="Windows" ID="895341446"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3468,7 +3400,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-044.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="797582111"/>
 												<File Platform="Windows" ID="797582111"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3476,7 +3407,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-045.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="448894659"/>
 												<File Platform="Windows" ID="448894659"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3485,7 +3415,6 @@
 											<AudioFile>Yellow-046.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="508613199"/>
-												<File Platform="Mac" ID="1048434815"/>
 												<File Platform="Windows" ID="1048434815"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3493,7 +3422,6 @@
 											<Language>SFX</Language>
 											<AudioFile>Yellow-041.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Mac" ID="965751396"/>
 												<File Platform="Windows" ID="965751396"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3502,7 +3430,6 @@
 											<AudioFile>Yellow-048.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="135974771"/>
-												<File Platform="Mac" ID="364527085"/>
 												<File Platform="Windows" ID="364527085"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
@@ -3539,7 +3466,6 @@
 											<AudioFile>Yellow-050.wav</AudioFile>
 											<ConvertedFileIDList>
 												<File Platform="Android" ID="35738441"/>
-												<File Platform="Mac" ID="324271879"/>
 												<File Platform="Windows" ID="324271879"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>

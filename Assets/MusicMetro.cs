@@ -17,8 +17,10 @@ public class MusicMetro : MonoBehaviour
 	public float lastInputTime;
 	private List<float> taps = new List<float>();
 	public AK.Wwise.Event tickEvent, stepEvent_start, stepEvent_stop, semitoneEvent;
-	public AK.Wwise.RTPC rtpc_step, rtpc_semitone;
-	public AK.Wwise.Switch tickDesign;
+	public AK.Wwise.RTPC rtpc_step, rtpc_semitone, rtpc_speedFactor;
+
+	[Range(1f, 2f)]
+	public float speedFactor = 1f;
 
 	private int max_tick_count = 4, max_semi_count = 12, max_chord_count = 4;
 	private float diameter;
@@ -242,8 +244,8 @@ public class MusicMetro : MonoBehaviour
 
 		if (sequencer[current_semitone, current_tick] == true)
 		{
-			AkSoundEngine.SetSwitch(tickDesign.GroupId, tickDesign.Id, metro_object.gameObject);
 			AkSoundEngine.SetRTPCValue(rtpc_step.Id, current_tick, metro_object.gameObject);
+			AkSoundEngine.SetRTPCValue(rtpc_speedFactor.Id, speedFactor, metro_object.gameObject);
 			AkSoundEngine.PostEvent(tickEvent.Id, metro_object.gameObject);
 		}
 	}
@@ -284,5 +286,62 @@ public class MusicMetro : MonoBehaviour
 	{
 		to_semi = (int)slider_.value;
 		slider_.transform.GetChild(slider_.transform.childCount - 1).GetComponentInChildren<Text>().text = slider_.value.ToString();
+	}
+	public void SetTickMode(Dropdown dropdown_)
+	{
+		switch (dropdown_.value)
+		{
+			case 0: // Pitch
+				AkSoundEngine.SetSwitch("tick_mode", "pitch", metro_object.gameObject);
+				break;
+			case 1: // Repeat
+				AkSoundEngine.SetSwitch("tick_mode", "repeat", metro_object.gameObject);
+				break;
+			case 2: // Binary
+				AkSoundEngine.SetSwitch("tick_mode", "binary", metro_object.gameObject);
+				break;
+		}
+	}
+	public void SetTickDesign(Dropdown dropdown_)
+	{
+		switch (dropdown_.value)
+		{
+			case 0:
+				AkSoundEngine.SetSwitch("tick_design", "one", metro_object.gameObject);
+				break;
+			case 1:
+				AkSoundEngine.SetSwitch("tick_design", "two", metro_object.gameObject);
+				break;
+		}
+	}
+	public void SetReadMode(Dropdown dropdown_)
+	{
+		switch (dropdown_.value)
+		{
+			case 0:
+				activeReadMethod = MetroReadMethod.Sequence;
+				break;
+			case 1:
+				activeReadMethod = MetroReadMethod.Sonar;
+				break;
+		}
+	}
+	public void ToggleDirectionCycle()
+	{
+		if (activeDirectionCycle == (int)MetroDirectionCycle.Clockwise)
+			activeDirectionCycle = (int)MetroDirectionCycle.CounterClockwise;
+		else activeDirectionCycle = (int)MetroDirectionCycle.Clockwise;
+	}
+	public void ToggleDirectionChord()
+	{
+		if (activeDirectionChord == (int)MetroDirectionChord.Inwards)
+			activeDirectionChord = (int)MetroDirectionChord.Outwards;
+		else activeDirectionChord = (int)MetroDirectionChord.Inwards;
+	}
+	public void ToggleDirectionSequencer()
+	{
+		if (activeDirectionSequence == (int)MetroDirectionSequence.Inwards)
+			activeDirectionSequence = (int)MetroDirectionSequence.Outwards;
+		else activeDirectionSequence = (int)MetroDirectionSequence.Inwards;
 	}
 }

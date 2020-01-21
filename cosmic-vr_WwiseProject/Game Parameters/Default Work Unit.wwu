@@ -20,6 +20,13 @@
 				<GameParameter Name="rtpc_vel_x" ID="{1E5D1C3F-C917-4889-B460-C0C09E86F2D3}"/>
 				<GameParameter Name="rtpc_vel_y" ID="{FFAE3D87-850E-47B6-A7A2-D543F6C5F497}"/>
 				<GameParameter Name="rtpc_vel_z" ID="{6C86A085-07A4-4944-B0D4-6A313D6D36A5}"/>
+				<GameParameter Name="rtpc_tick_repeat_triggerrate" ID="{27E380B0-7D35-4696-B08D-10B1DCABF3E2}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="2"/>
+						<Property Name="Min" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

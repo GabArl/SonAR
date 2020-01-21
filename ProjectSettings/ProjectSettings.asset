@@ -252,7 +252,7 @@ PlayerSettings:
   clonedFromGUID: 5e732017669dfdd47bef175829bc547e
   templatePackageId: com.unity.template.lightweightvr@2.8.0
   templateDefaultScene: Assets/Scenes/SampleScene.unity
-  AndroidTargetArchitectures: 5
+  AndroidTargetArchitectures: 7
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
   AndroidKeystoreName: 

@@ -33,11 +33,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="rtpc_pos_y" ID="{24BF0423-CA17-424E-9C56-47AC6BC90034}"/>
-							<Value>1</Value>
+							<Value>0.87</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Length_To_Origin" ID="{4300FDDA-0336-4313-B1BA-2B985B738737}"/>
-							<Value>0</Value>
+							<Value>0.46</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Minutes" ID="{2A49E384-D88C-4489-9D1C-2871FBB8D18C}"/>
@@ -48,8 +48,12 @@
 							<Value>11</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="rtpc_tick_repeat_triggerrate" ID="{27E380B0-7D35-4696-B08D-10B1DCABF3E2}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="tick_digit" ID="{4B58EF5A-766F-4706-A940-0FACEF7C62EA}"/>
-							<Value>3</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="rtpc_vel_y" ID="{FFAE3D87-850E-47B6-A7A2-D543F6C5F497}"/>
@@ -69,7 +73,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Length_To_Last" ID="{FD1724F1-184A-4B26-AC6A-0E5E52E582F2}"/>
-							<Value>0</Value>
+							<Value>0.92</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="rtpc_pos_x" ID="{DFB87519-B8F3-4B98-852B-DB569EC62836}"/>
@@ -81,11 +85,12 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Chord_Length" ID="{E6C253D0-DF47-4F54-A03E-E281C69A79CC}"/>
-							<Value>0.69</Value>
+							<Value>0.66</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="repeat" ID="{5B4461DA-6001-405B-B339-52DA0C5EA9E8}"/>
 						<CurrentSwitchRef Name="one" ID="{2E98E92D-E322-4435-A2D3-243F06EA24E3}"/>
 						<CurrentSwitchRef Name="_01" ID="{9ED5E74E-2ECE-40FE-BE83-51F92CE9E808}"/>
 					</CurrentSwitchList>

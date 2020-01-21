@@ -136,6 +136,54 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
+				<SwitchGroup Name="tick_mode" ID="{A482D931-49E4-437B-AB2E-98B10CB3CA4E}">
+					<ChildrenList>
+						<Switch Name="binary" ID="{CA3E0A23-8005-47F4-9DC9-C1025969AAFE}"/>
+						<Switch Name="repeat" ID="{5B4461DA-6001-405B-B339-52DA0C5EA9E8}"/>
+						<Switch Name="pitch" ID="{DFFA25F1-6DEC-468C-B64A-F63F647D79B9}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="tick_digit" ID="{74325062-9D41-4833-AFCC-78F3DF6CA1C0}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="_0" ID="{670A6D6A-CAA8-4502-B327-4D0C233933A2}"/>
+						<Switch Name="_1" ID="{C9C46FD4-C8D9-4ACB-A2F3-EF33BDDB5B7B}"/>
+						<Switch Name="_2" ID="{A5D8D4F5-E368-4218-85F1-65CEFFD00148}"/>
+						<Switch Name="_3" ID="{691681C8-366B-4154-9C20-2D8F41DB3C02}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="tick_digit" ID="{4B58EF5A-766F-4706-A940-0FACEF7C62EA}"/>
+						<Curve Name="" ID="{CE8023F7-0119-4A48-9F9B-F9A7BD54022D}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3</XPos>
+									<YPos>4</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

@@ -13,8 +13,6 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID ATOMCOLLISION = 1513267954U;
-        static const AkUniqueID ATOMLOOP = 1151473028U;
         static const AkUniqueID PLAY_CHORD_FULL = 2576020748U;
         static const AkUniqueID PLAY_CHORD_LOOP = 2096876433U;
         static const AkUniqueID PLAY_HOUR = 2905912508U;
@@ -66,6 +64,31 @@ namespace AK
                 static const AkUniqueID TWO = 678209053U;
             } // namespace SWITCH
         } // namespace TICK_DESIGN
+
+        namespace TICK_DIGIT
+        {
+            static const AkUniqueID GROUP = 365065828U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID _0 = 846646256U;
+                static const AkUniqueID _1 = 846646257U;
+                static const AkUniqueID _2 = 846646258U;
+                static const AkUniqueID _3 = 846646259U;
+            } // namespace SWITCH
+        } // namespace TICK_DIGIT
+
+        namespace TICK_MODE
+        {
+            static const AkUniqueID GROUP = 1124709220U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BINARY = 3227068230U;
+                static const AkUniqueID PITCH = 1908158473U;
+                static const AkUniqueID REPEAT = 2639924424U;
+            } // namespace SWITCH
+        } // namespace TICK_MODE
 
         namespace TRACK_NUMBER
         {
@@ -139,6 +162,7 @@ namespace AK
         static const AkUniqueID RTPC_POS_X = 3414181498U;
         static const AkUniqueID RTPC_POS_Y = 3414181499U;
         static const AkUniqueID RTPC_POS_Z = 3414181496U;
+        static const AkUniqueID RTPC_TICK_REPEAT_TRIGGERRATE = 3441649109U;
         static const AkUniqueID RTPC_VEL_X = 4196732797U;
         static const AkUniqueID RTPC_VEL_Y = 4196732796U;
         static const AkUniqueID RTPC_VEL_Z = 4196732799U;
@@ -151,7 +175,6 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID NEW = 444308101U;
-        static const AkUniqueID SOUNDBANK = 1661994096U;
     } // namespace BANKS
 
     namespace BUSSES

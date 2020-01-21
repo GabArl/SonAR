@@ -3,34 +3,12 @@
 	<Events>
 		<WorkUnit Name="New" ID="{BAEEE755-E002-4A41-879A-82F892F27082}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="AtomCollision" ID="{3F739AFF-9429-4D5F-8826-BEB2B563CF61}">
-					<ChildrenList>
-						<Action Name="" ID="{62C8AF7C-2CC6-46C9-8CDE-AA79C18C0E3D}" ShortID="852217107">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="atom_collision" ID="{C54D81C8-AE50-42EA-8E19-2BEDBF0D38BE}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="AtomLoop" ID="{55A443F6-427B-49A5-A8A3-BD25B6A2D187}">
-					<ChildrenList>
-						<Action Name="" ID="{1C0818C5-0967-467F-BD13-45ED94ED17F8}" ShortID="807990512">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="atom_loop" ID="{8C6219AC-7F12-42FD-9325-9F9A5D147436}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Plugin" ID="{ED0AAAB9-B77B-43D8-9790-E5942B6714DB}">
 					<ChildrenList>
 						<Action Name="" ID="{4DA13432-511A-473E-959E-9D4CE1F56BDC}" ShortID="554153925">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="New Blend Container" ID="{AD02F7EA-B019-4ACC-810C-6F06D0BF543A}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
+									<ObjectRef Name="hvfm_test" ID="{AD02F7EA-B019-4ACC-810C-6F06D0BF543A}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

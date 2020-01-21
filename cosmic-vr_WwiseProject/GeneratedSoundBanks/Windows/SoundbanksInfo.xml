@@ -16,8 +16,6 @@
 			<ShortName>New</ShortName>
 			<Path>New.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1513267954" Name="AtomCollision" ObjectPath="\Events\New\AtomCollision" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.553000" DurationMax="0.560958"/>
-				<Event Id="1151473028" Name="AtomLoop" ObjectPath="\Events\New\AtomLoop" MaxAttenuation="1.000000" DurationType="Infinite"/>
 				<Event Id="2576020748" Name="Play_Chord_Full" ObjectPath="\Events\Geometry\Play_Chord_Full" MaxAttenuation="10.000000" DurationType="Infinite"/>
 				<Event Id="2096876433" Name="Play_Chord_Loop" ObjectPath="\Events\Geometry\Play_Chord_Loop" DurationType="Unknown"/>
 				<Event Id="2905912508" Name="Play_Hour" ObjectPath="\Events\Clock\Play_Hour" MaxAttenuation="5.000000" DurationType="Infinite"/>
@@ -26,7 +24,7 @@
 				<Event Id="2429363254" Name="Play_Minute" ObjectPath="\Events\Clock\Play_Minute" MaxAttenuation="5.000000" DurationType="OneShot" DurationMin="1.763101" DurationMax="1.763101"/>
 				<Event Id="3319890774" Name="Play_Second" ObjectPath="\Events\Clock\Play_Second" MaxAttenuation="5.000000" DurationType="OneShot" DurationMin="0.560958" DurationMax="0.560958"/>
 				<Event Id="533559632" Name="Play_Semitone" ObjectPath="\Events\Geometry\Play_Semitone" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.277417" DurationMax="0.277417"/>
-				<Event Id="3592141553" Name="Play_Tick" ObjectPath="\Events\Geometry\Play_Tick" DurationType="OneShot" DurationMin="0.179759" DurationMax="0.373883"/>
+				<Event Id="3592141553" Name="Play_Tick" ObjectPath="\Events\Geometry\Play_Tick" DurationType="OneShot" DurationMin="0.114502" DurationMax="0.373883"/>
 				<Event Id="4028792483" Name="Play_Tone_Idle" ObjectPath="\Events\Geometry\Play_Tone_Idle" MaxAttenuation="1.000000" DurationType="Infinite"/>
 				<Event Id="3784159884" Name="Plugin" ObjectPath="\Events\New\Plugin" DurationType="Unknown"/>
 				<Event Id="3393091015" Name="Stop_Chord_Loop" ObjectPath="\Events\Geometry\Stop_Chord_Loop" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.277417" DurationMax="0.277417"/>
@@ -67,10 +65,6 @@
 					<ShortName>ui_wheel_change_tone_03.wav</ShortName>
 					<Path>SFX\ui_wheel_change_tone_03_A30074E9.wem</Path>
 				</File>
-				<File Id="198424254" Language="SFX">
-					<ShortName>ui_wheel_change_tone_04.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_04_10C4C929.wem</Path>
-				</File>
 				<File Id="274396582" Language="SFX">
 					<ShortName>ui_wheel_change_tone_03.wav</ShortName>
 					<Path>SFX\ui_wheel_change_tone_03_818F6E6F.wem</Path>
@@ -78,10 +72,6 @@
 				<File Id="422270334" Language="SFX">
 					<ShortName>sfx_player_circle_loop_01.wav</ShortName>
 					<Path>SFX\sfx_player_circle_loop_01_C5579977.wem</Path>
-				</File>
-				<File Id="530158327" Language="SFX">
-					<ShortName>ui_wheel_change_tone_05.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_05_10C4C929.wem</Path>
 				</File>
 				<File Id="725415192" Language="SFX">
 					<ShortName>Record.wav</ShortName>
@@ -97,42 +87,6 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\SoundBank</ObjectPath>
-			<ShortName>SoundBank</ShortName>
-			<Path>SoundBank.bnk</Path>
-			<IncludedEvents>
-				<Event Id="1513267954" Name="AtomCollision" ObjectPath="\Events\New\AtomCollision" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.553000" DurationMax="0.560958"/>
-				<Event Id="1151473028" Name="AtomLoop" ObjectPath="\Events\New\AtomLoop" MaxAttenuation="1.000000" DurationType="Infinite"/>
-				<Event Id="3784159884" Name="Plugin" ObjectPath="\Events\New\Plugin" DurationType="Unknown"/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="66536949" Language="SFX">
-					<ShortName>ui_wheel_change_tone_02.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_02_10C4C929.wem</Path>
-				</File>
-				<File Id="142011321" Language="SFX">
-					<ShortName>ui_wheel_change_tone_01.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_01_10C4C929.wem</Path>
-				</File>
-				<File Id="198424254" Language="SFX">
-					<ShortName>ui_wheel_change_tone_04.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_04_10C4C929.wem</Path>
-				</File>
-				<File Id="530158327" Language="SFX">
-					<ShortName>ui_wheel_change_tone_05.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_05_10C4C929.wem</Path>
-				</File>
-				<File Id="725415192" Language="SFX">
-					<ShortName>Record.wav</ShortName>
-					<Path>SFX\Record_D79FB2B7.wem</Path>
-				</File>
-				<File Id="866382955" Language="SFX">
-					<ShortName>ui_wheel_change_tone_03.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_03_10C4C929.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

@@ -1,53 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1B115F0D-3F98-4CFF-874B-CC4E07D7E8BC}" SchemaVersion="94">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{1B115F0D-3F98-4CFF-874B-CC4E07D7E8BC}" PersistMode="Standalone">
-			<ChildrenList>
-				<Event Name="Red" ID="{A89F4478-B685-4B5E-ADEA-A6CBCD0EE372}">
-					<ChildrenList>
-						<Action Name="" ID="{B54D4CA8-73E8-4D69-93DB-74DFF7DDAB8A}" ShortID="714610180">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Red" ID="{BFEBED85-BCBE-4BF3-AAE4-DBE7F6758071}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Blue" ID="{E3481979-8E00-46E5-B89E-E80786D350EB}">
-					<ChildrenList>
-						<Action Name="" ID="{CFDC8EE8-F754-41CE-BFBF-22E8B8A60F01}" ShortID="33932420">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Blue" ID="{8415D7E8-AB5D-4BFA-B53A-C71B1E7CB656}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Yellow" ID="{C5D95DA6-D063-4934-A011-3E67149A5320}">
-					<ChildrenList>
-						<Action Name="" ID="{4F01D901-3103-403A-B344-25DC14780118}" ShortID="1025261874">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Yellow" ID="{6BACECE0-398E-4526-A770-A2F964838405}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Violet" ID="{26521969-0382-4727-8672-804358DB277F}">
-					<ChildrenList>
-						<Action Name="" ID="{7EA7D80E-8B66-49AF-9A9D-02CAE5F4E91A}" ShortID="131144427">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Violet" ID="{759F1EF5-23C9-45D3-8603-2EB8C6108189}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{1B115F0D-3F98-4CFF-874B-CC4E07D7E8BC}" PersistMode="Standalone"/>
 	</Events>
 </WwiseDocument>
