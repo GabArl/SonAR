@@ -32,6 +32,18 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace CHORD_DESIGN
+        {
+            static const AkUniqueID GROUP = 4082000090U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ONE = 1064933119U;
+                static const AkUniqueID THREE = 912956111U;
+                static const AkUniqueID TWO = 678209053U;
+            } // namespace SWITCH
+        } // namespace CHORD_DESIGN
+
         namespace TICK_BINARY_ONE
         {
             static const AkUniqueID GROUP = 1312546987U;
@@ -121,6 +133,7 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID SPACE = 4164838345U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

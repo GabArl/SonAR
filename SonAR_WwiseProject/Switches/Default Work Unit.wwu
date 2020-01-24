@@ -130,6 +130,13 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
+				<SwitchGroup Name="chord_design" ID="{CC8FAF52-6B3D-45EC-9A20-BDB399A12373}">
+					<ChildrenList>
+						<Switch Name="one" ID="{470623AB-4150-4308-BB77-F5844CFD9CC8}"/>
+						<Switch Name="two" ID="{F666523E-61F3-4D33-A96F-FF7E9EA8ED18}"/>
+						<Switch Name="three" ID="{E60E410C-6C21-41BE-9EB0-AAF304A8C278}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

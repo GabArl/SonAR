@@ -5,9 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="sb_SonAR" ID="{9445EAA0-ABAE-4991-9EEC-63915AAE7DEA}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Geometry" ID="{3D57C6F3-AC95-43D8-8CA9-021B9E11C8A9}" WorkUnitID="{3D57C6F3-AC95-43D8-8CA9-021B9E11C8A9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Clock" ID="{28DF720A-4B80-4740-A45B-24D7B19275AE}" WorkUnitID="{28DF720A-4B80-4740-A45B-24D7B19275AE}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="New" ID="{BAEEE755-E002-4A41-879A-82F892F27082}" WorkUnitID="{BAEEE755-E002-4A41-879A-82F892F27082}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Default Work Unit" ID="{1B115F0D-3F98-4CFF-874B-CC4E07D7E8BC}" WorkUnitID="{1B115F0D-3F98-4CFF-874B-CC4E07D7E8BC}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

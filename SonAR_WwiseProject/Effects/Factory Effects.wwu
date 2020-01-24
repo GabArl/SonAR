@@ -1547,11 +1547,15 @@
 								</Effect>
 								<Effect Name="Deep" ID="{76753DA8-3DCF-4812-A726-2745812F6C1B}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
 									<PropertyList>
-										<Property Name="FeedBackLevel" Type="Real32" Value="0.75"/>
+										<Property Name="DelayTime" Type="Real32" Value="0.2"/>
+										<Property Name="DryLevel" Type="Real32" Value="0.78"/>
+										<Property Name="FeedBackLevel" Type="Real32" Value="0.5"/>
 										<Property Name="FeedForwardLevel" Type="Real32" Value="0.7"/>
-										<Property Name="ModDepth" Type="Real32" Value="100"/>
+										<Property Name="ModDepth" Type="Real32" Value="49.5"/>
 										<Property Name="ModFrequency" Type="Real32" Value="0.6"/>
 										<Property Name="ModPWM" Type="Real32" Value="0"/>
+										<Property Name="ModSmoothing" Type="Real32" Value="36"/>
+										<Property Name="WetDryMix" Type="Real32" Value="55"/>
 									</PropertyList>
 								</Effect>
 								<Effect Name="Treble" ID="{FB516F18-AA49-4B92-BC11-FA23E8CC59B4}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
@@ -1602,8 +1606,36 @@
 								<Property Name="DryLevel" Type="Real32" Value="0.3"/>
 								<Property Name="FeedBackLevel" Type="Real32" Value="0.9"/>
 								<Property Name="ModDepth" Type="Real32" Value="10"/>
-								<Property Name="ModFrequency" Type="Real32" Value="5.5"/>
+								<Property Name="ModFrequency" Type="Real32" Value="5.5">
+									<RTPCList>
+										<RTPC Name="" ID="{97E71257-53B6-4BCF-ACB2-5D53291D41EA}" ShortID="521661852">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Length_To_Origin" ID="{4300FDDA-0336-4313-B1BA-2B985B738737}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{647C5653-0655-4CDD-98F8-3F197F6DC7D8}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="5"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0.1</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>5</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="ModPWM" Type="Real32" Value="0"/>
+								<Property Name="WetDryMix" Type="Real32" Value="26"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Special_Effect_1" ID="{83317D8A-9D4C-438E-BE8C-BC7D27CAD1B0}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
@@ -1639,8 +1671,10 @@
 								<Effect Name="Many_Odd_Harm_Peaks" ID="{227BF0C2-EE7F-4962-AEFD-BE4C86E48398}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
 									<PropertyList>
 										<Property Name="DelayTime" Type="Real32" Value="2.5"/>
-										<Property Name="EnableLFO" Type="bool" Value="False"/>
-										<Property Name="FeedBackLevel" Type="Real32" Value="0.95"/>
+										<Property Name="FeedBackLevel" Type="Real32" Value="0.15"/>
+										<Property Name="FeedForwardLevel" Type="Real32" Value="0.4"/>
+										<Property Name="ModDepth" Type="Real32" Value="42.1"/>
+										<Property Name="WetDryMix" Type="Real32" Value="46"/>
 									</PropertyList>
 								</Effect>
 								<Effect Name="Few_Even_Notches" ID="{25DCAC4B-7165-436C-9B22-75628C2533D1}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
@@ -1711,11 +1745,12 @@
 						</Effect>
 						<Effect Name="Repeat_after_me" ID="{7A0568D0-BE8B-4233-B3E8-200344DB7AE0}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
 							<PropertyList>
-								<Property Name="Voice1FilterFrequency" Type="Real32" Value="3656"/>
+								<Property Name="DryLevel" Type="Real32" Value="-5"/>
+								<Property Name="Voice1FilterFrequency" Type="Real32" Value="2220"/>
 								<Property Name="Voice1FilterType" Type="int32" Value="4"/>
 								<Property Name="Voice1Pitch" Type="Real32" Value="400"/>
 								<Property Name="Voice2Enable" Type="bool" Value="True"/>
-								<Property Name="Voice2FilterFrequency" Type="Real32" Value="361"/>
+								<Property Name="Voice2FilterFrequency" Type="Real32" Value="203"/>
 								<Property Name="Voice2FilterType" Type="int32" Value="4"/>
 								<Property Name="Voice2Pitch" Type="Real32" Value="-1100"/>
 								<Property Name="WindowSize" Type="int32" Value="3840"/>
@@ -1869,6 +1904,7 @@
 						</Effect>
 						<Effect Name="Rhythmic_Talk" ID="{F0F27454-4BCC-4302-A61D-C324E7187DD0}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
+								<Property Name="ModDepth" Type="Real32" Value="50.5"/>
 								<Property Name="ModFrequency" Type="Real32" Value="15"/>
 								<Property Name="ModPWM" Type="Real32" Value="15"/>
 								<Property Name="ModPhaseOffset" Type="Real32" Value="-180"/>
@@ -1887,6 +1923,7 @@
 						</Effect>
 						<Effect Name="Boomerang" ID="{65397B72-19EC-43DB-B2D2-EB84437B6BDC}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
+								<Property Name="ModDepth" Type="Real32" Value="55.3"/>
 								<Property Name="ModFrequency" Type="Real32" Value="3"/>
 								<Property Name="ModPWM" Type="Real32" Value="0"/>
 								<Property Name="ModPhaseOffset" Type="Real32" Value="-180"/>

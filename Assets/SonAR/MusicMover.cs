@@ -8,11 +8,14 @@ using UnityEngine.UI;
 // redesign inner/first notes
 // fallback no arcore / no camera allowed
 // dont cast shadows
-// repair lines
 // fix ARCore
-// play chords when stepping
 // expose params and enable designs
 // expose speed
+// musical / mathematical chord read
+// make chord patch 2 better 
+// include spawn chord into designs
+// wtf is going on with the chord read
+
 
 public class MusicMover : MonoBehaviour
 {
@@ -37,6 +40,8 @@ public class MusicMover : MonoBehaviour
 	public int numberOfNotes = 4;
 	public float toneAngle = 30f;
 
+	private float inner_radius;
+
 	public GameObject keyboard;
 	public List<Button> key_buttons = new List<Button>();
 
@@ -44,8 +49,9 @@ public class MusicMover : MonoBehaviour
 	public AK.Wwise.RTPC rtpc_chordLength, rtpc_semitone;
 	public AK.Wwise.RTPC length_to_origin;
 	public AK.Wwise.RTPC length_to_last;
+	private string chord_design = "one";
 
-	private Vector3 origin, self, last;
+	private Vector3  self, last;
 
 	private float step_length;
 
@@ -91,6 +97,7 @@ public class MusicMover : MonoBehaviour
 		currentChord.tones = new List<Tone>();
 
 		step_length = ((endPoint.transform.localPosition.x - pushPoint.transform.localPosition.x) / (numberOfNotes - 1));
+
 		metro.SetParams(stepCountMax, step_length, pushPoint.transform.localPosition.x, toneAngle);
 
 		for (int i = 0; i < numberOfNotes; i++)
@@ -99,7 +106,9 @@ public class MusicMover : MonoBehaviour
 		}
 
 		transform.parent.transform.localRotation *= Quaternion.Euler(0f, -90f, 0f); // Gegenrotieren
-		origin = startPoint.transform.position;
+
+		inner_radius = Vector3.Distance(middlePoint.transform.position, startPoint.transform.position);
+		diameter = Vector3.Distance(middlePoint.transform.position, endPoint.transform.position);
 
 		foreach (Button keybutton in keyboard.GetComponentsInChildren<Button>())
 		{
@@ -203,22 +212,16 @@ public class MusicMover : MonoBehaviour
 				else
 					last = currentChord.tones[i - 1].obj.transform.position;
 
-				tempTone.line.SetPosition(0, origin);
+				tempTone.line.SetPosition(0, startPoint.transform.position);
 				tempTone.line.SetPosition(1, self);
 				tempTone.line.SetPosition(2, last);
 
-				tempTone.length_to_origin = Vector3.Distance(origin, self);
-				tempTone.length_to_last = Vector3.Distance(last, self);
+				tempTone.length_to_origin = Mathf.Lerp(0f, 1f, Mathf.InverseLerp(0f, inner_radius * 2, Vector3.Distance(startPoint.transform.position, self)));
+				tempTone.length_to_last = Mathf.Lerp(0f, 1f, Mathf.InverseLerp(0f, inner_radius * 2, Vector3.Distance(last, self)));
+				tempTone.length_to_last = 0; // This is very dependent from the input order, so it is very hard to receive auditory information from it.
 
-				AkSoundEngine.SetRTPCValue(
-					 length_to_origin.Id,
-					 Mathf.Lerp(0f, 1f, Mathf.InverseLerp(0f, diameter, tempTone.length_to_origin)),
-					 currentChord.tones[i].obj);
-
-				AkSoundEngine.SetRTPCValue(
-					 length_to_last.Id,
-					 Mathf.Lerp(0f, 1f, Mathf.InverseLerp(0f, diameter, tempTone.length_to_last)),
-					 currentChord.tones[i].obj);
+				AkSoundEngine.SetRTPCValue(length_to_origin.Id, tempTone.length_to_origin, currentChord.tones[i].obj);
+				AkSoundEngine.SetRTPCValue(length_to_last.Id, tempTone.length_to_last, currentChord.tones[i].obj);
 
 				currentChord.tones[i] = tempTone;
 			}
@@ -266,6 +269,11 @@ public class MusicMover : MonoBehaviour
 			copyTone.obj.GetComponent<MeshFilter>().mesh = mesh;
 			copyTone.obj.GetComponent<MeshRenderer>().material = materialObj;
 			copyTone.obj.transform.localScale = scale;
+			copyTone.length_to_origin = tone.length_to_origin;
+			copyTone.length_to_last = tone.length_to_last;
+			AkSoundEngine.SetRTPCValue(length_to_origin.Id, copyTone.length_to_origin, copyTone.obj);
+			AkSoundEngine.SetRTPCValue(length_to_last.Id, copyTone.length_to_last, copyTone.obj);
+
 			copyTone.line.enabled = false;
 			copyChord.tones.Add(copyTone);
 		}
@@ -329,6 +337,8 @@ public class MusicMover : MonoBehaviour
 
 		Tone tone = currentChord.tones[keys.Count];
 
+
+
 		tone.obj.SetActive(true);
 		tone.isMoving = true;
 		tone.semitone = keyNum;
@@ -348,6 +358,7 @@ public class MusicMover : MonoBehaviour
 		currentChord.tones[keys.Count] = tone;
 
 		AkSoundEngine.SetRTPCValue(rtpc_semitone.Id, currentChord.tones[keys.Count].semitone, currentChord.tones[keys.Count].obj);
+		AkSoundEngine.SetSwitch("chord_design", chord_design, currentChord.tones[keys.Count].obj);
 		AkSoundEngine.PostEvent(startEvent.Id, currentChord.tones[keys.Count].obj);
 
 		count_moving_tones++;
@@ -362,6 +373,35 @@ public class MusicMover : MonoBehaviour
 			chordFull = true;
 			foreach (Button button in key_buttons)
 				button.interactable = false;
+		}
+	}
+
+	public void PlayChord(int current_chord_, AK.Wwise.RTPC step_, AK.Wwise.Event step_event_) // This is not good code and needs rethinking.
+	{
+		if (chords.Count > current_chord_)
+		{
+			foreach (Tone tone in chords[current_chord_].tones)
+			{
+				AkSoundEngine.SetSwitch("chord_design", chord_design, tone.obj.gameObject); // Could it be stacked into one AkObject?
+				AkSoundEngine.PostEvent(step_event_.Id, tone.obj.gameObject);
+			}
+		}
+
+	}
+
+	public void SetChordDesign(Dropdown dropdown_)
+	{
+		switch (dropdown_.value)
+		{
+			case 0:
+				chord_design = "one";
+				break;
+			case 1:
+				chord_design = "two";
+				break;
+			case 2:
+				chord_design = "three";
+				break;
 		}
 	}
 }
@@ -399,8 +439,8 @@ public class Tone
 		obj.AddComponent<LineRenderer>();
 		line = obj.GetComponent<LineRenderer>();
 		line.enabled = true;
-		line.startWidth = 0.001f;
-		line.endWidth = 0.003f;
+		line.startWidth = 0.005f;
+		line.endWidth = 0.007f;
 
 		number = counter;
 		counter++;

@@ -1,6 +1,212 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1B115F0D-3F98-4CFF-874B-CC4E07D7E8BC}" SchemaVersion="94">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{1B115F0D-3F98-4CFF-874B-CC4E07D7E8BC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1B115F0D-3F98-4CFF-874B-CC4E07D7E8BC}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Chord_Loop" ID="{48CF23C0-256D-491A-8330-761242DE51DE}">
+					<ChildrenList>
+						<Action Name="" ID="{B7CD5615-DDB5-40CF-8B2A-AE348390BCAE}" ShortID="833997956">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="6"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chord_design" ID="{D3BFEF0B-8DC9-407D-8D07-9883226B446F}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E8096D48-CF8E-4F65-A407-4765C2C88021}" ShortID="715728639">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chord_design" ID="{D3BFEF0B-8DC9-407D-8D07-9883226B446F}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Semitone" ID="{6452A1A6-706D-4F0F-9ADD-94A42C15F0C4}">
+					<ChildrenList>
+						<Action Name="" ID="{0A7DFF27-4009-4241-9DC3-222BC013793E}" ShortID="160346634">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Semitones" ID="{954B3CF1-CBB8-4148-8192-E0AB5E780335}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Tone_Idle" ID="{8FC39D29-B0B4-48A1-ABA8-9F76E929A8FC}">
+					<ChildrenList>
+						<Action Name="" ID="{88E8FD11-7688-48ED-A0EA-D1AD8B8A07D8}" ShortID="556320414">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="tone_idle_loop" ID="{2F63922C-EC2E-4805-8C91-BA3D215D4533}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Chord_Loop" ID="{C6C0BD9F-A832-419E-B35D-C515A9E24010}">
+					<ChildrenList>
+						<Action Name="" ID="{146823B6-E906-4C84-8971-3D80B884434D}" ShortID="157404336">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chord_design" ID="{D3BFEF0B-8DC9-407D-8D07-9883226B446F}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6E4889C3-AC6A-4BE8-9406-E334CCBE3B17}" ShortID="812528449">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chord_NewInput" ID="{711D3708-EC37-4A04-9FD7-BA29FC0EA03D}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_LastChord" ID="{F34D4E46-29A6-44B5-B167-17B1D7EE0D2C}">
+					<ChildrenList>
+						<Action Name="" ID="{F968CEEC-8A6D-4B31-AEBD-AE2CF9C0D60E}" ShortID="560272118">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ui_wheel_change_tone_02" ID="{30390833-CC38-4847-B9E1-ABA69988FA2D}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{52281BA4-790F-4D85-9C25-F781576FD3C6}" ShortID="451123271">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="idle_pad" ID="{DA569D1A-C9BC-4926-8D0D-F403B73FBF4C}" WorkUnitID="{F34708C9-9235-41FC-AFE3-C4471C648FD2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_LastChord" ID="{D60D51EA-D15B-4015-BFD9-6374E0963FC0}">
+					<ChildrenList>
+						<Action Name="" ID="{9B74BFCA-F909-4E72-BE26-D66F1D7928BF}" ShortID="942488698">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="idle_pad" ID="{DA569D1A-C9BC-4926-8D0D-F403B73FBF4C}" WorkUnitID="{F34708C9-9235-41FC-AFE3-C4471C648FD2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Tick" ID="{6D9702FB-1019-46FB-8796-2E9001C76328}">
+					<ChildrenList>
+						<Action Name="" ID="{E1C5AB5F-BE2D-4603-A443-B15F0B888C56}" ShortID="777683431">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tick" ID="{688EB154-A85C-4287-8313-CFC569E35F52}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Chord_Full" ID="{113F2B32-5398-4607-AD8A-8A557B7929C3}">
+					<ChildrenList>
+						<Action Name="" ID="{F61F99AE-6167-4346-A6B8-2CF1E4717C4E}" ShortID="887190559">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="atom_loop" ID="{098B83F6-93A1-4C3F-9F98-7E25235230D4}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0CFC4786-94E2-46E6-95AC-3B1A4634C389}" ShortID="882669787">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeInCurve" Type="int16" Value="8"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="atom_loop" ID="{098B83F6-93A1-4C3F-9F98-7E25235230D4}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{00D96BC6-CBB4-4499-AB1B-D6DAC0960E26}" ShortID="271256175">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Semitones" ID="{954B3CF1-CBB8-4148-8192-E0AB5E780335}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Metro_Step" ID="{C25DBF08-CD3B-4298-AF7D-8FB63D648F35}">
+					<ChildrenList>
+						<Action Name="" ID="{0407BF25-4AD4-4F8B-B255-AD6AD3CA698A}" ShortID="527449755">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chord" ID="{9B8BA60B-E6BC-4061-944F-BFD495B77BED}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Tone_Idle" ID="{14138948-66E0-4F96-9A54-2D99B5B6F1E9}">
+					<ChildrenList>
+						<Action Name="" ID="{6CAB8D8F-BB0F-4764-87DA-8748C3568D81}" ShortID="442143663">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="tone_idle_loop" ID="{2F63922C-EC2E-4805-8C91-BA3D215D4533}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Metro_Step" ID="{32393432-427E-4564-8AD5-4CB2929A5692}">
+					<ChildrenList>
+						<Action Name="" ID="{7EDFC8F5-EB8E-4171-BD4B-247615E90D94}" ShortID="756651254">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chord_design" ID="{D3BFEF0B-8DC9-407D-8D07-9883226B446F}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plugin" ID="{ED0AAAB9-B77B-43D8-9790-E5942B6714DB}">
+					<ChildrenList>
+						<Action Name="" ID="{4DA13432-511A-473E-959E-9D4CE1F56BDC}" ShortID="554153925">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chord_d1" ID="{AD02F7EA-B019-4ACC-810C-6F06D0BF543A}" WorkUnitID="{2FDB9552-465F-4239-ABEB-A2C1990124C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

@@ -10,6 +10,14 @@
 						<Property Name="Room Size Z" Type="Real32" Value="3"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="New_SoundSeed_Impact" ID="{7076E2CF-681F-43BE-8D1F-0E50FDCC5150}" PluginName="SoundSeed Impact" CompanyID="0" PluginID="116" PluginType="3">
+					<PropertyList>
+						<Property Name="BWAmt" Type="Real32" Value="-400"/>
+					</PropertyList>
+					<PluginData>
+	<ModeList GlobalGain="0.000000"/>
+</PluginData>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

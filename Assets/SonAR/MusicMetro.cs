@@ -20,7 +20,7 @@ public class MusicMetro : MonoBehaviour
 	public AK.Wwise.RTPC rtpc_step, rtpc_semitone, rtpc_speedFactor;
 
 	[Range(1f, 2f)]
-	public float speedFactor = 1f;
+	public float repeatSpeedFactor = 1f;
 
 	private int max_tick_count = 4, max_semi_count = 12, max_chord_count = 4;
 	private float step_length, push_length;
@@ -28,7 +28,7 @@ public class MusicMetro : MonoBehaviour
 
 	float maxBPM = 120f;
 	float maxFactor = 0.5f;
-	float maxTime = 1f / 4f;
+	float maxTime = 0.5f;
 	float bpm_factor;
 
 	public Text bpmText;
@@ -36,9 +36,11 @@ public class MusicMetro : MonoBehaviour
 
 	public bool[,] sequencer = new bool[12, 4];
 
+
+	public MusicMover mover;
+
 	[Range(0, 11)]
 	private int from_semi = 0;
-
 
 	[Range(0, 11)]
 	private int to_semi = 11;
@@ -246,7 +248,7 @@ public class MusicMetro : MonoBehaviour
 		if (sequencer[current_semitone, current_tick] == true)
 		{
 			AkSoundEngine.SetRTPCValue(rtpc_step.Id, current_tick, metro_object.gameObject);
-			AkSoundEngine.SetRTPCValue(rtpc_speedFactor.Id, speedFactor, metro_object.gameObject);
+			AkSoundEngine.SetRTPCValue(rtpc_speedFactor.Id, repeatSpeedFactor, metro_object.gameObject);
 			AkSoundEngine.PostEvent(tickEvent.Id, metro_object.gameObject);
 		}
 	}
@@ -262,15 +264,22 @@ public class MusicMetro : MonoBehaviour
 		steps_list[last_chord].transform.localPosition -= new Vector3(0f, 0.003f, 0f);
 		steps_list[current_chord].transform.localPosition += new Vector3(0f, 0.003f, 0f);
 
-		AkSoundEngine.PostEvent(stepEvent_stop.Id, gameObject);
-		for (int i = 0; i < sequencer.GetLength(0); i++)
-		{
-			if (sequencer[i, current_chord])
-			{
-				AkSoundEngine.SetRTPCValue(rtpc_semitone.Id, i, gameObject);
-				AkSoundEngine.PostEvent(stepEvent_start.Id, gameObject);
-			}
-		}
+		AkSoundEngine.PostEvent(stepEvent_stop.Id, gameObject); // Stops all
+
+		mover.PlayChord(last_chord, rtpc_step, stepEvent_start); // Weirdly last_chord is needed.
+
+		
+	//for (int i = 0; i < sequencer.GetLength(0); i++)
+	//{
+	//	if (sequencer[i, current_chord] == true)
+	//	{
+	//		//AkSoundEngine.SetRTPCValue(rtpc_semitone.Id, i, gameObject);
+	//
+	//		
+	//		AkSoundEngine.SetSwitch("chord_design", "two", gameObject);
+	//		AkSoundEngine.PostEvent(stepEvent_start.Id, gameObject);
+	//	}
+	//}
 	}
 
 	public void AddInputTap()
@@ -278,6 +287,9 @@ public class MusicMetro : MonoBehaviour
 		taps.Add(Time.timeSinceLevelLoad);
 		lastInputTime = Time.time;
 	}
+
+	#region [UI functions]
+
 	public void SetRangeFrom(Slider slider_)
 	{
 		from_semi = (int)slider_.value;
@@ -288,17 +300,18 @@ public class MusicMetro : MonoBehaviour
 		to_semi = (int)slider_.value;
 		slider_.transform.GetChild(slider_.transform.childCount - 1).GetComponentInChildren<Text>().text = slider_.value.ToString();
 	}
+
 	public void SetTickMode(Dropdown dropdown_)
 	{
 		switch (dropdown_.value)
 		{
-			case 0: // Pitch
+			case 0:
 				AkSoundEngine.SetSwitch("tick_mode", "pitch", metro_object.gameObject);
 				break;
-			case 1: // Repeat
+			case 1:
 				AkSoundEngine.SetSwitch("tick_mode", "repeat", metro_object.gameObject);
 				break;
-			case 2: // Binary
+			case 2:
 				AkSoundEngine.SetSwitch("tick_mode", "binary", metro_object.gameObject);
 				break;
 		}
@@ -315,6 +328,7 @@ public class MusicMetro : MonoBehaviour
 				break;
 		}
 	}
+
 	public void SetReadMode(Dropdown dropdown_)
 	{
 		switch (dropdown_.value)
@@ -327,6 +341,11 @@ public class MusicMetro : MonoBehaviour
 				break;
 		}
 	}
+	public void SetRepeatSpeed(float speed_)
+	{
+		repeatSpeedFactor = speed_;
+	}
+
 	public void ToggleDirectionCycle()
 	{
 		if (activeDirectionCycle == (int)MetroDirectionCycle.Clockwise)
@@ -345,4 +364,6 @@ public class MusicMetro : MonoBehaviour
 			activeDirectionSequence = (int)MetroDirectionSequence.Outwards;
 		else activeDirectionSequence = (int)MetroDirectionSequence.Inwards;
 	}
+	#endregion
+
 }

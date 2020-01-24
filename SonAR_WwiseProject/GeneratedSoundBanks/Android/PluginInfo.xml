@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PluginInfo Project="SonAr_WwiseProject" Platform="Android" BasePlatform="Android">
+<PluginInfo Project="SonAR_WwiseProject" Platform="Android" BasePlatform="Android">
 	<Plugins>
+		<Plugin Name="Wwise Parametric EQ" ID="6881283" DLL="AkParametricEQ"/>
 		<Plugin Name="Wwise Matrix Reverb" ID="7536643" DLL="AkMatrixReverb"/>
 		<Plugin Name="Wwise RoomVerb" ID="7733251" DLL="AkRoomVerb"/>
+		<Plugin Name="Wwise Flanger" ID="8192003" DLL="AkFlanger"/>
+		<Plugin Name="Wwise Harmonizer" ID="9043971" DLL="AkHarmonizer"/>
 		<Plugin Name="Oculus Spatializer" ID="9572518" DLL="OculusSpatializerWwise"/>
+		<Plugin Name="Wwise Synth One" ID="9699330" DLL="AkSynthOne"/>
 		<Plugin Name="System" ID="11403271" DLL="DefaultSink"/>
 		<Plugin Name="No Output" ID="11862023" DLL="DefaultSink"/>
 		<Plugin Name="AttachableMixerInput" ID="32837795" DLL="OculusSpatializerWwise"/>

@@ -570,7 +570,6 @@
 						<BlendContainer Name="idle_pad" ID="{DA569D1A-C9BC-4926-8D0D-F403B73FBF4C}" ShortID="510858480">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<RTPCList>
