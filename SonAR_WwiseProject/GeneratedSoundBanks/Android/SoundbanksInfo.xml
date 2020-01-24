@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Android\</SourceFilesRoot>
+		<SoundBanksRoot>D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\GeneratedSoundBanks\Android\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\GeneratedSoundBanks\Android</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="5723758" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\sb_SonAR</ObjectPath>
+			<ShortName>sb_SonAR</ShortName>
+			<Path>sb_SonAR.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2576020748" Name="Play_Chord_Full" ObjectPath="\Events\Geometry\Play_Chord_Full" MaxAttenuation="10.000000" DurationType="Infinite"/>
+				<Event Id="2096876433" Name="Play_Chord_Loop" ObjectPath="\Events\Geometry\Play_Chord_Loop" DurationType="Unknown"/>
+				<Event Id="2905912508" Name="Play_Hour" ObjectPath="\Events\Clock\Play_Hour" MaxAttenuation="5.000000" DurationType="Infinite"/>
+				<Event Id="3096279812" Name="Play_LastChord" ObjectPath="\Events\Geometry\Play_LastChord" MaxAttenuation="5.000000" DurationType="Infinite"/>
+				<Event Id="3880256402" Name="Play_Metro_Step" ObjectPath="\Events\Geometry\Play_Metro_Step" MaxAttenuation="2.000000" DurationType="Unknown"/>
+				<Event Id="2429363254" Name="Play_Minute" ObjectPath="\Events\Clock\Play_Minute" MaxAttenuation="5.000000" DurationType="OneShot" DurationMin="1.763101" DurationMax="1.763101"/>
+				<Event Id="3319890774" Name="Play_Second" ObjectPath="\Events\Clock\Play_Second" MaxAttenuation="5.000000" DurationType="OneShot" DurationMin="0.560958" DurationMax="0.560958"/>
+				<Event Id="533559632" Name="Play_Semitone" ObjectPath="\Events\Geometry\Play_Semitone" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.277417" DurationMax="0.277417"/>
+				<Event Id="3592141553" Name="Play_Tick" ObjectPath="\Events\Geometry\Play_Tick" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.085341" DurationMax="0.373883"/>
+				<Event Id="4028792483" Name="Play_Tone_Idle" ObjectPath="\Events\Geometry\Play_Tone_Idle" MaxAttenuation="1.000000" DurationType="Infinite"/>
+				<Event Id="3784159884" Name="Plugin" ObjectPath="\Events\New\Plugin" DurationType="Unknown"/>
+				<Event Id="3393091015" Name="Stop_Chord_Loop" ObjectPath="\Events\Geometry\Stop_Chord_Loop" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.277417" DurationMax="0.277417"/>
+				<Event Id="987771470" Name="Stop_LastChord" ObjectPath="\Events\Geometry\Stop_LastChord" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3618416136" Name="Stop_Metro_Step" ObjectPath="\Events\Geometry\Stop_Metro_Step" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="553704049" Name="Stop_Tone_Idle" ObjectPath="\Events\Geometry\Stop_Tone_Idle" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="54302559" Language="SFX">
+					<ShortName>ui_wheel_change_tone_01.wav</ShortName>
+					<Path>SFX\ui_wheel_change_tone_01_DC405336.wem</Path>
+				</File>
+				<File Id="55176079" Language="SFX">
+					<ShortName>ui_wheel_change_tone_03.wav</ShortName>
+					<Path>SFX\ui_wheel_change_tone_03_68A6643A.wem</Path>
+				</File>
+				<File Id="88409178" Language="SFX">
+					<ShortName>ui_wheel_change_tone_01.wav</ShortName>
+					<Path>SFX\ui_wheel_change_tone_01_77964352.wem</Path>
+				</File>
+				<File Id="120218215" Language="SFX">
+					<ShortName>ui_wheel_change_tone_03.wav</ShortName>
+					<Path>SFX\ui_wheel_change_tone_03_10C4C929.wem</Path>
+				</File>
+				<File Id="140446169" Language="SFX">
+					<ShortName>Circle 1.wav</ShortName>
+					<Path>SFX\Circle 1_10C4C929.wem</Path>
+				</File>
+				<File Id="182918401" Language="SFX">
+					<ShortName>ui_wheel_change_tone_03.wav</ShortName>
+					<Path>SFX\ui_wheel_change_tone_03_C6EBFC98.wem</Path>
+				</File>
+				<File Id="244711514" Language="SFX">
+					<ShortName>ui_wheel_change_tone_03.wav</ShortName>
+					<Path>SFX\ui_wheel_change_tone_03_A30074E9.wem</Path>
+				</File>
+				<File Id="274396582" Language="SFX">
+					<ShortName>ui_wheel_change_tone_03.wav</ShortName>
+					<Path>SFX\ui_wheel_change_tone_03_818F6E6F.wem</Path>
+				</File>
+				<File Id="329064743" Language="SFX">
+					<ShortName>ui_wheel_change_tone_01.wav</ShortName>
+					<Path>SFX\ui_wheel_change_tone_01_10C4C929.wem</Path>
+				</File>
+				<File Id="422270334" Language="SFX">
+					<ShortName>sfx_player_circle_loop_01.wav</ShortName>
+					<Path>SFX\sfx_player_circle_loop_01_C5579977.wem</Path>
+				</File>
+				<File Id="482077558" Language="SFX">
+					<ShortName>ui_wheel_change_tone_02.wav</ShortName>
+					<Path>SFX\ui_wheel_change_tone_02_10C4C929.wem</Path>
+				</File>
+				<File Id="725415192" Language="SFX">
+					<ShortName>Record.wav</ShortName>
+					<Path>SFX\Record_D79FB2B7.wem</Path>
+				</File>
+				<File Id="786278253" Language="SFX">
+					<ShortName>ui_wheel_change_tone_02.wav</ShortName>
+					<Path>SFX\ui_wheel_change_tone_02_5C755D98.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FFFC701B-0C16-45AE-8ED5-CCF74255E932}" SchemaVersion="94">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{FFFC701B-0C16-45AE-8ED5-CCF74255E932}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Oculus_Spatializer" ID="{EBC87B5E-EE97-4AD8-BB3B-FD1B35DB1C78}" PluginName="Oculus Spatializer" CompanyID="266" PluginID="146" PluginType="6">
+					<PropertyList>
+						<Property Name="Room Size X" Type="Real32" Value="7"/>
+						<Property Name="Room Size Y" Type="Real32" Value="2"/>
+						<Property Name="Room Size Z" Type="Real32" Value="3"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

@@ -1,0 +1,3568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{118858D3-39B5-4E85-812C-91980DC6A343}" SchemaVersion="94">
+	<InteractiveMusic>
+		<WorkUnit Name="Default Work Unit" ID="{118858D3-39B5-4E85-812C-91980DC6A343}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSwitchContainer Name="sources" ID="{EA4EEE62-9F38-4DAC-AC33-93152DE9047D}" ShortID="865378285">
+					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="Yellow" ID="{294FCFB1-8592-4A2B-A961-0EEC529F28D1}" ShortID="800620139">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="EndPosition" Type="Real64" Value="116351.87057634"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Yellow" ID="{320757FC-79AB-4C60-A70A-089391EA6CE9}" ShortID="663865509">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MusicTrackType" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yellow-001" ID="{BE21C979-3D31-4191-BC3E-39A0B7C09C69}" ShortID="540684704">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-001.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="267996665"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-002" ID="{A3E7F5C6-A2DA-4B8A-956A-773819E1CBB3}" ShortID="859379753">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-002.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="217301"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-003" ID="{76C174AD-9EBF-4E2B-831F-33648058DFCD}" ShortID="807987821">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-003.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="79861451"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-005" ID="{90118FA0-3216-47F7-8192-00214C8113B4}" ShortID="448955111">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-005.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-006" ID="{1A0CA7E4-0306-4A79-A384-8164BBA4AD8F}" ShortID="1000903146">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-006.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="758342912"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-007" ID="{C707B190-88E7-4F15-B318-EBC9A76DA463}" ShortID="912162692">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-007.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="686739217"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-004" ID="{FDEAF5BE-B401-4D7C-BCCF-329EF67D4C32}" ShortID="239575238">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-004.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-012" ID="{B6D32AC3-0152-44AF-8330-7DFB263E638D}" ShortID="160644576">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-012.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="24352547"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-013" ID="{AF49E814-D606-4B00-B9CA-55B12D878E8D}" ShortID="810260596">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-013.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="373948526"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-011" ID="{5EA4D60B-97ED-49B4-9237-415564EAFEA8}" ShortID="546720858">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-011.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="110147936"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-009" ID="{3BF645E4-9166-4FD5-AE16-95071F54DDA1}" ShortID="5119599">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-009.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-010" ID="{9D3726E7-122D-4C41-AD67-F20637297326}" ShortID="1033185445">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-010.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="148850036"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-008" ID="{E58A0337-AE1E-4BA3-B49D-536A874C77BC}" ShortID="325597598">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-008.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="157357336"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-015" ID="{E14B8912-2D0A-4262-92AB-D8CBC48B1416}" ShortID="2249429">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-015.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-014" ID="{F105D9E5-0901-4C6E-8287-6B5B5DAE5739}" ShortID="449713039">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-014.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="241788121"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-017" ID="{A0E246FE-E889-44F9-9E06-C5CA74A2EF01}" ShortID="1009163399">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-017.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="765405247"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-018" ID="{07D0F79A-6B1D-4EDD-9E77-677F8059CFFB}" ShortID="311466335">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-018.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="114562925"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-016" ID="{237BDB55-EB25-4771-ACBB-CC4D4922D746}" ShortID="533196988">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-016.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-026" ID="{DC78960B-A4F2-4F00-B2C0-4860EB003D6C}" ShortID="161498785">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-026.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-031" ID="{15A6C771-6F48-4F37-ACD1-DD73AA88F51B}" ShortID="826674612">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-031.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="37196961"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-028" ID="{242E41EF-BAF0-43F7-B827-BA18AC8E42A6}" ShortID="532026053">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-028.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="97389117"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-027" ID="{8988B648-E1E4-41E7-AC36-C65519B6CEDA}" ShortID="853421394">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-027.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="277921382"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-030" ID="{E6FF1F41-430A-4E5A-96B8-6648014220A2}" ShortID="60738470">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-030.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-025" ID="{E5F4DC47-B256-4701-AF92-31FED052F1D3}" ShortID="776022803">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-025.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="88537610"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-024" ID="{435D87B4-2514-4925-8C46-15FACC632A02}" ShortID="559492833">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-024.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="195622476"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-029" ID="{4610B99A-C236-4865-AC92-B66ED41581B0}" ShortID="957714618">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-029.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="318377238"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-023" ID="{D875DF12-557C-4665-891B-DC7E9EFFCE4A}" ShortID="552835106">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-023.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="286845062"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-034" ID="{851CE561-AA00-4091-9452-12FEB0BDAA4C}" ShortID="370978417">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-034.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="121152840"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-036" ID="{A5405390-1D9F-4344-9516-DC25FA007526}" ShortID="85195707">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-036.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-033" ID="{353C314D-7FA9-4757-BE91-CE9E40DF4CFF}" ShortID="516176198">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-033.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="165700614"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-037" ID="{057509F9-D29D-43D6-AE63-D0A61E8F0710}" ShortID="516068774">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-037.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-032" ID="{C301B1E5-2454-4F9C-B439-21E06D022795}" ShortID="988593097">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-032.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="414665444"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-035" ID="{B45CABBA-6155-423E-9985-DF1D4A354D43}" ShortID="36682477">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-035.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="32185332"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-021" ID="{70540963-8E51-416B-A464-103439F6249E}" ShortID="296199675">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-021.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="276367894"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-022" ID="{D9DEA6C0-32E4-4FB1-B6E8-BD3C59EE5B54}" ShortID="598932020">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-022.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="584904361"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-019" ID="{772750F3-157A-48CE-9834-FCE82ADB2D30}" ShortID="818757347">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-019.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="116949885"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-020" ID="{96251497-AF29-443B-A398-C2813D4D548F}" ShortID="992125726">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-020.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="304061820"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-038" ID="{38CFEBCA-E8D4-4D70-8702-6E9FC807FC9A}" ShortID="675832831">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-038.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="96236950"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-042" ID="{2057FE63-4010-4668-8B65-FC40D4CB7F28}" ShortID="835314459">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-042.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="238569719"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-043" ID="{FA043952-5B07-4118-9129-93E112FFDB5F}" ShortID="895341446">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-043.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="699044511"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-044" ID="{21C2E113-96AA-4EAB-BBBA-4113719CFF70}" ShortID="797582111">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-044.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="491338756"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-045" ID="{EB4B0E7F-A4A1-4147-89FA-46F81B40F983}" ShortID="448894659">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-045.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="236698172"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-046" ID="{3D3CD6F1-C692-443C-9EAE-2AA2386409D6}" ShortID="1048434815">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-046.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="508613199"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-041" ID="{8C2868CC-637C-448B-8BBC-2B944A94070C}" ShortID="965751396">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-041.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="173509154"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-048" ID="{938236C2-6037-49A1-BF7C-E316D8D272E3}" ShortID="364527085">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-048.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="135974771"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-047" ID="{B7CC5E38-850D-4289-A72F-EF491FE0AEDB}" ShortID="55566872">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-047.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-040" ID="{BB49B5F6-152B-4217-B708-E8A5B8533117}" ShortID="665029195">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-040.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-039" ID="{5F51C8B4-7D1E-4174-BA7E-C0294DB145A9}" ShortID="243457308">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-039.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-049" ID="{4FD0F9F9-FF0D-4752-8309-68B293F10161}" ShortID="234382395">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-049.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-050" ID="{4395C6C5-869D-45AE-BCA9-DF82E357528D}" ShortID="324271879">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-050.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="35738441"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{BF113EA6-C64E-4C5C-8440-0BD909B021BB}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{D7EB2099-1FDA-4DD0-8CA1-88D650B1EFFC}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{43DED37D-8708-4AE2-BB84-BDEF3E2B2B7D}">
+											<ClipList>
+												<MusicClip Name="Yellow-001" ID="{48773B15-6B64-4734-BCD3-B24D4D08156C}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-001" ID="{BE21C979-3D31-4191-BC3E-39A0B7C09C69}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{2FDD705E-6B81-43A1-8FA6-410C53D3932B}">
+											<ClipList>
+												<MusicClip Name="Yellow-002" ID="{B64B5BFE-E1DA-45B2-A63E-BB29E0BA91AD}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-002" ID="{A3E7F5C6-A2DA-4B8A-956A-773819E1CBB3}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{5D5D8BD1-1130-4915-BABF-0D61D89F6AFD}">
+											<ClipList>
+												<MusicClip Name="Yellow-003" ID="{527426D3-1D4C-4B32-B516-01021C4D1C23}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-003" ID="{76C174AD-9EBF-4E2B-831F-33648058DFCD}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{BCB6D36B-770E-40D8-8AF0-018DE6304689}">
+											<ClipList>
+												<MusicClip Name="Yellow-004" ID="{8ED054AC-50BC-47A7-8F5D-F6D561692424}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-004" ID="{FDEAF5BE-B401-4D7C-BCCF-329EF67D4C32}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{5A960E67-F4C8-4B6C-9B39-686488CA18DB}">
+											<ClipList>
+												<MusicClip Name="Yellow-005" ID="{E560A12E-AFAE-423B-8498-5E2C9AA5590E}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-005" ID="{90118FA0-3216-47F7-8192-00214C8113B4}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{C3E85945-98CB-4DE4-B39F-7964C5916037}">
+											<ClipList>
+												<MusicClip Name="Yellow-006" ID="{8AB2C828-B74C-4D7F-9E8A-AD550A44BD63}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-006" ID="{1A0CA7E4-0306-4A79-A384-8164BBA4AD8F}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{D569A583-60A7-4B50-9118-6806BC902E3F}">
+											<ClipList>
+												<MusicClip Name="Yellow-007" ID="{4567F0B4-3FAD-4042-BBDF-3F91ABE894DC}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-007" ID="{C707B190-88E7-4F15-B318-EBC9A76DA463}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{0AFCD850-71B3-4E6C-AD68-05A92FBCBE39}">
+											<ClipList>
+												<MusicClip Name="Yellow-008" ID="{236A8BDF-784A-405D-A8DA-1D7AD4351900}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-008" ID="{E58A0337-AE1E-4BA3-B49D-536A874C77BC}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{C13A8367-FC79-4E94-AE39-36C621556F90}">
+											<ClipList>
+												<MusicClip Name="Yellow-009" ID="{295728AA-0F45-4204-90A5-95B2C780C03F}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-009" ID="{3BF645E4-9166-4FD5-AE16-95071F54DDA1}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{85AA6B66-7634-4A6C-AFED-D811313FF045}">
+											<ClipList>
+												<MusicClip Name="Yellow-010" ID="{4D9F85E0-FFF0-4B0E-83BD-4766998C559D}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-010" ID="{9D3726E7-122D-4C41-AD67-F20637297326}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{D2887F60-3342-4083-95E1-952719FEC99A}">
+											<ClipList>
+												<MusicClip Name="Yellow-011" ID="{88DF8C57-6F02-4FF3-8CEF-87553228F6AA}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-011" ID="{5EA4D60B-97ED-49B4-9237-415564EAFEA8}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{629C3513-C888-46D8-8E40-7DE5E2D99B2B}">
+											<ClipList>
+												<MusicClip Name="Yellow-012" ID="{1548FFF8-75EA-4420-9CBE-B04D6843BC78}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-012" ID="{B6D32AC3-0152-44AF-8330-7DFB263E638D}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{313A1230-DF55-42F5-885D-BBE4E1E78864}">
+											<ClipList>
+												<MusicClip Name="Yellow-013" ID="{404D198A-BCF5-4239-8006-94831AC2B8D2}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-013" ID="{AF49E814-D606-4B00-B9CA-55B12D878E8D}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{37DD26EA-15EA-43EA-945E-1FD205B36F8C}">
+											<ClipList>
+												<MusicClip Name="Yellow-014" ID="{011D1B55-5DF8-400A-8A09-21405126408A}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-014" ID="{F105D9E5-0901-4C6E-8287-6B5B5DAE5739}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{46C950BC-92EB-42D3-9884-D262B145E971}">
+											<ClipList>
+												<MusicClip Name="Yellow-015" ID="{8B1AAE95-4FF0-43E2-97C6-479D6A4EBFF9}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-015" ID="{E14B8912-2D0A-4262-92AB-D8CBC48B1416}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{EF49350F-D02D-4DBB-8414-054236F72804}">
+											<ClipList>
+												<MusicClip Name="Yellow-016" ID="{5CCDFA6A-E590-4C52-BE44-C7B4CFEB044E}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-016" ID="{237BDB55-EB25-4771-ACBB-CC4D4922D746}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{6F34DC36-8B16-4A9A-AE51-F68C06695574}">
+											<ClipList>
+												<MusicClip Name="Yellow-017" ID="{4A521415-7646-47AC-A478-881843B95DD1}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-017" ID="{A0E246FE-E889-44F9-9E06-C5CA74A2EF01}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{3F3ADA47-8A88-4E18-8E42-0370CD5FE341}">
+											<ClipList>
+												<MusicClip Name="Yellow-018" ID="{E1093DB1-E8D3-40DA-8BC2-9AB94A104131}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-018" ID="{07D0F79A-6B1D-4EDD-9E77-677F8059CFFB}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{89F26966-46B1-4362-A470-DCA693FA76D1}">
+											<ClipList>
+												<MusicClip Name="Yellow-019" ID="{704DE09E-75A9-4323-A31D-76CD4342979C}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-019" ID="{772750F3-157A-48CE-9834-FCE82ADB2D30}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{599AB5CC-5EAB-413C-BB25-B90091AD8538}">
+											<ClipList>
+												<MusicClip Name="Yellow-020" ID="{B7359F92-B449-44C3-8EA6-859F3DE52E1E}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-020" ID="{96251497-AF29-443B-A398-C2813D4D548F}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{399E33ED-03AA-43B5-AE58-0910127369AF}">
+											<ClipList>
+												<MusicClip Name="Yellow-021" ID="{897FDB51-40E9-4308-BE63-7C5043596370}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-021" ID="{70540963-8E51-416B-A464-103439F6249E}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{8457E12D-164A-48FC-8928-2BD60087D490}">
+											<ClipList>
+												<MusicClip Name="Yellow-022" ID="{6B0130DD-AB9B-4908-B6AA-F7F7EFA00FE1}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-022" ID="{D9DEA6C0-32E4-4FB1-B6E8-BD3C59EE5B54}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{FB588E07-D447-4558-9CC9-E38117FA8C5B}">
+											<ClipList>
+												<MusicClip Name="Yellow-023" ID="{CB14CF64-0C0E-4C6C-8D57-F5C36A49FC82}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-023" ID="{D875DF12-557C-4665-891B-DC7E9EFFCE4A}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{A9A77687-E0FC-4067-B1F6-763985BAD4CE}">
+											<ClipList>
+												<MusicClip Name="Yellow-024" ID="{3145D004-4EAA-437A-B255-FA34384A2978}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-024" ID="{435D87B4-2514-4925-8C46-15FACC632A02}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{4D989941-3FF7-4398-8D52-CCACB76041D9}">
+											<ClipList>
+												<MusicClip Name="Yellow-025" ID="{C9756F0C-32D9-4FCF-8C08-8A1A4862EDA0}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-025" ID="{E5F4DC47-B256-4701-AF92-31FED052F1D3}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{94DA6722-8036-4C0A-891D-7FBCCBF34B58}">
+											<ClipList>
+												<MusicClip Name="Yellow-026" ID="{4072F8A2-0C33-49A4-B7B2-E1B31A0D62B7}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-026" ID="{DC78960B-A4F2-4F00-B2C0-4860EB003D6C}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{863298C9-23B2-4DB9-883F-8CE209615A33}">
+											<ClipList>
+												<MusicClip Name="Yellow-027" ID="{F56BA0E2-016B-4611-A916-581769B84AE9}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-027" ID="{8988B648-E1E4-41E7-AC36-C65519B6CEDA}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{B7FC8E32-ECBA-47B0-878F-6D9E5EBF8405}">
+											<ClipList>
+												<MusicClip Name="Yellow-028" ID="{594D592C-E229-4D9F-B88F-F8976F48EC5C}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-028" ID="{242E41EF-BAF0-43F7-B827-BA18AC8E42A6}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{672B42B9-460C-439C-BC1A-CD1F8EEE10C6}">
+											<ClipList>
+												<MusicClip Name="Yellow-029" ID="{3B6A8587-54F6-4A71-A5E7-198F082D0A08}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-029" ID="{4610B99A-C236-4865-AC92-B66ED41581B0}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{AB69A454-EAC8-4B94-A021-9879F4AA76B2}">
+											<ClipList>
+												<MusicClip Name="Yellow-030" ID="{6D987F3A-1B06-4ECE-9251-77F34EDB0CD4}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-030" ID="{E6FF1F41-430A-4E5A-96B8-6648014220A2}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{137C1055-0D07-41B1-B2CA-E4FB0EB806D7}">
+											<ClipList>
+												<MusicClip Name="Yellow-031" ID="{B8D5CC8D-5C32-48ED-BBF4-AC084C71D86F}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-031" ID="{15A6C771-6F48-4F37-ACD1-DD73AA88F51B}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{F9E54A44-F504-4618-BADC-A37D5352C9E3}">
+											<ClipList>
+												<MusicClip Name="Yellow-032" ID="{49567378-02A2-4D78-B1A0-69F50C034CCF}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-032" ID="{C301B1E5-2454-4F9C-B439-21E06D022795}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{76EF69C7-AA52-4F75-A91F-32346B6A6E0F}">
+											<ClipList>
+												<MusicClip Name="Yellow-033" ID="{E88DAF08-426D-4383-9398-CDEA54AC620B}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-033" ID="{353C314D-7FA9-4757-BE91-CE9E40DF4CFF}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{004139D8-8CDA-48EB-8309-1551D0439FA4}">
+											<ClipList>
+												<MusicClip Name="Yellow-034" ID="{45F92C86-5780-4F93-BC90-A3CF4590AD09}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-034" ID="{851CE561-AA00-4091-9452-12FEB0BDAA4C}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{85E6B74B-5A6E-4DB0-9CC8-CC26C041DC35}">
+											<ClipList>
+												<MusicClip Name="Yellow-035" ID="{214A357E-1B67-4806-B64D-067669EEA721}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-035" ID="{B45CABBA-6155-423E-9985-DF1D4A354D43}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{A687F9F1-4B0C-46E8-9350-F38DA06E9121}">
+											<ClipList>
+												<MusicClip Name="Yellow-036" ID="{3F25BA32-CF3C-44DC-A341-23E1B26336F8}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-036" ID="{A5405390-1D9F-4344-9516-DC25FA007526}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{1A5A8758-C1F6-4BAD-94AB-BF290D652EC3}">
+											<ClipList>
+												<MusicClip Name="Yellow-037" ID="{7BBEBB5E-28C8-4D9C-B0DB-551C408ED964}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-037" ID="{057509F9-D29D-43D6-AE63-D0A61E8F0710}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{8BDB70DF-D866-4D33-8550-EB28E5F83EC7}">
+											<ClipList>
+												<MusicClip Name="Yellow-038" ID="{019AFE4F-B25B-48A4-88C9-06C315B9111E}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-038" ID="{38CFEBCA-E8D4-4D70-8702-6E9FC807FC9A}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{BA3C9220-34F9-4731-85EA-8214B3189EE8}">
+											<ClipList>
+												<MusicClip Name="Yellow-039" ID="{A6D75946-EAE1-4F5E-B411-031080C65570}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-039" ID="{5F51C8B4-7D1E-4174-BA7E-C0294DB145A9}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{85BF1901-16C6-4E03-88C4-0E71FF308C4E}">
+											<ClipList>
+												<MusicClip Name="Yellow-040" ID="{BFEED2DA-39A8-42CA-A023-D63DCCCA4CF1}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-040" ID="{BB49B5F6-152B-4217-B708-E8A5B8533117}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{F05CE0E6-22E1-4F9F-8F65-C85659C05293}">
+											<ClipList>
+												<MusicClip Name="Yellow-041" ID="{FB1D2666-2C1B-4DD3-A342-1009A7D72194}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-041" ID="{8C2868CC-637C-448B-8BBC-2B944A94070C}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{0DB203F6-E883-444A-A83B-E6D7D3B38CD3}">
+											<ClipList>
+												<MusicClip Name="Yellow-042" ID="{5158E449-AC9E-4B4B-8F8A-7B031722A122}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-042" ID="{2057FE63-4010-4668-8B65-FC40D4CB7F28}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{708153B5-84C9-4F57-A027-6AB9C3B12EB8}">
+											<ClipList>
+												<MusicClip Name="Yellow-043" ID="{6C9A0C74-3BF7-4F11-A6B3-A59EA1DFBE66}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-043" ID="{FA043952-5B07-4118-9129-93E112FFDB5F}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{297B4FDF-2366-43F4-B015-7F65C9F568E9}">
+											<ClipList>
+												<MusicClip Name="Yellow-044" ID="{A36E17C8-DEB7-42D3-9BA3-2715F64C6A96}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-044" ID="{21C2E113-96AA-4EAB-BBBA-4113719CFF70}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{167E54D5-BA89-4F34-8EF9-DFC70DE90AE7}">
+											<ClipList>
+												<MusicClip Name="Yellow-045" ID="{2DE88272-E20A-4308-AA5B-02F93324DA24}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-045" ID="{EB4B0E7F-A4A1-4147-89FA-46F81B40F983}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{DFA133DE-6B31-4ABF-83F0-88AB2231CE19}">
+											<ClipList>
+												<MusicClip Name="Yellow-046" ID="{033E8C53-6924-48B2-9202-846D78195718}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-046" ID="{3D3CD6F1-C692-443C-9EAE-2AA2386409D6}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{39D1491D-3D53-4379-8618-FC25D38332F6}">
+											<ClipList>
+												<MusicClip Name="Yellow-047" ID="{19B80ECE-C741-4D07-A1F4-EE7B9EEA7FE3}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-047" ID="{B7CC5E38-850D-4289-A72F-EF491FE0AEDB}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{9F2420EB-9DF9-4EE7-9ACF-18D78B2141E2}">
+											<ClipList>
+												<MusicClip Name="Yellow-048" ID="{D64C0F1E-7A3C-4548-9D13-457E1CFB6963}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-048" ID="{938236C2-6037-49A1-BF7C-E316D8D272E3}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{14421710-ACFE-4B89-95F7-73A9D2D34FC2}">
+											<ClipList>
+												<MusicClip Name="Yellow-049" ID="{681062DB-01CE-4038-8CE9-D5BF1A683F5C}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-049" ID="{4FD0F9F9-FF0D-4752-8309-68B293F10161}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{6B64D17E-7C14-4BAE-8E85-D5A88DE5DD4A}">
+											<ClipList>
+												<MusicClip Name="Yellow-050" ID="{5902417E-26A3-457C-BD76-317B3E0A2EAB}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-050" ID="{4395C6C5-869D-45AE-BCA9-DF82E357528D}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{8C03E41C-EEB8-46BC-A35E-4BE236EA2A2D}"/>
+								<MusicCue Name="Exit Cue" ID="{81727740-FA08-456A-9A30-D8049DB9FF5A}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="115072"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Violet" ID="{F0E93502-B3D4-4E7D-A94B-CA669976219F}" ShortID="709775572">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="EndPosition" Type="Real64" Value="1982456.04848415"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Violet" ID="{2161EEB3-AA61-4196-93E0-D5140774B3DC}" ShortID="633780570">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MusicTrackType" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Violet-001" ID="{E807B7CC-DBBA-4486-9BF6-6E02382BA067}" ShortID="891778413">
+											<Language>SFX</Language>
+											<AudioFile>Violet-001.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="Violet-002" ID="{084CAA02-63B1-41BD-A51B-F59E8D2F887B}" ShortID="749576519">
+											<Language>SFX</Language>
+											<AudioFile>Violet-002.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{AB12E2C7-FA7B-41CF-BF72-198BCA38E960}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{559DD593-42A2-464D-96B7-4C1564515148}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{3BD4724C-FD46-4797-B097-4A06699C6262}">
+											<ClipList>
+												<MusicClip Name="Violet-001" ID="{834CA9AC-1CD7-47AE-8270-EFBC920E848A}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="1832369.58333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Violet-001" ID="{E807B7CC-DBBA-4486-9BF6-6E02382BA067}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{FA51C6B4-020F-4D23-A0C5-1C7031A46C78}">
+											<ClipList>
+												<MusicClip Name="Violet-002" ID="{35301B2B-F059-474B-A43D-E1DFD7BD212E}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="1832369.58333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Violet-002" ID="{084CAA02-63B1-41BD-A51B-F59E8D2F887B}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{54C865F0-1633-456E-BCF0-BDD57277CB5B}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{EB8D6C9D-3E29-4FFE-931A-2254950E5893}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{FF9F65BC-1C05-468C-9271-7B298BFB0016}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{5EACDEBB-1751-417F-8470-EB365263D9BA}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{F1824FEF-E547-4DFB-84B5-B5EE8702B9B4}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{9D00E5D6-6FAD-441B-9038-E2732B66C09F}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{750E6C19-EEB1-4B0F-848E-3B0A960961D8}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{68C27891-0991-460C-89BB-3BCFDD64C314}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{8AB6867D-BD6C-424D-BBA8-E4620B5E2848}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{9E191097-B4ED-499F-A16C-138E8F7718B6}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{6D7CA290-1D67-4628-83A8-7D87AFC33F08}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{EE4772F4-F546-4533-B24C-95BB378D75A0}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{7716841C-7380-4D3D-8884-E0E15102E84C}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{CDE134A6-6061-463E-B293-1DA04502ACA4}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{9B62B210-7700-4264-AEE7-4FA018E75872}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{85EC1DDA-F106-417E-8BE0-CB6316E10D33}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{9674E0CC-C37A-4946-828F-B307CBDA68CF}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{E1E43559-32C6-4290-B3AA-D118341626E9}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{F699FFCB-AA9C-4BD4-86A5-D2F8D61F4E2E}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{D649755D-C0F7-42D3-90A9-0FF5BDBCA126}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{0A6920B5-133D-4472-924B-3536D277BE25}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{CE2BA0C5-C1F0-4EDD-BE54-BFF5FD1CAABD}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{41012552-6AD9-4C00-A24C-6C7E0C8BB92F}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{6D75769E-62EA-4920-9753-D08DBC353ECF}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{867B5A9F-CF11-4304-A3EF-F689F50E5231}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{BDE99E32-028E-49EC-9DE5-718C9905A044}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{5C367850-B6FB-4D67-A5DE-7DEC5D9180A2}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{4B88F0C8-3626-4569-B502-379B246B1625}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{C5612E47-B93D-4A4D-A8CA-3AF062190120}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{09EA7ACF-EDCF-478E-AFE9-67FF8886E744}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{E599BD8F-D335-4968-8776-E8C02B2853C6}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{31BE70A5-2406-4D00-B154-870874803FC6}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{735942D1-0566-4E1E-8068-85C8FBE5F565}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{FF340BD4-42C3-4943-86D1-7CE95EC7ADD6}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{6692D6AE-EF95-46C2-AE7A-015A141C64FE}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{E5CA0824-1B4A-4CB1-B6CE-A620F5BA1357}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{ED241DD8-E301-43F5-8A5A-BC4069138BF2}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{A2B0DEB9-534A-4961-913A-C5483A0B8211}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{411F95B6-FE2F-4361-B844-2C95D25B0854}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{14C1EC4E-68A2-49EA-8388-03BC69F3B0F1}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{7BE169A4-D4A6-446B-933F-3C6945478F6D}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{04A99EFA-0AC9-4797-9ED1-3556F9D6B442}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{5850FF2C-9756-49B1-BD63-7EF58E7E34EF}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{7CBD20C6-77C9-4C30-9263-005086171278}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{18C05B23-19BE-47DA-8739-3BD055B3838F}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{6FCD033A-A7B0-4DBA-A313-8F84D7429872}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{7473B207-2273-4149-9088-9EA77EA71113}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{D036E565-D4A4-47E0-B3D5-5BDEBA6838FD}">
+											<ReferenceList/>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{216884F9-FD48-48C2-A6B1-FD9F7A422B99}"/>
+								<MusicCue Name="Exit Cue" ID="{EEF6588C-1880-482C-9113-56AA2E5EBD34}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="1830092.37487649"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Red" ID="{94EF81F5-1F7F-4DAA-A412-91C67FBF68A0}" ShortID="180215824">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="EndPosition" Type="Real64" Value="116351.87057634"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Yellow" ID="{BAE2B960-D5AC-4B60-9791-0B9575A948F5}" ShortID="291907630">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MusicTrackType" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yellow-001" ID="{91B51E5C-9DE8-40BB-B0AF-498D78D4F2D2}" ShortID="267996665">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-001.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="540684704"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-002" ID="{CAE95E31-4018-43D6-99EE-8298B8A88013}" ShortID="217301">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-002.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="859379753"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-003" ID="{828EB2BB-A70F-40E4-ACCF-B9118658BB26}" ShortID="79861451">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-003.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="807987821"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-005" ID="{97B2B909-5603-414A-98A3-08322FE3D78D}" ShortID="1006972164">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-005.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="448955111"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-006" ID="{8FC21D8C-1DE8-40DF-BB23-E267851388C8}" ShortID="758342912">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-006.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="1000903146"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-007" ID="{660D7629-2FDE-4F28-8078-FF87E1A8564B}" ShortID="686739217">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-007.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="912162692"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-004" ID="{86556F85-8521-4959-87E8-DCD724BEA6B2}" ShortID="653158697">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-004.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="239575238"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-012" ID="{6EFA046B-1A08-4EC2-91C0-1E58CBE46ED1}" ShortID="889481466">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-012.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="24352547"/>
+												<File Platform="Windows" ID="160644576"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-013" ID="{18D79AA8-8659-4C2C-B4E8-68684FFBFABE}" ShortID="373948526">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-013.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="810260596"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-011" ID="{4558A262-8946-4DFC-B7C6-972785B6AC28}" ShortID="110147936">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-011.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="546720858"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-009" ID="{BD15D33D-EF94-4BA7-A1AE-571082728996}" ShortID="1028623946">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-009.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="5119599"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-010" ID="{84D7D2E9-D1DC-414D-B681-57387F378FD2}" ShortID="148850036">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-010.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="1033185445"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-008" ID="{D9796BF6-4B6B-4622-8239-03F60C650BCB}" ShortID="157357336">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-008.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="325597598"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-015" ID="{69FB8F8F-E3F4-4DD1-9E42-B06A242AB477}" ShortID="1026572692">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-015.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="2249429"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-014" ID="{B1A00F34-02F2-4B0D-9018-DCD903B52D3E}" ShortID="241788121">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-014.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="449713039"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-017" ID="{E50A094A-7718-4EC2-9F77-51799F895822}" ShortID="765405247">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-017.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="1009163399"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-018" ID="{0616C481-62DD-4F7A-BF8E-958720D65FCF}" ShortID="114562925">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-018.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="311466335"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-016" ID="{2DD38036-58D6-4940-A605-1A15BD585C2A}" ShortID="1042083669">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-016.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="533196988"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-026" ID="{AA7F45DB-0AA5-4C48-B174-DE1115C10FB6}" ShortID="803757562">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-026.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="161498785"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-031" ID="{3F095598-14F8-44E3-8E1C-5128C34000DE}" ShortID="37196961">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-031.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="826674612"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-028" ID="{6F2714C7-BA45-462E-9181-CC2077E76DF1}" ShortID="97389117">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-028.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="532026053"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-027" ID="{F2DAA2BF-EA0B-4C55-8F7B-837ACD6D860D}" ShortID="277921382">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-027.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="853421394"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-030" ID="{E8D47C78-B582-47E6-B317-4B402139477B}" ShortID="1024408598">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-030.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="60738470"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-025" ID="{790CD309-5D90-4D06-B0A0-961C19E9797A}" ShortID="864389593">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-025.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="88537610"/>
+												<File Platform="Windows" ID="776022803"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-024" ID="{E7B787C4-B4FB-4803-BEFA-2479669D4E2E}" ShortID="195622476">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-024.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="559492833"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-029" ID="{179999F8-6DFC-42B2-B02A-08C8C0C13852}" ShortID="975007043">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-029.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="318377238"/>
+												<File Platform="Windows" ID="957714618"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-023" ID="{F0D383A0-8F20-42E4-9E98-E36BA30711B8}" ShortID="474631008">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-023.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="286845062"/>
+												<File Platform="Windows" ID="552835106"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-034" ID="{1BDD6D70-D2E3-4041-B62D-8D11EBACF8EF}" ShortID="268439350">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-034.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="121152840"/>
+												<File Platform="Windows" ID="370978417"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-036" ID="{50C3055D-60E5-4C03-9471-9E3DEFD8AA29}" ShortID="926282732">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-036.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="85195707"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-033" ID="{86DC09AC-BCCC-4B83-AE44-1FEBFF05BDA9}" ShortID="503625798">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-033.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="165700614"/>
+												<File Platform="Windows" ID="516176198"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-037" ID="{CF08BE9A-02F7-4763-B5EA-11FD07E88F57}" ShortID="695880179">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-037.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="516068774"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-032" ID="{F4829217-4438-464B-88BE-E07C2E339FDD}" ShortID="414665444">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-032.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="988593097"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-035" ID="{2B159FC2-CA8C-4309-8F0A-8F49589D91E0}" ShortID="32185332">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-035.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="36682477"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-021" ID="{6B93207B-0C2B-4BC9-9221-651E374FF941}" ShortID="276367894">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-021.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="296199675"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-022" ID="{4DE476C4-EFBD-4E29-AE95-E020D542B676}" ShortID="769941181">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-022.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="584904361"/>
+												<File Platform="Windows" ID="598932020"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-019" ID="{D65BB8C6-D34A-4ECC-9C74-E4B9D0963780}" ShortID="395922859">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-019.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="116949885"/>
+												<File Platform="Windows" ID="818757347"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-020" ID="{A5E34675-ADBC-4ED1-A206-C7CB06EDE58A}" ShortID="702336951">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-020.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="304061820"/>
+												<File Platform="Windows" ID="992125726"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-038" ID="{2AF28B04-FBB4-4BDC-BFB7-136FEA07ACA1}" ShortID="467211730">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-038.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="96236950"/>
+												<File Platform="Windows" ID="675832831"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-042" ID="{1CC3C70C-F62F-49F4-8491-3090CB460E5B}" ShortID="622587728">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-042.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="238569719"/>
+												<File Platform="Windows" ID="835314459"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-043" ID="{F98F5A01-6698-4931-9DCF-878FAF81B899}" ShortID="928856599">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-043.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="699044511"/>
+												<File Platform="Windows" ID="895341446"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-044" ID="{59D5C6B7-5068-41E8-9DEB-CECE15858B2A}" ShortID="775928983">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-044.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="491338756"/>
+												<File Platform="Windows" ID="797582111"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-045" ID="{FBADE766-99C2-4B22-92EE-12268B2D920B}" ShortID="885106466">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-045.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="236698172"/>
+												<File Platform="Windows" ID="448894659"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-046" ID="{CED52E7B-A5C7-425B-A1CC-87BBB1A74375}" ShortID="508613199">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-046.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="1048434815"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-041" ID="{25DAEDA8-590E-420B-AC85-C959EE5A4034}" ShortID="237551900">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-041.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="173509154"/>
+												<File Platform="Windows" ID="965751396"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-048" ID="{82DC6B0B-5B5A-40E2-B561-62BD3ED2059D}" ShortID="135974771">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-048.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="364527085"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-047" ID="{338E96FA-CEA7-467E-BB17-F10647593979}" ShortID="177043625">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-047.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="55566872"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-040" ID="{9684B383-3564-4756-A618-368D78ED61E8}" ShortID="901405063">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-040.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="665029195"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-039" ID="{D65C97B5-AECD-4575-985C-3D49891D29E1}" ShortID="926938277">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-039.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="243457308"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-049" ID="{86B2F4B1-2C65-4945-92BC-553B23C7ACF0}" ShortID="435663693">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-049.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="234382395"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-050" ID="{2202845F-A373-4E1C-970A-E5EEB4DAE819}" ShortID="35738441">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-050.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="324271879"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{46469DFE-4F54-4C3E-B537-11836D00AA7E}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{EFFB29AB-5EF9-4FD4-BCCD-EDA5B0C53611}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{D6A0DA2F-FF9C-45E8-9A52-5086D131AD08}">
+											<ClipList>
+												<MusicClip Name="Yellow-001" ID="{18247C0C-865D-4187-98D8-D8A7DE726D10}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-001" ID="{91B51E5C-9DE8-40BB-B0AF-498D78D4F2D2}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{D7EA3630-69DB-4F9C-8CE3-FC0C2A72C487}">
+											<ClipList>
+												<MusicClip Name="Yellow-002" ID="{D1051C4C-6B36-431A-83D7-EF4F02058074}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-002" ID="{CAE95E31-4018-43D6-99EE-8298B8A88013}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{9106D570-07FF-43C2-8C7C-D8911041873A}">
+											<ClipList>
+												<MusicClip Name="Yellow-003" ID="{102E6DE6-6B5F-4B1F-B2B4-D4C023EBDED4}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-003" ID="{828EB2BB-A70F-40E4-ACCF-B9118658BB26}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{97DFA66D-A4A7-4D79-A45B-6551D83CCFB9}">
+											<ClipList>
+												<MusicClip Name="Yellow-004" ID="{C9D30C52-0686-493A-9408-85D3C4149765}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-004" ID="{86556F85-8521-4959-87E8-DCD724BEA6B2}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{C00CF8B7-1922-43D5-A2A5-A65B1E611460}">
+											<ClipList>
+												<MusicClip Name="Yellow-005" ID="{D2A2531F-FFB7-4467-8972-66B555A153BE}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-005" ID="{97B2B909-5603-414A-98A3-08322FE3D78D}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{434933C4-F2A1-436C-BC37-F7EE575A596C}">
+											<ClipList>
+												<MusicClip Name="Yellow-006" ID="{A35D7C5E-F5F1-4E6D-9129-1505ED521946}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-006" ID="{8FC21D8C-1DE8-40DF-BB23-E267851388C8}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{4B055172-5878-4003-BFA7-DAACBD632B8B}">
+											<ClipList>
+												<MusicClip Name="Yellow-007" ID="{A7CCBD46-9083-455D-B4B0-9036D8EE0EE0}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-007" ID="{660D7629-2FDE-4F28-8078-FF87E1A8564B}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{7224053D-2826-4D58-8B23-B0F9D6D30587}">
+											<ClipList>
+												<MusicClip Name="Yellow-008" ID="{42C8E0C3-F93F-4994-9C66-FB4911F8904F}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-008" ID="{D9796BF6-4B6B-4622-8239-03F60C650BCB}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{28C1A52D-ED28-4A86-95A0-B4EEA69028E4}">
+											<ClipList>
+												<MusicClip Name="Yellow-009" ID="{8DA95471-C1ED-4C24-90A7-28F31F314883}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-009" ID="{BD15D33D-EF94-4BA7-A1AE-571082728996}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{984510AA-47EB-4865-A8E6-5C121184A342}">
+											<ClipList>
+												<MusicClip Name="Yellow-010" ID="{C868CA60-5D89-4A7A-A609-7C742CFA847E}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-010" ID="{84D7D2E9-D1DC-414D-B681-57387F378FD2}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{44FDD39E-2205-497B-9BB7-573F35A6DAE3}">
+											<ClipList>
+												<MusicClip Name="Yellow-011" ID="{F42883DF-C42F-4657-838B-6C782BD6BFE1}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-011" ID="{4558A262-8946-4DFC-B7C6-972785B6AC28}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{420A6446-C313-42A6-A301-AD436836CC65}">
+											<ClipList>
+												<MusicClip Name="Yellow-012" ID="{9937B05C-870F-4DC5-8267-7653F86F7534}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-012" ID="{6EFA046B-1A08-4EC2-91C0-1E58CBE46ED1}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{722AF10A-B35D-47C7-BA2D-A3B684392485}">
+											<ClipList>
+												<MusicClip Name="Yellow-013" ID="{E9876837-0B79-4F1C-ADD0-F42A3A5D629F}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-013" ID="{18D79AA8-8659-4C2C-B4E8-68684FFBFABE}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{48967727-60B1-4351-BCA8-E1DB2BFC2927}">
+											<ClipList>
+												<MusicClip Name="Yellow-014" ID="{93A9988B-51AC-4BD4-8971-9D4BEF6B06EA}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-014" ID="{B1A00F34-02F2-4B0D-9018-DCD903B52D3E}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{7810D357-0CB3-40E5-8B54-B6EDB8352A08}">
+											<ClipList>
+												<MusicClip Name="Yellow-015" ID="{A944F470-6C7B-4058-9230-5F83AC99C37E}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-015" ID="{69FB8F8F-E3F4-4DD1-9E42-B06A242AB477}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{D7F46D3A-3260-4D78-AEB1-A6AD9CCD0F0B}">
+											<ClipList>
+												<MusicClip Name="Yellow-016" ID="{C9F48767-22A1-4D69-BA33-1E1030B44913}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-016" ID="{2DD38036-58D6-4940-A605-1A15BD585C2A}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{0382E908-2CD3-4DA7-8F45-C550694A690F}">
+											<ClipList>
+												<MusicClip Name="Yellow-017" ID="{F7A56DC0-7096-4094-B146-ACB2D413F9CD}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-017" ID="{E50A094A-7718-4EC2-9F77-51799F895822}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{97CD705C-A72B-44EC-BC19-703E0DD254F2}">
+											<ClipList>
+												<MusicClip Name="Yellow-018" ID="{0D46F5D9-5845-4549-90D2-5F2253D44618}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-018" ID="{0616C481-62DD-4F7A-BF8E-958720D65FCF}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{ED3D3BA8-9BD3-4BE3-990D-B7121D8CA08D}">
+											<ClipList>
+												<MusicClip Name="Yellow-019" ID="{D57B6860-537F-4DDE-BD3E-A58405B0C870}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-019" ID="{D65BB8C6-D34A-4ECC-9C74-E4B9D0963780}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{0454D622-483E-47E5-AB9B-8374E1D2FA44}">
+											<ClipList>
+												<MusicClip Name="Yellow-020" ID="{8BD3CBAF-4256-40E0-BD64-80F74278B9B5}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-020" ID="{A5E34675-ADBC-4ED1-A206-C7CB06EDE58A}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{BBD04D19-109B-41C2-AD0A-611B9CA73F05}">
+											<ClipList>
+												<MusicClip Name="Yellow-021" ID="{D53F8B1B-E1FC-4F99-8F2E-36F185A29CE5}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-021" ID="{6B93207B-0C2B-4BC9-9221-651E374FF941}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{00743011-1B00-4133-A945-3430463ED12D}">
+											<ClipList>
+												<MusicClip Name="Yellow-022" ID="{11CC8C2F-20AA-4830-BFDD-BB34126EA6FA}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-022" ID="{4DE476C4-EFBD-4E29-AE95-E020D542B676}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{28C63C42-B81B-4872-B9E1-CDC094A03C7A}">
+											<ClipList>
+												<MusicClip Name="Yellow-023" ID="{467AA50D-A3C0-4FF3-AF3E-264E706693AA}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-023" ID="{F0D383A0-8F20-42E4-9E98-E36BA30711B8}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{D261ED97-1654-4DC9-93EA-8C0C0CFBA688}">
+											<ClipList>
+												<MusicClip Name="Yellow-024" ID="{C6C785B6-C079-40EE-8CF1-A5FBBE7EBFEC}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-024" ID="{E7B787C4-B4FB-4803-BEFA-2479669D4E2E}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{F276C63F-9E90-4482-996C-D4FC9DC3D9EB}">
+											<ClipList>
+												<MusicClip Name="Yellow-025" ID="{64039C96-F9FF-4C3F-9AC3-3E42E418B493}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-025" ID="{790CD309-5D90-4D06-B0A0-961C19E9797A}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{E9BC0305-BE31-489B-9720-968E43BE8FE9}">
+											<ClipList>
+												<MusicClip Name="Yellow-026" ID="{12C0FC26-5419-44C3-A8DF-4AC33CC33EDA}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-026" ID="{AA7F45DB-0AA5-4C48-B174-DE1115C10FB6}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{58B4BE6B-9331-4242-9231-3A5BB469CC73}">
+											<ClipList>
+												<MusicClip Name="Yellow-027" ID="{E1E75DAB-6218-4DED-9654-2D85E059AE54}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-027" ID="{F2DAA2BF-EA0B-4C55-8F7B-837ACD6D860D}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{9A2C11C5-48CD-40A1-BF79-F42B78B673FF}">
+											<ClipList>
+												<MusicClip Name="Yellow-028" ID="{9843ABAD-E919-4626-83D8-D365670AF33E}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-028" ID="{6F2714C7-BA45-462E-9181-CC2077E76DF1}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{C9C08477-097F-4A57-B4AB-C689870DFC7E}">
+											<ClipList>
+												<MusicClip Name="Yellow-029" ID="{36625823-AC2B-488E-A765-E3D98ADE79DF}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-029" ID="{179999F8-6DFC-42B2-B02A-08C8C0C13852}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{87727FAA-9EC2-473C-B968-8146AFDEAAB7}">
+											<ClipList>
+												<MusicClip Name="Yellow-030" ID="{288CB78B-F241-40FD-834E-37D2BBF717DF}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-030" ID="{E8D47C78-B582-47E6-B317-4B402139477B}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{2C57C183-D4DF-43AF-88B0-67AF2F031DA8}">
+											<ClipList>
+												<MusicClip Name="Yellow-031" ID="{2DD65835-6399-4DDB-BAD4-A46A37A9EFF6}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-031" ID="{3F095598-14F8-44E3-8E1C-5128C34000DE}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{28DEBD5F-D7ED-4D0D-A12A-2142BC209415}">
+											<ClipList>
+												<MusicClip Name="Yellow-032" ID="{297877A5-E955-467E-B048-5A184B0CF950}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-032" ID="{F4829217-4438-464B-88BE-E07C2E339FDD}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{550190C0-E48F-4A11-9658-D5AACA035688}">
+											<ClipList>
+												<MusicClip Name="Yellow-033" ID="{7F02C99F-72F6-43A4-B922-90CC7AFE36F3}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-033" ID="{86DC09AC-BCCC-4B83-AE44-1FEBFF05BDA9}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{982A3220-04EC-467D-BE37-B30821C3785C}">
+											<ClipList>
+												<MusicClip Name="Yellow-034" ID="{DE45C812-8CB3-434F-8BB1-BD986CD6B0E8}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-034" ID="{1BDD6D70-D2E3-4041-B62D-8D11EBACF8EF}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{2DEA5400-EAB9-4A18-A071-2B140A9397EB}">
+											<ClipList>
+												<MusicClip Name="Yellow-035" ID="{80BB7C9F-6997-4AAF-A55E-50824E8DAA0A}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-035" ID="{2B159FC2-CA8C-4309-8F0A-8F49589D91E0}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{01512FCB-FD63-42AD-8BFB-619B9525D40B}">
+											<ClipList>
+												<MusicClip Name="Yellow-036" ID="{C991D49A-AE3C-4F53-9A19-46DD9170CF1D}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-036" ID="{50C3055D-60E5-4C03-9471-9E3DEFD8AA29}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{555B5F0C-1761-46CC-B0F0-35BE1BEB5209}">
+											<ClipList>
+												<MusicClip Name="Yellow-037" ID="{EE90D5C5-0776-4DD3-B76E-9CC168368CED}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-037" ID="{CF08BE9A-02F7-4763-B5EA-11FD07E88F57}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{EF771887-33FC-4CED-A5CC-BBEF73944958}">
+											<ClipList>
+												<MusicClip Name="Yellow-038" ID="{576EB8BC-D23A-4548-A075-776C66B1384D}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-038" ID="{2AF28B04-FBB4-4BDC-BFB7-136FEA07ACA1}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{64634675-AB65-48AA-8030-35129514FF87}">
+											<ClipList>
+												<MusicClip Name="Yellow-039" ID="{0E653958-AD78-4188-A41F-D8B962A7063A}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-039" ID="{D65C97B5-AECD-4575-985C-3D49891D29E1}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{2D10F71F-9B60-47F4-B5A1-6193903A5D37}">
+											<ClipList>
+												<MusicClip Name="Yellow-040" ID="{29A3FD43-DCD3-4E92-90F0-34C74A8924B3}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-040" ID="{9684B383-3564-4756-A618-368D78ED61E8}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{36E7D213-A694-4972-9817-C397481BDA0A}">
+											<ClipList>
+												<MusicClip Name="Yellow-041" ID="{08229DFC-9FFC-4842-9C7C-D9EDF50D42E7}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-041" ID="{25DAEDA8-590E-420B-AC85-C959EE5A4034}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{8C1C0A10-489C-44E6-AD21-A7ADF09B7FD4}">
+											<ClipList>
+												<MusicClip Name="Yellow-042" ID="{935752B3-E7E7-431D-B2F5-9CC8F257D92C}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-042" ID="{1CC3C70C-F62F-49F4-8491-3090CB460E5B}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{5EA218DD-E014-458D-9E16-CF5AA448FCB5}">
+											<ClipList>
+												<MusicClip Name="Yellow-043" ID="{707C4605-875A-43B1-99D6-7BA14826F1F9}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-043" ID="{F98F5A01-6698-4931-9DCF-878FAF81B899}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{C5F732E8-73E6-4551-85FF-E5DED73A6713}">
+											<ClipList>
+												<MusicClip Name="Yellow-044" ID="{3F29D525-9448-440D-8ADD-CD4867E0FF85}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-044" ID="{59D5C6B7-5068-41E8-9DEB-CECE15858B2A}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{2D53F195-2343-47B9-88F2-FD9967E65BF4}">
+											<ClipList>
+												<MusicClip Name="Yellow-045" ID="{6D0650D8-D8D0-42FE-9DC6-EB017812AFC3}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-045" ID="{FBADE766-99C2-4B22-92EE-12268B2D920B}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{3636F495-2DA7-4609-9257-A6C04AD82A50}">
+											<ClipList>
+												<MusicClip Name="Yellow-046" ID="{7D20DA89-508A-42E6-8C25-088FEC36D6A7}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-046" ID="{CED52E7B-A5C7-425B-A1CC-87BBB1A74375}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{DF2AA0B4-D9D5-486B-82B8-B18A66FB2F1A}">
+											<ClipList>
+												<MusicClip Name="Yellow-047" ID="{7670BFB1-B476-4FA0-A261-D5C64ADBA861}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-047" ID="{338E96FA-CEA7-467E-BB17-F10647593979}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{888AA3A7-5D3C-43FC-A40D-642CCB56C2B7}">
+											<ClipList>
+												<MusicClip Name="Yellow-048" ID="{EAFF6232-6744-4E7F-A47B-FDC3C0FBDEBE}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-048" ID="{82DC6B0B-5B5A-40E2-B561-62BD3ED2059D}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{B860BB5F-9EFF-4968-A94C-C78440011B44}">
+											<ClipList>
+												<MusicClip Name="Yellow-049" ID="{46CA58D7-E042-4B3E-B011-8CA1446E9F58}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-049" ID="{86B2F4B1-2C65-4945-92BC-553B23C7ACF0}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{FB4F59E5-BFE2-42BE-B63D-4A4BC668110C}">
+											<ClipList>
+												<MusicClip Name="Yellow-050" ID="{1E08D9D2-6EF4-4288-A422-23AEE7015C38}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-050" ID="{2202845F-A373-4E1C-970A-E5EEB4DAE819}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{E5FC6A58-AF55-4D4F-BF50-7C5126DED38F}"/>
+								<MusicCue Name="Exit Cue" ID="{64FE6560-B56F-4964-BED7-A8B3D16765BD}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="115072"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Blue" ID="{52302E99-53B0-41A2-8E37-D8045B6D82F8}" ShortID="204992407">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="EndPosition" Type="Real64" Value="116351.87057634"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Yellow" ID="{94C0F5E0-9681-4D3E-A72C-4B40F93A319B}" ShortID="53628390">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MusicTrackType" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yellow-001" ID="{83BD2749-7CC7-473A-9DF8-80E80E737436}" ShortID="988516903">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-001.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="267996665"/>
+												<File Platform="Windows" ID="540684704"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-002" ID="{C0A5FDD4-F5CE-4FBF-9722-6C93CE78D2EC}" ShortID="906737284">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-002.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="217301"/>
+												<File Platform="Windows" ID="859379753"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-003" ID="{EA1E7980-F495-4F80-9051-4F51D4FE4521}" ShortID="799995784">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-003.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="79861451"/>
+												<File Platform="Windows" ID="807987821"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-005" ID="{B7ED1A6C-70FB-43B4-9F12-2D71D2F2EE37}" ShortID="605001894">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-005.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="448955111"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-006" ID="{D51AD1A8-9BC5-464E-BFD7-6B221C2A7BF4}" ShortID="882240534">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-006.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="758342912"/>
+												<File Platform="Windows" ID="1000903146"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-007" ID="{6457EEF5-3228-4356-9224-6106DB4D4DC6}" ShortID="983431915">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-007.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="686739217"/>
+												<File Platform="Windows" ID="912162692"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-004" ID="{CFE67FE5-0306-4162-BDA8-2154FD6367ED}" ShortID="421097317">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-004.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="239575238"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-012" ID="{9EA54C63-80A5-485D-8E03-557CB0860D60}" ShortID="24352547">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-012.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="160644576"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-013" ID="{D888C1A5-F840-408B-A1F5-5BD4E36ED919}" ShortID="724681861">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-013.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="373948526"/>
+												<File Platform="Windows" ID="810260596"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-011" ID="{11289D5D-9110-4BA2-94AE-1EC90B6D507F}" ShortID="556405301">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-011.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="110147936"/>
+												<File Platform="Windows" ID="546720858"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-009" ID="{9E7DC874-733A-41B7-B177-5ADD7E2275A7}" ShortID="946279279">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-009.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="5119599"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-010" ID="{E52DED9C-E2FE-44B2-864C-87DC07FF11CB}" ShortID="559654447">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-010.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="148850036"/>
+												<File Platform="Windows" ID="1033185445"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-008" ID="{6C7DFE91-5EB3-40D9-8278-A381FA99D949}" ShortID="754065273">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-008.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="157357336"/>
+												<File Platform="Windows" ID="325597598"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-015" ID="{5EC3001B-66A1-4978-9079-E0FF3B84ED56}" ShortID="410960981">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-015.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="2249429"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-014" ID="{A6F70E98-DEE5-4953-85B2-E62AEF098BCE}" ShortID="816479326">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-014.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="241788121"/>
+												<File Platform="Windows" ID="449713039"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-017" ID="{F484C4EA-BD3E-4431-BAD5-D9A1FC73E4EF}" ShortID="968714245">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-017.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="765405247"/>
+												<File Platform="Windows" ID="1009163399"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-018" ID="{6A6A7E81-9000-462C-AA90-A8F582C3A5BE}" ShortID="1071849379">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-018.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="114562925"/>
+												<File Platform="Windows" ID="311466335"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-016" ID="{1E44A133-D41A-4017-94D8-997BD673F697}" ShortID="985917312">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-016.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="533196988"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-026" ID="{3FC62EC6-98E5-4CA9-9787-DA0C6E1490F0}" ShortID="1067773179">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-026.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="161498785"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-031" ID="{30423D31-BFDE-45DF-8388-0F792197DE9F}" ShortID="274800704">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-031.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="37196961"/>
+												<File Platform="Windows" ID="826674612"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-028" ID="{C98588CB-73DB-415A-B33F-39E71AD13253}" ShortID="223876140">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-028.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="97389117"/>
+												<File Platform="Windows" ID="532026053"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-027" ID="{5B47FEF1-03C2-4E07-8417-1D5E23CDF453}" ShortID="563370564">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-027.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="277921382"/>
+												<File Platform="Windows" ID="853421394"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-030" ID="{3A963278-18A4-4C27-868C-5A9F4D665464}" ShortID="569825401">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-030.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="60738470"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-025" ID="{CCED3F9A-63E7-4479-AAAE-4C0C7E61676F}" ShortID="88537610">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-025.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="776022803"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-024" ID="{20A8AA36-A0A9-465A-9636-F2761DC011BD}" ShortID="922462889">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-024.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="195622476"/>
+												<File Platform="Windows" ID="559492833"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-029" ID="{4D5E6315-D09F-4B79-9A51-A5645DB8D453}" ShortID="318377238">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-029.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="957714618"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-023" ID="{E1E7073E-5A9A-4514-B65A-19A7CE626987}" ShortID="286845062">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-023.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="552835106"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-034" ID="{B641FC18-E1F0-4306-B117-B5DBE48C6412}" ShortID="121152840">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-034.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="370978417"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-036" ID="{4BB8C992-1DE8-45AB-A0A8-19A896E4A217}" ShortID="169224354">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-036.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="85195707"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-033" ID="{E5E00407-CAFC-4842-ACAB-897886F042FC}" ShortID="165700614">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-033.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="516176198"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-037" ID="{22F15177-D79E-455A-9160-0A54ABE0F264}" ShortID="782993696">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-037.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="516068774"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-032" ID="{B3A2B730-25DB-4BE5-8506-E056E0F928CB}" ShortID="976704023">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-032.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="414665444"/>
+												<File Platform="Windows" ID="988593097"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-035" ID="{04C90C52-FC33-4A17-AE06-11B9055E7BF2}" ShortID="998915437">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-035.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="32185332"/>
+												<File Platform="Windows" ID="36682477"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-021" ID="{27EB38A4-2D79-4057-AF80-B7164E0FD200}" ShortID="336252260">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-021.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="276367894"/>
+												<File Platform="Windows" ID="296199675"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-022" ID="{E2AFA618-4060-4D21-B36E-C0E3FFC8F88D}" ShortID="584904361">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-022.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="598932020"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-019" ID="{9117D261-8DAB-4B3B-939B-435A649679B6}" ShortID="116949885">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-019.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="818757347"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-020" ID="{8E3E38CA-A71A-476B-8564-DFE85EC58466}" ShortID="304061820">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-020.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="992125726"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-038" ID="{23B97B3F-6A77-4D1A-9C67-BE04D1B2F6AA}" ShortID="96236950">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-038.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="675832831"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-042" ID="{413ECB3C-FAF8-44F5-9DEC-3809FBFE2B87}" ShortID="238569719">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-042.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="835314459"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-043" ID="{21E803BC-4546-485B-A2E0-D26EE82A92F9}" ShortID="699044511">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-043.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="895341446"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-044" ID="{7B63BCF2-C952-47E9-9204-DCE647927BF1}" ShortID="491338756">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-044.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="797582111"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-045" ID="{F97D8BCF-0A83-4289-ADA0-2483DF6E2DC4}" ShortID="236698172">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-045.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="448894659"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-046" ID="{B5015AD1-0AD0-40D1-8E57-D7DEA8E07028}" ShortID="715464617">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-046.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="508613199"/>
+												<File Platform="Windows" ID="1048434815"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-041" ID="{525302C1-3DEA-42E0-BF18-45D4298905BC}" ShortID="173509154">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-041.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Windows" ID="965751396"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-048" ID="{F714AA3A-C3B3-4716-8D52-E952956A3B95}" ShortID="360401945">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-048.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="135974771"/>
+												<File Platform="Windows" ID="364527085"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-047" ID="{14644D16-8654-4871-B386-C54652221632}" ShortID="627541720">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-047.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="55566872"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-040" ID="{D2ABB7BE-9EAF-403A-8806-1A4FA9810802}" ShortID="1042941663">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-040.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="665029195"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-039" ID="{E6338792-309C-4CBD-8487-53B797D4633F}" ShortID="306176141">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-039.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="243457308"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-049" ID="{453FBADB-6812-44BE-ACD6-67FE6EC980D4}" ShortID="470799960">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-049.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="234382395"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Yellow-050" ID="{A6A7879D-3D47-4380-A430-B17F62D9A196}" ShortID="109718147">
+											<Language>SFX</Language>
+											<AudioFile>Yellow-050.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="35738441"/>
+												<File Platform="Windows" ID="324271879"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{DA4A8034-4511-456A-A1D2-624B1EE64CBF}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{9E9EC801-013D-4D48-9FFC-AD284FCBC678}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{D307ECFE-681D-470D-AAE1-6BCFCC870EED}">
+											<ClipList>
+												<MusicClip Name="Yellow-001" ID="{6CDBA19F-E021-4E23-B61E-97EF5C704E77}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-001" ID="{83BD2749-7CC7-473A-9DF8-80E80E737436}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{31707AA5-AD42-4107-A581-22F849F27705}">
+											<ClipList>
+												<MusicClip Name="Yellow-002" ID="{ED26A542-6290-4BBA-B8BD-18B67BF89AEA}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-002" ID="{C0A5FDD4-F5CE-4FBF-9722-6C93CE78D2EC}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{6D90F9AC-7727-40C9-B23E-8D65CFAFCA4C}">
+											<ClipList>
+												<MusicClip Name="Yellow-003" ID="{ED1671C9-75EF-4965-8B06-E2110864253F}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-003" ID="{EA1E7980-F495-4F80-9051-4F51D4FE4521}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{EA26C20D-4E80-4CAC-AC32-6397CE168D92}">
+											<ClipList>
+												<MusicClip Name="Yellow-004" ID="{49436E36-3612-4689-AA56-35DCD7D84E77}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-004" ID="{CFE67FE5-0306-4162-BDA8-2154FD6367ED}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{D14FE38F-B228-4633-B577-5CB78F6C0686}">
+											<ClipList>
+												<MusicClip Name="Yellow-005" ID="{92581476-3077-4249-8C00-400565C835EA}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-005" ID="{B7ED1A6C-70FB-43B4-9F12-2D71D2F2EE37}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{68ACD8A1-892B-4A76-9187-AD7A616A6CE1}">
+											<ClipList>
+												<MusicClip Name="Yellow-006" ID="{99D1C10B-D2AB-4105-A2E9-533C331FADB8}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-006" ID="{D51AD1A8-9BC5-464E-BFD7-6B221C2A7BF4}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{2B9EA402-6779-4BC5-9247-9492F8C1C0CD}">
+											<ClipList>
+												<MusicClip Name="Yellow-007" ID="{0D44A030-1B20-4E06-89AC-36754F7344F0}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-007" ID="{6457EEF5-3228-4356-9224-6106DB4D4DC6}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{6E0F826B-FFFC-453D-9E05-776F269BFC6B}">
+											<ClipList>
+												<MusicClip Name="Yellow-008" ID="{7108475D-760D-4D67-A2BC-940935346C75}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-008" ID="{6C7DFE91-5EB3-40D9-8278-A381FA99D949}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{C0037532-FC47-430A-91B6-7C7667DD3E96}">
+											<ClipList>
+												<MusicClip Name="Yellow-009" ID="{3446DA13-6C7D-4912-AA80-7C0046AB76B3}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-009" ID="{9E7DC874-733A-41B7-B177-5ADD7E2275A7}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{0004B33B-0749-4A52-8E72-FC458CB14E1F}">
+											<ClipList>
+												<MusicClip Name="Yellow-010" ID="{19D457F1-B4A0-4C5E-8C91-97A81A045762}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-010" ID="{E52DED9C-E2FE-44B2-864C-87DC07FF11CB}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{33FD0565-973F-4CD5-9E33-C2A688E92277}">
+											<ClipList>
+												<MusicClip Name="Yellow-011" ID="{E7E0AEC0-193D-443A-8C0C-117DA797DAE5}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-011" ID="{11289D5D-9110-4BA2-94AE-1EC90B6D507F}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{A176691E-BB44-44A7-B7C4-48E0130DB396}">
+											<ClipList>
+												<MusicClip Name="Yellow-012" ID="{F91F204A-44CF-42DE-BB9F-C790FB86D1F2}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-012" ID="{9EA54C63-80A5-485D-8E03-557CB0860D60}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{B4A2F744-A40D-4BBA-8CC5-D08BBFA7C57A}">
+											<ClipList>
+												<MusicClip Name="Yellow-013" ID="{B3A48670-3E0C-4328-AEAF-45C4BE97FE74}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-013" ID="{D888C1A5-F840-408B-A1F5-5BD4E36ED919}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{A0570362-6149-4EC2-A845-84281CCD6856}">
+											<ClipList>
+												<MusicClip Name="Yellow-014" ID="{BB4E04BA-0443-42FE-A4BE-160C9BD832F1}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-014" ID="{A6F70E98-DEE5-4953-85B2-E62AEF098BCE}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{CA6653DD-449C-4D7C-807F-6280953CF65A}">
+											<ClipList>
+												<MusicClip Name="Yellow-015" ID="{D7531B63-277D-4A21-95D4-3C6A8013C987}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-015" ID="{5EC3001B-66A1-4978-9079-E0FF3B84ED56}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{65567CA5-720A-43E5-9183-14097F9E7EE4}">
+											<ClipList>
+												<MusicClip Name="Yellow-016" ID="{684D6DA2-0132-4D29-BC11-E079B72D9518}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-016" ID="{1E44A133-D41A-4017-94D8-997BD673F697}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{C355FAE7-3923-4962-A413-1BFE98DF7D55}">
+											<ClipList>
+												<MusicClip Name="Yellow-017" ID="{6178DCD2-A31A-4327-B418-79090C3BCCEF}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-017" ID="{F484C4EA-BD3E-4431-BAD5-D9A1FC73E4EF}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{801E245D-D700-4F6A-83A8-3F10ABE11135}">
+											<ClipList>
+												<MusicClip Name="Yellow-018" ID="{72BE822F-8ADB-4DC7-99B5-2B2212291121}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-018" ID="{6A6A7E81-9000-462C-AA90-A8F582C3A5BE}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{1C37D896-B47A-4EDF-8B27-D6C543D2B2C0}">
+											<ClipList>
+												<MusicClip Name="Yellow-019" ID="{BB86524B-DC30-4F01-B552-14F191296FF3}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-019" ID="{9117D261-8DAB-4B3B-939B-435A649679B6}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{9D653631-1E43-48CA-AF03-55ECC433F86A}">
+											<ClipList>
+												<MusicClip Name="Yellow-020" ID="{8738D1E0-06B2-407B-93C6-F89B71C942AE}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-020" ID="{8E3E38CA-A71A-476B-8564-DFE85EC58466}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{B568B27C-723F-4A18-B6E6-92B4B5024BC0}">
+											<ClipList>
+												<MusicClip Name="Yellow-021" ID="{4837EA90-0F8B-4D1F-AC04-EB1F695420CF}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-021" ID="{27EB38A4-2D79-4057-AF80-B7164E0FD200}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{A26E2D18-46FF-4EC3-BD33-5DA6C426CF92}">
+											<ClipList>
+												<MusicClip Name="Yellow-022" ID="{40F2EEB2-2805-4607-ADA0-C5F51B5C7A15}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-022" ID="{E2AFA618-4060-4D21-B36E-C0E3FFC8F88D}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{FF5D6A93-E0C7-462F-A9CA-29FEAD19CFD0}">
+											<ClipList>
+												<MusicClip Name="Yellow-023" ID="{CB74F9C9-65FC-4926-BB2F-07830E520532}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-023" ID="{E1E7073E-5A9A-4514-B65A-19A7CE626987}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{648B0411-8256-4FF0-AA90-26D8ECBCDEA9}">
+											<ClipList>
+												<MusicClip Name="Yellow-024" ID="{EB413C40-8CE1-45DC-B52E-51C87D273A8E}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-024" ID="{20A8AA36-A0A9-465A-9636-F2761DC011BD}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{E105B22D-9317-4015-B4CD-A3EA09CCB8C1}">
+											<ClipList>
+												<MusicClip Name="Yellow-025" ID="{22004973-B620-49E6-8B19-D2080915D81C}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-025" ID="{CCED3F9A-63E7-4479-AAAE-4C0C7E61676F}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{96043BB4-FE9B-4D86-B6AB-F35D16BB0E57}">
+											<ClipList>
+												<MusicClip Name="Yellow-026" ID="{5CFF7F3A-1432-44E9-AF42-BEFFA1163354}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-026" ID="{3FC62EC6-98E5-4CA9-9787-DA0C6E1490F0}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{6A051DFA-C4EB-4BDA-B9E5-A8072BA7714A}">
+											<ClipList>
+												<MusicClip Name="Yellow-027" ID="{F2B94BE9-0A17-41AC-81B2-7FA2ECA16D0A}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-027" ID="{5B47FEF1-03C2-4E07-8417-1D5E23CDF453}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{ED396554-C35A-4C41-8336-B22B2EF47E9D}">
+											<ClipList>
+												<MusicClip Name="Yellow-028" ID="{DA86DF6B-B3C1-4A4B-9B40-7F4CB755BEE6}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-028" ID="{C98588CB-73DB-415A-B33F-39E71AD13253}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{0B47C784-3109-4329-83FA-38E9C6CF8267}">
+											<ClipList>
+												<MusicClip Name="Yellow-029" ID="{610C6683-6885-45CA-AD05-C142335571E6}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-029" ID="{4D5E6315-D09F-4B79-9A51-A5645DB8D453}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{99E78E8E-E625-4632-8F38-49D7B2EAB2E6}">
+											<ClipList>
+												<MusicClip Name="Yellow-030" ID="{34C879F7-3473-43B8-8BBF-DF2590217721}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-030" ID="{3A963278-18A4-4C27-868C-5A9F4D665464}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{1686F5E8-23A5-4FF9-95DE-219E1A2621A5}">
+											<ClipList>
+												<MusicClip Name="Yellow-031" ID="{3F95B2CB-6205-4EF0-A088-8CE632AC442A}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-031" ID="{30423D31-BFDE-45DF-8388-0F792197DE9F}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{0E90DDD8-90E0-4036-B80E-C0A4EEB1AE8A}">
+											<ClipList>
+												<MusicClip Name="Yellow-032" ID="{CD8D2635-B32C-4F54-8C88-7D0C3BA0FA34}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-032" ID="{B3A2B730-25DB-4BE5-8506-E056E0F928CB}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{D8B3B0DD-CF26-4C66-A231-215DB08F40EA}">
+											<ClipList>
+												<MusicClip Name="Yellow-033" ID="{EC5438FE-E004-43A2-B3B9-80D27ADC4FC2}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-033" ID="{E5E00407-CAFC-4842-ACAB-897886F042FC}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{788C05E7-E9C4-4FE9-8334-C62AA25E07A2}">
+											<ClipList>
+												<MusicClip Name="Yellow-034" ID="{184BF836-5974-47B2-9538-5E20DF7AADAD}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-034" ID="{B641FC18-E1F0-4306-B117-B5DBE48C6412}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{E9C3240C-A3CC-4733-BC78-FDBC77D1DCC2}">
+											<ClipList>
+												<MusicClip Name="Yellow-035" ID="{BBB0D35B-AB5A-4308-AFE7-C1819B53DAC5}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-035" ID="{04C90C52-FC33-4A17-AE06-11B9055E7BF2}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{8FE57D53-1809-4C35-B026-DC74D1928403}">
+											<ClipList>
+												<MusicClip Name="Yellow-036" ID="{102A3DA5-1482-4C7C-B83D-5B629033A34A}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-036" ID="{4BB8C992-1DE8-45AB-A0A8-19A896E4A217}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{E9FD82F1-CA59-4815-8466-E107E4DA7B6D}">
+											<ClipList>
+												<MusicClip Name="Yellow-037" ID="{86F294C1-AAEE-415B-A6E8-9B33FFEF15A1}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-037" ID="{22F15177-D79E-455A-9160-0A54ABE0F264}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{F092C433-4CA0-44BA-8459-E0FD5408C69A}">
+											<ClipList>
+												<MusicClip Name="Yellow-038" ID="{41D5946D-A69C-46E0-A244-086218AFFF07}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-038" ID="{23B97B3F-6A77-4D1A-9C67-BE04D1B2F6AA}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{DCE499A8-9A11-452D-A5DD-B236CF22847E}">
+											<ClipList>
+												<MusicClip Name="Yellow-039" ID="{D3332160-190C-4613-ADAA-4BD89420936C}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-039" ID="{E6338792-309C-4CBD-8487-53B797D4633F}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{F857CF4E-8C64-4AA9-BDC3-BAED3864C990}">
+											<ClipList>
+												<MusicClip Name="Yellow-040" ID="{B9AA97E9-7E37-4F97-B7EC-4C3C7085170E}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-040" ID="{D2ABB7BE-9EAF-403A-8806-1A4FA9810802}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{295A3E66-2CD4-40AB-B25B-2110D151C1F0}">
+											<ClipList>
+												<MusicClip Name="Yellow-041" ID="{3A4DE936-0490-44FF-ACE6-8FC8942CB6FC}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-041" ID="{525302C1-3DEA-42E0-BF18-45D4298905BC}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{B9333993-4CD9-47E9-9E52-D2041027E9B1}">
+											<ClipList>
+												<MusicClip Name="Yellow-042" ID="{E51CA486-BD6E-481B-90CD-5E1452939B31}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-042" ID="{413ECB3C-FAF8-44F5-9DEC-3809FBFE2B87}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{C2883E83-CFF0-4C47-9D58-1140E8AE8BA1}">
+											<ClipList>
+												<MusicClip Name="Yellow-043" ID="{6C27D6FF-2E20-484E-BB15-965600BFABC8}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-043" ID="{21E803BC-4546-485B-A2E0-D26EE82A92F9}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{7C5985F6-9026-4DC6-8604-E59F5864EBB0}">
+											<ClipList>
+												<MusicClip Name="Yellow-044" ID="{C186288F-A1F6-4110-825C-D5FB28BC3F04}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-044" ID="{7B63BCF2-C952-47E9-9204-DCE647927BF1}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{2B444701-90AA-4BF6-8131-4540E82766F8}">
+											<ClipList>
+												<MusicClip Name="Yellow-045" ID="{05990D07-C403-403C-8F6F-51DA9F8C34BF}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-045" ID="{F97D8BCF-0A83-4289-ADA0-2483DF6E2DC4}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{32CEF68D-AFDB-48F1-BCCF-7EF9A8D0C39C}">
+											<ClipList>
+												<MusicClip Name="Yellow-046" ID="{FA277971-A377-4AF8-9702-ECCD4FB41966}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-046" ID="{B5015AD1-0AD0-40D1-8E57-D7DEA8E07028}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{66EAB74E-EA81-4B30-AF37-621010382621}">
+											<ClipList>
+												<MusicClip Name="Yellow-047" ID="{68C7BB4A-6EC1-4B7D-A544-10AE47E1C4B0}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-047" ID="{14644D16-8654-4871-B386-C54652221632}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{1BA2C172-6342-408C-904F-0FC635FB81EC}">
+											<ClipList>
+												<MusicClip Name="Yellow-048" ID="{B5EE320B-9676-47A9-8024-483A6EF16F83}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-048" ID="{F714AA3A-C3B3-4716-8D52-E952956A3B95}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{EF5D8DD3-93E6-4C7A-8E9C-D10F8FDE88B6}">
+											<ClipList>
+												<MusicClip Name="Yellow-049" ID="{A6B8FEF1-F638-40D6-B4D7-A2231A9FEF1B}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-049" ID="{453FBADB-6812-44BE-ACD6-67FE6EC980D4}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{3D7DBF82-B44B-4FF9-9A11-AC7A20CC1B8A}">
+											<ClipList>
+												<MusicClip Name="Yellow-050" ID="{A9D25E52-BA6E-415D-B340-CEC5DAF40D8E}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1.97619698383278E-11"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115072"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-1.97619698383278E-11"/>
+													</PropertyList>
+													<AudioSourceRef Name="Yellow-050" ID="{A6A7879D-3D47-4380-A430-B17F62D9A196}"/>
+												</MusicClip>
+											</ClipList>
+											<ReferenceList/>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{3F6CD58B-85A4-4CDA-BD79-224E0E635CFC}"/>
+								<MusicCue Name="Exit Cue" ID="{071759D2-9FCB-4422-873D-37433EF0DC8E}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="115072"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{B6FAA1BE-0022-4986-904A-B6692D0E1756}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{631F68AF-FB7F-4006-815C-638A0CAEFFF6}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+				</MusicSwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

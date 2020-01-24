@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}" SchemaVersion="94">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{5958B690-B2F9-48D1-A7ED-0F22DE032393}" WorkUnitID="{F6A1BB1F-317D-416B-B402-F4611DDB5354}"/>
+						</Reference>
+						<Reference Name="Mixer" PluginName="Oculus Spatializer" CompanyID="266" PluginID="146" PluginType="6">
+							<ObjectRef Name="New_Oculus_Spatializer" ID="{EBC87B5E-EE97-4AD8-BB3B-FD1B35DB1C78}" WorkUnitID="{FFFC701B-0C16-45AE-8ED5-CCF74255E932}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}">
+							<PropertyList>
+								<Property Name="BypassEffect2" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="AttachableMixerInput">
+									<Custom>
+										<Effect Name="Oculus Spatializer (Attached)" ID="{7462B08D-042D-4D75-A4E7-53FC9BD76D76}" ShortID="318043416" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3"/>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Space_Dreaming" ID="{4FF7C4B2-37B0-4DFF-8E8A-1420102AE2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+									<ObjectRef Name="Large_Church1" ID="{9B6E8B78-EF8C-494C-AADA-D01CF51B5FAC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect3" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Hall_Large_TooBright" ID="{5F144EE3-081F-4BEC-ABCF-F88E111FECAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

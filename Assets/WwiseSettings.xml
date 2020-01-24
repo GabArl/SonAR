@@ -9,5 +9,5 @@
   <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
   <WwiseInstallationPathMac />
   <WwiseInstallationPathWindows>D:\DAW\Wwise\Wwise 2019.1.6.7110</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../../cosmic-vr/cosmic-vr_WwiseProject/cosmic-vr_WwiseProject.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../../SonAR/SonAR_WwiseProject/SonAR_WwiseProject.wproj</WwiseProjectPath>
 </WwiseSettings>

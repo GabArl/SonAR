@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbd6156b6ba44de4fa6101822c5c004e, type: 3}
   m_Name: C25DBF08-CD3B-4298-AF7D-8FB63D648F35
   m_EditorClassIdentifier: 
-  objectName: Stop_metro_step
+  objectName: Stop_Metro_Step
   id: 3618416136
   guid: C25DBF08-CD3B-4298-AF7D-8FB63D648F35

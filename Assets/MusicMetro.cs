@@ -23,7 +23,7 @@ public class MusicMetro : MonoBehaviour
 	public float speedFactor = 1f;
 
 	private int max_tick_count = 4, max_semi_count = 12, max_chord_count = 4;
-	private float diameter;
+	private float step_length, push_length;
 	private float toneAngle;
 
 	float maxBPM = 120f;
@@ -190,10 +190,11 @@ public class MusicMetro : MonoBehaviour
 				sequencer[i, j] = false;
 	}
 
-	public void SetParams(int max_chord_, float diameter_, float toneAngle_)
+	public void SetParams(int max_chord_, float step_length_, float push_length_, float toneAngle_)
 	{
 		max_chord_count = max_chord_;
-		diameter = diameter_;
+		step_length = step_length_;
+		push_length = push_length_;
 		toneAngle = toneAngle_;
 	}
 
@@ -238,9 +239,9 @@ public class MusicMetro : MonoBehaviour
 	private void ChangeTick()
 	{
 		metro_object.transform.localPosition = new Vector3(
-			((diameter / max_chord_count) * (current_tick + 1)) * 2 * Mathf.Sin(Mathf.Deg2Rad * ((toneAngle * current_semitone) + 90)),
+			((step_length * current_tick) + push_length) * Mathf.Sin(Mathf.Deg2Rad * ((toneAngle * current_semitone) + 90)),
 			metro_object.transform.localPosition.y,
-			((diameter / max_chord_count) * (current_tick + 1)) * 2 * Mathf.Cos(Mathf.Deg2Rad * ((toneAngle * current_semitone) + 90)));
+			((step_length * current_tick) + push_length) * Mathf.Cos(Mathf.Deg2Rad * ((toneAngle * current_semitone) + 90)));
 
 		if (sequencer[current_semitone, current_tick] == true)
 		{

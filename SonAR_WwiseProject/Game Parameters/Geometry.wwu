@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}" SchemaVersion="94">
+	<GameParameters>
+		<WorkUnit Name="Geometry" ID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Chord_Length" ID="{E6C253D0-DF47-4F54-A03E-E281C69A79CC}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Semitone" ID="{D4EACEDC-AEC2-4624-9276-D4A5B0C406D2}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="11"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Length_To_Origin" ID="{4300FDDA-0336-4313-B1BA-2B985B738737}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Length_To_Last" ID="{FD1724F1-184A-4B26-AC6A-0E5E52E582F2}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="tick_digit" ID="{4B58EF5A-766F-4706-A940-0FACEF7C62EA}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="3"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbd6156b6ba44de4fa6101822c5c004e, type: 3}
   m_Name: 32393432-427E-4564-8AD5-4CB2929A5692
   m_EditorClassIdentifier: 
-  objectName: Play_metro_step
+  objectName: Play_Metro_Step
   id: 3880256402
   guid: 32393432-427E-4564-8AD5-4CB2929A5692

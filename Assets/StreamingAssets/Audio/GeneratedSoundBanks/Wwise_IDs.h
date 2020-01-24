@@ -90,65 +90,6 @@ namespace AK
             } // namespace SWITCH
         } // namespace TICK_MODE
 
-        namespace TRACK_NUMBER
-        {
-            static const AkUniqueID GROUP = 2876568630U;
-
-            namespace SWITCH
-            {
-                static const AkUniqueID _01 = 1627589345U;
-                static const AkUniqueID _02 = 1627589346U;
-                static const AkUniqueID _03 = 1627589347U;
-                static const AkUniqueID _04 = 1627589348U;
-                static const AkUniqueID _05 = 1627589349U;
-                static const AkUniqueID _06 = 1627589350U;
-                static const AkUniqueID _07 = 1627589351U;
-                static const AkUniqueID _08 = 1627589352U;
-                static const AkUniqueID _09 = 1627589353U;
-                static const AkUniqueID _10 = 1644366931U;
-                static const AkUniqueID _11 = 1644366930U;
-                static const AkUniqueID _12 = 1644366929U;
-                static const AkUniqueID _13 = 1644366928U;
-                static const AkUniqueID _14 = 1644366935U;
-                static const AkUniqueID _15 = 1644366934U;
-                static const AkUniqueID _16 = 1644366933U;
-                static const AkUniqueID _17 = 1644366932U;
-                static const AkUniqueID _18 = 1644366939U;
-                static const AkUniqueID _19 = 1644366938U;
-                static const AkUniqueID _20 = 1661144518U;
-                static const AkUniqueID _21 = 1661144519U;
-                static const AkUniqueID _22 = 1661144516U;
-                static const AkUniqueID _23 = 1661144517U;
-                static const AkUniqueID _24 = 1661144514U;
-                static const AkUniqueID _25 = 1661144515U;
-                static const AkUniqueID _26 = 1661144512U;
-                static const AkUniqueID _27 = 1661144513U;
-                static const AkUniqueID _28 = 1661144526U;
-                static const AkUniqueID _29 = 1661144527U;
-                static const AkUniqueID _30 = 1677922233U;
-                static const AkUniqueID _31 = 1677922232U;
-                static const AkUniqueID _32 = 1677922235U;
-                static const AkUniqueID _33 = 1677922234U;
-                static const AkUniqueID _34 = 1677922237U;
-                static const AkUniqueID _35 = 1677922236U;
-                static const AkUniqueID _36 = 1677922239U;
-                static const AkUniqueID _37 = 1677922238U;
-                static const AkUniqueID _38 = 1677922225U;
-                static const AkUniqueID _39 = 1677922224U;
-                static const AkUniqueID _40 = 1694699820U;
-                static const AkUniqueID _41 = 1694699821U;
-                static const AkUniqueID _42 = 1694699822U;
-                static const AkUniqueID _43 = 1694699823U;
-                static const AkUniqueID _44 = 1694699816U;
-                static const AkUniqueID _45 = 1694699817U;
-                static const AkUniqueID _46 = 1694699818U;
-                static const AkUniqueID _47 = 1694699819U;
-                static const AkUniqueID _48 = 1694699812U;
-                static const AkUniqueID _49 = 1694699813U;
-                static const AkUniqueID _50 = 1711477407U;
-            } // namespace SWITCH
-        } // namespace TRACK_NUMBER
-
     } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
@@ -174,14 +115,12 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID NEW = 444308101U;
+        static const AkUniqueID SB_SONAR = 5723758U;
     } // namespace BANKS
 
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
-        static const AkUniqueID NEW_AUDIO_BUS = 2255513057U;
-        static const AkUniqueID NEW_AUDIO_BUS_01 = 2799548653U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES
