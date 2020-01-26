@@ -85,7 +85,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{522D57DB-8BC2-49FE-B5F1-F9CFD5339B0A}"/>
+						<CurrentStateRef Name="Mute" ID="{FBCAAE69-970A-4F51-8F46-14C51AF42016}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="binary" ID="{CA3E0A23-8005-47F4-9DC9-C1025969AAFE}"/>

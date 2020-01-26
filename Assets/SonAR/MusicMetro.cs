@@ -9,56 +9,53 @@ using UnityEngine.UI;
 
 public class MusicMetro : MonoBehaviour
 {
+	public bool[,] sequencer = new bool[12, 4];
+	public MusicMover mover;
 	public GameObject metro_object;
+	public Text bpmText;
+	public Text sequencerText;
+
 	public List<GameObject> lanes_list, steps_list;
 
+	public float lastInputTime;
 	private float timeSinceTick;
 	private float tapsPerSecond;
-	public float lastInputTime;
 	private List<float> taps = new List<float>();
-	public AK.Wwise.Event tickEvent, stepEvent_start, stepEvent_stop, semitoneEvent, semiGroupEvent;
-	public AK.Wwise.RTPC rtpc_step, rtpc_semitone, rtpc_speedFactor;
-
-	[Range(1f, 2f)]
-	public float repeatSpeedFactor = 1f;
 
 	private int max_tick_count = 4, max_semi_count = 12, max_chord_count = 4;
 	private float step_length, push_length;
 	private float toneAngle;
+	private float repeatSpeedFactor = 1f;
 
-	public float maxBPM = 50f;
-	public float maxFactor = 0.1f;
-	public float maxTime = 0.25f;
-	public float bpm_factor;
+	private float maxBPM = 50f;
+	private float maxFactor = 0.1f;
+	private float maxTime = 0.25f;
+	private float bpm_factor;
 
-	public Text bpmText;
-	public Text sequencerText;
-
-	public bool[,] sequencer = new bool[12, 4];
-
-
-	public MusicMover mover;
 
 	[Range(0, 11)]
 	private int from_semi = 0;
-
 	[Range(0, 11)]
 	private int to_semi = 11;
 
+	public AK.Wwise.Event tickEvent, stepEvent_start, stepEvent_stop, semiGroupEvent;
+	public AK.Wwise.RTPC rtpc_step, rtpc_semitone, rtpc_speedFactor;
 
-	public enum MetroReadMode { Group, Single };
-	public MetroReadMode activeReadMode = MetroReadMode.Single;
+
 	public enum MetroChordMode { Math, Music };
 	public MetroChordMode activeChordMode = MetroChordMode.Math;
 
+	private enum MetroReadMode { Group, Single };
+	private MetroReadMode activeReadMode = MetroReadMode.Single;
+
 	private enum MetroDirectionCycle : int { Clockwise = 1, CounterClockwise = -1 };
-	public int activeDirectionCycle = (int)MetroDirectionCycle.Clockwise;
+	private int activeDirectionCycle = (int)MetroDirectionCycle.Clockwise;
 
 	private enum MetroDirectionSequence : int { Outwards = 1, Inwards = -1 };
-	public int activeDirectionSequence = (int)MetroDirectionSequence.Inwards;
+	private int activeDirectionSequence = (int)MetroDirectionSequence.Inwards;
 
 	private enum MetroDirectionChord : int { Outwards = 1, Inwards = -1 };
-	public int activeDirectionChord = (int)MetroDirectionChord.Outwards;
+	private int activeDirectionChord = (int)MetroDirectionChord.Outwards;
 
 	public int current_tick_;
 	private int current_tick
@@ -281,10 +278,7 @@ public class MusicMetro : MonoBehaviour
 	{
 		steps_list[last_chord].transform.localPosition -= new Vector3(0f, 0.003f, 0f);
 		steps_list[current_chord].transform.localPosition += new Vector3(0f, 0.003f, 0f);
-
-		AkSoundEngine.PostEvent(stepEvent_stop.Id, gameObject); // Stops all
-
-		mover.PlayChord(current_chord, stepEvent_start);
+		mover.PlayChord(current_chord, stepEvent_start, stepEvent_stop);
 	}
 
 	public void AddInputTap()
@@ -385,7 +379,6 @@ public class MusicMetro : MonoBehaviour
 	{
 		maxFactor = slider_.value;
 	}
-
 	public void ToggleDirectionCycle()
 	{
 		if (activeDirectionCycle == (int)MetroDirectionCycle.Clockwise)
@@ -405,5 +398,4 @@ public class MusicMetro : MonoBehaviour
 		else activeDirectionSequence = (int)MetroDirectionSequence.Inwards;
 	}
 	#endregion
-
 }

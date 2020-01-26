@@ -6,8 +6,16 @@
 				<BlendContainer Name="idle_pad" ID="{DA569D1A-C9BC-4926-8D0D-F403B73FBF4C}" ShortID="510858480">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>45</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverridePositioning" Type="bool" Value="True"/>
 						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-1200</Value>
+							</ValueList>
 							<RTPCList>
 								<RTPC Name="" ID="{FBE5399D-79CA-4999-92FA-E099C81E721D}" ShortID="205163071">
 									<ReferenceList>
@@ -35,9 +43,14 @@
 								</RTPC>
 							</RTPCList>
 						</Property>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-5</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -55,6 +68,9 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Space" ID="{626D6A43-DBE1-4239-8B2D-48B7B926E9D1}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1165,12 +1181,23 @@
 					</StateInfo>
 				</BlendContainer>
 				<ActorMixer Name="Ticks" ID="{1CEEE27E-BE79-41F3-A05C-A64CE33A6443}" ShortID="852940015">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="AttachableMixerInput">
+							<Custom>
+								<Effect Name="Oculus Spatializer (Attached)" ID="{BD717D5D-3A14-46F8-84EE-AAF92C970A21}" ShortID="337962791" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3"/>
+							</Custom>
+						</Reference>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="att_2m" ID="{15726583-2086-402E-B823-76E1A6671F70}" WorkUnitID="{9A9CC599-7D90-42EC-A617-C3043E491B06}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+							<ObjectRef Name="Space" ID="{626D6A43-DBE1-4239-8B2D-48B7B926E9D1}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1704,6 +1731,11 @@
 						<BlendContainer Name="tone_idle_loop" ID="{2F63922C-EC2E-4805-8C91-BA3D215D4533}" ShortID="720659056">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
@@ -1858,21 +1890,6 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
-						</BlendContainer>
-						<BlendContainer Name="StopToneMove" ID="{1AE0DF8E-1F8F-4E05-AE67-AE3DB26C2A36}" ShortID="593122831">
-							<ReferenceList>
-								<Reference Name="AttachableMixerInput">
-									<Custom>
-										<Effect Name="Oculus Spatializer (Attached)" ID="{20CFB807-82A8-4706-8E0B-F46654329EF4}" ShortID="720338138" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3"/>
-									</Custom>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Space" ID="{626D6A43-DBE1-4239-8B2D-48B7B926E9D1}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
-								</Reference>
-							</ReferenceList>
 						</BlendContainer>
 						<BlendContainer Name="Semitones" ID="{954B3CF1-CBB8-4148-8192-E0AB5E780335}" ShortID="740572987">
 							<PropertyList>
