@@ -4,18 +4,19 @@ using UnityEngine;
 using UnityEngine.UI;
 
 //TODO
-// make angular speed uniform / instant
-// redesign inner/first notes
-// fallback no arcore / no camera allowed
-// dont cast shadows
-// fix ARCore
-// expose params and enable designs
-// expose speed
-// musical / mathematical chord read
-// make chord patch 2 better 
-// include spawn chord into designs
-// wtf is going on with the chord read
 
+// fix ARCore & fallback no arcore / no camera allowed
+// dont cast shadows
+// clean switches, make globals
+// expose number of tones an clean when new_number < old_number (just clear all) , does a chord push empty notes when <4?
+// help text rework
+// reset button
+// turn off ambient light?
+// convert stereo files to mono
+// fix keyboard colors
+// enable camera feed
+// attenuate ticks
+// change tick design 2
 
 public class MusicMover : MonoBehaviour
 {
@@ -46,12 +47,13 @@ public class MusicMover : MonoBehaviour
 	public List<Button> key_buttons = new List<Button>();
 
 	public AK.Wwise.Event startEvent, stopEvent, longStopEvent, toneIdle_start, toneIdle_stop, start_lastChord, stop_lastChord, tickEvent;
-	public AK.Wwise.RTPC rtpc_chordLength, rtpc_semitone;
+	public AK.Wwise.RTPC rtpc_chordLength, rtpc_semitone, rtpc_tickSemi;
 	public AK.Wwise.RTPC length_to_origin;
 	public AK.Wwise.RTPC length_to_last;
 	private string chord_design = "one";
+	public string tick_design = "one";
 
-	private Vector3  self, last;
+	private Vector3 self, last;
 
 	private float step_length;
 
@@ -301,10 +303,10 @@ public class MusicMover : MonoBehaviour
 
 			Vector3 scale = tone.obj.transform.localScale;
 			tone.obj.transform.localScale = new Vector3(scale.x, scale.y * 0.7f, scale.z * 0.8f);
-			AkSoundEngine.SetRTPCValue(rtpc_semitone.Id, tone.semitone, tone.obj.gameObject);
-			AkSoundEngine.PostEvent(toneIdle_start.Id, tone.obj.gameObject);
+			//	AkSoundEngine.SetRTPCValue(rtpc_semitone.Id, tone.semitone, tone.obj.gameObject);
+			//	AkSoundEngine.PostEvent(toneIdle_start.Id, tone.obj.gameObject);
 
-			AkSoundEngine.SetRTPCValue(rtpc_semitone.Id, tone.semitone, gameObject);
+			AkSoundEngine.SetRTPCValue(rtpc_semitone.Id, tone.semitone, gameObject); // set rtpc_semi to base tone for distant keytone
 			AkSoundEngine.PostEvent(start_lastChord.Id, gameObject);
 		}
 		chord.tones.Sort((t1, t2) => t1.semitone.CompareTo(t2.semitone));
@@ -353,11 +355,11 @@ public class MusicMover : MonoBehaviour
 		// 		tone.anchor.transform.localRotation = currentChord.tones[keys.Count - 1].anchor.transform.localRotation;
 		// }
 		// else
-		tone.anchor.transform.localRotation = Quaternion.Euler(0, toneAngle, 0);
 
+		tone.anchor.transform.localRotation = Quaternion.Euler(0, 0, 0);
 		currentChord.tones[keys.Count] = tone;
 
-		AkSoundEngine.SetRTPCValue(rtpc_semitone.Id, currentChord.tones[keys.Count].semitone, currentChord.tones[keys.Count].obj);
+		//AkSoundEngine.SetRTPCValue(rtpc_semitone.Id, currentChord.tones[keys.Count].semitone, currentChord.tones[keys.Count].obj);
 		AkSoundEngine.SetSwitch("chord_design", chord_design, currentChord.tones[keys.Count].obj);
 		AkSoundEngine.PostEvent(startEvent.Id, currentChord.tones[keys.Count].obj);
 
@@ -376,17 +378,45 @@ public class MusicMover : MonoBehaviour
 		}
 	}
 
-	public void PlayChord(int current_chord_, AK.Wwise.RTPC step_, AK.Wwise.Event step_event_) // This is not good code and needs rethinking.
+	public void PlayChord(int current_chord_, AK.Wwise.Event step_event_) // This is not good code and needs rethinking.
 	{
 		if (chords.Count > current_chord_)
 		{
-			foreach (Tone tone in chords[current_chord_].tones)
+			int inverseChord = chords.Count - current_chord_ - 1; // Because chord objects are saved in reversed order.
+			foreach (Tone tone in chords[chords.Count - current_chord_ - 1].tones)
 			{
+
+				if (metro.activeChordMode == MusicMetro.MetroChordMode.Math)
+				{
+					AkSoundEngine.SetRTPCValue(rtpc_semitone.Id, 0, tone.obj.gameObject);
+					AkSoundEngine.SetRTPCValue(length_to_origin.Id, tone.length_to_origin, tone.obj.gameObject);
+
+				}
+				else if (metro.activeChordMode == MusicMetro.MetroChordMode.Music)
+				{
+					AkSoundEngine.SetRTPCValue(length_to_origin.Id, 0, tone.obj.gameObject);
+					AkSoundEngine.SetRTPCValue(rtpc_semitone.Id, tone.semitone, tone.obj.gameObject);
+				}
 				AkSoundEngine.SetSwitch("chord_design", chord_design, tone.obj.gameObject); // Could it be stacked into one AkObject?
 				AkSoundEngine.PostEvent(step_event_.Id, tone.obj.gameObject);
 			}
 		}
+	}
 
+	public void PlayTick(int current_semitone_, int current_chord_, AK.Wwise.RTPC rtpc_step_, AK.Wwise.Event semitone_event_) // This is not good code and needs rethinking.
+	{
+		int inverseChord = chords.Count - current_chord_ - 1; // Because chord objects are saved in reversed order.
+
+		foreach (Tone tone in chords[inverseChord].tones)
+		{
+			if (tone.semitone == current_semitone_)
+			{
+				AkSoundEngine.SetSwitch("tick_design", tick_design, tone.obj.gameObject); // Could it be stacked into one AkObject?
+				AkSoundEngine.SetRTPCValue(rtpc_tickSemi.Id, current_semitone_, tone.obj.gameObject);
+				AkSoundEngine.SetRTPCValue(rtpc_step_.Id, current_chord_, tone.obj.gameObject);
+				AkSoundEngine.PostEvent(semitone_event_.Id, tone.obj.gameObject);
+			}
+		}
 	}
 
 	public void SetChordDesign(Dropdown dropdown_)

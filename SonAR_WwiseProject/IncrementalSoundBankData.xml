@@ -3,14 +3,14 @@
 	<Platform GUID="{0F353992-E0B6-44D9-885C-7CA63D832FE0}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="3246392083" Timestamp="1579865233"/>
+				<File Name="Init" Hash="3467733647" Timestamp="1579961848"/>
 				<File Name="New" Hash="2176600241" Timestamp="1579793411"/>
-				<File Name="sb_SonAR" Hash="3963634907" Timestamp="1579869387"/>
+				<File Name="sb_SonAR" Hash="1219205761" Timestamp="1579962589"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2730336974" Timestamp="1579869387"/>
+				<File Name="" Hash="1124716045" Timestamp="1579962589"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -30,15 +30,15 @@
 	<Platform GUID="{33F226C6-6082-4EF9-8626-0BF432F633C5}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="72991043" Timestamp="1579865233"/>
+				<File Name="Init" Hash="3447077407" Timestamp="1579961848"/>
 				<File Name="New" Hash="2217396996" Timestamp="1579793411"/>
 				<File Name="SoundBank" Hash="1039533758" Timestamp="1572487660"/>
-				<File Name="sb_SonAR" Hash="760783753" Timestamp="1579869387"/>
+				<File Name="sb_SonAR" Hash="3144404048" Timestamp="1579962589"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3929525410" Timestamp="1579869388"/>
+				<File Name="" Hash="1149373755" Timestamp="1579962589"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

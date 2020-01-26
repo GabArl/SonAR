@@ -15,20 +15,41 @@ namespace AK
     {
         static const AkUniqueID PLAY_CHORD_FULL = 2576020748U;
         static const AkUniqueID PLAY_CHORD_LOOP = 2096876433U;
-        static const AkUniqueID PLAY_HOUR = 2905912508U;
         static const AkUniqueID PLAY_LASTCHORD = 3096279812U;
         static const AkUniqueID PLAY_METRO_STEP = 3880256402U;
-        static const AkUniqueID PLAY_MINUTE = 2429363254U;
-        static const AkUniqueID PLAY_SECOND = 3319890774U;
         static const AkUniqueID PLAY_SEMITONE = 533559632U;
         static const AkUniqueID PLAY_TICK = 3592141553U;
+        static const AkUniqueID PLAY_TICK_GROUP = 1709201661U;
         static const AkUniqueID PLAY_TONE_IDLE = 4028792483U;
-        static const AkUniqueID PLUGIN = 3784159884U;
         static const AkUniqueID STOP_CHORD_LOOP = 3393091015U;
         static const AkUniqueID STOP_LASTCHORD = 987771470U;
         static const AkUniqueID STOP_METRO_STEP = 3618416136U;
         static const AkUniqueID STOP_TONE_IDLE = 553704049U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace MUTE_CHORDS
+        {
+            static const AkUniqueID GROUP = 1372853048U;
+
+            namespace STATE
+            {
+                static const AkUniqueID MUTE = 2974103762U;
+            } // namespace STATE
+        } // namespace MUTE_CHORDS
+
+        namespace MUTE_TICKS
+        {
+            static const AkUniqueID GROUP = 175455601U;
+
+            namespace STATE
+            {
+                static const AkUniqueID MUTE = 2974103762U;
+            } // namespace STATE
+        } // namespace MUTE_TICKS
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
@@ -122,6 +143,7 @@ namespace AK
         static const AkUniqueID SECONDS = 745018932U;
         static const AkUniqueID SEMITONE = 3102311527U;
         static const AkUniqueID TICK_DIGIT = 365065828U;
+        static const AkUniqueID TICKSEMI = 4091128056U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

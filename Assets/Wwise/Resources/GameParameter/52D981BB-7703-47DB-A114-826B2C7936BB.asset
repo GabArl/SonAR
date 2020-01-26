@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd6156b6ba44de4fa6101822c5c004e, type: 3}
-  m_Name: 8AD1B2BB-BF74-4037-AC58-B86D1DBD4A8C
+  m_Script: {fileID: 11500000, guid: 361b8cb7c87c33941a8d7e27231ce435, type: 3}
+  m_Name: 52D981BB-7703-47DB-A114-826B2C7936BB
   m_EditorClassIdentifier: 
-  objectName: Play_Second
-  id: 3319890774
-  guid: 8AD1B2BB-BF74-4037-AC58-B86D1DBD4A8C
+  objectName: TickSemi
+  id: 4091128056
+  guid: 52D981BB-7703-47DB-A114-826B2C7936BB

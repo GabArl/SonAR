@@ -16,7 +16,7 @@ public class MusicMetro : MonoBehaviour
 	private float tapsPerSecond;
 	public float lastInputTime;
 	private List<float> taps = new List<float>();
-	public AK.Wwise.Event tickEvent, stepEvent_start, stepEvent_stop, semitoneEvent;
+	public AK.Wwise.Event tickEvent, stepEvent_start, stepEvent_stop, semitoneEvent, semiGroupEvent;
 	public AK.Wwise.RTPC rtpc_step, rtpc_semitone, rtpc_speedFactor;
 
 	[Range(1f, 2f)]
@@ -26,10 +26,10 @@ public class MusicMetro : MonoBehaviour
 	private float step_length, push_length;
 	private float toneAngle;
 
-	float maxBPM = 120f;
-	float maxFactor = 0.5f;
-	float maxTime = 0.5f;
-	float bpm_factor;
+	public float maxBPM = 50f;
+	public float maxFactor = 0.1f;
+	public float maxTime = 0.25f;
+	public float bpm_factor;
 
 	public Text bpmText;
 	public Text sequencerText;
@@ -46,8 +46,10 @@ public class MusicMetro : MonoBehaviour
 	private int to_semi = 11;
 
 
-	public enum MetroReadMethod { Sonar, Sequence };
-	public MetroReadMethod activeReadMethod = MetroReadMethod.Sequence;
+	public enum MetroReadMode { Group, Single };
+	public MetroReadMode activeReadMode = MetroReadMode.Single;
+	public enum MetroChordMode { Math, Music };
+	public MetroChordMode activeChordMode = MetroChordMode.Math;
 
 	private enum MetroDirectionCycle : int { Clockwise = 1, CounterClockwise = -1 };
 	public int activeDirectionCycle = (int)MetroDirectionCycle.Clockwise;
@@ -111,7 +113,7 @@ public class MusicMetro : MonoBehaviour
 				else
 				{
 					current_semitone_ = to_semi;
-					next_semitone = value + to_semi;
+					next_semitone = to_semi - 1;
 					current_chord += activeDirectionChord;
 
 				}
@@ -133,7 +135,7 @@ public class MusicMetro : MonoBehaviour
 				else
 				{
 					current_semitone_ = from_semi;
-					next_semitone = value - from_semi;
+					next_semitone = from_semi + 1;
 					current_chord += activeDirectionChord;
 				}
 			}
@@ -163,7 +165,7 @@ public class MusicMetro : MonoBehaviour
 				else current_chord_ = max_chord_count - 1;
 
 				last_chord = value + 1;
-				next_chord = value + max_chord_count - 1;
+				next_chord = value + (max_chord_count - 1);
 			}
 			else if (value >= max_chord_count - 1 && activeDirectionChord == (int)MetroDirectionChord.Outwards)
 			{
@@ -171,7 +173,7 @@ public class MusicMetro : MonoBehaviour
 				else current_chord_ = 0;
 
 				last_chord = value - 1;
-				next_chord = value - max_chord_count - 1;
+				next_chord = value - (max_chord_count - 1);
 			}
 			else
 			{
@@ -219,9 +221,9 @@ public class MusicMetro : MonoBehaviour
 		{
 			timeSinceTick = 0;
 
-			if (activeReadMethod == MetroReadMethod.Sequence)
+			if (activeReadMode == MetroReadMode.Single)
 				current_tick += activeDirectionSequence;
-			if (activeReadMethod == MetroReadMethod.Sonar)
+			if (activeReadMode == MetroReadMode.Group)
 				current_semitone += activeDirectionCycle;
 		}
 
@@ -257,6 +259,22 @@ public class MusicMetro : MonoBehaviour
 	{
 		lanes_list[last_semitone].transform.localPosition -= new Vector3(0f, 0.003f, 0f);
 		lanes_list[current_semitone].transform.localPosition += new Vector3(0f, 0.003f, 0f);
+
+		if (activeReadMode == MetroReadMode.Group)
+		{
+			metro_object.transform.localPosition = new Vector3(
+				((step_length * current_tick) + push_length) * Mathf.Sin(Mathf.Deg2Rad * ((toneAngle * current_semitone) + 90)),
+				metro_object.transform.localPosition.y,
+				((step_length * current_tick) + push_length) * Mathf.Cos(Mathf.Deg2Rad * ((toneAngle * current_semitone) + 90)));
+
+			for (int i = 0; i < sequencer.GetLength(1); i++)
+			{
+				if (sequencer[current_semitone, i] == true)
+				{
+					mover.PlayTick(current_semitone, i, rtpc_step, semiGroupEvent);
+				}
+			}
+		}
 	}
 
 	private void ChangeChord()
@@ -266,20 +284,7 @@ public class MusicMetro : MonoBehaviour
 
 		AkSoundEngine.PostEvent(stepEvent_stop.Id, gameObject); // Stops all
 
-		mover.PlayChord(last_chord, rtpc_step, stepEvent_start); // Weirdly last_chord is needed.
-
-		
-	//for (int i = 0; i < sequencer.GetLength(0); i++)
-	//{
-	//	if (sequencer[i, current_chord] == true)
-	//	{
-	//		//AkSoundEngine.SetRTPCValue(rtpc_semitone.Id, i, gameObject);
-	//
-	//		
-	//		AkSoundEngine.SetSwitch("chord_design", "two", gameObject);
-	//		AkSoundEngine.PostEvent(stepEvent_start.Id, gameObject);
-	//	}
-	//}
+		mover.PlayChord(current_chord, stepEvent_start);
 	}
 
 	public void AddInputTap()
@@ -303,6 +308,14 @@ public class MusicMetro : MonoBehaviour
 
 	public void SetTickMode(Dropdown dropdown_)
 	{
+
+		if (dropdown_.value == 3)
+		{
+			AkSoundEngine.SetState("mute_ticks", "Mute");
+			return;
+		}
+
+		AkSoundEngine.SetState("mute_ticks", "None");
 		switch (dropdown_.value)
 		{
 			case 0:
@@ -321,29 +334,56 @@ public class MusicMetro : MonoBehaviour
 		switch (dropdown_.value)
 		{
 			case 0:
+				mover.tick_design = "one";
 				AkSoundEngine.SetSwitch("tick_design", "one", metro_object.gameObject);
 				break;
 			case 1:
+				mover.tick_design = "two";
 				AkSoundEngine.SetSwitch("tick_design", "two", metro_object.gameObject);
 				break;
 		}
 	}
+	public void SetChordMode(Dropdown dropdown_)
+	{
+		if (dropdown_.value == 2)
+		{
+			AkSoundEngine.SetState("mute_chords", "Mute");
+			return;
+		}
 
+		AkSoundEngine.SetState("mute_chords", "None");
+
+		switch (dropdown_.value)
+		{
+			case 0:
+				activeChordMode = MetroChordMode.Math;
+				break;
+			case 1:
+				activeChordMode = MetroChordMode.Music;
+				break;
+		}
+	}
 	public void SetReadMode(Dropdown dropdown_)
 	{
 		switch (dropdown_.value)
 		{
 			case 0:
-				activeReadMethod = MetroReadMethod.Sequence;
+				activeReadMode = MetroReadMode.Single;
+				maxTime /= 2;
 				break;
 			case 1:
-				activeReadMethod = MetroReadMethod.Sonar;
+				activeReadMode = MetroReadMode.Group;
+				maxTime *= 2;
 				break;
 		}
 	}
-	public void SetRepeatSpeed(float speed_)
+	public void SetRepeatSpeed(Slider slider_)
 	{
-		repeatSpeedFactor = speed_;
+		repeatSpeedFactor = slider_.value;
+	}
+	public void SetCycleSpeed(Slider slider_)
+	{
+		maxFactor = slider_.value;
 	}
 
 	public void ToggleDirectionCycle()

@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8F4C566A-DAB2-4288-8207-BED397AFE30B}" SchemaVersion="94">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{8F4C566A-DAB2-4288-8207-BED397AFE30B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8F4C566A-DAB2-4288-8207-BED397AFE30B}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="mute_chords" ID="{0687E3AE-0637-4093-959F-4E05735DD0CE}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{522D57DB-8BC2-49FE-B5F1-F9CFD5339B0A}"/>
+						<State Name="Mute" ID="{FBCAAE69-970A-4F51-8F46-14C51AF42016}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="mute_ticks" ID="{44276F06-9D2E-436E-A719-4963BCFB2893}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{917A53BC-87BB-40FE-8743-97BA77E6E48D}"/>
+						<State Name="Mute" ID="{8EAE03ED-60C1-4FF2-A8D2-B900155CBB42}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

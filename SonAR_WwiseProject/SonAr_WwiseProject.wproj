@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="Project" SchemaVersion="94" WwiseVersion="v2019.1.6" WwiseBuild="7110">
 	<ProjectInfo>
-		<Project Name="cosmic-vr_WwiseProject" ID="{2FB5FAA0-409B-4319-BB2B-F7524EDBB3A1}">
+		<Project Name="SonAR_WwiseProject" ID="{2FB5FAA0-409B-4319-BB2B-F7524EDBB3A1}">
 			<Platforms>
 				<Platform Name="Android" ReferencePlatform="Android" ID="{0F353992-E0B6-44D9-885C-7CA63D832FE0}"/>
 				<Platform Name="Windows" ReferencePlatform="Windows" ID="{33F226C6-6082-4EF9-8626-0BF432F633C5}"/>
@@ -27,8 +27,8 @@
 				</Property>
 				<Property Name="GlobalVoiceInstancesLimit" Type="int16">
 					<ValueList>
-						<Value Platform="Android">256</Value>
-						<Value Platform="Windows">256</Value>
+						<Value Platform="Android">40</Value>
+						<Value Platform="Windows">40</Value>
 					</ValueList>
 				</Property>
 				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjUwNDIiIG1hc2s9IkNUWE04ODQ4IiBlbmM9IjAiPjxsaWNlbnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIyLDMsNCwxMCwxMywxNCwxNSIgZXhwaXJlcz0iMjAyMC0wNy0zMSIgIC8+PGxpY2Vuc2UgaWQ9IjIyIiBuYW1lPSJMZXZlbCBBIExpY2Vuc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwzLDQsMTAsMTMsMTQsMTUiIGV4cGlyZXM9IjIwMjAtMDctMzEiICAvPjxsaWNlbnNlIGlkPSIyMSIgbmFtZT0iTWFpbnRlbmFuY2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwzLDQsMTAsMTMsMTQsMTUiIGV4cGlyZXM9IjIwMjAtMDctMzEiICAvPjxsaWNlbnNlIGlkPSIyNSIgbmFtZT0iQWxsIFd3aXNlIFBsdWctSW5zIiB0eXBlPSIzIiAgZXhwaXJlcz0iMjAyMC0wNy0zMSIgIC8+PC9wcm9qZWN0Pg==|aaxpRhUYgkrT7kPq7wZ0xVx/Y6pQ3o/buwWUK88rIudxV5v+mVdFVHVmky9TiF7qBZwyJF/jGgON+ltdxOqjYtSx5Omsx4YJKw+5ErGiobchrfbAngHvXJ9agl3cDOm0/aOQ6XTsC5VgdKv0telrG5aQlzgui5uPKatX3rz2q5cfNqFy4Q6/44tVZstKVPxFWSg2t+HPUV8lp43RJeOeJGuiN8IgKSyuaFXIB79pceSuifNeoo+iCXTkEsehLlZ0E9nK+nEOdTSA4UohtW0b5Z9FKfxbfqVpd2ToXV1PEiB0Bft5/wLRtrY0LynCYwVIc8CrWliRVSv4ZxP8qQopMA=="/>
@@ -9977,6 +9977,130 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
+				<SharedPropertyList ClassName="Oculus Spatializer" PluginType="6" CompanyID="266" PluginID="146">
+					<PropertyList>
+						<Property Name="Bypass" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Color" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="DEBUG Clamp Pos" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="DEBUG Misc" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Enable Reflections" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Gain" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Global Scale" Type="Real32">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverrideColor" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Reflect Behind" Type="Real32">
+							<ValueList>
+								<Value>0.5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Reflect Down" Type="Real32">
+							<ValueList>
+								<Value>0.4</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Reflect Front" Type="Real32">
+							<ValueList>
+								<Value>0.5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Reflect Left" Type="Real32">
+							<ValueList>
+								<Value>0.5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Reflect Right" Type="Real32">
+							<ValueList>
+								<Value>0.5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Reflect Up" Type="Real32">
+							<ValueList>
+								<Value>0.2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Reflections Range Max" Type="Real32">
+							<ValueList>
+								<Value>100</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Reflections Range Min" Type="Real32">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Reverb On" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Reverb Wet Mix" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Room Size X" Type="Real32">
+							<ValueList>
+								<Value>8</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Room Size Y" Type="Real32">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Room Size Z" Type="Real32">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Version" Type="Real32">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Voice Limit" Type="int32">
+							<ValueList>
+								<Value>64</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+				</SharedPropertyList>
 				<SharedPropertyList ClassName="Wwise Synth One" PluginType="2" CompanyID="0" PluginID="148">
 					<PropertyList>
 						<Property Name="BaseFrequency" Type="Real32">
@@ -11642,6 +11766,55 @@
 						<Property Name="RampVsLoopSensitivity" Type="Real32">
 							<ValueList>
 								<Value>3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+				</SharedPropertyList>
+				<SharedPropertyList ClassName="AttachableMixerInput" PluginType="3" CompanyID="266" PluginID="501">
+					<PropertyList>
+						<Property Name="Ambisonic" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="AmbisonicVSpeakerMode" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="AttenuationRangeMax" Type="Real32">
+							<ValueList>
+								<Value>100</Value>
+							</ValueList>
+						</Property>
+						<Property Name="AttenuationRangeMin" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Bypass" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EnableReflections" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ReverbSendLevel" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseInvSqAttenuation" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="VolumetricRadius" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
