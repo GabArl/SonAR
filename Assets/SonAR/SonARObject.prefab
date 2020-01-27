@@ -4082,7 +4082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8050375066597106338
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5033,10 +5033,10 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Play 4 tones to fill a chord which then moves outwards. \nA sequencer circles
     through the polar grid and reads the notes.\nChanges by the user occur after next
-    tick, semitone or chord.\n\nChord modes:  - Math: listen to length between note
-    and origin \n\t                     - Music: listen to note pitch\n\nTick modes:
-    \      Pitch [c d e f], Repeat [1 2 3 4], Binary[11 10 01 00]\nRepeat Speed:   Sets
-    time between ticks when in 'Repeat' mode."
+    tick, semitone or chord.\n\nChord modes:  - Math: listen to length betweens notes\n\t
+    \                 - Music: listen to note pitch\n\nTick modes:       Pitch [c
+    d e f], Repeat [1 2 3 4], Binary[11 10 01 00]\nRepeat Speed:   Sets time between
+    ticks when in 'Repeat' mode."
 --- !u!1 &1388690267989595423
 GameObject:
   m_ObjectHideFlags: 0

@@ -146,7 +146,7 @@ public class MusicMover : MonoBehaviour
 		tone.obj.transform.localScale = scale;
 		tone.obj.SetActive(false);
 		tone.line.material = materialLine;
-		tone.line.positionCount = 3;
+		tone.line.positionCount = 2;
 		return tone;
 	}
 
@@ -226,20 +226,39 @@ public class MusicMover : MonoBehaviour
 				self = tempTone.obj.transform.position;
 
 				if (i == 0)
+				{
 					last = self;
+
+				}
+
 				else
 					last = currentChord.tones[i - 1].obj.transform.position;
 
-				tempTone.line.SetPosition(0, startPoint.transform.position);
-				tempTone.line.SetPosition(1, self);
-				tempTone.line.SetPosition(2, last);
+
 
 				tempTone.length_to_origin = Mathf.Lerp(0f, 1f, Mathf.InverseLerp(0f, inner_radius * 2, Vector3.Distance(startPoint.transform.position, self)));
 				tempTone.length_to_last = Mathf.Lerp(0f, 1f, Mathf.InverseLerp(0f, inner_radius * 2, Vector3.Distance(last, self)));
-				tempTone.length_to_last = 0; // This is very dependent from the input order, so it is very hard to receive auditory information from it.
+
+
+				if (metro.activeChordMode == MusicMetro.MetroChordMode.Math)
+				{
+					tempTone.line.SetPosition(0, last);
+					tempTone.line.SetPosition(1, self);
+					tempTone.length_to_origin = tempTone.length_to_last; // Dirty workaround, need rethinking.
+				}
+				else
+				{
+					tempTone.line.SetPosition(0, startPoint.transform.position);
+					tempTone.line.SetPosition(1, self);
+					tempTone.length_to_last = 0;
+
+					//tempTone.line.SetPosition(2, last);
+				}
+
+
 
 				AkSoundEngine.SetRTPCValue(length_to_origin.Id, tempTone.length_to_origin, currentChord.tones[i].obj);
-				AkSoundEngine.SetRTPCValue(length_to_last.Id, tempTone.length_to_last, currentChord.tones[i].obj);
+				//AkSoundEngine.SetRTPCValue(length_to_last.Id, tempTone.length_to_last, currentChord.tones[i].obj);
 
 				currentChord.tones[i] = tempTone;
 			}
@@ -359,7 +378,21 @@ public class MusicMover : MonoBehaviour
 		tone.isMoving = true;
 		tone.semitone = keyNum;
 		tone.targetRotation = Quaternion.Euler(0, keyNum * toneAngle, 0);
-		tone.anchor.transform.localRotation = Quaternion.Euler(0, 0, 0);
+
+
+
+		if (metro.activeChordMode == MusicMetro.MetroChordMode.Math)
+		{
+			if (inputKeys.Count == 0)
+				tone.anchor.transform.localRotation = Quaternion.Euler(0, 0, 0);
+			else
+				tone.anchor.transform.localRotation = currentChord.tones[inputKeys.Count - 1].anchor.transform.localRotation;
+		}
+		else
+		{
+			tone.anchor.transform.localRotation = Quaternion.Euler(0, 0, 0);
+		}
+
 
 		currentChord.tones[inputKeys.Count] = tone;
 
@@ -393,6 +426,8 @@ public class MusicMover : MonoBehaviour
 			{
 				foreach (Tone tone in chords[i].tones)
 				{
+					AkSoundEngine.PostEvent(stop_event_.Id, tone.obj.gameObject);
+
 					if (i == inverseChord)
 					{
 						if (metro.activeChordMode == MusicMetro.MetroChordMode.Math)
@@ -408,10 +443,6 @@ public class MusicMover : MonoBehaviour
 						}
 						AkSoundEngine.SetSwitch("chord_design", chord_design, tone.obj.gameObject); // Could it be stacked into one AkObject?
 						AkSoundEngine.PostEvent(start_event_.Id, tone.obj.gameObject);
-					}
-					else
-					{
-						AkSoundEngine.PostEvent(stop_event_.Id, tone.obj.gameObject);
 					}
 				}
 			}

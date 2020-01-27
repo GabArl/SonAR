@@ -175,7 +175,7 @@
 				</Event>
 				<Event Name="Play_Metro_Step" ID="{32393432-427E-4564-8AD5-4CB2929A5692}">
 					<ChildrenList>
-						<Action Name="" ID="{7EDFC8F5-EB8E-4171-BD4B-247615E90D94}" ShortID="756651254">
+						<Action Name="" ID="{404FCD3B-DF3F-4D84-A97D-F0FDB7B41EE5}" ShortID="506258468">
 							<PropertyList>
 								<Property Name="Delay" Type="Real64" Value="0.1"/>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>

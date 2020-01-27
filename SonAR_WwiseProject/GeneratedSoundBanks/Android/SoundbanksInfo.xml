@@ -32,7 +32,7 @@
 			<IncludedMemoryFiles>
 				<File Id="7798141" Language="SFX">
 					<ShortName>ui_wheel_change_tone_03.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_03_FACD9E5A.wem</Path>
+					<Path>SFX\ui_wheel_change_tone_03_8B286050.wem</Path>
 				</File>
 				<File Id="54302559" Language="SFX">
 					<ShortName>ui_wheel_change_tone_01.wav</ShortName>
@@ -72,7 +72,7 @@
 				</File>
 				<File Id="616650629" Language="SFX">
 					<ShortName>ui_wheel_change_tone_03.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_03_1EAC60FB.wem</Path>
+					<Path>SFX\ui_wheel_change_tone_03_E235C618.wem</Path>
 				</File>
 				<File Id="725415192" Language="SFX">
 					<ShortName>Record.wav</ShortName>
@@ -80,7 +80,7 @@
 				</File>
 				<File Id="863798373" Language="SFX">
 					<ShortName>Circle 1.wav</ShortName>
-					<Path>SFX\Circle 1_71AC8C21.wem</Path>
+					<Path>SFX\Circle 1_16EC5A6C.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

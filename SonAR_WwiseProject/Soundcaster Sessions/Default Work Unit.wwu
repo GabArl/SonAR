@@ -93,7 +93,7 @@
 						<CurrentSwitchRef Name="_0" ID="{670A6D6A-CAA8-4502-B327-4D0C233933A2}"/>
 						<CurrentSwitchRef Name="_0" ID="{BC943E8C-DF64-4311-BA20-1AA698141962}"/>
 						<CurrentSwitchRef Name="_0" ID="{F8C60498-34C8-4CA0-B089-5AD55D4434C1}"/>
-						<CurrentSwitchRef Name="two" ID="{054002BE-0328-492C-8A44-6E99E073C2DA}"/>
+						<CurrentSwitchRef Name="one" ID="{2E98E92D-E322-4435-A2D3-243F06EA24E3}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
