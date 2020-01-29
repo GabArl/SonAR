@@ -81,7 +81,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Chord_Length" ID="{E6C253D0-DF47-4F54-A03E-E281C69A79CC}"/>
-							<Value>6.21739130434782E-02</Value>
+							<Value>1</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">

@@ -21,6 +21,16 @@
 						<State Name="Mute" ID="{8EAE03ED-60C1-4FF2-A8D2-B900155CBB42}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="chord_mode" ID="{1FFA5E58-E424-48C9-BE33-0F0CDD8E771B}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{EC000B33-B890-4F07-8B8D-16F2E5F3BF90}"/>
+						<State Name="music" ID="{A18179BB-C589-4F78-80C4-2F847F84982B}"/>
+						<State Name="math" ID="{112B9F7D-A4CB-465F-A95E-6E437B3C4DBB}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

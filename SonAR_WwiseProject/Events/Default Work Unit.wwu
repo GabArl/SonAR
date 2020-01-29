@@ -114,30 +114,39 @@
 				</Event>
 				<Event Name="Play_Chord_Full" ID="{113F2B32-5398-4607-AD8A-8A557B7929C3}">
 					<ChildrenList>
-						<Action Name="" ID="{F61F99AE-6167-4346-A6B8-2CF1E4717C4E}" ShortID="887190559">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="atom_loop" ID="{098B83F6-93A1-4C3F-9F98-7E25235230D4}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{0CFC4786-94E2-46E6-95AC-3B1A4634C389}" ShortID="882669787">
+						<Action Name="" ID="{A2A01203-59B8-42AC-8230-F74317D80EB7}" ShortID="811984137">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeInCurve" Type="int16" Value="8"/>
-								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
-								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="ActionType" Type="int16" Value="13"/>
+								<Property Name="Pitch" Type="int32" Value="-4800"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="atom_loop" ID="{098B83F6-93A1-4C3F-9F98-7E25235230D4}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
+									<ObjectRef Name="ui_wheel_change_tone_01" ID="{8767A828-DFB2-47C4-BF1A-314227EEA9D0}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 						<Action Name="" ID="{00D96BC6-CBB4-4499-AB1B-D6DAC0960E26}" ShortID="271256175">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Semitones" ID="{954B3CF1-CBB8-4148-8192-E0AB5E780335}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
+									<ObjectRef Name="ui_wheel_change_tone_01" ID="{8767A828-DFB2-47C4-BF1A-314227EEA9D0}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9DC39789-38B8-484A-BDF7-2AC25A3E533A}" ShortID="15818553">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="13"/>
+								<Property Name="Pitch" Type="int32" Value="3600"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ui_wheel_change_tone_02" ID="{149B1BB8-28AF-45CF-882E-4BC78BF4A269}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{92C75DE4-1480-42E4-9678-5D8DD627AF29}" ShortID="434633224">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ui_wheel_change_tone_02" ID="{149B1BB8-28AF-45CF-882E-4BC78BF4A269}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

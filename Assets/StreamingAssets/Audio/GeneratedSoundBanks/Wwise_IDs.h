@@ -29,6 +29,17 @@ namespace AK
 
     namespace STATES
     {
+        namespace CHORD_MODE
+        {
+            static const AkUniqueID GROUP = 2788513129U;
+
+            namespace STATE
+            {
+                static const AkUniqueID MATH = 2708913211U;
+                static const AkUniqueID MUSIC = 3991942870U;
+            } // namespace STATE
+        } // namespace CHORD_MODE
+
         namespace MUTE_CHORDS
         {
             static const AkUniqueID GROUP = 1372853048U;

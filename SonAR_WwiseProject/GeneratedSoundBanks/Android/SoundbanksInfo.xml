@@ -16,13 +16,13 @@
 			<ShortName>sb_SonAR</ShortName>
 			<Path>sb_SonAR.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2576020748" Name="Play_Chord_Full" ObjectPath="\Events\Default Work Unit\Play_Chord_Full" MaxAttenuation="2.000000" DurationType="Infinite"/>
+				<Event Id="2576020748" Name="Play_Chord_Full" ObjectPath="\Events\Default Work Unit\Play_Chord_Full" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.015975" DurationMax="0.015975"/>
 				<Event Id="2096876433" Name="Play_Chord_Loop" ObjectPath="\Events\Default Work Unit\Play_Chord_Loop" MaxAttenuation="2.000000" DurationType="Unknown"/>
 				<Event Id="3096279812" Name="Play_LastChord" ObjectPath="\Events\Default Work Unit\Play_LastChord" MaxAttenuation="5.000000" DurationType="Infinite"/>
 				<Event Id="3880256402" Name="Play_Metro_Step" ObjectPath="\Events\Default Work Unit\Play_Metro_Step" MaxAttenuation="2.000000" DurationType="Unknown"/>
 				<Event Id="533559632" Name="Play_Semitone" ObjectPath="\Events\Default Work Unit\Play_Semitone" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.196163" DurationMax="0.196163"/>
 				<Event Id="3592141553" Name="Play_Tick" ObjectPath="\Events\Default Work Unit\Play_Tick" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.085341" DurationMax="0.373883"/>
-				<Event Id="1709201661" Name="Play_Tick_Group" ObjectPath="\Events\Default Work Unit\Play_Tick_Group" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.069354" DurationMax="0.726355"/>
+				<Event Id="1709201661" Name="Play_Tick_Group" ObjectPath="\Events\Default Work Unit\Play_Tick_Group" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.069354" DurationMax="0.857268"/>
 				<Event Id="4028792483" Name="Play_Tone_Idle" ObjectPath="\Events\Default Work Unit\Play_Tone_Idle" MaxAttenuation="1.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3393091015" Name="Stop_Chord_Loop" ObjectPath="\Events\Default Work Unit\Stop_Chord_Loop" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.523693" DurationMax="0.523693"/>
 				<Event Id="987771470" Name="Stop_LastChord" ObjectPath="\Events\Default Work Unit\Stop_LastChord" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -70,17 +70,17 @@
 					<ShortName>ui_wheel_change_tone_02.wav</ShortName>
 					<Path>SFX\ui_wheel_change_tone_02_B6869661.wem</Path>
 				</File>
+				<File Id="578366139" Language="SFX">
+					<ShortName>ui_wheel_change_tone_01.wav</ShortName>
+					<Path>SFX\ui_wheel_change_tone_01_5A1B5743.wem</Path>
+				</File>
 				<File Id="616650629" Language="SFX">
 					<ShortName>ui_wheel_change_tone_03.wav</ShortName>
 					<Path>SFX\ui_wheel_change_tone_03_E235C618.wem</Path>
 				</File>
-				<File Id="725415192" Language="SFX">
-					<ShortName>Record.wav</ShortName>
-					<Path>SFX\Record_6A264F6F.wem</Path>
-				</File>
 				<File Id="863798373" Language="SFX">
 					<ShortName>Circle 1.wav</ShortName>
-					<Path>SFX\Circle 1_16EC5A6C.wem</Path>
+					<Path>SFX\Circle 1_9D6A2F85.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

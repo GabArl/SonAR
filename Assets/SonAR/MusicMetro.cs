@@ -19,7 +19,7 @@ public class MusicMetro : MonoBehaviour
 
 	public float lastInputTime;
 	private float timeSinceTick;
-	private float tapsPerSecond;
+	private float tapsPerMinute;
 	private List<float> taps = new List<float>();
 
 	private int max_tick_count = 4, max_semi_count = 12, max_chord_count = 4;
@@ -27,10 +27,10 @@ public class MusicMetro : MonoBehaviour
 	private float toneAngle;
 	private float repeatSpeedFactor = 1f;
 
-	private float maxBPM = 50f;
-	private float maxFactor = 0.1f;
-	private float maxTime = 0.25f;
-	private float bpm_factor;
+	public float maxTPM = 100f;
+	public float maxFactor = 0.14f;
+	public float maxTime = 0.25f;
+	private float tpm_factor;
 
 
 	[Range(0, 11)]
@@ -38,7 +38,7 @@ public class MusicMetro : MonoBehaviour
 	[Range(0, 11)]
 	private int to_semi = 11;
 
-	public AK.Wwise.Event tickEvent, stepEvent_start, stepEvent_stop, semiGroupEvent;
+	public AK.Wwise.Event tickEvent, semiGroupEvent;
 	public AK.Wwise.RTPC rtpc_step, rtpc_semitone, rtpc_speedFactor;
 
 
@@ -208,13 +208,13 @@ public class MusicMetro : MonoBehaviour
 				taps.Remove(taps[i]);
 			}
 		}
-		tapsPerSecond = taps.Count;
-		bpmText.text = "BPM: " + tapsPerSecond;
+		tapsPerMinute = taps.Count;
+		bpmText.text = "Taps per Minute: " + tapsPerMinute;
 
 		timeSinceTick += Time.deltaTime;
-		bpm_factor = Mathf.Lerp(0f, maxFactor, Mathf.InverseLerp(0f, maxBPM, tapsPerSecond));
+		tpm_factor = Mathf.Lerp(0f, maxFactor, Mathf.InverseLerp(0f, maxTPM, tapsPerMinute));
 
-		if (timeSinceTick >= maxTime - bpm_factor)
+		if (timeSinceTick >= maxTime - tpm_factor)
 		{
 			timeSinceTick = 0;
 
@@ -278,7 +278,7 @@ public class MusicMetro : MonoBehaviour
 	{
 		steps_list[last_chord].transform.localPosition -= new Vector3(0f, 0.003f, 0f);
 		steps_list[current_chord].transform.localPosition += new Vector3(0f, 0.003f, 0f);
-		mover.PlayChord(current_chord, stepEvent_start, stepEvent_stop);
+		mover.PlayChord(current_chord);
 	}
 
 	public void AddInputTap()

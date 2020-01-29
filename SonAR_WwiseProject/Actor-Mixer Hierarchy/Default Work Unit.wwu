@@ -50,7 +50,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>3</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -188,7 +188,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-22</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -250,7 +250,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-18</Value>
+												<Value>-19</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -347,7 +347,7 @@
 																	</Point>
 																	<Point>
 																		<XPos>1</XPos>
-																		<YPos>-3</YPos>
+																		<YPos>-2</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -533,11 +533,17 @@
 									<PropertyList>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>30</Value>
+												<Value>38</Value>
 											</ValueList>
 										</Property>
 										<Property Name="OverrideConversion" Type="bool" Value="True"/>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-2400</Value>
+											</ValueList>
+										</Property>
 										<Property Name="RenderEffect0" Type="bool">
 											<ValueList>
 												<Value>True</Value>
@@ -556,11 +562,6 @@
 										<Property Name="RenderEffect3" Type="bool">
 											<ValueList>
 												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -605,18 +606,21 @@
 												</Effect>
 											</Custom>
 										</Reference>
+										<Reference Name="Effect2" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+											<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
 										<Reference Name="Effect3">
 											<Custom CreatedFrom="{AB43D98E-8FA5-4C12-AFA0-54483E6AF9C9}">
 												<Effect Name="High_Freq_Cut_3_(Custom)" ID="{E168F779-BE40-4B09-AE81-07435D249654}" ShortID="992538333" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 													<PropertyList>
 														<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
 														<Property Name="FilterTypeBand2" Type="int32" Value="5"/>
-														<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
-														<Property Name="FrequencyBand2" Type="Real32" Value="663"/>
-														<Property Name="FrequencyBand3" Type="Real32" Value="15000"/>
-														<Property Name="GainBand2" Type="Real32" Value="-12.5"/>
-														<Property Name="GainBand3" Type="Real32" Value="-3"/>
+														<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="720"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="950"/>
+														<Property Name="GainBand3" Type="Real32" Value="-24"/>
 														<Property Name="OnOffBand1" Type="bool" Value="False"/>
+														<Property Name="QFactorBand3" Type="Real32" Value="0.5"/>
 													</PropertyList>
 												</Effect>
 											</Custom>
@@ -624,24 +628,21 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
 										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="Chord_d3" ID="{70BEDF65-B73C-4155-BB07-8DDFFB1C6521}" ShortID="326175454">
 											<PropertyList>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
-														<Value>60</Value>
+														<Value>45</Value>
 													</ValueList>
 												</Property>
-												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
 														<Value>2400</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UserAuxSendVolume0" Type="Real64">
-													<ValueList>
-														<Value>-13</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -680,7 +681,7 @@
 																			</Point>
 																			<Point>
 																				<XPos>1</XPos>
-																				<YPos>800</YPos>
+																				<YPos>1200</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -738,7 +739,7 @@
 																			</Point>
 																			<Point>
 																				<XPos>1</XPos>
-																				<YPos>420</YPos>
+																				<YPos>290</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -767,6 +768,11 @@
 										<Property Name="UserAuxSendVolume0" Type="Real64">
 											<ValueList>
 												<Value>-12</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1167,13 +1173,28 @@
 							<StateGroupInfo>
 								<StateGroupRef Name="mute_chords" ID="{0687E3AE-0637-4093-959F-4E05735DD0CE}"/>
 							</StateGroupInfo>
+							<StateGroupInfo>
+								<StateGroupRef Name="chord_mode" ID="{1FFA5E58-E424-48C9-BE33-0F0CDD8E771B}"/>
+							</StateGroupInfo>
 						</StateGroupList>
 						<CustomStateList>
+							<CustomState>
+								<StateRef Name="math" ID="{112B9F7D-A4CB-465F-A95E-6E437B3C4DBB}"/>
+								<CustomState Name="" ID="{DE28DF4D-6DAB-4B5D-89D7-8399C36E8B34}" ShortID="523996719"/>
+							</CustomState>
 							<CustomState>
 								<StateRef Name="Mute" ID="{FBCAAE69-970A-4F51-8F46-14C51AF42016}"/>
 								<CustomState Name="" ID="{474EC901-E654-4E79-8AC0-ECB4E6E4EB7C}" ShortID="753655817">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="music" ID="{A18179BB-C589-4F78-80C4-2F847F84982B}"/>
+								<CustomState Name="" ID="{B2C4BE28-5D2E-438D-ABC0-A1E9EDC2B522}" ShortID="223864645">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32" Value="-1200"/>
 									</PropertyList>
 								</CustomState>
 							</CustomState>
@@ -1183,6 +1204,11 @@
 				<ActorMixer Name="Ticks" ID="{1CEEE27E-BE79-41F3-A05C-A64CE33A6443}" ShortID="852940015">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AttachableMixerInput">
@@ -1411,7 +1437,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-12</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1448,7 +1474,7 @@
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>74</Value>
+												<Value>75</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Lowpass" Type="int16">
@@ -1560,12 +1586,12 @@
 									<ChildrenList>
 										<AudioFileSource Name="Circle 1" ID="{A463B21F-5640-412F-9E21-41628415102E}" ShortID="863798373">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.289652613141065"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.51361081917797"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.283680394313414"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.552430241557701"/>
 												<Property Name="FadeOutShape" Type="int16" Value="0"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="9.85416106562387E-02"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.612152429834209"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.25381930017516"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.859999511181718"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Circle 1.wav</AudioFile>
@@ -1601,133 +1627,6 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
-						<BlendContainer Name="atom_loop" ID="{098B83F6-93A1-4C3F-9F98-7E25235230D4}" ShortID="578444432">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
-								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>10</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-600</Value>
-									</ValueList>
-									<RTPCList>
-										<RTPC Name="" ID="{5E641611-1D36-4356-97D2-3B5AEFD74B0F}" ShortID="840940629">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="Chord_Length" ID="{E6C253D0-DF47-4F54-A03E-E281C69A79CC}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{2C45A205-5026-46A1-9ED3-CC55F357123C}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="65537"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>0</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>1</XPos>
-														<YPos>1200</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="UserAuxSendVolume0" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
-								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="AttachableMixerInput">
-									<Custom>
-										<Effect Name="Oculus Spatializer (Attached)" ID="{4CE3BCF9-C463-47F5-B81D-CF23514CB74B}" ShortID="605413757" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3"/>
-									</Custom>
-								</Reference>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="att_10m" ID="{C0775DFF-E924-4945-9240-946652C19DFB}" WorkUnitID="{9A9CC599-7D90-42EC-A617-C3043E491B06}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Space" ID="{626D6A43-DBE1-4239-8B2D-48B7B926E9D1}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
-								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Record" ID="{7E655ED7-9286-47D5-A651-97CEF1501B74}" ShortID="905554670">
-									<PropertyList>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="UserAuxSendVolume0" Type="Real64">
-											<ValueList>
-												<Value>-18</Value>
-											</ValueList>
-										</Property>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="AttachableMixerInput">
-											<Custom>
-												<Effect Name="Oculus Spatializer (Attached)" ID="{B8DD1B1C-3D99-4955-86BF-81709152E491}" ShortID="439797801" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3">
-													<PropertyList>
-														<Property Name="EnableReflections" Type="bool" Value="False"/>
-													</PropertyList>
-												</Effect>
-											</Custom>
-										</Reference>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="att_2m" ID="{15726583-2086-402E-B823-76E1A6671F70}" WorkUnitID="{9A9CC599-7D90-42EC-A617-C3043E491B06}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
-										</Reference>
-										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Record" ID="{A0678624-EBB0-4862-BBC8-F7F1A9E53925}" ShortID="1039454950">
-											<Language>SFX</Language>
-											<AudioFile>Record.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="725415192"/>
-											</ConvertedFileIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Record" ID="{A0678624-EBB0-4862-BBC8-F7F1A9E53925}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</BlendContainer>
 						<BlendContainer Name="tone_idle_loop" ID="{2F63922C-EC2E-4805-8C91-BA3D215D4533}" ShortID="720659056">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -4229,6 +4128,149 @@
 										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Semitone_chordFinish" ID="{08CBAE65-0D35-48E3-B908-D429E968FC9F}" ShortID="329605217">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>63</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>40</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>600</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{E9B47424-9406-4009-9762-0F620BC6073D}" ShortID="867991606">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Semitone" ID="{D4EACEDC-AEC2-4624-9276-D4A5B0C406D2}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{5D2D5C78-4D5B-4FA8-8528-5337E895FDDB}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-1200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>11</XPos>
+														<YPos>-100</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-18</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="AttachableMixerInput">
+									<Custom>
+										<Effect Name="Oculus Spatializer (Attached)" ID="{9C9CA3E5-38E7-4785-97FB-72365F27CF1A}" ShortID="503183932" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3"/>
+									</Custom>
+								</Reference>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="att_2m" ID="{15726583-2086-402E-B823-76E1A6671F70}" WorkUnitID="{9A9CC599-7D90-42EC-A617-C3043E491B06}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Space" ID="{626D6A43-DBE1-4239-8B2D-48B7B926E9D1}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ui_wheel_change_tone_01" ID="{8767A828-DFB2-47C4-BF1A-314227EEA9D0}" ShortID="506017046">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ui_wheel_change_tone_01" ID="{542F2A55-141C-4BE3-BC35-A5FBC6B3548B}" ShortID="578366139">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.56150698602794E-02"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.25920159680639E-02"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ui_wheel_change_tone_01" ID="{542F2A55-141C-4BE3-BC35-A5FBC6B3548B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ui_wheel_change_tone_02" ID="{149B1BB8-28AF-45CF-882E-4BC78BF4A269}" ShortID="423822875">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="att_2m" ID="{15726583-2086-402E-B823-76E1A6671F70}" WorkUnitID="{9A9CC599-7D90-42EC-A617-C3043E491B06}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Space" ID="{626D6A43-DBE1-4239-8B2D-48B7B926E9D1}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ui_wheel_change_tone_01" ID="{B6C4F4FE-7E0D-49CB-A74A-ACDB7710E8F9}" ShortID="511479142">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.56150698602794E-02"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.25920159680639E-02"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="578366139"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ui_wheel_change_tone_01" ID="{B6C4F4FE-7E0D-49CB-A74A-ACDB7710E8F9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>
