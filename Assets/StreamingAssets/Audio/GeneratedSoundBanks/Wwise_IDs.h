@@ -17,7 +17,6 @@ namespace AK
         static const AkUniqueID PLAY_CHORD_LOOP = 2096876433U;
         static const AkUniqueID PLAY_LASTCHORD = 3096279812U;
         static const AkUniqueID PLAY_METRO_STEP = 3880256402U;
-        static const AkUniqueID PLAY_SEMITONE = 533559632U;
         static const AkUniqueID PLAY_TICK = 3592141553U;
         static const AkUniqueID PLAY_TICK_GROUP = 1709201661U;
         static const AkUniqueID PLAY_TONE_IDLE = 4028792483U;

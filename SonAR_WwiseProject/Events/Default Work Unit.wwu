@@ -28,17 +28,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Semitone" ID="{6452A1A6-706D-4F0F-9ADD-94A42C15F0C4}">
-					<ChildrenList>
-						<Action Name="" ID="{0A7DFF27-4009-4241-9DC3-222BC013793E}" ShortID="160346634">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Semitones" ID="{954B3CF1-CBB8-4148-8192-E0AB5E780335}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Tone_Idle" ID="{8FC39D29-B0B4-48A1-ABA8-9F76E929A8FC}">
 					<ChildrenList>
 						<Action Name="" ID="{88E8FD11-7688-48ED-A0EA-D1AD8B8A07D8}" ShortID="556320414">
@@ -81,7 +70,7 @@
 						<Action Name="" ID="{52281BA4-790F-4D85-9C25-F781576FD3C6}" ShortID="451123271">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="idle_pad" ID="{DA569D1A-C9BC-4926-8D0D-F403B73FBF4C}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
+									<ObjectRef Name="idle_loop" ID="{DA569D1A-C9BC-4926-8D0D-F403B73FBF4C}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -95,7 +84,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="idle_pad" ID="{DA569D1A-C9BC-4926-8D0D-F403B73FBF4C}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
+									<ObjectRef Name="idle_loop" ID="{DA569D1A-C9BC-4926-8D0D-F403B73FBF4C}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -121,14 +110,14 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="ui_wheel_change_tone_01" ID="{8767A828-DFB2-47C4-BF1A-314227EEA9D0}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
+									<ObjectRef Name="tick_single_01-a" ID="{8767A828-DFB2-47C4-BF1A-314227EEA9D0}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 						<Action Name="" ID="{00D96BC6-CBB4-4499-AB1B-D6DAC0960E26}" ShortID="271256175">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="ui_wheel_change_tone_01" ID="{8767A828-DFB2-47C4-BF1A-314227EEA9D0}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
+									<ObjectRef Name="tick_single_01-a" ID="{8767A828-DFB2-47C4-BF1A-314227EEA9D0}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -139,14 +128,14 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="ui_wheel_change_tone_02" ID="{149B1BB8-28AF-45CF-882E-4BC78BF4A269}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
+									<ObjectRef Name="tick_single_01-b" ID="{149B1BB8-28AF-45CF-882E-4BC78BF4A269}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 						<Action Name="" ID="{92C75DE4-1480-42E4-9678-5D8DD627AF29}" ShortID="434633224">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="ui_wheel_change_tone_02" ID="{149B1BB8-28AF-45CF-882E-4BC78BF4A269}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
+									<ObjectRef Name="tick_single_01-b" ID="{149B1BB8-28AF-45CF-882E-4BC78BF4A269}" WorkUnitID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

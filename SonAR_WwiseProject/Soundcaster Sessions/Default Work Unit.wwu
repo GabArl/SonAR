@@ -6,12 +6,8 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{6546F73D-7A2D-49D4-BB22-3E6B11E39441}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Play_Chord_Loop" ID="{48CF23C0-256D-491A-8330-761242DE51DE}" WorkUnitID="{1B115F0D-3F98-4CFF-874B-CC4E07D7E8BC}"/>
-							<Position X="1" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Stop_Chord_Loop" ID="{C6C0BD9F-A832-419E-B35D-C515A9E24010}" WorkUnitID="{1B115F0D-3F98-4CFF-874B-CC4E07D7E8BC}"/>
-							<Position X="2" Y="0"/>
+							<ObjectRef Name="Play_Tick" ID="{6D9702FB-1019-46FB-8796-2E9001C76328}" WorkUnitID="{1B115F0D-3F98-4CFF-874B-CC4E07D7E8BC}"/>
+							<Position X="1" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -45,7 +41,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="tick_digit" ID="{4B58EF5A-766F-4706-A940-0FACEF7C62EA}"/>
-							<Value>0</Value>
+							<Value>3</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="rtpc_vel_y" ID="{FFAE3D87-850E-47B6-A7A2-D543F6C5F497}"/>
@@ -88,7 +84,7 @@
 						<CurrentStateRef Name="Mute" ID="{FBCAAE69-970A-4F51-8F46-14C51AF42016}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="binary" ID="{CA3E0A23-8005-47F4-9DC9-C1025969AAFE}"/>
+						<CurrentSwitchRef Name="repeat" ID="{5B4461DA-6001-405B-B339-52DA0C5EA9E8}"/>
 						<CurrentSwitchRef Name="one" ID="{470623AB-4150-4308-BB77-F5844CFD9CC8}"/>
 						<CurrentSwitchRef Name="_0" ID="{670A6D6A-CAA8-4502-B327-4D0C233933A2}"/>
 						<CurrentSwitchRef Name="_0" ID="{BC943E8C-DF64-4311-BA20-1AA698141962}"/>

@@ -201,6 +201,8 @@ public class MusicMetro : MonoBehaviour
 
 	public void UpdateMetro()
 	{
+		// Update TPM
+
 		for (int i = 0; i < taps.Count; i++)
 		{
 			if (taps[i] <= Time.timeSinceLevelLoad - 60)
@@ -209,10 +211,11 @@ public class MusicMetro : MonoBehaviour
 			}
 		}
 		tapsPerMinute = taps.Count;
-		bpmText.text = "Taps per Minute: " + tapsPerMinute;
+		tpm_factor = Mathf.Lerp(0f, maxFactor, Mathf.InverseLerp(0f, maxTPM, tapsPerMinute));
+
+		// Update tick
 
 		timeSinceTick += Time.deltaTime;
-		tpm_factor = Mathf.Lerp(0f, maxFactor, Mathf.InverseLerp(0f, maxTPM, tapsPerMinute));
 
 		if (timeSinceTick >= maxTime - tpm_factor)
 		{
@@ -223,6 +226,10 @@ public class MusicMetro : MonoBehaviour
 			if (activeReadMode == MetroReadMode.Group)
 				current_semitone += activeDirectionCycle;
 		}
+
+		// Update UI
+
+		bpmText.text = "Taps per Minute: " + tapsPerMinute;
 
 		sequencerText.text = "";
 		for (int i = 0; i < sequencer.GetLength(0); i++)

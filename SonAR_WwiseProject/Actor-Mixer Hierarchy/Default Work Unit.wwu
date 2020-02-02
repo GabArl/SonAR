@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{6172D73D-0CD1-4F53-ACAF-6084FDDF04D0}" PersistMode="Standalone">
 			<ChildrenList>
-				<BlendContainer Name="idle_pad" ID="{DA569D1A-C9BC-4926-8D0D-F403B73FBF4C}" ShortID="510858480">
+				<BlendContainer Name="idle_loop" ID="{DA569D1A-C9BC-4926-8D0D-F403B73FBF4C}" ShortID="510858480">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Highpass" Type="int16">
@@ -74,7 +74,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="sfx_player_circle_loop_01" ID="{B36E942F-4A01-492E-8CE6-A01771DD65C3}" ShortID="943398633">
+						<Sound Name="idle_loop" ID="{B36E942F-4A01-492E-8CE6-A01771DD65C3}" ShortID="943398633">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -96,61 +96,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="sfx_player_circle_loop_01" ID="{291C7E81-17C5-4AB2-AD24-B617BFD9A1C8}" ShortID="462736533">
+								<AudioFileSource Name="idle_loop" ID="{0FF5D79F-439B-4E6F-988C-B15BD38C2CD3}" ShortID="27045413">
 									<PropertyList>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 									</PropertyList>
 									<Language>SFX</Language>
-									<AudioFile>sfx_player_circle_loop_01.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="422270334"/>
-									</ConvertedFileIDList>
+									<AudioFile>idle_loop.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="sfx_player_circle_loop_01" ID="{291C7E81-17C5-4AB2-AD24-B617BFD9A1C8}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="ui_wheel_change_tone_02" ID="{2EE4FDFE-66E7-4880-A5E2-D436B05378A6}" ShortID="702325268">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="Highpass" Type="int16">
-									<ValueList>
-										<Value>45</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-96</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="att_10cm" ID="{B85BA967-5D3A-4E27-93B0-355992DBCD0A}" WorkUnitID="{9A9CC599-7D90-42EC-A617-C3043E491B06}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
-								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="ui_wheel_change_tone_02" ID="{F5A0DD67-13CF-4F8C-906C-5BD1C2791894}" ShortID="240010076">
-									<Language>SFX</Language>
-									<AudioFile>ui_wheel_change_tone_02.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File Platform="Android" ID="482077558"/>
-										<File Platform="Windows" ID="66536949"/>
-									</ConvertedFileIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="ui_wheel_change_tone_02" ID="{F5A0DD67-13CF-4F8C-906C-5BD1C2791894}" Platform="Linked"/>
+								<ActiveSource Name="idle_loop" ID="{0FF5D79F-439B-4E6F-988C-B15BD38C2CD3}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -1266,7 +1221,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="ui_wheel_change_tone_02" ID="{74A5DB5F-85F7-48AA-93CD-5E9F4E79431D}" ShortID="711290403">
+								<Sound Name="tick_single_01" ID="{74A5DB5F-85F7-48AA-93CD-5E9F4E79431D}" ShortID="711290403">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="UserAuxSendVolume0" Type="Real64">
@@ -1276,7 +1231,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1295,17 +1250,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="ui_wheel_change_tone_01" ID="{36341D7C-D3D3-47AF-BF90-7147A1DE4BA3}" ShortID="466905319">
+										<AudioFileSource Name="tick_single_01" ID="{D5DD7AB2-D67D-4183-8C52-1A295DC4A789}" ShortID="877099058">
 											<Language>SFX</Language>
-											<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+											<AudioFile>tick_single_01.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File Platform="Android" ID="329064743"/>
-												<File Platform="Windows" ID="142011321"/>
+												<File ID="274989793"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="ui_wheel_change_tone_01" ID="{36341D7C-D3D3-47AF-BF90-7147A1DE4BA3}" Platform="Linked"/>
+										<ActiveSource Name="tick_single_01" ID="{D5DD7AB2-D67D-4183-8C52-1A295DC4A789}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -1347,7 +1301,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="ui_wheel_change_tone_01" ID="{91AAB985-314A-4D27-8137-8A977BC02DBB}" ShortID="745096084">
+								<Sound Name="tick_group_d2" ID="{91AAB985-314A-4D27-8137-8A977BC02DBB}" ShortID="745096084">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="Pitch" Type="int32">
@@ -1437,7 +1391,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-13</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1456,20 +1410,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="ui_wheel_change_tone_01" ID="{095D5900-6ECD-4F1A-A745-6BEAA366B939}" ShortID="786883849">
+										<AudioFileSource Name="tick_single_01" ID="{15D0A0D8-0A40-4FAB-BCC3-0E7B820EFDC2}" ShortID="274989793">
 											<Language>SFX</Language>
-											<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File Platform="Android" ID="329064743"/>
-												<File Platform="Windows" ID="142011321"/>
-											</ConvertedFileIDList>
+											<AudioFile>tick_single_01.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="ui_wheel_change_tone_01" ID="{095D5900-6ECD-4F1A-A745-6BEAA366B939}" Platform="Linked"/>
+										<ActiveSource Name="tick_single_01" ID="{15D0A0D8-0A40-4FAB-BCC3-0E7B820EFDC2}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Circle 1" ID="{4095E34A-5F5B-4350-A754-4666711C3C80}" ShortID="621410206">
+								<Sound Name="tick_group_d1" ID="{4095E34A-5F5B-4350-A754-4666711C3C80}" ShortID="621410206">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="Highpass" Type="int16">
@@ -1568,6 +1518,11 @@
 												<Value>-9</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -1584,44 +1539,44 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Circle 1" ID="{A463B21F-5640-412F-9E21-41628415102E}" ShortID="863798373">
+										<AudioFileSource Name="tick_group" ID="{A7551BDC-CDA2-4208-970C-7AEDD2E7954E}" ShortID="485519638">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.283680394313414"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.552430241557701"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.284"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.552"/>
 												<Property Name="FadeOutShape" Type="int16" Value="0"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.25381930017516"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.859999511181718"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.25382"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.86"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>Circle 1.wav</AudioFile>
+											<AudioFile>tick_group.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Circle 1" ID="{A463B21F-5640-412F-9E21-41628415102E}" Platform="Linked"/>
+										<ActiveSource Name="tick_group" ID="{A7551BDC-CDA2-4208-970C-7AEDD2E7954E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="Circle 1" ID="{4095E34A-5F5B-4350-A754-4666711C3C80}"/>
+										<ItemRef Name="tick_group_d1" ID="{4095E34A-5F5B-4350-A754-4666711C3C80}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="ui_wheel_change_tone_01" ID="{91AAB985-314A-4D27-8137-8A977BC02DBB}"/>
+										<ItemRef Name="tick_group_d2" ID="{91AAB985-314A-4D27-8137-8A977BC02DBB}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
 										<SwitchRef Name="one" ID="{2E98E92D-E322-4435-A2D3-243F06EA24E3}"/>
 										<ItemList>
-											<ItemRef Name="ui_wheel_change_tone_01" ID="{91AAB985-314A-4D27-8137-8A977BC02DBB}"/>
+											<ItemRef Name="tick_group_d2" ID="{91AAB985-314A-4D27-8137-8A977BC02DBB}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="two" ID="{054002BE-0328-492C-8A44-6E99E073C2DA}"/>
 										<ItemList>
-											<ItemRef Name="Circle 1" ID="{4095E34A-5F5B-4350-A754-4666711C3C80}"/>
+											<ItemRef Name="tick_group_d1" ID="{4095E34A-5F5B-4350-A754-4666711C3C80}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
@@ -1734,7 +1689,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="ui_wheel_change_tone_02" ID="{30390833-CC38-4847-B9E1-ABA69988FA2D}" ShortID="358937498">
+										<Sound Name="tick_single_01" ID="{30390833-CC38-4847-B9E1-ABA69988FA2D}" ShortID="358937498">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
@@ -1769,130 +1724,31 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="ui_wheel_change_tone_02" ID="{43C753E1-1617-4294-B176-C136E783BBB7}" ShortID="786278253">
+												<AudioFileSource Name="tick_single_01" ID="{043B2241-835F-4D82-A885-B6B38358C2E1}" ShortID="956104068">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="3.80837912087912E-03"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.236119505494505"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="7.59100331674958E-03"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.236"/>
 														<Property Name="FadeOutShape" Type="int16" Value="0"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="7.61675824175825E-03"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.251353021978022"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.00762"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.25135"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>ui_wheel_change_tone_02.wav</AudioFile>
+													<AudioFile>tick_single_01.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="ui_wheel_change_tone_02" ID="{43C753E1-1617-4294-B176-C136E783BBB7}" Platform="Linked"/>
+												<ActiveSource Name="tick_single_01" ID="{043B2241-835F-4D82-A885-B6B38358C2E1}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
-						<BlendContainer Name="Semitones" ID="{954B3CF1-CBB8-4148-8192-E0AB5E780335}" ShortID="740572987">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>600</Value>
-									</ValueList>
-									<RTPCList>
-										<RTPC Name="" ID="{4BB47FDF-B6B2-4AD2-A2D2-8F48081E34DE}" ShortID="377684497">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="Semitone" ID="{D4EACEDC-AEC2-4624-9276-D4A5B0C406D2}" WorkUnitID="{02FC784A-EF39-494A-855A-8AC8D8F4F44F}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{2B1B3C13-3519-4ED7-A1C6-983439EEF068}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="65537"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-1200</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>11</XPos>
-														<YPos>-100</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
-								<Property Name="UserAuxSendVolume0" Type="Real64">
-									<ValueList>
-										<Value>-3</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-17</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="AttachableMixerInput">
-									<Custom>
-										<Effect Name="Oculus Spatializer (Attached)" ID="{F00431ED-D6F9-4CF2-A0F4-36BF2600B55A}" ShortID="514910295" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3"/>
-									</Custom>
-								</Reference>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="att_10m" ID="{C0775DFF-E924-4945-9240-946652C19DFB}" WorkUnitID="{9A9CC599-7D90-42EC-A617-C3043E491B06}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Space" ID="{626D6A43-DBE1-4239-8B2D-48B7B926E9D1}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
-								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="ui_wheel_change_tone_01" ID="{33F77BE3-7BF4-44FB-9A6A-3A252CE8BF8E}" ShortID="43745107">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-9</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
-										</Reference>
-										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="ui_wheel_change_tone_01" ID="{C0EDCC44-EC46-4E12-9A9F-230C4891F5E3}" ShortID="695562172">
-											<Language>SFX</Language>
-											<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File Platform="Android" ID="329064743"/>
-												<File Platform="Windows" ID="142011321"/>
-											</ConvertedFileIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="ui_wheel_change_tone_01" ID="{C0EDCC44-EC46-4E12-9A9F-230C4891F5E3}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</BlendContainer>
 						<BlendContainer Name="Tick" ID="{688EB154-A85C-4287-8313-CFC569E35F52}" ShortID="548374432">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="AttachableMixerInput">
@@ -1911,7 +1767,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Space" ID="{626D6A43-DBE1-4239-8B2D-48B7B926E9D1}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+									<ObjectRef Name="Record" ID="{585DB0E7-50B3-4B4D-A6A0-CA77477F3123}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1992,44 +1848,9 @@
 																				<Value>150</Value>
 																			</ValueList>
 																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
-																		</Reference>
-																		<Reference Name="UserAuxSend0">
-																			<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_01" ID="{C7DC783E-BBE4-4AEB-A969-A2E6F8D151FA}" ShortID="376536993">
-																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="0.013854723190089"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="7.31400503290748E-02"/>
-																				<Property Name="FadeOutShape" Type="int16" Value="2"/>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="4.51084010840108E-02"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="0.137258420441347"/>
-																			</PropertyList>
-																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
-																			<ConvertedFileIDList>
-																				<File ID="88409178"/>
-																			</ConvertedFileIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_01" ID="{C7DC783E-BBE4-4AEB-A969-A2E6F8D151FA}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="1" ID="{79A87C46-039B-46FB-90B4-79F7A80742B9}" ShortID="439463462">
-																	<PropertyList>
-																		<Property Name="Pitch" Type="int32">
+																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>-100</Value>
+																				<Value>2</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -2045,24 +1866,63 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_01" ID="{2F987A1E-4F2F-447F-9155-4750BB2702D0}" ShortID="154344542">
+																		<AudioFileSource Name="tick_single_01" ID="{7BDB9DE9-C06D-4403-9F77-F960EBD670B8}" ShortID="437465099">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="6.02519357336431E-02"/>
-																				<Property Name="FadeInShape" Type="int16" Value="7"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="1.51435346496323E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.014"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.073"/>
+																				<Property Name="FadeOutShape" Type="int16" Value="2"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="5.79965156794422E-03"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="8.63503677893922E-02"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.04511"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.13726"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
-																			<ConvertedFileIDList>
-																				<File ID="54302559"/>
-																			</ConvertedFileIDList>
+																			<AudioFile>tick_single_01.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_01" ID="{2F987A1E-4F2F-447F-9155-4750BB2702D0}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_01" ID="{7BDB9DE9-C06D-4403-9F77-F960EBD670B8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="1" ID="{79A87C46-039B-46FB-90B4-79F7A80742B9}" ShortID="439463462">
+																	<PropertyList>
+																		<Property Name="Pitch" Type="int32">
+																			<ValueList>
+																				<Value>-100</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>2</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="tick_single_01" ID="{FEC30BF3-40DD-473F-B7AA-61D4CF6388C3}" ShortID="708162647">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.06"/>
+																				<Property Name="FadeInShape" Type="int16" Value="7"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.015"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.0058"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.08635"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>tick_single_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="tick_single_01" ID="{FEC30BF3-40DD-473F-B7AA-61D4CF6388C3}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -2121,44 +1981,9 @@
 																				<Value>150</Value>
 																			</ValueList>
 																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
-																		</Reference>
-																		<Reference Name="UserAuxSend0">
-																			<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_01" ID="{AED34420-0142-4D0D-9034-D0C6CA04AE5B}" ShortID="420513590">
-																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="0.013854723190089"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="7.31400503290748E-02"/>
-																				<Property Name="FadeOutShape" Type="int16" Value="2"/>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="4.51084010840108E-02"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="0.137258420441347"/>
-																			</PropertyList>
-																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
-																			<ConvertedFileIDList>
-																				<File ID="88409178"/>
-																			</ConvertedFileIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_01" ID="{AED34420-0142-4D0D-9034-D0C6CA04AE5B}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="1" ID="{444BC0E9-C84B-41F1-A300-86DAA5864A10}" ShortID="30382798">
-																	<PropertyList>
-																		<Property Name="Pitch" Type="int32">
+																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>-100</Value>
+																				<Value>2</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -2174,24 +1999,69 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_01" ID="{C91970CC-ADA2-45BA-B7BD-C0C60A5AEB27}" ShortID="155130158">
+																		<AudioFileSource Name="tick_single_01" ID="{DF4F9D11-50D0-4768-B3E7-9CA943A6D74C}" ShortID="129839569">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="6.02519357336431E-02"/>
-																				<Property Name="FadeInShape" Type="int16" Value="7"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="1.51435346496323E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.014"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.073"/>
+																				<Property Name="FadeOutShape" Type="int16" Value="2"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="5.79965156794422E-03"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="8.63503677893922E-02"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.04511"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.13726"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+																			<AudioFile>tick_single_01.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="54302559"/>
+																				<File ID="437465099"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_01" ID="{C91970CC-ADA2-45BA-B7BD-C0C60A5AEB27}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_01" ID="{DF4F9D11-50D0-4768-B3E7-9CA943A6D74C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="1" ID="{444BC0E9-C84B-41F1-A300-86DAA5864A10}" ShortID="30382798">
+																	<PropertyList>
+																		<Property Name="Pitch" Type="int32">
+																			<ValueList>
+																				<Value>-100</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>2</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="reverb" ID="{09C7BCC9-FA4A-493F-95E5-8DD27DD76A12}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="tick_single_01" ID="{2D40164F-FA08-4E2B-914E-4E6CD56DC96C}" ShortID="383798997">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.06"/>
+																				<Property Name="FadeInShape" Type="int16" Value="7"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.015"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.0058"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.08635"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>tick_single_01.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="708162647"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="tick_single_01" ID="{2D40164F-FA08-4E2B-914E-4E6CD56DC96C}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -2267,6 +2137,11 @@
 																				<Value>6</Value>
 																			</ValueList>
 																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>1</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Attenuation">
@@ -2283,25 +2158,21 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_03" ID="{315F4A1B-EF1D-49D9-804F-28B601BD1C75}" ShortID="274396582">
+																		<AudioFileSource Name="tick_single_02" ID="{EB9ACB01-8CFF-4F51-967D-1342F5861BE0}" ShortID="604560346">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="2.59529217762913E-02"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="4.31506410256411E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.026"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.043"/>
 																				<Property Name="FadeOutShape" Type="int16" Value="0"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="9.69325994054255E-03"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="6.56640189520624E-02"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.00969"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.06566"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
-																			<ConvertedFileIDList>
-																				<File Platform="Android" ID="182918401"/>
-																				<File Platform="Windows" ID="120218215"/>
-																			</ConvertedFileIDList>
+																			<AudioFile>tick_single_02.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_03" ID="{315F4A1B-EF1D-49D9-804F-28B601BD1C75}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_02" ID="{EB9ACB01-8CFF-4F51-967D-1342F5861BE0}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="1" ID="{3611C549-BA2B-48E0-8FDC-E888CE11CA1F}" ShortID="640018299">
@@ -2314,6 +2185,11 @@
 																		<Property Name="Pitch" Type="int32">
 																			<ValueList>
 																				<Value>-2300</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>2</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -2329,21 +2205,21 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_03" ID="{F47AB62F-92A1-43BC-B89F-25408CB02923}" ShortID="55176079">
+																		<AudioFileSource Name="tick_single_02" ID="{60AB5008-EE55-4286-850A-4A5229D727F4}" ShortID="246818888">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="2.06372630992195E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.021"/>
 																				<Property Name="FadeInShape" Type="int16" Value="9"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="3.43954384986991E-03"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.003"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="2.81417224080268E-02"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="7.31684782608696E-02"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.02814"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.07317"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+																			<AudioFile>tick_single_02.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_03" ID="{F47AB62F-92A1-43BC-B89F-25408CB02923}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_02" ID="{60AB5008-EE55-4286-850A-4A5229D727F4}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -2407,6 +2283,11 @@
 																				<Value>-2400</Value>
 																			</ValueList>
 																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>1</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
@@ -2420,24 +2301,24 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_03" ID="{DE472A8F-FEE4-49F4-89CA-8E5EAAC16134}" ShortID="713361219">
+																		<AudioFileSource Name="tick_single_02" ID="{6E42B4B5-6C0B-4A3D-ADD5-03391A695BF5}" ShortID="746608340">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="9.06788833147528E-03"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="4.84662997027128E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.026"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.043"/>
 																				<Property Name="FadeOutShape" Type="int16" Value="0"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="9.69325994054255E-03"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="6.56640189520624E-02"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.00969"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.06566"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+																			<AudioFile>tick_single_02.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="274396582"/>
+																				<File ID="604560346"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_03" ID="{DE472A8F-FEE4-49F4-89CA-8E5EAAC16134}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_02" ID="{6E42B4B5-6C0B-4A3D-ADD5-03391A695BF5}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="1" ID="{12FB4CBC-B368-44B6-998B-CFCFE123A295}" ShortID="506265698">
@@ -2452,6 +2333,11 @@
 																				<Value>-2300</Value>
 																			</ValueList>
 																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>2</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
@@ -2465,25 +2351,24 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_03" ID="{FAA3637C-D788-4595-8598-6D26FDA1CB45}" ShortID="824757981">
+																		<AudioFileSource Name="tick_single_02" ID="{A1DB78CB-6C2B-4060-B2B4-FDFB8D00DE0D}" ShortID="193116609">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="2.50148643626904E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.021"/>
 																				<Property Name="FadeInShape" Type="int16" Value="9"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="3.43954384986991E-03"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.003"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="3.56461817168339E-02"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="7.34811640654032E-02"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.02814"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.07317"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+																			<AudioFile>tick_single_02.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File Platform="Android" ID="244711514"/>
-																				<File Platform="Windows" ID="182918401"/>
+																				<File ID="246818888"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_03" ID="{FAA3637C-D788-4595-8598-6D26FDA1CB45}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_02" ID="{A1DB78CB-6C2B-4060-B2B4-FDFB8D00DE0D}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -2633,7 +2518,7 @@
 																		</Property>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>-8</Value>
+																				<Value>-6</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -2649,24 +2534,24 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_01" ID="{84C521AB-B00F-4E50-A4F2-3C0D040E33D9}" ShortID="844976464">
+																		<AudioFileSource Name="tick_single_01" ID="{7A316C4B-EB9F-4A37-AC18-20A01E4A935E}" ShortID="339088967">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="0.013854723190089"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="7.31400503290748E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.014"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.073"/>
 																				<Property Name="FadeOutShape" Type="int16" Value="2"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="4.51084010840108E-02"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="0.137258420441347"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.04511"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.13726"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+																			<AudioFile>tick_single_01.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="88409178"/>
+																				<File ID="437465099"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_01" ID="{84C521AB-B00F-4E50-A4F2-3C0D040E33D9}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_01" ID="{7A316C4B-EB9F-4A37-AC18-20A01E4A935E}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="tick" ID="{A9C266E3-2669-465C-B442-CACDCF3332CF}" ShortID="34739501">
@@ -2676,6 +2561,11 @@
 																				<Value>-100</Value>
 																			</ValueList>
 																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>2</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
@@ -2689,25 +2579,24 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_01" ID="{32D2D96F-1639-4355-8D7D-911B888A6C78}" ShortID="9161198">
+																		<AudioFileSource Name="tick_single_01" ID="{50C60EA4-8B9D-43F6-B170-390612B82E5F}" ShortID="159681571">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="6.02519357336431E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.06"/>
 																				<Property Name="FadeInShape" Type="int16" Value="7"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="1.51435346496323E-02"/>
-																				<Property Name="LoopBegin" Type="Real64" Value="0.20975406504065"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.015"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="5.79965156794422E-03"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="8.63503677893922E-02"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.0058"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.08635"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+																			<AudioFile>tick_single_01.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="54302559"/>
+																				<File ID="708162647"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_01" ID="{32D2D96F-1639-4355-8D7D-911B888A6C78}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_01" ID="{50C60EA4-8B9D-43F6-B170-390612B82E5F}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -2767,6 +2656,11 @@
 																				<Value>-100</Value>
 																			</ValueList>
 																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>2</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
@@ -2780,25 +2674,24 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_01" ID="{70D0B71F-7191-4BDC-8681-EEA5749EA2A0}" ShortID="573623086">
+																		<AudioFileSource Name="tick_single_01" ID="{4874D19D-61D5-462D-A8C1-E01B6384FB59}" ShortID="510406214">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="6.02519357336431E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.06"/>
 																				<Property Name="FadeInShape" Type="int16" Value="7"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="1.51435346496323E-02"/>
-																				<Property Name="LoopBegin" Type="Real64" Value="0.20975406504065"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.015"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="5.79965156794422E-03"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="8.63503677893922E-02"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.0058"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.08635"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+																			<AudioFile>tick_single_01.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="54302559"/>
+																				<File ID="708162647"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_01" ID="{70D0B71F-7191-4BDC-8681-EEA5749EA2A0}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_01" ID="{4874D19D-61D5-462D-A8C1-E01B6384FB59}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="end" ID="{81F1208B-7D7D-4F1C-915D-CB408387C97E}" ShortID="719168672">
@@ -2810,7 +2703,7 @@
 																		</Property>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>-8</Value>
+																				<Value>-6</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -2826,24 +2719,24 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_01" ID="{C26244F1-2566-4ED2-8889-7175B9C238ED}" ShortID="36641175">
+																		<AudioFileSource Name="tick_single_01" ID="{59233CDF-123B-471B-B171-C6EF06D0DA14}" ShortID="1031125059">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="0.013854723190089"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="7.31400503290748E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.014"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.073"/>
 																				<Property Name="FadeOutShape" Type="int16" Value="2"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="4.51084010840108E-02"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="0.137258420441347"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.04511"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.13726"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+																			<AudioFile>tick_single_01.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="88409178"/>
+																				<File ID="437465099"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_01" ID="{C26244F1-2566-4ED2-8889-7175B9C238ED}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_01" ID="{59233CDF-123B-471B-B171-C6EF06D0DA14}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -2904,6 +2797,11 @@
 																				<Value>-100</Value>
 																			</ValueList>
 																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>2</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
@@ -2917,25 +2815,24 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_01" ID="{9D266019-4965-4A1C-A0B1-35AAC1C570B6}" ShortID="979634481">
+																		<AudioFileSource Name="tick_single_01" ID="{86F96F17-5A92-4DB0-9DD7-FAE05EF0158F}" ShortID="196688135">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="6.02519357336431E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.06"/>
 																				<Property Name="FadeInShape" Type="int16" Value="7"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="1.51435346496323E-02"/>
-																				<Property Name="LoopBegin" Type="Real64" Value="0.20975406504065"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.015"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="5.79965156794422E-03"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="8.63503677893922E-02"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.0058"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.08635"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+																			<AudioFile>tick_single_01.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="54302559"/>
+																				<File ID="708162647"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_01" ID="{9D266019-4965-4A1C-A0B1-35AAC1C570B6}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_01" ID="{86F96F17-5A92-4DB0-9DD7-FAE05EF0158F}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="end" ID="{2D9D96F1-6C77-4C06-B628-7889A5E55D45}" ShortID="162211240">
@@ -2947,7 +2844,7 @@
 																		</Property>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>-8</Value>
+																				<Value>-6</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -2963,24 +2860,24 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_01" ID="{607A474B-25AE-47D5-AD43-884616005B0B}" ShortID="66551381">
+																		<AudioFileSource Name="tick_single_01" ID="{D9CD755D-CF1B-4883-AFA8-4B07641438AF}" ShortID="237777225">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="0.013854723190089"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="7.31400503290748E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.014"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.073"/>
 																				<Property Name="FadeOutShape" Type="int16" Value="2"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="4.51084010840108E-02"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="0.137258420441347"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.04511"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.13726"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+																			<AudioFile>tick_single_01.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="88409178"/>
+																				<File ID="437465099"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_01" ID="{607A474B-25AE-47D5-AD43-884616005B0B}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_01" ID="{D9CD755D-CF1B-4883-AFA8-4B07641438AF}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -3042,6 +2939,11 @@
 																				<Value>-100</Value>
 																			</ValueList>
 																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>2</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
@@ -3055,25 +2957,24 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_01" ID="{EC2664FE-359E-4B80-A35E-B56817E7B88C}" ShortID="252573524">
+																		<AudioFileSource Name="tick_single_01" ID="{E5CF8E42-7301-4036-83A5-C3F3608AB673}" ShortID="218048777">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="6.02519357336431E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.06"/>
 																				<Property Name="FadeInShape" Type="int16" Value="7"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="1.51435346496323E-02"/>
-																				<Property Name="LoopBegin" Type="Real64" Value="0.20975406504065"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.015"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="5.79965156794422E-03"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="8.63503677893922E-02"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.0058"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.08635"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+																			<AudioFile>tick_single_01.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="54302559"/>
+																				<File ID="708162647"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_01" ID="{EC2664FE-359E-4B80-A35E-B56817E7B88C}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_01" ID="{E5CF8E42-7301-4036-83A5-C3F3608AB673}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="end" ID="{80D79C57-3EDE-4D52-83CD-CFA21C9A33A3}" ShortID="817435974">
@@ -3085,7 +2986,7 @@
 																		</Property>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>-8</Value>
+																				<Value>-6</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -3101,24 +3002,24 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_01" ID="{C5518DC9-967F-4B7D-988C-9307EE81FF83}" ShortID="992548454">
+																		<AudioFileSource Name="tick_single_01" ID="{38472B1B-319E-424D-8327-04C53DFD30B6}" ShortID="74947596">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="0.013854723190089"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="7.31400503290748E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.014"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.073"/>
 																				<Property Name="FadeOutShape" Type="int16" Value="2"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="4.51084010840108E-02"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="0.137258420441347"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.04511"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.13726"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+																			<AudioFile>tick_single_01.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="88409178"/>
+																				<File ID="437465099"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_01" ID="{C5518DC9-967F-4B7D-988C-9307EE81FF83}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_01" ID="{38472B1B-319E-424D-8327-04C53DFD30B6}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -3250,7 +3151,7 @@
 																		</Property>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>3</Value>
+																				<Value>5</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -3269,24 +3170,21 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_03" ID="{DA08D7F5-07B8-4116-8600-39EAB61A46C8}" ShortID="175748837">
+																		<AudioFileSource Name="tick_single_02" ID="{AB9DD8B1-5FB8-4A83-9687-EC1A4D3DD72A}" ShortID="752069697">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="1.19037800652874E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.012"/>
 																				<Property Name="FadeInShape" Type="int16" Value="9"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="1.68756715943809E-02"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.017"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="0.082893942966909"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="0.145051761694003"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.08289"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.14505"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
-																			<ConvertedFileIDList>
-																				<File ID="7798141"/>
-																			</ConvertedFileIDList>
+																			<AudioFile>tick_single_02.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_03" ID="{DA08D7F5-07B8-4116-8600-39EAB61A46C8}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_02" ID="{AB9DD8B1-5FB8-4A83-9687-EC1A4D3DD72A}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="tick" ID="{BA58466C-5872-40C5-82FC-05351F593AA7}" ShortID="434099200">
@@ -3302,6 +3200,11 @@
 																				<Value>-2400</Value>
 																			</ValueList>
 																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>1</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Attenuation">
@@ -3318,21 +3221,21 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_03" ID="{42AE14F2-BE16-4980-A7ED-3C85C1EAC4C8}" ShortID="616650629">
+																		<AudioFileSource Name="tick_single_02" ID="{9ECE6741-DEAB-4803-9272-19CC0FDAB947}" ShortID="187393400">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="7.14234293397593E-03"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="4.31506410256411E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.007"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.043"/>
 																				<Property Name="FadeOutShape" Type="int16" Value="0"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="9.69325994054255E-03"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="6.09613742414836E-02"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.00969"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.06096"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+																			<AudioFile>tick_single_02.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_03" ID="{42AE14F2-BE16-4980-A7ED-3C85C1EAC4C8}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_02" ID="{9ECE6741-DEAB-4803-9272-19CC0FDAB947}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -3398,6 +3301,11 @@
 																				<Value>-2400</Value>
 																			</ValueList>
 																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>1</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Attenuation">
@@ -3414,24 +3322,24 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_03" ID="{3ADDB561-87D2-4B2B-862F-20F66873EEE7}" ShortID="888642561">
+																		<AudioFileSource Name="tick_single_02" ID="{E50C1A9D-923C-4FAA-BA90-B47D15DE566F}" ShortID="1011014448">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="7.14234293397593E-03"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="4.31506410256411E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.007"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.043"/>
 																				<Property Name="FadeOutShape" Type="int16" Value="0"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="9.69325994054255E-03"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="6.09613742414836E-02"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.00969"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.06096"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+																			<AudioFile>tick_single_02.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="616650629"/>
+																				<File ID="187393400"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_03" ID="{3ADDB561-87D2-4B2B-862F-20F66873EEE7}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_02" ID="{E50C1A9D-923C-4FAA-BA90-B47D15DE566F}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="end" ID="{C846E121-2F7B-402B-B499-C9202A4E7B4D}" ShortID="51829070">
@@ -3449,7 +3357,7 @@
 																		</Property>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>3</Value>
+																				<Value>5</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -3468,24 +3376,24 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_03" ID="{1505DF33-A5A7-43A0-B38E-851F8E26B9A0}" ShortID="81950273">
+																		<AudioFileSource Name="tick_single_02" ID="{EB7BE200-FC64-4DFE-ACFF-E139170EBAB1}" ShortID="227479525">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="1.19037800652874E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.012"/>
 																				<Property Name="FadeInShape" Type="int16" Value="9"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="1.68756715943809E-02"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.017"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="0.082893942966909"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="0.145051761694003"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.08289"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.14505"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+																			<AudioFile>tick_single_02.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="7798141"/>
+																				<File ID="752069697"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_03" ID="{1505DF33-A5A7-43A0-B38E-851F8E26B9A0}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_02" ID="{EB7BE200-FC64-4DFE-ACFF-E139170EBAB1}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -3552,6 +3460,11 @@
 																				<Value>-2400</Value>
 																			</ValueList>
 																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>1</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Attenuation">
@@ -3568,24 +3481,24 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_03" ID="{A871722F-67E4-41B4-B784-1822AD6E6D7A}" ShortID="226324431">
+																		<AudioFileSource Name="tick_single_02" ID="{DFC59E17-DB28-4A1B-981D-A8AC871D09DE}" ShortID="401946843">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="7.14234293397593E-03"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="4.31506410256411E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.007"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.043"/>
 																				<Property Name="FadeOutShape" Type="int16" Value="0"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="9.69325994054255E-03"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="6.09613742414836E-02"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.00969"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.06096"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+																			<AudioFile>tick_single_02.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="616650629"/>
+																				<File ID="187393400"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_03" ID="{A871722F-67E4-41B4-B784-1822AD6E6D7A}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_02" ID="{DFC59E17-DB28-4A1B-981D-A8AC871D09DE}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="end" ID="{EF000F66-0F40-47CA-8BDF-5B9BAF9E2F17}" ShortID="881365785">
@@ -3603,7 +3516,7 @@
 																		</Property>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>3</Value>
+																				<Value>5</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -3622,24 +3535,24 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_03" ID="{FF773DA7-9EA8-4EC9-85A6-A4AEA7B8F6A8}" ShortID="601682851">
+																		<AudioFileSource Name="tick_single_02" ID="{155C4A11-1A72-47D3-ABC8-83AE8E1F07AF}" ShortID="482247786">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="1.19037800652874E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.012"/>
 																				<Property Name="FadeInShape" Type="int16" Value="9"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="1.68756715943809E-02"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.017"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="0.082893942966909"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="0.145051761694003"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.08289"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.14505"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+																			<AudioFile>tick_single_02.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="7798141"/>
+																				<File ID="752069697"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_03" ID="{FF773DA7-9EA8-4EC9-85A6-A4AEA7B8F6A8}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_02" ID="{155C4A11-1A72-47D3-ABC8-83AE8E1F07AF}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -3707,6 +3620,11 @@
 																				<Value>-2400</Value>
 																			</ValueList>
 																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>1</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Attenuation">
@@ -3723,24 +3641,24 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_03" ID="{900A17C9-E510-4B69-BC88-D57F3C3F48ED}" ShortID="369347771">
+																		<AudioFileSource Name="tick_single_02" ID="{00978796-779C-4CE3-BB52-B174F904AB49}" ShortID="794046332">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="7.14234293397593E-03"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="4.31506410256411E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.007"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.043"/>
 																				<Property Name="FadeOutShape" Type="int16" Value="0"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="9.69325994054255E-03"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="6.09613742414836E-02"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.00969"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.06096"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+																			<AudioFile>tick_single_02.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="616650629"/>
+																				<File ID="187393400"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_03" ID="{900A17C9-E510-4B69-BC88-D57F3C3F48ED}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_02" ID="{00978796-779C-4CE3-BB52-B174F904AB49}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="end" ID="{D5738B14-7126-447D-96F0-F7C8A68EF4E3}" ShortID="337209246">
@@ -3758,7 +3676,7 @@
 																		</Property>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>3</Value>
+																				<Value>5</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -3777,24 +3695,24 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="ui_wheel_change_tone_03" ID="{2A2595A0-11C7-49AA-9AA6-94C9B0346FEF}" ShortID="659317935">
+																		<AudioFileSource Name="tick_single_02" ID="{2736629B-9D82-400B-ACA8-D0FF9BC84E00}" ShortID="315826287">
 																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="1.19037800652874E-02"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.012"/>
 																				<Property Name="FadeInShape" Type="int16" Value="9"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="1.68756715943809E-02"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.017"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="0.082893942966909"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="0.145051761694003"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.08289"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.14505"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
+																			<AudioFile>tick_single_02.wav</AudioFile>
 																			<ConvertedFileIDList>
-																				<File ID="7798141"/>
+																				<File ID="752069697"/>
 																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="ui_wheel_change_tone_03" ID="{2A2595A0-11C7-49AA-9AA6-94C9B0346FEF}" Platform="Linked"/>
+																		<ActiveSource Name="tick_single_02" ID="{2736629B-9D82-400B-ACA8-D0FF9BC84E00}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -3949,6 +3867,11 @@
 																		<Value>-2400</Value>
 																	</ValueList>
 																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -3962,24 +3885,21 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="ui_wheel_change_tone_03" ID="{AE6B63FF-C721-44DC-AF37-C1CFBB36B3D0}" ShortID="35232205">
+																<AudioFileSource Name="tick_single_02" ID="{7BBA47EB-29AA-4E35-8323-A393AAA11D29}" ShortID="703307495">
 																	<PropertyList>
-																		<Property Name="FadeInDuration" Type="Real64" Value="9.06788833147528E-03"/>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="4.84662997027128E-02"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.009"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.048"/>
 																		<Property Name="FadeOutShape" Type="int16" Value="0"/>
 																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="9.69325994054255E-03"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="6.56640189520624E-02"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.00969"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.06566"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
-																	<AudioFile>ui_wheel_change_tone_03.wav</AudioFile>
-																	<ConvertedFileIDList>
-																		<File ID="274396582"/>
-																	</ConvertedFileIDList>
+																	<AudioFile>tick_single_02.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="ui_wheel_change_tone_03" ID="{AE6B63FF-C721-44DC-AF37-C1CFBB36B3D0}" Platform="Linked"/>
+																<ActiveSource Name="tick_single_02" ID="{7BBA47EB-29AA-4E35-8323-A393AAA11D29}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
@@ -4031,6 +3951,11 @@
 																		<Value>-100</Value>
 																	</ValueList>
 																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>2</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -4044,25 +3969,24 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="ui_wheel_change_tone_01" ID="{463762D9-85EE-454E-8B09-DDD331EA0978}" ShortID="568710697">
+																<AudioFileSource Name="tick_single_01" ID="{A7C3C7A7-7052-4817-B405-B5C1DB029074}" ShortID="1065298574">
 																	<PropertyList>
-																		<Property Name="FadeInDuration" Type="Real64" Value="6.02519357336431E-02"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.06"/>
 																		<Property Name="FadeInShape" Type="int16" Value="7"/>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="1.51435346496323E-02"/>
-																		<Property Name="LoopBegin" Type="Real64" Value="0.20975406504065"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.015"/>
 																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="5.79965156794422E-03"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="8.63503677893922E-02"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0058"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.08635"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
-																	<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+																	<AudioFile>tick_single_01.wav</AudioFile>
 																	<ConvertedFileIDList>
-																		<File ID="54302559"/>
+																		<File ID="708162647"/>
 																	</ConvertedFileIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="ui_wheel_change_tone_01" ID="{463762D9-85EE-454E-8B09-DDD331EA0978}" Platform="Linked"/>
+																<ActiveSource Name="tick_single_01" ID="{A7C3C7A7-7052-4817-B405-B5C1DB029074}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
@@ -4201,11 +4125,11 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="ui_wheel_change_tone_01" ID="{8767A828-DFB2-47C4-BF1A-314227EEA9D0}" ShortID="506017046">
+								<Sound Name="tick_single_01-a" ID="{8767A828-DFB2-47C4-BF1A-314227EEA9D0}" ShortID="506017046">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-14</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4221,23 +4145,28 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="ui_wheel_change_tone_01" ID="{542F2A55-141C-4BE3-BC35-A5FBC6B3548B}" ShortID="578366139">
+										<AudioFileSource Name="tick_single_01" ID="{6484B516-7447-44C5-8412-C30F323400AD}" ShortID="715704096">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="1.56150698602794E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.016"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="2.25920159680639E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.02259"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+											<AudioFile>tick_single_01.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="ui_wheel_change_tone_01" ID="{542F2A55-141C-4BE3-BC35-A5FBC6B3548B}" Platform="Linked"/>
+										<ActiveSource Name="tick_single_01" ID="{6484B516-7447-44C5-8412-C30F323400AD}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="ui_wheel_change_tone_02" ID="{149B1BB8-28AF-45CF-882E-4BC78BF4A269}" ShortID="423822875">
+								<Sound Name="tick_single_01-b" ID="{149B1BB8-28AF-45CF-882E-4BC78BF4A269}" ShortID="423822875">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -4254,21 +4183,21 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="ui_wheel_change_tone_01" ID="{B6C4F4FE-7E0D-49CB-A74A-ACDB7710E8F9}" ShortID="511479142">
+										<AudioFileSource Name="tick_single_01" ID="{ED2E0165-ADE7-44B1-872C-CF9139EAFADF}" ShortID="576567380">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="1.56150698602794E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.016"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="2.25920159680639E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.02259"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>ui_wheel_change_tone_01.wav</AudioFile>
+											<AudioFile>tick_single_01.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="578366139"/>
+												<File ID="715704096"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="ui_wheel_change_tone_01" ID="{B6C4F4FE-7E0D-49CB-A74A-ACDB7710E8F9}" Platform="Linked"/>
+										<ActiveSource Name="tick_single_01" ID="{ED2E0165-ADE7-44B1-872C-CF9139EAFADF}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

@@ -5,12 +5,12 @@
 			<Language ID="393239870">
 				<File Name="Init" Hash="2511445679" Timestamp="1580295098"/>
 				<File Name="New" Hash="2176600241" Timestamp="1579793411"/>
-				<File Name="sb_SonAR" Hash="3158282414" Timestamp="1580295834"/>
+				<File Name="sb_SonAR" Hash="2173921721" Timestamp="1580483604"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2255535521" Timestamp="1580295834"/>
+				<File Name="" Hash="1967326322" Timestamp="1580483604"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -33,12 +33,12 @@
 				<File Name="Init" Hash="3680988671" Timestamp="1580295099"/>
 				<File Name="New" Hash="2217396996" Timestamp="1579793411"/>
 				<File Name="SoundBank" Hash="1039533758" Timestamp="1572487660"/>
-				<File Name="sb_SonAR" Hash="3590627070" Timestamp="1580295834"/>
+				<File Name="sb_SonAR" Hash="2173921721" Timestamp="1580483604"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1915322419" Timestamp="1580295834"/>
+				<File Name="" Hash="152391344" Timestamp="1580483604"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

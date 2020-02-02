@@ -18,6 +18,13 @@
 	<ModeList GlobalGain="0.000000"/>
 </PluginData>
 				</Effect>
+				<Effect Name="New_Wwise_Recorder" ID="{B753D7AC-1B42-42C7-9038-C800C0C0B28D}" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
+					<PropertyList>
+						<Property Name="ApplyDownstreamVolume" Type="bool" Value="True"/>
+						<Property Name="AuthoringFilename" Type="string" Value="D:\PROJECTS\cosmic-vr\BachelorWS1920\export\sounds\tick_repeat_d1_33.wav"/>
+						<Property Name="DownmixToStereo" Type="bool" Value="False"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

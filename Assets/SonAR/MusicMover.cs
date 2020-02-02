@@ -5,23 +5,13 @@ using UnityEngine.UI;
 
 //TODO
 
-// fix ARCore & fallback no arcore / no camera allowed
-// fix reset button
-//
-// turn off ambient light?
+// fallback no arcore / no camera allowed
 // dont cast shadows
-//
 // clean switches, make globals
-//
-// convert stereo files to mono
 // enable camera feed
-// change tick design 2 and chord design 3
-//
+// disable tick modes when in read:group
 // tweak speed
 // from-to objects
-
-
-// tweak speed, design 3 no earrape pls, only 4 notes because CPU, VIDEO
 
 public class MusicMover : MonoBehaviour
 {
@@ -100,25 +90,34 @@ public class MusicMover : MonoBehaviour
 	[ContextMenu("Create Objects")]
 	public void Create()
 	{
-		transform.parent.transform.localRotation = Quaternion.EulerRotation(transform.parent.transform.localRotation.x, GameObject.Find("ARCore Device").transform.localRotation.y, transform.parent.transform.localRotation.z);
-		transform.parent.transform.localRotation *= Quaternion.Euler(0f, -90f, 0f); // Rotate against offset.
+		// Prepare environment
 
 		GameObject.Find("ARCore Device").GetComponent<GoogleARCore.ARCoreSession>().SessionConfig.PlaneFindingMode = GoogleARCore.DetectedPlaneFindingMode.Disabled;
 		GameObject.Find("SonAR Controller").GetComponent<GoogleARCore.Examples.HelloAR.HelloARController>().m_hasObject = true;
 		ar_plane_discovery = GameObject.Find("PlaneDiscovery");
 		ar_plane_generator = GameObject.Find("Plane Generator");
 		ar_point_cloud = GameObject.Find("Point Cloud");
-		ar_plane_discovery.SetActive(false);
 		ar_plane_generator.SetActive(false);
 		ar_point_cloud.SetActive(false);
 
-		currentChord = new Chord();
-		currentChord.tones = new List<Tone>();
+		// Prepare object
+
+		transform.parent.transform.localRotation =
+			Quaternion.EulerRotation(
+				transform.parent.transform.localRotation.x,
+				GameObject.Find("ARCore Device").transform.localRotation.y,
+				transform.parent.transform.localRotation.z);
+		transform.parent.transform.localRotation *= Quaternion.Euler(0f, -90f, 0f); // Rotate against offset and towards user
 
 		inner_radius = Vector3.Distance(middlePoint.transform.position, startPoint.transform.position);
 		step_length = ((endPoint.transform.localPosition.x - pushPoint.transform.localPosition.x) / (stepCountMax - 1));
 
+		// Prepare input
+
 		metro.SetParams(stepCountMax, step_length, pushPoint.transform.localPosition.x, toneAngle);
+
+		currentChord = new Chord();
+		currentChord.tones = new List<Tone>();
 
 		for (int i = 0; i < numberOfNotes; i++)
 		{
@@ -269,11 +268,19 @@ public class MusicMover : MonoBehaviour
 
 	private void FinishChord()
 	{
+		// Update system
+
 		inputKeys.Clear();
 		chordFull = false;
 		chordsMoving = true;
-		chords.Add(CopyChord(currentChord));
 		count_moving_chords = chords.Count;
+
+		foreach (Button button in key_buttons)
+			button.interactable = false;
+
+		// Update Chords
+
+		chords.Add(CopyChord(currentChord));
 
 		for (int i = 0; i < chords.Count; i++) // for-loop instead of foreach because Destroy()
 		{
@@ -283,15 +290,10 @@ public class MusicMover : MonoBehaviour
 				i--;
 			}
 		}
-
 		foreach (Tone tone in currentChord.tones)
 		{
 			tone.obj.SetActive(false);
 		}
-
-		foreach (Button button in key_buttons)
-			button.interactable = false;
-
 		ResetTones();
 	}
 
@@ -325,10 +327,23 @@ public class MusicMover : MonoBehaviour
 	{
 		if (chord.step >= stepCountMax - 1) return false;
 
+		foreach (Button keybutton in key_buttons)
+		{
+			keybutton.interactable = true;
+		}
+
+		// Update chord
+
 		chord.step++;
 		chord.isMoving = true;
 		chord.movingTones = chord.tones.Count;
+		chord.tones.Sort((t1, t2) => t1.semitone.CompareTo(t2.semitone)); // Sort for base tone
+		chord.tones[0].obj.GetComponent<MeshRenderer>().material = materialHighlight;
+
 		AkSoundEngine.PostEvent(stop_lastChord.Id, gameObject);
+
+		// Update tones and sequencer
+
 		foreach (Tone tone in chord.tones)
 		{
 			if (chord.step != 0)
@@ -348,15 +363,8 @@ public class MusicMover : MonoBehaviour
 			AkSoundEngine.SetRTPCValue(rtpc_semitone.Id, tone.semitone, gameObject); // set rtpc_semi to base tone for distant keytone?
 			AkSoundEngine.PostEvent(start_lastChord.Id, gameObject);
 		}
-		chord.tones.Sort((t1, t2) => t1.semitone.CompareTo(t2.semitone));
-		chord.tones[0].obj.GetComponent<MeshRenderer>().material = materialHighlight;
+
 		PlayChord(metro.current_chord_);
-
-		foreach (Button keybutton in key_buttons)
-		{
-			keybutton.interactable = true;
-		}
-
 		return true;
 	}
 
@@ -377,8 +385,17 @@ public class MusicMover : MonoBehaviour
 	{
 		if (chordFull) return;
 
-		Tone tone = currentChord.tones[inputKeys.Count];
 
+		// Update system
+
+		hasInput = true;
+		tonesMoving = true;
+		count_moving_tones++;
+		metro.AddInputTap();
+
+		// Update tone
+
+		Tone tone = currentChord.tones[inputKeys.Count];
 		tone.obj.SetActive(true);
 		tone.isMoving = true;
 		tone.semitone = keyNum;
@@ -398,14 +415,10 @@ public class MusicMover : MonoBehaviour
 
 		currentChord.tones[inputKeys.Count] = tone;
 
-		hasInput = true;
-		metro.AddInputTap();
-
-		tonesMoving = true;
-		count_moving_tones++;
-
 		AkSoundEngine.SetSwitch("chord_design", chord_design, currentChord.tones[inputKeys.Count].obj);
 		AkSoundEngine.PostEvent(startEvent.Id, currentChord.tones[inputKeys.Count].obj);
+
+		// Update input
 
 		inputKeys.Add(keyNum);
 		key_buttons.Find(x => x.name.Contains(keyNum.ToString())).interactable = false;
@@ -418,7 +431,9 @@ public class MusicMover : MonoBehaviour
 		}
 	}
 
-	public void PlayChord(int current_chord_) // This is not good code and needs rethinking.
+	#region [Audio related]
+
+	public void PlayChord(int current_chord_) // Move to own class?
 	{
 		if (chords.Count > current_chord_)
 		{
@@ -459,7 +474,7 @@ public class MusicMover : MonoBehaviour
 		}
 	}
 
-	public void PlayTick(int current_semitone_, int current_chord_, AK.Wwise.RTPC rtpc_step_, AK.Wwise.Event semitone_event_) // This is not good code and needs rethinking.
+	public void PlayTick(int current_semitone_, int current_chord_, AK.Wwise.RTPC rtpc_step_, AK.Wwise.Event semitone_event_) // This is not good practice and needs rethinking.
 	{
 		int inverseChord = chords.Count - current_chord_ - 1; // Because chord objects are saved in reversed order.
 
@@ -474,6 +489,7 @@ public class MusicMover : MonoBehaviour
 			}
 		}
 	}
+	#endregion
 
 	#region [UI functions]
 

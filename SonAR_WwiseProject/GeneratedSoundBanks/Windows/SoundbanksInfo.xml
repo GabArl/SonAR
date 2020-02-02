@@ -16,12 +16,11 @@
 			<ShortName>sb_SonAR</ShortName>
 			<Path>sb_SonAR.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2576020748" Name="Play_Chord_Full" ObjectPath="\Events\Default Work Unit\Play_Chord_Full" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.015975" DurationMax="0.015975"/>
+				<Event Id="2576020748" Name="Play_Chord_Full" ObjectPath="\Events\Default Work Unit\Play_Chord_Full" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.015974" DurationMax="0.015974"/>
 				<Event Id="2096876433" Name="Play_Chord_Loop" ObjectPath="\Events\Default Work Unit\Play_Chord_Loop" MaxAttenuation="2.000000" DurationType="Unknown"/>
 				<Event Id="3096279812" Name="Play_LastChord" ObjectPath="\Events\Default Work Unit\Play_LastChord" MaxAttenuation="5.000000" DurationType="Infinite"/>
 				<Event Id="3880256402" Name="Play_Metro_Step" ObjectPath="\Events\Default Work Unit\Play_Metro_Step" MaxAttenuation="2.000000" DurationType="Unknown"/>
-				<Event Id="533559632" Name="Play_Semitone" ObjectPath="\Events\Default Work Unit\Play_Semitone" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.196163" DurationMax="0.196163"/>
-				<Event Id="3592141553" Name="Play_Tick" ObjectPath="\Events\Default Work Unit\Play_Tick" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.085341" DurationMax="0.373883"/>
+				<Event Id="3592141553" Name="Play_Tick" ObjectPath="\Events\Default Work Unit\Play_Tick" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.085340" DurationMax="0.373880"/>
 				<Event Id="1709201661" Name="Play_Tick_Group" ObjectPath="\Events\Default Work Unit\Play_Tick_Group" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.069354" DurationMax="0.857268"/>
 				<Event Id="4028792483" Name="Play_Tone_Idle" ObjectPath="\Events\Default Work Unit\Play_Tone_Idle" MaxAttenuation="1.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3393091015" Name="Stop_Chord_Loop" ObjectPath="\Events\Default Work Unit\Stop_Chord_Loop" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.523693" DurationMax="0.523693"/>
@@ -30,57 +29,49 @@
 				<Event Id="553704049" Name="Stop_Tone_Idle" ObjectPath="\Events\Default Work Unit\Stop_Tone_Idle" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="7798141" Language="SFX">
-					<ShortName>ui_wheel_change_tone_03.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_03_8B286050.wem</Path>
+				<File Id="27045413" Language="SFX">
+					<ShortName>idle_loop.wav</ShortName>
+					<Path>SFX\idle_loop_7789AD2F.wem</Path>
 				</File>
-				<File Id="54302559" Language="SFX">
-					<ShortName>ui_wheel_change_tone_01.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_01_2AAF6CEE.wem</Path>
+				<File Id="187393400" Language="SFX">
+					<ShortName>tick_single_02.wav</ShortName>
+					<Path>SFX\tick_single_02_190007B4.wem</Path>
 				</File>
-				<File Id="55176079" Language="SFX">
-					<ShortName>ui_wheel_change_tone_03.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_03_27669B22.wem</Path>
+				<File Id="246818888" Language="SFX">
+					<ShortName>tick_single_02.wav</ShortName>
+					<Path>SFX\tick_single_02_A8A82164.wem</Path>
 				</File>
-				<File Id="66536949" Language="SFX">
-					<ShortName>ui_wheel_change_tone_02.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_02_B6869661.wem</Path>
+				<File Id="274989793" Language="SFX">
+					<ShortName>tick_single_01.wav</ShortName>
+					<Path>SFX\tick_single_01_B6869661.wem</Path>
 				</File>
-				<File Id="88409178" Language="SFX">
-					<ShortName>ui_wheel_change_tone_01.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_01_9CBBAD1A.wem</Path>
+				<File Id="437465099" Language="SFX">
+					<ShortName>tick_single_01.wav</ShortName>
+					<Path>SFX\tick_single_01_7447B23C.wem</Path>
 				</File>
-				<File Id="120218215" Language="SFX">
-					<ShortName>ui_wheel_change_tone_03.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_03_52F09CB0.wem</Path>
+				<File Id="485519638" Language="SFX">
+					<ShortName>tick_group.wav</ShortName>
+					<Path>SFX\tick_group_D856C6CD.wem</Path>
 				</File>
-				<File Id="142011321" Language="SFX">
-					<ShortName>ui_wheel_change_tone_01.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_01_B6869661.wem</Path>
+				<File Id="604560346" Language="SFX">
+					<ShortName>tick_single_02.wav</ShortName>
+					<Path>SFX\tick_single_02_A74864D6.wem</Path>
 				</File>
-				<File Id="182918401" Language="SFX">
-					<ShortName>ui_wheel_change_tone_03.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_03_13CFCC61.wem</Path>
+				<File Id="703307495" Language="SFX">
+					<ShortName>tick_single_02.wav</ShortName>
+					<Path>SFX\tick_single_02_6FFD9FA9.wem</Path>
 				</File>
-				<File Id="274396582" Language="SFX">
-					<ShortName>ui_wheel_change_tone_03.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_03_F3BFC467.wem</Path>
+				<File Id="708162647" Language="SFX">
+					<ShortName>tick_single_01.wav</ShortName>
+					<Path>SFX\tick_single_01_7BADF061.wem</Path>
 				</File>
-				<File Id="422270334" Language="SFX">
-					<ShortName>sfx_player_circle_loop_01.wav</ShortName>
-					<Path>SFX\sfx_player_circle_loop_01_7789AD2F.wem</Path>
+				<File Id="715704096" Language="SFX">
+					<ShortName>tick_single_01.wav</ShortName>
+					<Path>SFX\tick_single_01_0713DAD0.wem</Path>
 				</File>
-				<File Id="578366139" Language="SFX">
-					<ShortName>ui_wheel_change_tone_01.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_01_5A1B5743.wem</Path>
-				</File>
-				<File Id="616650629" Language="SFX">
-					<ShortName>ui_wheel_change_tone_03.wav</ShortName>
-					<Path>SFX\ui_wheel_change_tone_03_E235C618.wem</Path>
-				</File>
-				<File Id="863798373" Language="SFX">
-					<ShortName>Circle 1.wav</ShortName>
-					<Path>SFX\Circle 1_9D6A2F85.wem</Path>
+				<File Id="752069697" Language="SFX">
+					<ShortName>tick_single_02.wav</ShortName>
+					<Path>SFX\tick_single_02_48442859.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
