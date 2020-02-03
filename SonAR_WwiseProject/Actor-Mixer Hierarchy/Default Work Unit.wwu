@@ -143,7 +143,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-12</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -160,7 +160,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Space" ID="{626D6A43-DBE1-4239-8B2D-48B7B926E9D1}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+							<ObjectRef Name="Mono" ID="{05F98AA0-DE03-4A2F-BE3F-02635A2D4FF4}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -205,7 +205,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-19</Value>
+												<Value>-22</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -821,7 +821,7 @@
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>60</YPos>
+																				<YPos>146</YPos>
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
@@ -1748,7 +1748,11 @@
 						<BlendContainer Name="Tick" ID="{688EB154-A85C-4287-8313-CFC569E35F52}" ShortID="548374432">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="AttachableMixerInput">
@@ -1767,7 +1771,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1C5A6BA-1832-49DF-9146-D82774EF3670}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Record" ID="{585DB0E7-50B3-4B4D-A6A0-CA77477F3123}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D40DE93-6B96-4E7E-AB53-228216C67EE9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

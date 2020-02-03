@@ -8,7 +8,6 @@
 		<Plugin Name="Wwise Synth One" ID="9699330" DLL="AkSynthOne"/>
 		<Plugin Name="System" ID="11403271" DLL="DefaultSink"/>
 		<Plugin Name="No Output" ID="11862023" DLL="DefaultSink"/>
-		<Plugin Name="AttachableMixerInput" ID="32837795" DLL="OculusSpatializerWwise"/>
 		<Plugin Name="HvFM" ID="215745538" DLL="Hv_HvFM_WwiseSourcePlugin"/>
 	</Plugins>
 </PluginInfo>

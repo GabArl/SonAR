@@ -165,6 +165,7 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MONO = 3145425408U;
         static const AkUniqueID SPACE = 4164838345U;
     } // namespace BUSSES
 

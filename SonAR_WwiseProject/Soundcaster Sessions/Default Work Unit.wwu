@@ -25,7 +25,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Length_To_Origin" ID="{4300FDDA-0336-4313-B1BA-2B985B738737}"/>
-							<Value>0</Value>
+							<Value>6.81339880683132E-312</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Minutes" ID="{2A49E384-D88C-4489-9D1C-2871FBB8D18C}"/>
@@ -84,7 +84,7 @@
 						<CurrentStateRef Name="Mute" ID="{FBCAAE69-970A-4F51-8F46-14C51AF42016}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="repeat" ID="{5B4461DA-6001-405B-B339-52DA0C5EA9E8}"/>
+						<CurrentSwitchRef Name="binary" ID="{CA3E0A23-8005-47F4-9DC9-C1025969AAFE}"/>
 						<CurrentSwitchRef Name="one" ID="{470623AB-4150-4308-BB77-F5844CFD9CC8}"/>
 						<CurrentSwitchRef Name="_0" ID="{670A6D6A-CAA8-4502-B327-4D0C233933A2}"/>
 						<CurrentSwitchRef Name="_0" ID="{BC943E8C-DF64-4311-BA20-1AA698141962}"/>
