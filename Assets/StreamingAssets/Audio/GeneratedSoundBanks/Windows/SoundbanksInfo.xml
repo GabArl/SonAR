@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>D:\PROJECTS\cosmic-vr\github-workspace\SonAR\SonAR_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\PROJECTS\cosmic-vr\github-workspace\SonAR\SonAR_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\PROJECTS\cosmic-vr\github-workspace\SonAR\SonAR_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\PROJECTS\cosmic-vr\github-workspace\SonAR\SonAR_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="5723758" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\sb_SonAR</ObjectPath>
+			<ShortName>sb_SonAR</ShortName>
+			<Path>sb_SonAR.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2576020748" Name="Play_Chord_Full" ObjectPath="\Events\Default Work Unit\Play_Chord_Full" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.015974" DurationMax="0.015974"/>
+				<Event Id="2096876433" Name="Play_Chord_Loop" ObjectPath="\Events\Default Work Unit\Play_Chord_Loop" MaxAttenuation="2.000000" DurationType="Unknown"/>
+				<Event Id="3096279812" Name="Play_LastChord" ObjectPath="\Events\Default Work Unit\Play_LastChord" MaxAttenuation="5.000000" DurationType="Infinite"/>
+				<Event Id="3880256402" Name="Play_Metro_Step" ObjectPath="\Events\Default Work Unit\Play_Metro_Step" MaxAttenuation="2.000000" DurationType="Unknown"/>
+				<Event Id="3592141553" Name="Play_Tick" ObjectPath="\Events\Default Work Unit\Play_Tick" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.085340" DurationMax="0.373880"/>
+				<Event Id="1709201661" Name="Play_Tick_Group" ObjectPath="\Events\Default Work Unit\Play_Tick_Group" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.069354" DurationMax="0.857268"/>
+				<Event Id="4028792483" Name="Play_Tone_Idle" ObjectPath="\Events\Default Work Unit\Play_Tone_Idle" MaxAttenuation="1.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3393091015" Name="Stop_Chord_Loop" ObjectPath="\Events\Default Work Unit\Stop_Chord_Loop" MaxAttenuation="2.000000" DurationType="OneShot" DurationMin="0.523693" DurationMax="0.523693"/>
+				<Event Id="987771470" Name="Stop_LastChord" ObjectPath="\Events\Default Work Unit\Stop_LastChord" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3618416136" Name="Stop_Metro_Step" ObjectPath="\Events\Default Work Unit\Stop_Metro_Step" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="553704049" Name="Stop_Tone_Idle" ObjectPath="\Events\Default Work Unit\Stop_Tone_Idle" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="27045413" Language="SFX">
+					<ShortName>idle_loop.wav</ShortName>
+					<Path>SFX\idle_loop_7789AD2F.wem</Path>
+				</File>
+				<File Id="187393400" Language="SFX">
+					<ShortName>tick_single_02.wav</ShortName>
+					<Path>SFX\tick_single_02_190007B4.wem</Path>
+				</File>
+				<File Id="246818888" Language="SFX">
+					<ShortName>tick_single_02.wav</ShortName>
+					<Path>SFX\tick_single_02_A8A82164.wem</Path>
+				</File>
+				<File Id="274989793" Language="SFX">
+					<ShortName>tick_single_01.wav</ShortName>
+					<Path>SFX\tick_single_01_B6869661.wem</Path>
+				</File>
+				<File Id="437465099" Language="SFX">
+					<ShortName>tick_single_01.wav</ShortName>
+					<Path>SFX\tick_single_01_7447B23C.wem</Path>
+				</File>
+				<File Id="485519638" Language="SFX">
+					<ShortName>tick_group.wav</ShortName>
+					<Path>SFX\tick_group_D856C6CD.wem</Path>
+				</File>
+				<File Id="604560346" Language="SFX">
+					<ShortName>tick_single_02.wav</ShortName>
+					<Path>SFX\tick_single_02_A74864D6.wem</Path>
+				</File>
+				<File Id="703307495" Language="SFX">
+					<ShortName>tick_single_02.wav</ShortName>
+					<Path>SFX\tick_single_02_6FFD9FA9.wem</Path>
+				</File>
+				<File Id="708162647" Language="SFX">
+					<ShortName>tick_single_01.wav</ShortName>
+					<Path>SFX\tick_single_01_7BADF061.wem</Path>
+				</File>
+				<File Id="715704096" Language="SFX">
+					<ShortName>tick_single_01.wav</ShortName>
+					<Path>SFX\tick_single_01_0713DAD0.wem</Path>
+				</File>
+				<File Id="752069697" Language="SFX">
+					<ShortName>tick_single_02.wav</ShortName>
+					<Path>SFX\tick_single_02_48442859.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

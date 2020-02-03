@@ -1,0 +1,75 @@
+Event	ID	Name			Wwise Object Path	Notes
+	533559632	Play_Semitone			\Geometry\Play_Semitone	
+	553704049	Stop_Tone_Idle			\Geometry\Stop_Tone_Idle	
+	987771470	Stop_LastChord			\Geometry\Stop_LastChord	
+	2096876433	Play_Chord_Loop			\Geometry\Play_Chord_Loop	
+	2429363254	Play_Minute			\Clock\Play_Minute	
+	2576020748	Play_Chord_Full			\Geometry\Play_Chord_Full	
+	2905912508	Play_Hour			\Clock\Play_Hour	
+	3096279812	Play_LastChord			\Geometry\Play_LastChord	
+	3319890774	Play_Second			\Clock\Play_Second	
+	3393091015	Stop_Chord_Loop			\Geometry\Stop_Chord_Loop	
+	3592141553	Play_Tick			\Geometry\Play_Tick	
+	3618416136	Stop_metro_step			\Geometry\Stop_metro_step	
+	3784159884	Plugin			\New\Plugin	
+	3880256402	Play_metro_step			\Geometry\Play_metro_step	
+	4028792483	Play_Tone_Idle			\Geometry\Play_Tone_Idle	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	365065828	tick_digit			\Default Work Unit\tick_digit	
+	654608395	tick_design			\Default Work Unit\tick_design	
+	923263321	tick_binary_two			\Default Work Unit\tick_binary_two	
+	1124709220	tick_mode			\Default Work Unit\tick_mode	
+	1312546987	tick_binary_one			\Default Work Unit\tick_binary_one	
+
+Switch	ID	Name	Switch Group			Notes
+	846646256	_0	tick_digit			
+	846646257	_1	tick_digit			
+	846646258	_2	tick_digit			
+	846646259	_3	tick_digit			
+	678209053	two	tick_design			
+	1064933119	one	tick_design			
+	846646256	_0	tick_binary_two			
+	846646257	_1	tick_binary_two			
+	1908158473	pitch	tick_mode			
+	2639924424	repeat	tick_mode			
+	3227068230	binary	tick_mode			
+	846646256	_0	tick_binary_one			
+	846646257	_1	tick_binary_one			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	277558524	Length_To_Origin			\Geometry\Length_To_Origin	
+	365065828	tick_digit			\Geometry\tick_digit	
+	745018932	Seconds			\Clock\Seconds	
+	1024289516	Chord_Length			\Geometry\Chord_Length	
+	1053147292	Minutes			\Clock\Minutes	
+	3102311527	Semitone			\Geometry\Semitone	
+	3441649109	rtpc_tick_repeat_triggerrate			\Default Work Unit\rtpc_tick_repeat_triggerrate	
+	3737256986	Hours			\Clock\Hours	
+	3775536674	Length_To_Last			\Geometry\Length_To_Last	
+
+Effect plug-ins	ID	Name	Type				Notes
+	32998494	Oculus Spatializer (Attached)	AttachableMixerInput			
+	439797801	Oculus Spatializer (Attached)	AttachableMixerInput			
+	1070500695	Oculus Spatializer (Attached)	AttachableMixerInput			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	78645170	HvFM	HvFM		\Actor-Mixer Hierarchy\Geometry\step\step\step_01\HvFM	
+	346918163	HvFM	HvFM		\Actor-Mixer Hierarchy\Default Work Unit\hvfm_test\New Sound SFX_01\HvFM	
+	418501779	HvFM	HvFM		\Actor-Mixer Hierarchy\Geometry\step\step\step_02\HvFM	
+	716457513	HvFM	HvFM		\Actor-Mixer Hierarchy\Default Work Unit\hvfm_test\New Sound SFX\HvFM	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	54302559	1	D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\SFX\ui_wheel_change_tone_01_DC405336.wem		\Actor-Mixer Hierarchy\Geometry\tick\tick_mode\tick_binary\tick_binary_d1\tick_binary_d1_one\1		15532
+	55176079	1	D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\SFX\ui_wheel_change_tone_03_68A6643A.wem		\Actor-Mixer Hierarchy\Geometry\tick\tick_mode\tick_binary\tick_binary_d2\tick_binary_d2_one\1		8708
+	66536949	ui_wheel_change_tone_02	D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\SFX\ui_wheel_change_tone_02_10C4C929.wem		\Actor-Mixer Hierarchy\Clock\Clock\idle_loop\idle_tick\ui_wheel_change_tone_02		53296
+	88409178	0	D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\SFX\ui_wheel_change_tone_01_77964352.wem		\Actor-Mixer Hierarchy\Geometry\tick\tick_mode\tick_binary\tick_binary_d1\tick_binary_d1_one\0		17756
+	120218215	0	D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\SFX\ui_wheel_change_tone_03_C6EBFC98.wem		\Actor-Mixer Hierarchy\Geometry\tick\tick_mode\tick_binary\tick_binary_d2\tick_binary_d2_one\0		10812
+	140446169	Circle 1	D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\SFX\Circle 1_10C4C929.wem		\Actor-Mixer Hierarchy\Clock\Clock\Minutes\Circle 1		439900
+	142011321	ui_wheel_change_tone_01	D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\SFX\ui_wheel_change_tone_01_10C4C929.wem		\Actor-Mixer Hierarchy\Geometry\Semitones\ui_wheel_change_tone_01		53328
+	182918401	1	D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\SFX\ui_wheel_change_tone_03_A30074E9.wem		\Actor-Mixer Hierarchy\Geometry\tick\tick_mode\tick_binary\tick_binary_d2\tick_binary_d2_two\1		7328
+	274396582	0	D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\SFX\ui_wheel_change_tone_03_818F6E6F.wem		\Actor-Mixer Hierarchy\Geometry\tick\tick_mode\tick_binary\tick_binary_d2\tick_binary_d2_two\0		10812
+	422270334	sfx_player_circle_loop_01	D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\SFX\sfx_player_circle_loop_01_C5579977.wem		\Actor-Mixer Hierarchy\Clock\Clock\idle_pad\sfx_player_circle_loop_01		398130
+	725415192	Record	D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\SFX\Record_D79FB2B7.wem		\Actor-Mixer Hierarchy\Geometry\atom_loop\Record		805952
+	866382955	ui_wheel_change_tone_03	D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\SFX\ui_wheel_change_tone_03_10C4C929.wem		\Actor-Mixer Hierarchy\Clock\Clock\Seconds\ui_wheel_change_tone_03		53916
+
