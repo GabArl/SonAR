@@ -1,0 +1,13 @@
+Event	ID	Name			Wwise Object Path	Notes
+	980603538	red			\Default Work Unit\red	
+	1325827433	blue			\Default Work Unit\blue	
+	2774173721	yellow			\Default Work Unit\yellow	
+	2862198004	violet			\Default Work Unit\violet	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	66536949	ui_wheel_change_tone_02	D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\SFX\ui_wheel_change_tone_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sources\red\red\test\ui_wheel_change_tone_02		53296
+	142011321	ui_wheel_change_tone_01	D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\SFX\ui_wheel_change_tone_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sources\red\red\test\ui_wheel_change_tone_01		53328
+	198424254	ui_wheel_change_tone_04	D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\SFX\ui_wheel_change_tone_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sources\red\red\test\ui_wheel_change_tone_04		53152
+	530158327	ui_wheel_change_tone_05	D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\SFX\ui_wheel_change_tone_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sources\red\red\test\ui_wheel_change_tone_05		53340
+	866382955	ui_wheel_change_tone_03	D:\PROJECTS\cosmic-vr\github-workspace\cosmic-vr\cosmic-vr_WwiseProject\.cache\Windows\SFX\ui_wheel_change_tone_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sources\red\red\test\ui_wheel_change_tone_03		53916
+

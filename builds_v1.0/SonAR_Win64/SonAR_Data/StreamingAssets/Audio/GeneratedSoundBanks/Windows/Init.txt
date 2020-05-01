@@ -1,0 +1,47 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	365065828	tick_digit			\Default Work Unit\tick_digit	
+	923263321	tick_binary_two			\Default Work Unit\tick_binary_two	
+	1312546987	tick_binary_one			\Default Work Unit\tick_binary_one	
+
+Switch	ID	Name	Switch Group			Notes
+	846646256	_0	tick_digit			
+	846646257	_1	tick_digit			
+	846646258	_2	tick_digit			
+	846646259	_3	tick_digit			
+	846646256	_0	tick_binary_two			
+	846646257	_1	tick_binary_two			
+	846646256	_0	tick_binary_one			
+	846646257	_1	tick_binary_one			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	175455601	mute_ticks			\Default Work Unit\mute_ticks	
+	1372853048	mute_chords			\Default Work Unit\mute_chords	
+	2788513129	chord_mode			\Default Work Unit\chord_mode	
+
+State	ID	Name	State Group			Notes
+	0	None	mute_ticks			
+	2974103762	Mute	mute_ticks			
+	0	None	mute_chords			
+	2974103762	Mute	mute_chords			
+	0	None	chord_mode			
+	2708913211	math	chord_mode			
+	3991942870	music	chord_mode			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3145425408	Mono			\Default Work Unit\Master Audio Bus\Space\Mono	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	4164838345	Space			\Default Work Unit\Master Audio Bus\Space	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	348963605	reverb			\Default Work Unit\Master Audio Bus\reverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	400317747	Hall_Large_TooBright	Wwise RoomVerb			
+	1518494572	New_Oculus_Spatializer	Oculus Spatializer			
+	2662085913	Large_Church1	Wwise Matrix Reverb			
+	3216246379	Space_Dreaming	Wwise RoomVerb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

@@ -1,0 +1,87 @@
+Event	ID	Name			Wwise Object Path	Notes
+	553704049	Stop_Tone_Idle			\Default Work Unit\Stop_Tone_Idle	
+	987771470	Stop_LastChord			\Default Work Unit\Stop_LastChord	
+	1709201661	Play_Tick_Group			\Default Work Unit\Play_Tick_Group	
+	2096876433	Play_Chord_Loop			\Default Work Unit\Play_Chord_Loop	
+	2576020748	Play_Chord_Full			\Default Work Unit\Play_Chord_Full	
+	3096279812	Play_LastChord			\Default Work Unit\Play_LastChord	
+	3393091015	Stop_Chord_Loop			\Default Work Unit\Stop_Chord_Loop	
+	3592141553	Play_Tick			\Default Work Unit\Play_Tick	
+	3618416136	Stop_Metro_Step			\Default Work Unit\Stop_Metro_Step	
+	3880256402	Play_Metro_Step			\Default Work Unit\Play_Metro_Step	
+	4028792483	Play_Tone_Idle			\Default Work Unit\Play_Tone_Idle	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	365065828	tick_digit			\Default Work Unit\tick_digit	
+	654608395	tick_design			\Default Work Unit\tick_design	
+	923263321	tick_binary_two			\Default Work Unit\tick_binary_two	
+	1124709220	tick_mode			\Default Work Unit\tick_mode	
+	1312546987	tick_binary_one			\Default Work Unit\tick_binary_one	
+	4082000090	chord_design			\Default Work Unit\chord_design	
+
+Switch	ID	Name	Switch Group			Notes
+	846646256	_0	tick_digit			
+	846646257	_1	tick_digit			
+	846646258	_2	tick_digit			
+	846646259	_3	tick_digit			
+	678209053	two	tick_design			
+	1064933119	one	tick_design			
+	846646256	_0	tick_binary_two			
+	846646257	_1	tick_binary_two			
+	1908158473	pitch	tick_mode			
+	2639924424	repeat	tick_mode			
+	3227068230	binary	tick_mode			
+	846646256	_0	tick_binary_one			
+	846646257	_1	tick_binary_one			
+	678209053	two	chord_design			
+	912956111	three	chord_design			
+	1064933119	one	chord_design			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	175455601	mute_ticks			\Default Work Unit\mute_ticks	
+	1372853048	mute_chords			\Default Work Unit\mute_chords	
+	2788513129	chord_mode			\Default Work Unit\chord_mode	
+
+State	ID	Name	State Group			Notes
+	0	None	mute_ticks			
+	2974103762	Mute	mute_ticks			
+	0	None	mute_chords			
+	2974103762	Mute	mute_chords			
+	0	None	chord_mode			
+	2708913211	math	chord_mode			
+	3991942870	music	chord_mode			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	13163107	Mute	mute_ticks	\Actor-Mixer Hierarchy\Default Work Unit\Ticks		
+	223864645	music	chord_mode	\Actor-Mixer Hierarchy\Default Work Unit\Chords		
+	753655817	Mute	mute_chords	\Actor-Mixer Hierarchy\Default Work Unit\Chords		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	277558524	Length_To_Origin			\Geometry\Length_To_Origin	
+	365065828	tick_digit			\Geometry\tick_digit	
+	3102311527	Semitone			\Geometry\Semitone	
+	3441649109	rtpc_tick_repeat_triggerrate			\Default Work Unit\rtpc_tick_repeat_triggerrate	
+	4091128056	TickSemi			\Geometry\TickSemi	
+
+Effect plug-ins	ID	Name	Type				Notes
+	839129118	Vibrato_(Custom)	Wwise Flanger			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	346918163	HvFM	HvFM		\Actor-Mixer Hierarchy\Default Work Unit\Chords\Chord_design\Chord_d1\Chord_d1_high\HvFM	
+	418501779	HvFM	HvFM		\Actor-Mixer Hierarchy\Default Work Unit\Chords\Chord_design\Chord_d3\Chord_d3\HvFM	
+	716457513	HvFM	HvFM		\Actor-Mixer Hierarchy\Default Work Unit\Chords\Chord_design\Chord_d1\Chord_d1_low\HvFM	
+	939313892	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Chords\Chord_design\Chord_d2\Chord_d2\Wwise Synth One	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	27045413	idle_loop	D:\PROJECTS\cosmic-vr\github-workspace\SonAR\SonAR_WwiseProject\.cache\Windows\SFX\idle_loop_7789AD2F.wem		\Actor-Mixer Hierarchy\Default Work Unit\idle_loop\idle_loop		398130
+	187393400	tick	D:\PROJECTS\cosmic-vr\github-workspace\SonAR\SonAR_WwiseProject\.cache\Windows\SFX\tick_single_02_190007B4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ticks\Tick\tick_mode\tick_repeat\tick_repeat_d2\1\tick		4986
+	246818888	1	D:\PROJECTS\cosmic-vr\github-workspace\SonAR\SonAR_WwiseProject\.cache\Windows\SFX\tick_single_02_A8A82164.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ticks\Tick\tick_mode\tick_binary\tick_binary_d2\tick_binary_d2_one\1		4386
+	274989793	tick_single_01	D:\PROJECTS\cosmic-vr\github-workspace\SonAR\SonAR_WwiseProject\.cache\Windows\SFX\tick_single_01_B6869661.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ticks\Chord_NewInput\tick_single_01		26696
+	437465099	0	D:\PROJECTS\cosmic-vr\github-workspace\SonAR\SonAR_WwiseProject\.cache\Windows\SFX\tick_single_01_7447B23C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ticks\Tick\tick_mode\tick_binary\tick_binary_d1\tick_binary_d1_one\0		8910
+	485519638	tick_group_d1	D:\PROJECTS\cosmic-vr\github-workspace\SonAR\SonAR_WwiseProject\.cache\Windows\SFX\tick_group_D856C6CD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ticks\Semitones_Group\tick_group_d1		58258
+	604560346	0	D:\PROJECTS\cosmic-vr\github-workspace\SonAR\SonAR_WwiseProject\.cache\Windows\SFX\tick_single_02_A74864D6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ticks\Tick\tick_mode\tick_binary\tick_binary_d2\tick_binary_d2_one\0		5438
+	703307495	0	D:\PROJECTS\cosmic-vr\github-workspace\SonAR\SonAR_WwiseProject\.cache\Windows\SFX\tick_single_02_6FFD9FA9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ticks\Tick\tick_mode\tick_pitch\tick_pitch_d2\0		5438
+	708162647	1	D:\PROJECTS\cosmic-vr\github-workspace\SonAR\SonAR_WwiseProject\.cache\Windows\SFX\tick_single_01_7BADF061.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ticks\Tick\tick_mode\tick_binary\tick_binary_d1\tick_binary_d1_one\1		7798
+	715704096	tick_single_01-a	D:\PROJECTS\cosmic-vr\github-workspace\SonAR\SonAR_WwiseProject\.cache\Windows\SFX\tick_single_01_0713DAD0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ticks\Semitone_chordFinish\tick_single_01-a		2232
+	752069697	end	D:\PROJECTS\cosmic-vr\github-workspace\SonAR\SonAR_WwiseProject\.cache\Windows\SFX\tick_single_02_48442859.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ticks\Tick\tick_mode\tick_repeat\tick_repeat_d2\1\end		6030
+
